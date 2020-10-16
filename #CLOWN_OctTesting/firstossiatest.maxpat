@@ -4,7 +4,7 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 1,
-			"revision" : 5,
+			"revision" : 7,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -40,12 +40,13 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
-					"id" : "obj-2",
+					"id" : "obj-61",
 					"maxclass" : "newobj",
-					"numinlets" : 0,
-					"numoutlets" : 0,
-					"patching_rect" : [ 511.0, 85.0, 73.0, 22.0 ],
-					"text" : "ossia.model"
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 89.0, 724.5, 139.0, 22.0 ],
+					"text" : "ossia.device simple_test"
 				}
 
 			}
@@ -65,7 +66,7 @@
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "namespace" ],
-					"patching_rect" : [ 37.0, 158.0, 269.0, 556.0 ],
+					"patching_rect" : [ 89.0, 155.0, 269.0, 556.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -92,7 +93,22 @@
 
 			}
  ],
-		"lines" : [  ],
+		"lines" : [ 			{
+				"patchline" : 				{
+					"destination" : [ "obj-61", 0 ],
+					"source" : [ "obj-5", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-5", 0 ],
+					"midpoints" : [ 98.5, 747.0, 75.0, 747.0, 75.0, 150.0, 98.5, 150.0 ],
+					"source" : [ "obj-61", 0 ]
+				}
+
+			}
+ ],
 		"parameters" : 		{
 			"obj-1::obj-2::obj-1" : [ "Predelay[2]", "Predelay", 0 ],
 			"obj-1::obj-2::obj-29" : [ "Decay[2]", "Decay", 0 ],
@@ -121,45 +137,61 @@
 ,
 		"dependency_cache" : [ 			{
 				"name" : "ossia.pvh.adsr~.module.maxpat",
-				"bootpath" : "~/src/Max/PVH-maxlib_ossia/ossia.pvh.adsr~",
-				"patcherrelativepath" : "../Max/PVH-maxlib_ossia/ossia.pvh.adsr~",
+				"bootpath" : "~/Documents/Github/PVH-maxlib_ossia/ossia.pvh.adsr~",
+				"patcherrelativepath" : "../ossia.pvh.adsr~",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "ossia.pvh.adsr~.model.maxpat",
-				"bootpath" : "~/src/Max/PVH-maxlib_ossia/ossia.pvh.adsr~",
-				"patcherrelativepath" : "../Max/PVH-maxlib_ossia/ossia.pvh.adsr~",
+				"bootpath" : "~/Documents/Github/PVH-maxlib_ossia/ossia.pvh.adsr~",
+				"patcherrelativepath" : "../ossia.pvh.adsr~",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "ossia.pvh.adsr~.view.maxpat",
-				"bootpath" : "~/src/Max/PVH-maxlib_ossia/ossia.pvh.adsr~",
-				"patcherrelativepath" : "../Max/PVH-maxlib_ossia/ossia.pvh.adsr~",
+				"bootpath" : "~/Documents/Github/PVH-maxlib_ossia/ossia.pvh.adsr~",
+				"patcherrelativepath" : "../ossia.pvh.adsr~",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "ossia.cue_manager.module.maxpat",
-				"bootpath" : "~/src/Max/tml-ossia/utilities/cue_manager",
-				"patcherrelativepath" : "../Max/tml-ossia/utilities/cue_manager",
+				"bootpath" : "~/Documents/Github/tml-ossia/utilities/cue_manager",
+				"patcherrelativepath" : "../../tml-ossia/utilities/cue_manager",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "ossia.cue_manager.model.maxpat",
-				"bootpath" : "~/src/Max/tml-ossia/utilities/cue_manager",
-				"patcherrelativepath" : "../Max/tml-ossia/utilities/cue_manager",
+				"bootpath" : "~/Documents/Github/tml-ossia/utilities/cue_manager",
+				"patcherrelativepath" : "../../tml-ossia/utilities/cue_manager",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "ossia.cue_manager.view.maxpat",
-				"bootpath" : "~/src/Max/tml-ossia/utilities/cue_manager",
-				"patcherrelativepath" : "../Max/tml-ossia/utilities/cue_manager",
+				"bootpath" : "~/Documents/Github/tml-ossia/utilities/cue_manager",
+				"patcherrelativepath" : "../../tml-ossia/utilities/cue_manager",
 				"type" : "JSON",
 				"implicit" : 1
+			}
+, 			{
+				"name" : "ossia.parameter.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "ossia.model.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "ossia.remote.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "ossia.view.mxo",
+				"type" : "iLaX"
 			}
 , 			{
 				"name" : "bach.tree.mxo",
@@ -189,8 +221,22 @@
 				"name" : "bach.reg.mxo",
 				"type" : "iLaX"
 			}
+, 			{
+				"name" : "ossia.device.mxo",
+				"type" : "iLaX"
+			}
  ],
-		"autosave" : 0
+		"autosave" : 0,
+		"styles" : [ 			{
+				"name" : "Jamoma_highlighted_orange",
+				"default" : 				{
+					"accentcolor" : [ 1.0, 0.5, 0.0, 1.0 ]
+				}
+,
+				"parentstyle" : "",
+				"multi" : 0
+			}
+ ]
 	}
 
 }
