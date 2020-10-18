@@ -4,13 +4,13 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 1,
-			"revision" : 0,
+			"revision" : 7,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 229.0, 130.0, 476.0, 799.0 ],
+		"rect" : [ 229.0, 130.0, 280.0, 480.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -37,11 +37,12 @@
 		"tags" : "",
 		"style" : "",
 		"subpatcher_template" : "",
+		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-6",
-					"index" : 2,
+					"index" : 0,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -54,7 +55,7 @@
 					"annotation" : "",
 					"comment" : "dmx output",
 					"id" : "obj-5",
-					"index" : 1,
+					"index" : 0,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -66,7 +67,7 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-4",
-					"index" : 2,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -79,7 +80,7 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-3",
-					"index" : 1,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -100,7 +101,7 @@
 					"id" : "obj-2",
 					"lockeddragscroll" : 0,
 					"maxclass" : "bpatcher",
-					"name" : "pvh.light_phonergb.view.maxpat",
+					"name" : "ossia.pvh.light_XL206.view.maxpat",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
@@ -115,11 +116,11 @@
 					"annotation" : "4 channel light control",
 					"id" : "obj-1",
 					"maxclass" : "newobj",
-					"numinlets" : 3,
+					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 0.0, 375.0, 201.0, 22.0 ],
-					"text" : "pvh.light_phonergb.model #1"
+					"patching_rect" : [ 0.0, 375.0, 179.0, 22.0 ],
+					"text" : "ossia.pvh.light_XL206.model #1"
 				}
 
 			}
@@ -153,6 +154,45 @@
 
 			}
  ],
+		"dependency_cache" : [ 			{
+				"name" : "ossia.pvh.light_XL206.model.maxpat",
+				"bootpath" : "~/src/Max/PVH-maxlib_ossia/ossia.pvh.light_XL206",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "historylite.maxpat",
+				"bootpath" : "~/src/Projects/puppylight/2_include/_dreprecated/pvh.light_sixbar_old/include",
+				"patcherrelativepath" : "../../../Projects/puppylight/2_include/_dreprecated/pvh.light_sixbar_old/include",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "ossia.pvh.light_XL206.view.maxpat",
+				"bootpath" : "~/src/Max/PVH-maxlib_ossia/ossia.pvh.light_XL206",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "ossia.parameter.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "ossia.model.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "ossia.view.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "ossia.remote.mxo",
+				"type" : "iLaX"
+			}
+ ],
+		"autosave" : 0,
 		"styles" : [ 			{
 				"name" : "ksliderWhite",
 				"default" : 				{

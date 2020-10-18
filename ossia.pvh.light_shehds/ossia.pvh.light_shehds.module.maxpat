@@ -4,15 +4,15 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 1,
-			"revision" : 0,
+			"revision" : 7,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 973.0, 183.0, 640.0, 480.0 ],
+		"rect" : [ 189.0, 176.0, 640.0, 480.0 ],
 		"bglocked" : 0,
-		"openinpresentation" : 0,
+		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
 		"default_fontface" : 0,
 		"default_fontname" : "Arial",
@@ -37,6 +37,7 @@
 		"tags" : "",
 		"style" : "",
 		"subpatcher_template" : "",
+		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
 					"comment" : "",
@@ -100,12 +101,14 @@
 					"id" : "obj-2",
 					"lockeddragscroll" : 0,
 					"maxclass" : "bpatcher",
-					"name" : "pvh.light_shehds.view.maxpat",
+					"name" : "ossia.pvh.light_shehds.view.maxpat",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "" ],
-					"patching_rect" : [ -2.0, 0.0, 148.0, 248.0 ],
+					"patching_rect" : [ -2.0, 0.0, 161.0, 245.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ -2.0, 0.0, 149.0, 245.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -118,8 +121,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 0.0, 375.0, 223.0, 22.0 ],
-					"text" : "pvh.light_shehds.model #1 #2 #3 #4 #5 "
+					"patching_rect" : [ 0.0, 375.0, 255.0, 22.0 ],
+					"text" : "ossia.pvh.light_shehds.model #1 #2 #3 #4 #5 "
 				}
 
 			}

@@ -100,7 +100,7 @@
 					"id" : "obj-2",
 					"lockeddragscroll" : 0,
 					"maxclass" : "bpatcher",
-					"name" : "pvh.light_phonergb.view.maxpat",
+					"name" : "ossia.pvh.light_phonergb.view.maxpat",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
@@ -119,7 +119,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 0.0, 375.0, 201.0, 22.0 ],
-					"text" : "pvh.light_phonergb.model #1"
+					"text" : "ossia.pvh.light_phonergb.model #1"
 				}
 
 			}
