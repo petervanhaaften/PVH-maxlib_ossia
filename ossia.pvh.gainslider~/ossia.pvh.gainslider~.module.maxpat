@@ -2,16 +2,17 @@
 	"patcher" : 	{
 		"fileversion" : 1,
 		"appversion" : 		{
-			"major" : 7,
-			"minor" : 3,
-			"revision" : 5,
+			"major" : 8,
+			"minor" : 1,
+			"revision" : 7,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
+		"classnamespace" : "box",
 		"rect" : [ 84.0, 128.0, 640.0, 480.0 ],
 		"bglocked" : 0,
-		"openinpresentation" : 0,
+		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
 		"default_fontface" : 0,
 		"default_fontname" : "Arial",
@@ -36,6 +37,7 @@
 		"tags" : "",
 		"style" : "",
 		"subpatcher_template" : "",
+		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
 					"comment" : "",
@@ -45,8 +47,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 174.0, 100.0, 30.0, 30.0 ],
-					"style" : ""
+					"patching_rect" : [ 174.0, 100.0, 30.0, 30.0 ]
 				}
 
 			}
@@ -62,12 +63,14 @@
 					"id" : "obj-4",
 					"lockeddragscroll" : 0,
 					"maxclass" : "bpatcher",
-					"name" : "pvh.gainslider.view.maxpat",
+					"name" : "ossia.pvh.gainslider~.view.maxpat",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 0.0, 0.0, 25.0, 130.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 0.0, 0.0, 25.0, 130.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -80,8 +83,7 @@
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 105.0, 183.0, 30.0, 30.0 ],
-					"style" : ""
+					"patching_rect" : [ 105.0, 183.0, 30.0, 30.0 ]
 				}
 
 			}
@@ -93,9 +95,8 @@
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 105.0, 100.0, 30.0, 30.0 ],
-					"style" : ""
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 105.0, 100.0, 30.0, 30.0 ]
 				}
 
 			}
@@ -107,9 +108,8 @@
 					"numinlets" : 3,
 					"numoutlets" : 2,
 					"outlettype" : [ "signal", "" ],
-					"patching_rect" : [ 105.0, 150.0, 157.0, 22.0 ],
-					"style" : "",
-					"text" : "pvh.gainslider.model #1"
+					"patching_rect" : [ 105.0, 150.0, 208.0, 22.0 ],
+					"text" : "ossia.pvh.gainslider~.model #1"
 				}
 
 			}

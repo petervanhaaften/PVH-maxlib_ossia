@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 245.0, 78.0, 951.0, 902.0 ],
+		"rect" : [ 247.0, 101.0, 951.0, 902.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -39,6 +39,27 @@
 		"subpatcher_template" : "",
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
+				"box" : 				{
+					"args" : [ "testslider" ],
+					"bgmode" : 0,
+					"border" : 0,
+					"clickthrough" : 0,
+					"enablehscroll" : 0,
+					"enablevscroll" : 0,
+					"id" : "obj-9",
+					"lockeddragscroll" : 0,
+					"maxclass" : "bpatcher",
+					"name" : "ossia.pvh.gainslider~.module.maxpat",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"offset" : [ 0.0, 0.0 ],
+					"outlettype" : [ "signal" ],
+					"patching_rect" : [ 338.0, 181.0, 26.0, 131.0 ],
+					"viewvisibility" : 1
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"args" : [ "test-lpg" ],
 					"bgmode" : 0,
@@ -76,7 +97,7 @@
 					"numoutlets" : 2,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "signal", "" ],
-					"patching_rect" : [ 168.899999976158142, 135.599999964237213, 151.0, 204.0 ],
+					"patching_rect" : [ 168.899999976158142, 136.599999845027924, 151.0, 204.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -97,7 +118,7 @@
 					"numoutlets" : 2,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 294.899999976158142, 403.599999845027924, 146.0, 247.0 ],
+					"patching_rect" : [ 325.899999976158142, 405.599999845027924, 146.0, 247.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -139,7 +160,7 @@
 					"numoutlets" : 2,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 145.899999976158142, 403.599999845027924, 147.0, 247.0 ],
+					"patching_rect" : [ 168.899999976158142, 405.599999845027924, 147.0, 247.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -160,7 +181,7 @@
 					"numoutlets" : 2,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ -1.100000023841858, 405.599999845027924, 145.0, 243.0 ],
+					"patching_rect" : [ 2.899999976158142, 405.599999845027924, 146.0, 247.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -240,7 +261,7 @@
 					"maxclass" : "ezdac~",
 					"numinlets" : 2,
 					"numoutlets" : 0,
-					"patching_rect" : [ 168.899999976158142, 342.599999845027924, 45.0, 45.0 ]
+					"patching_rect" : [ 168.899999976158142, 347.599999845027924, 45.0, 45.0 ]
 				}
 
 			}
@@ -277,6 +298,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-19", 0 ],
 					"source" : [ "obj-20", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-6", 0 ],
+					"source" : [ "obj-4", 0 ]
 				}
 
 			}
@@ -659,6 +687,27 @@
 				"bootpath" : "~/src/Max/tml-ossia/utilities/namespacebrowser",
 				"patcherrelativepath" : "../../tml-ossia/utilities/namespacebrowser",
 				"type" : "TEXT",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "ossia.pvh.gainslider~.module.maxpat",
+				"bootpath" : "~/src/Max/PVH-maxlib_ossia/ossia.pvh.gainslider~",
+				"patcherrelativepath" : "../ossia.pvh.gainslider~",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "ossia.pvh.gainslider~.model.maxpat",
+				"bootpath" : "~/src/Max/PVH-maxlib_ossia/ossia.pvh.gainslider~",
+				"patcherrelativepath" : "../ossia.pvh.gainslider~",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "ossia.pvh.gainslider~.view.maxpat",
+				"bootpath" : "~/src/Max/PVH-maxlib_ossia/ossia.pvh.gainslider~",
+				"patcherrelativepath" : "../ossia.pvh.gainslider~",
+				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
