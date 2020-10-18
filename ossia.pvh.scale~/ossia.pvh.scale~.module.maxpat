@@ -2,16 +2,17 @@
 	"patcher" : 	{
 		"fileversion" : 1,
 		"appversion" : 		{
-			"major" : 7,
-			"minor" : 3,
-			"revision" : 5,
+			"major" : 8,
+			"minor" : 1,
+			"revision" : 7,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
+		"classnamespace" : "box",
 		"rect" : [ 331.0, 436.0, 640.0, 480.0 ],
 		"bglocked" : 0,
-		"openinpresentation" : 0,
+		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
 		"default_fontface" : 0,
 		"default_fontname" : "Arial",
@@ -36,16 +37,27 @@
 		"tags" : "",
 		"style" : "",
 		"subpatcher_template" : "",
+		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-7",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 342.0, 266.0, 100.0, 22.0 ]
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-6",
-					"index" : 0,
+					"index" : 2,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 192.0, 480.0, 30.0, 30.0 ],
-					"style" : ""
+					"patching_rect" : [ 175.0, 463.0, 30.0, 30.0 ]
 				}
 
 			}
@@ -53,12 +65,11 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-5",
-					"index" : 0,
+					"index" : 1,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 90.0, 480.0, 30.0, 30.0 ],
-					"style" : ""
+					"patching_rect" : [ 6.0, 463.0, 30.0, 30.0 ]
 				}
 
 			}
@@ -66,13 +77,12 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-4",
-					"index" : 0,
+					"index" : 2,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 192.0, 390.0, 30.0, 30.0 ],
-					"style" : ""
+					"patching_rect" : [ 175.0, 393.0, 30.0, 30.0 ]
 				}
 
 			}
@@ -80,13 +90,12 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-3",
-					"index" : 0,
+					"index" : 1,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 90.0, 390.0, 30.0, 30.0 ],
-					"style" : ""
+					"patching_rect" : [ 6.0, 393.0, 30.0, 30.0 ]
 				}
 
 			}
@@ -102,13 +111,14 @@
 					"id" : "obj-2",
 					"lockeddragscroll" : 0,
 					"maxclass" : "bpatcher",
-					"name" : "pvh.scale~.view.maxpat",
+					"name" : "ossia.pvh.scale~.view.maxpat",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 0.0, 0.0, 150.0, 350.0 ],
-					"presentation_rect" : [ 0.0, 0.0, 150.0, 350.0 ],
+					"patching_rect" : [ 0.0, 0.0, 166.0, 346.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 0.0, 0.0, 166.0, 324.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -121,9 +131,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "signal", "" ],
-					"patching_rect" : [ 90.0, 435.0, 121.0, 22.0 ],
-					"style" : "",
-					"text" : "pvh.scale~.model #1"
+					"patching_rect" : [ 6.0, 431.0, 188.0, 22.0 ],
+					"text" : "ossia.pvh.scale~.model #1"
 				}
 
 			}
@@ -138,7 +147,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-6", 0 ],
-					"midpoints" : [ 201.5, 460.0 ],
 					"source" : [ "obj-1", 1 ]
 				}
 
@@ -157,75 +165,7 @@
 				}
 
 			}
- ],
-		"parameters" : 		{
-			"obj-2::obj-9" : [ "live.toggle[8]", "live.toggle", 0 ]
-		}
-,
-		"dependency_cache" : [ 			{
-				"name" : "pvh.scale~.model.maxpat",
-				"bootpath" : "~/src/Max/PVH-maxlib/pvh.scale~",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "pvh.scale~.view.maxpat",
-				"bootpath" : "~/src/Max/PVH-maxlib/pvh.scale~",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "j.parameter.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "j.return.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "j.model.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "j.in~.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "j.message.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "j.send.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "j.out~.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "j.view.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "j.ui.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "j.remote.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "j.receive.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "j.receive~.mxo",
-				"type" : "iLaX"
-			}
- ],
-		"autosave" : 0
+ ]
 	}
 
 }
