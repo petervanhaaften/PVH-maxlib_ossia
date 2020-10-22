@@ -1,9 +1,0 @@
-
-
-
-- preset "default"
-  active 1
-  downSample 100
-
-  
-

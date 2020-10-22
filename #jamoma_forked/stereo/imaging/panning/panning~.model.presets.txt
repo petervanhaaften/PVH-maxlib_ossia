@@ -1,9 +1,0 @@
-
-
-- preset "default"
-# "edit a comment"
-mode FastMode
-position 0.000000
-shape EqualPower
- 
-
