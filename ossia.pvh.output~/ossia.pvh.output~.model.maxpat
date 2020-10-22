@@ -122,7 +122,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "signal", "signal", "" ],
 					"patching_rect" : [ 33.0, 144.0, 160.0, 22.0 ],
-					"text" : "saturation~.model saturation"
+					"text" : "ossia.pvh.saturation~.model saturation"
 				}
 
 			}

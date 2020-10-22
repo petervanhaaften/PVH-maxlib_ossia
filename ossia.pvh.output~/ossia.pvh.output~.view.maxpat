@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 16.0, 128.0, 1612.0, 938.0 ],
+		"rect" : [ 96.0, 148.0, 1612.0, 591.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -107,7 +107,7 @@
 					"presentation_rect" : [ 54.875, 119.5, 126.0, 27.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "Master Gain[1]",
+							"parameter_longname" : "Master Gain[2]",
 							"parameter_shortname" : "Master Gain",
 							"parameter_type" : 0,
 							"parameter_unitstyle" : 9
@@ -192,7 +192,7 @@
 					"presentation_rect" : [ 241.25, 151.5, 29.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "live.numbox[2]",
+							"parameter_longname" : "live.numbox[4]",
 							"parameter_shortname" : "live.numbox[2]",
 							"parameter_type" : 0,
 							"parameter_unitstyle" : 0
@@ -217,7 +217,7 @@
 					"presentation_rect" : [ 207.25, 151.5, 29.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "live.numbox[1]",
+							"parameter_longname" : "live.numbox[3]",
 							"parameter_shortname" : "live.numbox[1]",
 							"parameter_type" : 0,
 							"parameter_unitstyle" : 0
@@ -244,7 +244,7 @@
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_enum" : [ "val1", "val2" ],
-							"parameter_longname" : "live.text[6]",
+							"parameter_longname" : "live.text[12]",
 							"parameter_mmax" : 1,
 							"parameter_shortname" : "live.text[4]",
 							"parameter_type" : 2
@@ -270,7 +270,7 @@
 					"presentation_rect" : [ 93.25, 54.5, 54.0, 48.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "live.dial[4]",
+							"parameter_longname" : "live.dial[5]",
 							"parameter_mmax" : 96.0,
 							"parameter_mmin" : -6.0,
 							"parameter_shortname" : "Preamp",
@@ -297,7 +297,7 @@
 					"presentation_rect" : [ 151.75, 54.5, 44.0, 48.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "live.dial[3]",
+							"parameter_longname" : "live.dial[7]",
 							"parameter_mmax" : 1000.0,
 							"parameter_shortname" : "Release",
 							"parameter_type" : 0,
@@ -323,7 +323,7 @@
 					"presentation_rect" : [ 6.5, 54.5, 81.75, 48.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "live.dial[1]",
+							"parameter_longname" : "live.dial[6]",
 							"parameter_mmax" : 100.0,
 							"parameter_shortname" : "Depth",
 							"parameter_type" : 0,
@@ -350,7 +350,7 @@
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_enum" : [ "val1", "val2" ],
-							"parameter_longname" : "live.text[5]",
+							"parameter_longname" : "live.text[14]",
 							"parameter_mmax" : 1,
 							"parameter_shortname" : "live.text",
 							"parameter_type" : 2
@@ -378,7 +378,7 @@
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_enum" : [ "val1", "val2" ],
-							"parameter_longname" : "live.text[3]",
+							"parameter_longname" : "live.text[13]",
 							"parameter_mmax" : 1,
 							"parameter_shortname" : "live.text",
 							"parameter_type" : 2
@@ -406,7 +406,7 @@
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_enum" : [ "int8", "int16", "int24", "int32", "float32", "float64", "mulaw", "alaw" ],
-							"parameter_longname" : "live.menu[2]",
+							"parameter_longname" : "live.menu[5]",
 							"parameter_mmax" : 7,
 							"parameter_shortname" : "live.menu[2]",
 							"parameter_type" : 2
@@ -432,7 +432,7 @@
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_enum" : [ "aiff", "au", "raw", "wave", "sd2" ],
-							"parameter_longname" : "live.menu[1]",
+							"parameter_longname" : "live.menu[4]",
 							"parameter_mmax" : 4,
 							"parameter_shortname" : "live.menu",
 							"parameter_type" : 2
@@ -459,7 +459,7 @@
 					"presentation_rect" : [ 207.25, 113.5, 63.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "live.numbox",
+							"parameter_longname" : "live.numbox[5]",
 							"parameter_mmax" : 100.0,
 							"parameter_shortname" : "CPU",
 							"parameter_type" : 0,
@@ -488,7 +488,7 @@
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_enum" : [ "Off", "On" ],
-							"parameter_longname" : "live.text[4]",
+							"parameter_longname" : "live.text[15]",
 							"parameter_mmax" : 1,
 							"parameter_shortname" : "live.text[1]",
 							"parameter_type" : 2
@@ -515,7 +515,7 @@
 					"presentation_rect" : [ 7.5, 113.0, 44.0, 48.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_longname" : "pan",
+							"parameter_longname" : "pan[1]",
 							"parameter_mmax" : 1.0,
 							"parameter_mmin" : -1.0,
 							"parameter_shortname" : "Pan",
@@ -1258,7 +1258,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 53.5, 271.5, 81.0, 22.0 ],
+					"patching_rect" : [ 53.5, 271.5, 86.0, 22.0 ],
 					"text" : "ossia.view #1",
 					"varname" : "j.hub"
 				}
@@ -1633,7 +1633,7 @@
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_enum" : [ "Off", "On" ],
-							"parameter_longname" : "live.text[7]",
+							"parameter_longname" : "live.text[11]",
 							"parameter_mmax" : 1,
 							"parameter_shortname" : "live.text[1]",
 							"parameter_type" : 2
@@ -1710,7 +1710,7 @@
 					"patching_rect" : [ 419.0, 109.0, 158.0, 20.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 0.0, -2.5, 300.0, 20.0 ],
-					"text" : "/#1"
+					"text" : "/two"
 				}
 
 			}
@@ -1741,7 +1741,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 0.0, 15.0, 285.0, 164.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 15.0, 300.0, 119.0 ],
+					"presentation_rect" : [ 0.0, 15.0, 300.0, 161.0 ],
 					"proportion" : 0.5
 				}
 
