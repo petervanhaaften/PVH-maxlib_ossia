@@ -235,7 +235,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 1270.5, 37.0, 140.0, 102.0 ],
+					"patching_rect" : [ 1270.5, 37.0, 143.0, 102.0 ],
 					"text" : "ossia.parameter mode @repetitions 0 @type string @description \"Set the function to be used for calculating the scaling. Possible values: exponential | linear\"",
 					"varname" : "mode"
 				}
@@ -268,8 +268,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 940.5, 37.0, 151.0, 129.0 ],
-					"text" : "ossia.parameter lookahead @type int @range 0 256 @clip both @repetitions 0 @unit time.sample @description \"The number of samples (up to 256) to look ahead into the signal to see what is coming.\"",
+					"patching_rect" : [ 940.5, 37.0, 148.0, 129.0 ],
+					"text" : "ossia.parameter lookahead @type int @range 0 256 @clip both @repetitions 0 @description \"The number of samples (up to 256) to look ahead into the signal to see what is coming.\"",
 					"varname" : "lookahead"
 				}
 
@@ -284,7 +284,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 769.5, 37.0, 151.0, 156.0 ],
+					"patching_rect" : [ 769.5, 37.0, 156.0, 156.0 ],
 					"text" : "ossia.parameter threshold @type decimal @range -48 6 @clip free @unit gain.dB @description \"The limiter threshold (in dB below full scale). When the input signal level exceeds this threshold, it will be attenuated as necessary to keep the level below the threshold.\"",
 					"varname" : "threshold"
 				}
@@ -312,13 +312,13 @@
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
 					"id" : "obj-21",
-					"linecount" : 8,
+					"linecount" : 7,
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 459.0, 37.0, 136.0, 116.0 ],
-					"text" : "ossia.parameter preamp @type decimal @range -36 48 @clip free @unit gain.dB @ramp/function linear @description \"The gain in dB applied to the signal before limiting.\"",
+					"patching_rect" : [ 459.0, 37.0, 136.0, 102.0 ],
+					"text" : "ossia.parameter preamp @type decimal @range -36 48 @clip free @unit gain.dB @description \"The gain in dB applied to the signal before limiting.\"",
 					"varname" : "preamp"
 				}
 
