@@ -75,8 +75,8 @@
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 45.0, 315.0, 41.0, 22.0 ],
 					"style" : "",
-					"text" : "j.view",
-					"varname" : "j.model"
+					"text" : "ossia.view #1",
+					"varname" : "ossia.model #1"
 				}
 
 			}
@@ -116,7 +116,7 @@
 					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 659.5, 153.0, 131.0, 22.0 ],
 					"style" : "",
-					"text" : "j.remote numChannels"
+					"text" : "ossia.remote numChannels"
 				}
 
 			}
@@ -131,7 +131,7 @@
 					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 401.0, 153.0, 117.0, 22.0 ],
 					"style" : "",
-					"text" : "j.remote samplerate"
+					"text" : "ossia.remote samplerate"
 				}
 
 			}
@@ -146,7 +146,7 @@
 					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 534.5, 153.0, 111.0, 22.0 ],
 					"style" : "",
-					"text" : "j.remote vectorsize"
+					"text" : "ossia.remote vectorsize"
 				}
 
 			}
@@ -287,7 +287,7 @@
 					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 401.0, 99.0, 94.0, 22.0 ],
 					"style" : "",
-					"text" : "j.remote update"
+					"text" : "ossia.remote update"
 				}
 
 			}
@@ -398,11 +398,11 @@
 				"type" : "iLaX"
 			}
 , 			{
-				"name" : "j.remote.mxo",
+				"name" : "ossia.remote.mxo",
 				"type" : "iLaX"
 			}
 , 			{
-				"name" : "j.view.mxo",
+				"name" : "ossia.view #1.mxo",
 				"type" : "iLaX"
 			}
  ],

@@ -60,7 +60,7 @@
 					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 841.0, 211.0, 89.0, 22.0 ],
 					"style" : "",
-					"text" : "j.remote active"
+					"text" : "ossia.remote active"
 				}
 
 			}
@@ -132,7 +132,7 @@
 					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 991.0, 242.5, 83.0, 22.0 ],
 					"style" : "",
-					"text" : "j.remote clear"
+					"text" : "ossia.remote clear"
 				}
 
 			}
@@ -147,7 +147,7 @@
 					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 672.0, 211.0, 143.0, 22.0 ],
 					"style" : "",
-					"text" : "j.remote dcblocker/active"
+					"text" : "ossia.remote dcblocker/active"
 				}
 
 			}
@@ -372,7 +372,7 @@
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 60.0, 220.0, 63.0, 22.0 ],
 					"style" : "",
-					"text" : "j.view"
+					"text" : "ossia.view #1"
 				}
 
 			}
@@ -387,7 +387,7 @@
 					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 511.0, 211.0, 110.0, 22.0 ],
 					"style" : "",
-					"text" : "j.remote mode",
+					"text" : "ossia.remote mode",
 					"varname" : "mode"
 				}
 
@@ -403,7 +403,7 @@
 					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 906.0, 33.5, 119.0, 22.0 ],
 					"style" : "",
-					"text" : "j.remote release",
+					"text" : "ossia.remote release",
 					"varname" : "release"
 				}
 
@@ -419,7 +419,7 @@
 					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 754.0, 33.5, 135.0, 22.0 ],
 					"style" : "",
-					"text" : "j.remote lookahead",
+					"text" : "ossia.remote lookahead",
 					"varname" : "lookahead"
 				}
 
@@ -435,7 +435,7 @@
 					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 609.0, 33.5, 129.0, 22.0 ],
 					"style" : "",
-					"text" : "j.remote threshold",
+					"text" : "ossia.remote threshold",
 					"varname" : "threshold"
 				}
 
@@ -451,7 +451,7 @@
 					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 472.0, 33.5, 126.0, 22.0 ],
 					"style" : "",
-					"text" : "j.remote postamp",
+					"text" : "ossia.remote postamp",
 					"varname" : "postamp"
 				}
 
@@ -467,7 +467,7 @@
 					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 333.0, 33.5, 121.0, 22.0 ],
 					"style" : "",
-					"text" : "j.remote preamp",
+					"text" : "ossia.remote preamp",
 					"varname" : "preamp"
 				}
 
@@ -800,11 +800,11 @@
 				"type" : "iLaX"
 			}
 , 			{
-				"name" : "j.remote.mxo",
+				"name" : "ossia.remote.mxo",
 				"type" : "iLaX"
 			}
 , 			{
-				"name" : "j.view.mxo",
+				"name" : "ossia.view #1.mxo",
 				"type" : "iLaX"
 			}
  ],

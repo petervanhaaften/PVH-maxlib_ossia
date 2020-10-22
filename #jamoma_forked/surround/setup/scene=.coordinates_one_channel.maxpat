@@ -114,7 +114,7 @@
 					"outlettype" : [ "", "", "" ],
 					"patching_rect" : [ 522.0, 85.0, 171.0, 22.0 ],
 					"style" : "",
-					"text" : "j.receive number_of_channels",
+					"text" : "ossia.remote number_of_channels",
 					"varname" : "voices[4]"
 				}
 
@@ -284,7 +284,7 @@
 					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 705.0, 478.0, 109.0, 22.0 ],
 					"style" : "",
-					"text" : "j.remote position.1",
+					"text" : "ossia.remote position.1",
 					"varname" : "parameter"
 				}
 
@@ -465,11 +465,11 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "j.remote.mxo",
+				"name" : "ossia.remote.mxo",
 				"type" : "iLaX"
 			}
 , 			{
-				"name" : "j.receive.mxo",
+				"name" : "ossia.remote.mxo",
 				"type" : "iLaX"
 			}
  ],

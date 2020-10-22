@@ -63,7 +63,7 @@
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 192.0, 37.0, 130.0, 102.0 ],
 					"style" : "",
-					"text" : "j.message clear @type none @description \"Clears the history of previous samles used by the limiter and it's internal DC filter.\""
+					"text" : "ossia.parameter clear @mode set @type impulse @description \"Clears the history of previous samles used by the limiter and it's internal DC filter.\""
 				}
 
 			}
@@ -109,7 +109,7 @@
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 330.0, 37.0, 124.0, 89.0 ],
 					"style" : "",
-					"text" : "j.parameter active @type boolean @description \"When not active, the saturation effect is bypassed.\"",
+					"text" : "ossia.parameter active @type bool @description \"When not active, the saturation effect is bypassed.\"",
 					"varname" : "mode[1]"
 				}
 
@@ -141,7 +141,7 @@
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 19.0, 37.0, 162.0, 76.0 ],
 					"style" : "",
-					"text" : "j.parameter dcblocker/active @type boolean @description \"Filter out eventual DC component of signal before limiting.\"",
+					"text" : "ossia.parameter dcblocker/active @type bool @description \"Filter out eventual DC component of signal before limiting.\"",
 					"varname" : "preamp[1]"
 				}
 
@@ -248,7 +248,7 @@
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 1270.5, 37.0, 149.0, 116.0 ],
 					"style" : "",
-					"text" : "j.parameter mode @repetitions/filter 1 @type string @description \"Set the function to be used for calculating the scaling. Possible values: exponential | linear\"",
+					"text" : "ossia.parameter mode @repetitions 0 @type string @description \"Set the function to be used for calculating the scaling. Possible values: exponential | linear\"",
 					"varname" : "mode"
 				}
 
@@ -266,7 +266,7 @@
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 1116.5, 37.0, 127.0, 129.0 ],
 					"style" : "",
-					"text" : "j.parameter release @type decimal @range 0 1000 @clipmode low @dataspace time @unit ms @ramp/drive max @description \"The release time (ms).\"",
+					"text" : "ossia.parameter release @type decimal @range 0 1000 @clip low @unit time.ms @ramp/drive max @description \"The release time (ms).\"",
 					"varname" : "release"
 				}
 
@@ -283,7 +283,7 @@
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 940.5, 37.0, 166.0, 143.0 ],
 					"style" : "",
-					"text" : "j.parameter lookahead @type integer @range 0 256 @clipmode both @ramp/drive max @repetitions/filter 1 @dataspace time @unit sample @description \"The number of samples (up to 256) to look ahead into the signal to see what is coming.\"",
+					"text" : "ossia.parameter lookahead @type int @range 0 256 @clip both @ramp/drive max @repetitions 0 @unit time.sample @description \"The number of samples (up to 256) to look ahead into the signal to see what is coming.\"",
 					"varname" : "lookahead"
 				}
 
@@ -300,7 +300,7 @@
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 769.5, 37.0, 163.0, 169.0 ],
 					"style" : "",
-					"text" : "j.parameter threshold @type decimal @range -48 6 @clipmode none @ramp/drive max @dataspace gain @unit dB @description \"The limiter threshold (in dB below full scale). When the input signal level exceeds this threshold, it will be attenuated as necessary to keep the level below the threshold.\"",
+					"text" : "ossia.parameter threshold @type decimal @range -48 6 @clip free @ramp/drive max @unit gain.dB @description \"The limiter threshold (in dB below full scale). When the input signal level exceeds this threshold, it will be attenuated as necessary to keep the level below the threshold.\"",
 					"varname" : "threshold"
 				}
 
@@ -317,7 +317,7 @@
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 614.0, 37.0, 136.0, 129.0 ],
 					"style" : "",
-					"text" : "j.parameter postamp @type decimal @range -6 48 @clipmode none @dataspace gain @unit dB @ramp/drive max @description \"The gain in dB applied to the signal after limiting. \"",
+					"text" : "ossia.parameter postamp @type decimal @range -6 48 @clip free @unit gain.dB @ramp/drive max @description \"The gain in dB applied to the signal after limiting. \"",
 					"varname" : "postamp"
 				}
 
@@ -335,7 +335,7 @@
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 459.0, 37.0, 136.0, 143.0 ],
 					"style" : "",
-					"text" : "j.parameter preamp @type decimal @range -36 48 @clipmode none @ramp/drive max @dataspace gain @unit dB @ramp/function linear @description \"The gain in dB applied to the signal before limiting.\"",
+					"text" : "ossia.parameter preamp @type decimal @range -36 48 @clip free @ramp/drive max @unit gain.dB @ramp/function linear @description \"The gain in dB applied to the signal before limiting.\"",
 					"varname" : "preamp"
 				}
 
@@ -526,7 +526,7 @@
 			}
  ],
 		"dependency_cache" : [ 			{
-				"name" : "j.parameter.mxo",
+				"name" : "ossia.parameter.mxo",
 				"type" : "iLaX"
 			}
 , 			{

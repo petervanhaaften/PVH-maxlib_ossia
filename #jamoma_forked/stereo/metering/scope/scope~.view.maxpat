@@ -160,8 +160,8 @@
 					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 808.5, 167.0, 86.0, 35.0 ],
 					"style" : "",
-					"text" : "j.remote range @unit db",
-					"varname" : "j.parameter.mxb[4]"
+					"text" : "ossia.remote range @unit db",
+					"varname" : "ossia.parameter.mxb[4]"
 				}
 
 			}
@@ -517,7 +517,7 @@
 					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 412.5, 217.0, 149.0, 22.0 ],
 					"style" : "",
-					"text" : "j.remote monitored_model"
+					"text" : "ossia.remote monitored_model"
 				}
 
 			}
@@ -532,8 +532,8 @@
 					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 1032.0, 167.0, 116.0, 22.0 ],
 					"style" : "",
-					"text" : "j.remote buffer/pixel",
-					"varname" : "j.parameter.mxb[1]"
+					"text" : "ossia.remote buffer/pixel",
+					"varname" : "ossia.parameter.mxb[1]"
 				}
 
 			}
@@ -548,8 +548,8 @@
 					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 1278.5, 167.0, 136.0, 22.0 ],
 					"style" : "",
-					"text" : "j.remote buffer/samples",
-					"varname" : "j.parameter.mxb[5]"
+					"text" : "ossia.remote buffer/samples",
+					"varname" : "ossia.parameter.mxb[5]"
 				}
 
 			}
@@ -801,7 +801,7 @@
 					"outlettype" : [ "signal", "", "" ],
 					"patching_rect" : [ 552.0, 364.5, 127.0, 22.0 ],
 					"style" : "",
-					"text" : "j.receive~ audio/out.R"
+					"text" : "ossia.remote~ audio/out.R"
 				}
 
 			}
@@ -816,7 +816,7 @@
 					"outlettype" : [ "signal", "", "" ],
 					"patching_rect" : [ 361.0, 364.5, 125.0, 22.0 ],
 					"style" : "",
-					"text" : "j.receive~ audio/out.L"
+					"text" : "ossia.remote~ audio/out.L"
 				}
 
 			}
@@ -887,8 +887,8 @@
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 77.0, 454.5, 153.0, 76.0 ],
 					"style" : "",
-					"text" : "j.view @description \"An oscilloscope emulator for viewing waverforms or analyzing phase relationships.\"",
-					"varname" : "j.model"
+					"text" : "ossia.view #1 @description \"An oscilloscope emulator for viewing waverforms or analyzing phase relationships.\"",
+					"varname" : "ossia.model #1"
 				}
 
 			}
@@ -1234,11 +1234,11 @@
 				"type" : "iLaX"
 			}
 , 			{
-				"name" : "j.view.mxo",
+				"name" : "ossia.view #1.mxo",
 				"type" : "iLaX"
 			}
 , 			{
-				"name" : "j.receive~.mxo",
+				"name" : "ossia.remote~.mxo",
 				"type" : "iLaX"
 			}
 , 			{
@@ -1246,7 +1246,7 @@
 				"type" : "iLaX"
 			}
 , 			{
-				"name" : "j.remote.mxo",
+				"name" : "ossia.remote.mxo",
 				"type" : "iLaX"
 			}
 , 			{

@@ -52,7 +52,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "signal", "", "" ],
 					"patching_rect" : [ 509.799988, 37.0, 127.0, 20.0 ],
-					"text" : "j.receive~ audio/out.R"
+					"text" : "ossia.remote~ audio/out.R"
 				}
 
 			}
@@ -80,7 +80,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "signal", "", "" ],
 					"patching_rect" : [ 374.5, 37.0, 125.0, 20.0 ],
-					"text" : "j.receive~ audio/out.L"
+					"text" : "ossia.remote~ audio/out.L"
 				}
 
 			}
@@ -94,7 +94,7 @@
 					"numoutlets" : 4,
 					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 395.0, 277.0, 86.0, 20.0 ],
-					"text" : "j.remote rolloff",
+					"text" : "ossia.remote rolloff",
 					"varname" : "rolloff"
 				}
 
@@ -109,7 +109,7 @@
 					"numoutlets" : 4,
 					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 552.5, 200.0, 111.0, 20.0 ],
-					"text" : "j.remote oscillators",
+					"text" : "ossia.remote oscillators",
 					"varname" : "oscillators"
 				}
 
@@ -124,7 +124,7 @@
 					"numoutlets" : 4,
 					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 273.0, 277.0, 78.0, 20.0 ],
-					"text" : "j.remote rate",
+					"text" : "ossia.remote rate",
 					"varname" : "rate"
 				}
 
@@ -139,7 +139,7 @@
 					"numoutlets" : 4,
 					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 132.0, 268.0, 99.0, 20.0 ],
-					"text" : "j.remote spacing",
+					"text" : "ossia.remote spacing",
 					"varname" : "spacing"
 				}
 
@@ -154,7 +154,7 @@
 					"numoutlets" : 4,
 					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 325.0, 198.0, 88.0, 20.0 ],
-					"text" : "j.remote range",
+					"text" : "ossia.remote range",
 					"varname" : "range"
 				}
 
@@ -336,8 +336,8 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 15.0, 175.0, 41.0, 20.0 ],
-					"text" : "j.view",
-					"varname" : "j.model"
+					"text" : "ossia.view #1",
+					"varname" : "ossia.model #1"
 				}
 
 			}
@@ -614,15 +614,15 @@
 				"type" : "iLaX"
 			}
 , 			{
-				"name" : "j.view.mxo",
+				"name" : "ossia.view #1.mxo",
 				"type" : "iLaX"
 			}
 , 			{
-				"name" : "j.remote.mxo",
+				"name" : "ossia.remote.mxo",
 				"type" : "iLaX"
 			}
 , 			{
-				"name" : "j.receive~.mxo",
+				"name" : "ossia.remote~.mxo",
 				"type" : "iLaX"
 			}
  ]

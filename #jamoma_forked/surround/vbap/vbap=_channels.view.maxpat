@@ -46,7 +46,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 643.0, 3.5, 219.0, 37.0 ],
 					"style" : "",
-					"text" : "Apparently this ned to be in same patch as j.view for it to work"
+					"text" : "Apparently this ned to be in same patch as ossia.view #1 for it to work"
 				}
 
 			}
@@ -499,7 +499,7 @@
 													"outlettype" : [ "", "", "" ],
 													"patching_rect" : [ 744.5, 72.0, 210.0, 22.0 ],
 													"style" : "",
-													"text" : "j.receive sources/number_of_channels"
+													"text" : "ossia.remote sources/number_of_channels"
 												}
 
 											}
@@ -1270,7 +1270,7 @@
 					"outlettype" : [ "", "", "" ],
 					"patching_rect" : [ 495.0, 11.0, 137.0, 22.0 ],
 					"style" : "",
-					"text" : "j.receive model:address"
+					"text" : "ossia.remote model:address"
 				}
 
 			}
@@ -1308,7 +1308,7 @@
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 42.0, 293.0, 41.0, 22.0 ],
 					"style" : "",
-					"text" : "j.view"
+					"text" : "ossia.view #1"
 				}
 
 			}
@@ -1395,15 +1395,15 @@
 				"type" : "iLaX"
 			}
 , 			{
-				"name" : "j.view.mxo",
+				"name" : "ossia.view #1.mxo",
 				"type" : "iLaX"
 			}
 , 			{
-				"name" : "j.receive.mxo",
+				"name" : "ossia.remote.mxo",
 				"type" : "iLaX"
 			}
 , 			{
-				"name" : "j.remote.mxo",
+				"name" : "ossia.remote.mxo",
 				"type" : "iLaX"
 			}
  ],

@@ -92,7 +92,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 618.0, 547.5, 267.0, 47.0 ],
-					"text" : "j.return status @type boolean @description \"Indicates if the input signal is currently gated or not.\""
+					"text" : "ossia.parameter status @mode get @type bool @description \"Indicates if the input signal is currently gated or not.\""
 				}
 
 			}
@@ -135,7 +135,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 243.0, 124.5, 601.0, 47.0 ],
-					"text" : "j.parameter threshold @type decimal @ramp/drive max @repetitions/filter 1 @range -90 24 @clipmode both @description \"The threshold sets the level at which the Noise Gate opens and closes..\" @dataspace gain @unit dB",
+					"text" : "ossia.parameter threshold @type decimal @ramp/drive max @repetitions 0 @range -90 24 @clip both @description \"The threshold sets the level at which the Noise Gate opens and closes..\" @unit gain.dB",
 					"varname" : "threshold"
 				}
 
@@ -151,7 +151,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 113.0, 71.5, 582.0, 47.0 ],
-					"text" : "j.parameter release @type decimal @ramp/drive max @repetitions/filter 1 @range 0 1000 @clipmode both @description \"When the gate closes, this parameter sets how many milliseconds it will take to fade out.\" @dataspace time @unit ms",
+					"text" : "ossia.parameter release @type decimal @ramp/drive max @repetitions 0 @range 0 1000 @clip both @description \"When the gate closes, this parameter sets how many milliseconds it will take to fade out.\" @unit time.ms",
 					"varname" : "release"
 				}
 
@@ -167,7 +167,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 33.0, 18.0, 569.0, 47.0 ],
-					"text" : "j.parameter attack @type decimal @ramp/drive max @repetitions/filter 1 @range 0 1000 @clipmode low @description \"When the gate opens, this parameter sets how many milliseconds it will take to fade in.\" @dataspace time @unit ms",
+					"text" : "ossia.parameter attack @type decimal @ramp/drive max @repetitions 0 @range 0 1000 @clip low @description \"When the gate opens, this parameter sets how many milliseconds it will take to fade in.\" @unit time.ms",
 					"varname" : "attack"
 				}
 
@@ -183,7 +183,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 607.0, 226.0, 415.0, 47.0 ],
-					"text" : "j.parameter lookahead @type integer @ramp/drive max @repetitions/filter 1 @range 0 100 @clipmode low @description \"How many samples to look ahead while monitoring incoming signal.\"",
+					"text" : "ossia.parameter lookahead @type int @ramp/drive max @repetitions 0 @range 0 100 @clip low @description \"How many samples to look ahead while monitoring incoming signal.\"",
 					"varname" : "lookahead"
 				}
 
@@ -198,8 +198,8 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 778.0, 407.0, 207.0, 20.0 ],
-					"text" : "j.model @description \"Noise gate.\"",
-					"varname" : "j.model"
+					"text" : "ossia.model #1 @description \"Noise gate.\"",
+					"varname" : "ossia.model #1"
 				}
 
 			}
@@ -744,11 +744,11 @@
 			}
  ],
 		"dependency_cache" : [ 			{
-				"name" : "j.model.mxo",
+				"name" : "ossia.model #1.mxo",
 				"type" : "iLaX"
 			}
 , 			{
-				"name" : "j.parameter.mxo",
+				"name" : "ossia.parameter.mxo",
 				"type" : "iLaX"
 			}
 , 			{

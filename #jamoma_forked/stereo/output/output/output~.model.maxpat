@@ -93,7 +93,7 @@
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 528.799988, 287.0, 127.0, 89.0 ],
 					"style" : "",
-					"text" : "j.return cpu @range 0. 100. @type decimal @description \"reports the cpu usage of the dsp processing\""
+					"text" : "ossia.parameter cpu @mode get @range 0. 100. @type decimal @description \"reports the cpu usage of the dsp processing\""
 				}
 
 			}
@@ -169,7 +169,7 @@
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 357.799988, 123.0, 343.0, 35.0 ],
 					"style" : "",
-					"text" : "j.model @description \"A generic audio output model with built in master saturation, limiter, and recording abilities.\""
+					"text" : "ossia.model #1 @description \"A generic audio output model with built in master saturation, limiter, and recording abilities.\""
 				}
 
 			}
@@ -290,7 +290,7 @@
 									"outlettype" : [ "", "" ],
 									"patching_rect" : [ 237.0, 49.0, 257.0, 33.0 ],
 									"style" : "",
-									"text" : "j.message audio/active @type boolean @description \"turn audio on/off\"",
+									"text" : "ossia.parameter audio/active @mode set @type bool @description \"turn audio on/off\"",
 									"varname" : "record"
 								}
 
@@ -307,7 +307,7 @@
 									"outlettype" : [ "", "" ],
 									"patching_rect" : [ 362.0, 104.0, 150.0, 60.0 ],
 									"style" : "",
-									"text" : "j.message dspStatus @type none @description \"Open DSP Status window.\""
+									"text" : "ossia.parameter dspStatus @mode set @type impulse @description \"Open DSP Status window.\""
 								}
 
 							}
@@ -323,7 +323,7 @@
 									"outlettype" : [ "", "" ],
 									"patching_rect" : [ 680.0, 104.0, 152.0, 60.0 ],
 									"style" : "",
-									"text" : "j.parameter ch.2 @type integer @description \" Set logical output for right channel.\"",
+									"text" : "ossia.parameter ch.2 @type int @description \" Set logical output for right channel.\"",
 									"varname" : "ch_2"
 								}
 
@@ -340,7 +340,7 @@
 									"outlettype" : [ "", "" ],
 									"patching_rect" : [ 515.0, 104.0, 153.0, 60.0 ],
 									"style" : "",
-									"text" : "j.parameter ch.1 @type integer @description \" Set logical output for left channel.\"",
+									"text" : "ossia.parameter ch.1 @type int @description \" Set logical output for left channel.\"",
 									"varname" : "ch_1"
 								}
 
@@ -777,7 +777,7 @@
 				"type" : "iLaX"
 			}
 , 			{
-				"name" : "j.parameter.mxo",
+				"name" : "ossia.parameter.mxo",
 				"type" : "iLaX"
 			}
 , 			{
@@ -789,7 +789,7 @@
 				"type" : "iLaX"
 			}
 , 			{
-				"name" : "j.model.mxo",
+				"name" : "ossia.model #1.mxo",
 				"type" : "iLaX"
 			}
 , 			{

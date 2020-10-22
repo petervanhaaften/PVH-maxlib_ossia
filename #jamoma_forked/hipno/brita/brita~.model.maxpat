@@ -45,7 +45,7 @@
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 764.0, 284.0, 222.0, 22.0 ],
 					"style" : "",
-					"text" : "j.parameter preset_offset @type integer"
+					"text" : "ossia.parameter preset_offset @type int"
 				}
 
 			}
@@ -110,7 +110,7 @@
 					"outlettype" : [ "", "", "" ],
 					"patching_rect" : [ 351.0, 505.0, 137.0, 22.0 ],
 					"style" : "",
-					"text" : "j.receive model:address"
+					"text" : "ossia.remote model:address"
 				}
 
 			}
@@ -136,7 +136,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 553.0, 596.0, 124.0, 22.0 ],
 					"style" : "",
-					"text" : "j.send dsp/preset:mix"
+					"text" : "ossia.remote dsp/preset:mix"
 				}
 
 			}
@@ -214,7 +214,7 @@
 					"outlettype" : [ "", "", "" ],
 					"patching_rect" : [ 553.0, 284.0, 189.0, 22.0 ],
 					"style" : "",
-					"text" : "j.receive hipnoscope/interpolation"
+					"text" : "ossia.remote hipnoscope/interpolation"
 				}
 
 			}
@@ -289,7 +289,7 @@
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 250.0, 256.0, 49.0, 22.0 ],
 					"style" : "",
-					"text" : "j.model"
+					"text" : "ossia.model #1"
 				}
 
 			}
@@ -533,15 +533,15 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "j.parameter.mxo",
+				"name" : "ossia.parameter.mxo",
 				"type" : "iLaX"
 			}
 , 			{
-				"name" : "j.parameter_array.mxo",
+				"name" : "ossia.parameter_array.mxo",
 				"type" : "iLaX"
 			}
 , 			{
-				"name" : "j.model.mxo",
+				"name" : "ossia.model #1.mxo",
 				"type" : "iLaX"
 			}
 , 			{
@@ -573,11 +573,11 @@
 				"type" : "iLaX"
 			}
 , 			{
-				"name" : "j.receive.mxo",
+				"name" : "ossia.remote.mxo",
 				"type" : "iLaX"
 			}
 , 			{
-				"name" : "j.send.mxo",
+				"name" : "ossia.remote.mxo",
 				"type" : "iLaX"
 			}
  ],

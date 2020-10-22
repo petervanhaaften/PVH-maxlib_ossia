@@ -104,7 +104,7 @@
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 250.0, 70.0, 49.0, 22.0 ],
 					"style" : "",
-					"text" : "j.model"
+					"text" : "ossia.model #1"
 				}
 
 			}
@@ -196,7 +196,7 @@
 									"outlettype" : [ "", "" ],
 									"patching_rect" : [ 37.0, 33.0, 123.0, 89.0 ],
 									"style" : "",
-									"text" : "j.parameter source @type string @priority 1 @description \"Select what audio source to use.\"",
+									"text" : "ossia.parameter source @type string @priority 1 @description \"Select what audio source to use.\"",
 									"varname" : "source_select"
 								}
 
@@ -304,7 +304,7 @@
 													"outlettype" : [ "", "" ],
 													"patching_rect" : [ 164.0, 59.0, 149.0, 141.0 ],
 													"style" : "",
-													"text" : "j.parameter clicktrain/rate @type decimal @ramp/drive max @description \"How often a click is generated. in [Hz] by default.\" @range 0.01 100. @clipmode both @dataspace time @unit Hz",
+													"text" : "ossia.parameter clicktrain/rate @type decimal @ramp/drive max @description \"How often a click is generated. in [Hz] by default.\" @range 0.01 100. @clip both @unit time.Hz",
 													"varname" : "ch_1[1]"
 												}
 
@@ -906,7 +906,7 @@
 													"outlettype" : [ "", "" ],
 													"patching_rect" : [ 516.0, 37.0, 132.0, 76.0 ],
 													"style" : "",
-													"text" : "j.parameter file/play @type boolean @repetitions/filter 0 @description \"Play sound file.\""
+													"text" : "ossia.parameter file/play @type bool @repetitions 1 @description \"Play sound file.\""
 												}
 
 											}
@@ -923,7 +923,7 @@
 													"outlettype" : [ "", "" ],
 													"patching_rect" : [ 25.0, 37.0, 250.0, 35.0 ],
 													"style" : "",
-													"text" : "j.parameter file/path @type string @priority 2 @description \"the path to a sound file\""
+													"text" : "ossia.parameter file/path @type string @priority 2 @description \"the path to a sound file\""
 												}
 
 											}
@@ -940,8 +940,8 @@
 													"outlettype" : [ "", "" ],
 													"patching_rect" : [ 662.0, 37.0, 144.0, 129.0 ],
 													"style" : "",
-													"text" : "j.message file/direct @type generic @repetitions/filter 0 @description container for various messages sent directly to the sfplay~ object. Refer to the MSP documentation for further details.",
-													"varname" : "j.parameter.mxb[9]"
+													"text" : "ossia.parameter file/direct @mode set @type list @repetitions 1 @description container for various messages sent directly to the sfplay~ object. Refer to the MSP documentation for further details.",
+													"varname" : "ossia.parameter.mxb[9]"
 												}
 
 											}
@@ -958,7 +958,7 @@
 													"outlettype" : [ "", "" ],
 													"patching_rect" : [ 833.0, 37.0, 121.0, 62.0 ],
 													"style" : "",
-													"text" : "j.parameter file/loop @type boolean @description \"Loop soundfile.\"",
+													"text" : "ossia.parameter file/loop @type bool @description \"Loop soundfile.\"",
 													"varname" : "loop"
 												}
 
@@ -1023,7 +1023,7 @@
 																	"outlettype" : [ "", "" ],
 																	"patching_rect" : [ 50.0, 47.0, 271.0, 87.0 ],
 																	"style" : "",
-																	"text" : "j.parameter file/transpose @type decimal @range -12. 12. @clipmode none @dataspace time @unit midinote @ramp/drive max @ramp/function linear @description \"Control soundfile playback speed/transposition as MIDI transposition.\""
+																	"text" : "ossia.parameter file/transpose @type decimal @range -12. 12. @clip free @unit time.midinote @ramp/drive max @ramp/function linear @description \"Control soundfile playback speed/transposition as MIDI transposition.\""
 																}
 
 															}
@@ -1263,7 +1263,7 @@
 													"outlettype" : [ "", "" ],
 													"patching_rect" : [ 473.0, 647.0, 158.0, 89.0 ],
 													"style" : "",
-													"text" : "j.return soundfile/report @type none @repetitions/filter 0 @description \"Report when sound file reach end point and loop to start point.\""
+													"text" : "ossia.parameter soundfile/report @mode get @type impulse @repetitions 1 @description \"Report when sound file reach end point and loop to start point.\""
 												}
 
 											}
@@ -1357,7 +1357,7 @@
 																	"outlettype" : [ "", "" ],
 																	"patching_rect" : [ 97.0, 363.0, 157.0, 89.0 ],
 																	"style" : "",
-																	"text" : "j.return file/time/relative @type decimal @range 0. 1. @description \"Current relative position in sound file, expressed in the range (0, 1).\""
+																	"text" : "ossia.parameter file/time/relative @mode get @type decimal @range 0. 1. @description \"Current relative position in sound file, expressed in the range (0, 1).\""
 																}
 
 															}
@@ -1374,7 +1374,7 @@
 																	"outlettype" : [ "", "" ],
 																	"patching_rect" : [ 271.0, 363.0, 156.0, 89.0 ],
 																	"style" : "",
-																	"text" : "j.return file/time/absolute @type decimal @dataspace time @unit s @description \"Current absolute position in sound file, expressed in seconds.\""
+																	"text" : "ossia.parameter file/time/absolute @mode get @type decimal @unit time.s @description \"Current absolute position in sound file, expressed in seconds.\""
 																}
 
 															}
@@ -2146,7 +2146,7 @@
 													"outlettype" : [ "", "" ],
 													"patching_rect" : [ 183.0, 77.0, 175.0, 20.0 ],
 													"style" : "",
-													"text" : "j.model input @amenities none"
+													"text" : "ossia.model #1 input @amenities none"
 												}
 
 											}
@@ -2179,7 +2179,7 @@
 													"outlettype" : [ "", "" ],
 													"patching_rect" : [ 590.0, 121.0, 109.0, 87.0 ],
 													"style" : "",
-													"text" : "j.message audio/active @type boolean @description \"Turn audio on or off\"",
+													"text" : "ossia.parameter audio/active @mode set @type bool @description \"Turn audio on or off\"",
 													"varname" : "audio[1]"
 												}
 
@@ -2196,7 +2196,7 @@
 													"outlettype" : [ "", "" ],
 													"patching_rect" : [ 214.0, 121.0, 150.0, 60.0 ],
 													"style" : "",
-													"text" : "j.parameter channel.R @type integer @description \" Set logical input for right channel.\"",
+													"text" : "ossia.parameter channel.R @type int @description \" Set logical input for right channel.\"",
 													"varname" : "ch_2"
 												}
 
@@ -2213,7 +2213,7 @@
 													"outlettype" : [ "", "" ],
 													"patching_rect" : [ 68.0, 121.0, 140.0, 74.0 ],
 													"style" : "",
-													"text" : "j.parameter channel.L @type integer @description \" Set logical input for left channel.\"",
+													"text" : "ossia.parameter channel.L @type int @description \" Set logical input for left channel.\"",
 													"varname" : "ch_1"
 												}
 
@@ -2230,7 +2230,7 @@
 													"outlettype" : [ "", "" ],
 													"patching_rect" : [ 427.0, 121.0, 150.0, 60.0 ],
 													"style" : "",
-													"text" : "j.message dspStatus @type none @description \"Open DSP Status window.\""
+													"text" : "ossia.parameter dspStatus @mode set @type impulse @description \"Open DSP Status window.\""
 												}
 
 											}
@@ -2555,7 +2555,7 @@
 													"outlettype" : [ "", "" ],
 													"patching_rect" : [ 48.0, 104.0, 186.0, 114.0 ],
 													"style" : "",
-													"text" : "j.parameter testtone/frequency @type integer @ramp/drive max @range 0.2 16000. @clipmode both @dataspace time @unit Hz @description \"The Frequency of the test tone. in [Hz] by default.\"",
+													"text" : "ossia.parameter testtone/frequency @type int @ramp/drive max @range 0.2 16000. @clip both @unit time.Hz @description \"The Frequency of the test tone. in [Hz] by default.\"",
 													"varname" : "ch_1[2]"
 												}
 

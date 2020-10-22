@@ -71,7 +71,7 @@
 					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 624.0, 72.0, 169.0, 22.0 ],
 					"style" : "",
-					"text" : "j.remote number_of_channels",
+					"text" : "ossia.remote number_of_channels",
 					"varname" : "voices[4]"
 				}
 
@@ -102,8 +102,8 @@
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 50.0, 654.0, 41.0, 22.0 ],
 					"style" : "",
-					"text" : "j.view",
-					"varname" : "j.model[1]"
+					"text" : "ossia.view #1",
+					"varname" : "ossia.model #1[1]"
 				}
 
 			}
@@ -943,15 +943,15 @@
 				"type" : "iLaX"
 			}
 , 			{
-				"name" : "j.remote.mxo",
+				"name" : "ossia.remote.mxo",
 				"type" : "iLaX"
 			}
 , 			{
-				"name" : "j.receive.mxo",
+				"name" : "ossia.remote.mxo",
 				"type" : "iLaX"
 			}
 , 			{
-				"name" : "j.view.mxo",
+				"name" : "ossia.view #1.mxo",
 				"type" : "iLaX"
 			}
  ],

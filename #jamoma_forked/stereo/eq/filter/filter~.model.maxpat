@@ -61,7 +61,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 213.857147, 217.0, 543.0, 33.0 ],
-					"text" : "j.message q @type decimal @ramp/drive max @range 0. 100. @clipmode both @repetitions/filter 1 @description \"DEPRECATED: q resonance/slope. Use octave_bandwidth instead.\"",
+					"text" : "ossia.parameter q @mode set @type decimal @ramp/drive max @range 0. 100. @clip both @repetitions 0 @description \"DEPRECATED: q resonance/slope. Use octave_bandwidth instead.\"",
 					"varname" : "q[1]"
 				}
 
@@ -113,7 +113,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 667.571411, 404.0, 110.0, 87.0 ],
-					"text" : "j.message clear @type none @description \"Clears the history of previous samle values.\""
+					"text" : "ossia.parameter clear @mode set @type impulse @description \"Clears the history of previous samle values.\""
 				}
 
 			}
@@ -156,7 +156,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 589.071411, 594.0, 200.0, 33.0 ],
-					"text" : "j.model @description \"stereo 2nd order iir filter based on biquad~\""
+					"text" : "ossia.model #1 @description \"stereo 2nd order iir filter based on biquad~\""
 				}
 
 			}
@@ -321,7 +321,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 72.85714, 26.0, 557.0, 20.0 ],
-					"text" : "j.message filtergraph @description \"Messages to filtergraph. See the MSP reference for further details\""
+					"text" : "ossia.parameter filtergraph @mode set @description \"Messages to filtergraph. See the MSP reference for further details\""
 				}
 
 			}
@@ -336,7 +336,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 104.5, 54.0, 589.0, 33.0 ],
-					"text" : "j.parameter type @type string @priority 1 @description \"What kind of filter to use. Possible values: lowpass | highpass | bandpass | bandstop | peaknotch | lowshelf | highshelf\"",
+					"text" : "ossia.parameter type @type string @priority 1 @description \"What kind of filter to use. Possible values: lowpass | highpass | bandpass | bandstop | peaknotch | lowshelf | highshelf\"",
 					"varname" : "filtertype"
 				}
 
@@ -352,7 +352,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 194.0, 151.0, 532.0, 33.0 ],
-					"text" : "j.parameter gain @type decimal @range -24 24 @clipmode both @ramp/drive max @repetitions/filter 1 @description \"Gain (dB)\" @dataspace gain @unit dB",
+					"text" : "ossia.parameter gain @type decimal @range -24 24 @clip both @ramp/drive max @repetitions 0 @description \"Gain (dB)\" @unit gain.dB",
 					"varname" : "filtergain"
 				}
 
@@ -368,7 +368,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 213.857147, 284.0, 532.0, 33.0 ],
-					"text" : "j.parameter octave_bandwidth @type decimal @ramp/drive max @range 0.1 10. @clipmode both @repetitions/filter 1 @description \"Filter bandwidth/slope width expressed as octaves.\"",
+					"text" : "ossia.parameter octave_bandwidth @type decimal @ramp/drive max @range 0.1 10. @clip both @repetitions 0 @description \"Filter bandwidth/slope width expressed as octaves.\"",
 					"varname" : "q"
 				}
 
@@ -384,7 +384,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 173.571426, 109.0, 605.0, 33.0 ],
-					"text" : "j.parameter frequency @type decimal @range 20. 20000. @clipmode both @ramp/drive max @repetitions/filter 1 @description \"Center frequency (Hz)\" @dataspace time @unit Hz",
+					"text" : "ossia.parameter frequency @type decimal @range 20. 20000. @clip both @ramp/drive max @repetitions 0 @description \"Center frequency (Hz)\" @unit time.Hz",
 					"varname" : "cf"
 				}
 
@@ -614,7 +614,7 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "j.parameter.mxo",
+				"name" : "ossia.parameter.mxo",
 				"type" : "iLaX"
 			}
 , 			{
@@ -630,7 +630,7 @@
 				"type" : "iLaX"
 			}
 , 			{
-				"name" : "j.model.mxo",
+				"name" : "ossia.model #1.mxo",
 				"type" : "iLaX"
 			}
  ]

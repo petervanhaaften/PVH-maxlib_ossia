@@ -94,7 +94,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 699.0, 52.0, 132.0, 114.0 ],
-					"text" : "j.parameter lfo/depth @type decimal @range 0. 100. @clipmode both @ramp/drive max @repetitions/filter 1 @description \"LFO depth (0-100%).\"",
+					"text" : "ossia.parameter lfo/depth @type decimal @range 0. 100. @clip both @ramp/drive max @repetitions 0 @description \"LFO depth (0-100%).\"",
 					"varname" : "#1/lfo/depth"
 				}
 
@@ -110,7 +110,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 328.5, 52.0, 139.0, 141.0 ],
-					"text" : "j.parameter lfo/frequency @type decimal @range 0. 100. @clipmode low @ramp/drive max @repetitions/filter 1 @dataspace time @unit Hz @description \"LFO frequency (Hz).\"",
+					"text" : "ossia.parameter lfo/frequency @type decimal @range 0. 100. @clip low @ramp/drive max @repetitions 0 @unit time.Hz @description \"LFO frequency (Hz).\"",
 					"varname" : "#1/lfo/frequency"
 				}
 
@@ -126,7 +126,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 513.0, 52.0, 163.0, 100.0 ],
-					"text" : "j.parameter lfo/phase @type decimal @range 0. 1. @clipmode wrap @ramp/drive max @description \"LFO phase offset between left and right channels (0-1).\"",
+					"text" : "ossia.parameter lfo/phase @type decimal @range 0. 1. @clip wrap @ramp/drive max @description \"LFO phase offset between left and right channels (0-1).\"",
 					"varname" : "tremolo/phase_offset"
 				}
 
@@ -142,8 +142,8 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 528.0, 461.5, 157.0, 47.0 ],
-					"text" : "j.model @description \"Apply tremolo to incoming signal.\"",
-					"varname" : "j.model"
+					"text" : "ossia.model #1 @description \"Apply tremolo to incoming signal.\"",
+					"varname" : "ossia.model #1"
 				}
 
 			}
@@ -633,11 +633,11 @@
 			}
  ],
 		"dependency_cache" : [ 			{
-				"name" : "j.model.mxo",
+				"name" : "ossia.model #1.mxo",
 				"type" : "iLaX"
 			}
 , 			{
-				"name" : "j.parameter.mxo",
+				"name" : "ossia.parameter.mxo",
 				"type" : "iLaX"
 			}
 , 			{

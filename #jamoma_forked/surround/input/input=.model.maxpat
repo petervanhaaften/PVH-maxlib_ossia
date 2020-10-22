@@ -131,7 +131,7 @@
 									"outlettype" : [ "", "", "" ],
 									"patching_rect" : [ 85.0, 85.0, 114.0, 22.0 ],
 									"style" : "",
-									"text" : "j.receive audio/gain"
+									"text" : "ossia.remote audio/gain"
 								}
 
 							}
@@ -192,7 +192,7 @@
 									"outlettype" : [ "", "", "" ],
 									"patching_rect" : [ 228.0, 85.0, 118.0, 22.0 ],
 									"style" : "",
-									"text" : "j.receive audio/mute"
+									"text" : "ossia.remote audio/mute"
 								}
 
 							}
@@ -404,7 +404,7 @@
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 896.0, 664.0, 168.0, 49.0 ],
 					"style" : "",
-					"text" : "j.model @description \"Playback of multichannel audiofiles based on sfplay~\"",
+					"text" : "ossia.model #1 @description \"Playback of multichannel audiofiles based on sfplay~\"",
 					"varname" : "j.hub[1]"
 				}
 
@@ -765,7 +765,7 @@
 									"outlettype" : [ "", "" ],
 									"patching_rect" : [ 290.0, 307.0, 569.0, 33.0 ],
 									"style" : "",
-									"text" : "j.return info/position @active 1 @type decimal @description \"returns the normalized value for the current position in the soundfile\""
+									"text" : "ossia.parameter info/position @mode get @active 1 @type decimal @description \"returns the normalized value for the current position in the soundfile\""
 								}
 
 							}
@@ -1232,7 +1232,7 @@
 									"outlettype" : [ "", "" ],
 									"patching_rect" : [ 285.700012, 327.0, 210.0, 49.0 ],
 									"style" : "",
-									"text" : "j.return info/length @type float teger @description \"length of the soundfile in [ms]\" @dataspace time @unit ms"
+									"text" : "ossia.parameter info/length @mode get @type float teger @description \"length of the soundfile in [ms]\" @unit time.ms"
 								}
 
 							}
@@ -1248,7 +1248,7 @@
 									"outlettype" : [ "", "" ],
 									"patching_rect" : [ 155.5, 269.0, 189.0, 49.0 ],
 									"style" : "",
-									"text" : "j.return info/channels @type integer @description \"number of channels of the soundfile\""
+									"text" : "ossia.parameter info/channels @mode get @type int @description \"number of channels of the soundfile\""
 								}
 
 							}
@@ -1366,7 +1366,7 @@
 													"outlettype" : [ "", "" ],
 													"patching_rect" : [ 106.0, 85.5, 152.0, 47.0 ],
 													"style" : "",
-													"text" : "j.return info/name @type string @description \"name of the soundfile\""
+													"text" : "ossia.parameter info/name @mode get @type string @description \"name of the soundfile\""
 												}
 
 											}
@@ -1397,7 +1397,7 @@
 													"outlettype" : [ "", "" ],
 													"patching_rect" : [ 20.0, 142.5, 186.0, 47.0 ],
 													"style" : "",
-													"text" : "j.return info/playername @type string @description \"name of the sfplay~ object\""
+													"text" : "ossia.parameter info/playername @mode get @type string @description \"name of the sfplay~ object\""
 												}
 
 											}
@@ -3593,7 +3593,7 @@
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 546.0, 56.5, 126.0, 89.0 ],
 					"style" : "",
-					"text" : "j.message direct @type generic @repetitions/filter 0 @description \"direct commands to the sfplay~ object\"",
+					"text" : "ossia.parameter direct @mode set @type list @repetitions 1 @description \"direct commands to the sfplay~ object\"",
 					"varname" : "play[2]"
 				}
 
@@ -3608,7 +3608,7 @@
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 1083.0, 56.5, 116.0, 116.0 ],
 					"style" : "",
-					"text" : "j.message start @type decimal @repetitions/filter 1 @dataspace time @unit ms @description \"start time in soundfile to play in [ms]\"",
+					"text" : "ossia.parameter start @mode set @type decimal @repetitions 0 @unit time.ms @description \"start time in soundfile to play in [ms]\"",
 					"varname" : "start"
 				}
 
@@ -3623,7 +3623,7 @@
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 800.0, 56.5, 130.0, 62.0 ],
 					"style" : "",
-					"text" : "j.message pause @type boolean @repetitions/filter 1 @description Pause",
+					"text" : "ossia.parameter pause @mode set @type bool @repetitions 0 @description Pause",
 					"varname" : "play[1]"
 				}
 
@@ -3638,7 +3638,7 @@
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 820.0, 400.0, 186.0, 49.0 ],
 					"style" : "",
-					"text" : "j.parameter play @type boolean @repetitions/filter 1 @priority 2 @description \"starts playback\"",
+					"text" : "ossia.parameter play @type bool @repetitions 0 @priority 2 @description \"starts playback\"",
 					"varname" : "play"
 				}
 
@@ -3653,7 +3653,7 @@
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 946.0, 56.5, 118.0, 62.0 ],
 					"style" : "",
-					"text" : "j.parameter loop @type boolean @description \"Loop soundfile.\"",
+					"text" : "ossia.parameter loop @type bool @description \"Loop soundfile.\"",
 					"varname" : "loop"
 				}
 
@@ -3668,7 +3668,7 @@
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 394.0, 56.5, 125.0, 116.0 ],
 					"style" : "",
-					"text" : "j.parameter open @type string @priority 1 @repetitions/filter 0 @description \"Open sound file specified by filename.\" @default NULL"
+					"text" : "ossia.parameter open @type string @priority 1 @repetitions 1 @description \"Open sound file specified by filename.\" @default NULL"
 				}
 
 			}
@@ -3979,7 +3979,7 @@
 				"type" : "iLaX"
 			}
 , 			{
-				"name" : "j.parameter.mxo",
+				"name" : "ossia.parameter.mxo",
 				"type" : "iLaX"
 			}
 , 			{
@@ -3995,7 +3995,7 @@
 				"type" : "iLaX"
 			}
 , 			{
-				"name" : "j.model.mxo",
+				"name" : "ossia.model #1.mxo",
 				"type" : "iLaX"
 			}
 , 			{
@@ -4003,7 +4003,7 @@
 				"type" : "iLaX"
 			}
 , 			{
-				"name" : "j.receive.mxo",
+				"name" : "ossia.remote.mxo",
 				"type" : "iLaX"
 			}
 , 			{

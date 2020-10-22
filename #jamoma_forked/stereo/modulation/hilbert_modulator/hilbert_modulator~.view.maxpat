@@ -103,7 +103,7 @@
 					"outlettype" : [ "signal", "", "" ],
 					"patching_rect" : [ 482.5, 25.0, 127.0, 22.0 ],
 					"style" : "",
-					"text" : "j.receive~ audio/out.R"
+					"text" : "ossia.remote~ audio/out.R"
 				}
 
 			}
@@ -118,7 +118,7 @@
 					"outlettype" : [ "signal", "", "" ],
 					"patching_rect" : [ 319.5, 6.0, 125.0, 22.0 ],
 					"style" : "",
-					"text" : "j.receive~ audio/out.L"
+					"text" : "ossia.remote~ audio/out.L"
 				}
 
 			}
@@ -162,7 +162,7 @@
 					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 123.5, 235.0, 176.0, 22.0 ],
 					"style" : "",
-					"text" : "j.remote lower_sideband/active"
+					"text" : "ossia.remote lower_sideband/active"
 				}
 
 			}
@@ -178,7 +178,7 @@
 					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 123.5, 119.0, 175.0, 22.0 ],
 					"style" : "",
-					"text" : "j.remote modulating_frequency"
+					"text" : "ossia.remote modulating_frequency"
 				}
 
 			}
@@ -193,7 +193,7 @@
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 18.0, 152.0, 64.0, 22.0 ],
 					"style" : "",
-					"text" : "j.view"
+					"text" : "ossia.view #1"
 				}
 
 			}
@@ -342,15 +342,15 @@
 				"type" : "iLaX"
 			}
 , 			{
-				"name" : "j.view.mxo",
+				"name" : "ossia.view #1.mxo",
 				"type" : "iLaX"
 			}
 , 			{
-				"name" : "j.remote.mxo",
+				"name" : "ossia.remote.mxo",
 				"type" : "iLaX"
 			}
 , 			{
-				"name" : "j.receive~.mxo",
+				"name" : "ossia.remote~.mxo",
 				"type" : "iLaX"
 			}
  ],

@@ -158,7 +158,7 @@
 					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 336.0, 205.0, 133.0, 35.0 ],
 					"style" : "",
-					"text" : "j.remote feedback/gain @unit db",
+					"text" : "ossia.remote feedback/gain @unit db",
 					"varname" : "feedback"
 				}
 
@@ -174,7 +174,7 @@
 					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 501.0, 205.0, 132.0, 22.0 ],
 					"style" : "",
-					"text" : "j.remote feedback/time",
+					"text" : "ossia.remote feedback/time",
 					"varname" : "right"
 				}
 
@@ -190,7 +190,7 @@
 					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 501.0, 77.0, 135.0, 22.0 ],
 					"style" : "",
-					"text" : "j.remote frequency/shift"
+					"text" : "ossia.remote frequency/shift"
 				}
 
 			}
@@ -205,7 +205,7 @@
 					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 336.0, 76.0, 141.0, 22.0 ],
 					"style" : "",
-					"text" : "j.remote frequency/scale"
+					"text" : "ossia.remote frequency/scale"
 				}
 
 			}
@@ -220,7 +220,7 @@
 					"outlettype" : [ "signal", "", "" ],
 					"patching_rect" : [ 273.5, 299.0, 127.0, 22.0 ],
 					"style" : "",
-					"text" : "j.receive~ audio/out.R"
+					"text" : "ossia.remote~ audio/out.R"
 				}
 
 			}
@@ -235,7 +235,7 @@
 					"outlettype" : [ "signal", "", "" ],
 					"patching_rect" : [ 123.5, 299.0, 125.0, 22.0 ],
 					"style" : "",
-					"text" : "j.receive~ audio/out.L"
+					"text" : "ossia.remote~ audio/out.L"
 				}
 
 			}
@@ -379,7 +379,7 @@
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 15.0, 205.0, 288.0, 22.0 ],
 					"style" : "",
-					"text" : "j.view @description \"Spectral shifting with feedback\""
+					"text" : "ossia.view #1 @description \"Spectral shifting with feedback\""
 				}
 
 			}
@@ -574,15 +574,15 @@
 				"type" : "iLaX"
 			}
 , 			{
-				"name" : "j.view.mxo",
+				"name" : "ossia.view #1.mxo",
 				"type" : "iLaX"
 			}
 , 			{
-				"name" : "j.remote.mxo",
+				"name" : "ossia.remote.mxo",
 				"type" : "iLaX"
 			}
 , 			{
-				"name" : "j.receive~.mxo",
+				"name" : "ossia.remote~.mxo",
 				"type" : "iLaX"
 			}
  ],

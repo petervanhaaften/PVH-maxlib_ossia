@@ -54,7 +54,7 @@
 					"numoutlets" : 4,
 					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 285.0, 435.0, 200.0, 20.0 ],
-					"text" : "j.remote #1/clear"
+					"text" : "ossia.remote #1/clear"
 				}
 
 			}
@@ -100,7 +100,7 @@
 					"numoutlets" : 4,
 					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 285.0, 90.169922, 200.0, 20.0 ],
-					"text" : "j.remote #1/active",
+					"text" : "ossia.remote #1/active",
 					"varname" : "limiter/active"
 				}
 
@@ -159,7 +159,7 @@
 					"numoutlets" : 4,
 					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 286.0, 182.169922, 198.0, 20.0 ],
-					"text" : "j.remote #1/release",
+					"text" : "ossia.remote #1/release",
 					"varname" : "limiter/release"
 				}
 
@@ -174,7 +174,7 @@
 					"numoutlets" : 4,
 					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 285.0, 142.169922, 200.0, 20.0 ],
-					"text" : "j.remote #1/preamp",
+					"text" : "ossia.remote #1/preamp",
 					"varname" : "limiter/preamp"
 				}
 
@@ -341,7 +341,7 @@
 					"numoutlets" : 4,
 					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 285.0, 391.0, 200.0, 20.0 ],
-					"text" : "j.remote #1/dcblocker/active",
+					"text" : "ossia.remote #1/dcblocker/active",
 					"varname" : "limiter/active[1]"
 				}
 
@@ -415,7 +415,7 @@
 					"numoutlets" : 4,
 					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 285.0, 274.5, 199.0, 20.0 ],
-					"text" : "j.remote #1/mode",
+					"text" : "ossia.remote #1/mode",
 					"varname" : "limiter/mode"
 				}
 
@@ -430,7 +430,7 @@
 					"numoutlets" : 4,
 					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 285.0, 228.5, 199.0, 20.0 ],
-					"text" : "j.remote #1/threshold",
+					"text" : "ossia.remote #1/threshold",
 					"varname" : "limiter/threshold"
 				}
 
@@ -445,7 +445,7 @@
 					"numoutlets" : 4,
 					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 285.0, 349.5, 200.0, 20.0 ],
-					"text" : "j.remote #1/lookahead",
+					"text" : "ossia.remote #1/lookahead",
 					"varname" : "limiter/lookahead"
 				}
 
@@ -460,7 +460,7 @@
 					"numoutlets" : 4,
 					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 285.0, 311.5, 199.0, 20.0 ],
-					"text" : "j.remote #1/postamp",
+					"text" : "ossia.remote #1/postamp",
 					"varname" : "limiter/postamp"
 				}
 
@@ -707,7 +707,7 @@
 			}
  ],
 		"dependency_cache" : [ 			{
-				"name" : "j.remote.mxo",
+				"name" : "ossia.remote.mxo",
 				"type" : "iLaX"
 			}
  ]

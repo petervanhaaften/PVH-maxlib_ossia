@@ -90,7 +90,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
 					"patching_rect" : [ 31.0, 164.0, 364.0, 60.0 ],
-					"text" : "j.parameter_array harmonic.[10]/gain @format single @type decimal @ramp/drive Max @ramp/function linear @dataspace gain @unit dB @description \"Gain values (dB) for the 1st partial\""
+					"text" : "ossia.parameter_array harmonic.[10]/gain @format single @type decimal @ramp/drive Max @ramp/function linear @unit gain.dB @description \"Gain values (dB) for the 1st partial\""
 				}
 
 			}
@@ -105,7 +105,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
 					"patching_rect" : [ 429.0, 15.5, 249.0, 87.0 ],
-					"text" : "j.parameter_array factor.[10] @format array @type decimal @range 1. 100. @clipmode low @description \"list of factors that determines the frequencies of the 10 partials as a factor of the fundamental frequency, default is 1 2 3 4 5 6 7 8 9 10\""
+					"text" : "ossia.parameter_array factor.[10] @format array @type decimal @range 1. 100. @clip low @description \"list of factors that determines the frequencies of the 10 partials as a factor of the fundamental frequency, default is 1 2 3 4 5 6 7 8 9 10\""
 				}
 
 			}
@@ -120,7 +120,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 568.5, 152.0, 331.0, 60.0 ],
-					"text" : "j.parameter frequency @type decimal @range 20 20000 @clipmode none @ramp/drive Max @ramp/function linear @dataspace time @unit Hz @description \"Fundamental frequency of the signal.\"",
+					"text" : "ossia.parameter frequency @type decimal @range 20 20000 @clip free @ramp/drive Max @ramp/function linear @unit time.Hz @description \"Fundamental frequency of the signal.\"",
 					"varname" : "frequency"
 				}
 
@@ -150,7 +150,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 672.5, 465.5, 229.0, 33.0 ],
-					"text" : "j.model @description \"Additive synthesis using 10 harmonic partials.\""
+					"text" : "ossia.model #1 @description \"Additive synthesis using 10 harmonic partials.\""
 				}
 
 			}
@@ -520,7 +520,7 @@
 			}
  ],
 		"dependency_cache" : [ 			{
-				"name" : "j.model.mxo",
+				"name" : "ossia.model #1.mxo",
 				"type" : "iLaX"
 			}
 , 			{
@@ -528,11 +528,11 @@
 				"type" : "iLaX"
 			}
 , 			{
-				"name" : "j.parameter.mxo",
+				"name" : "ossia.parameter.mxo",
 				"type" : "iLaX"
 			}
 , 			{
-				"name" : "j.parameter_array.mxo",
+				"name" : "ossia.parameter_array.mxo",
 				"type" : "iLaX"
 			}
  ]

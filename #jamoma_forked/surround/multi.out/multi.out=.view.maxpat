@@ -72,8 +72,8 @@
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 13.0, 178.0, 63.0, 22.0 ],
 					"style" : "",
-					"text" : "j.view",
-					"varname" : "j.model"
+					"text" : "ossia.view #1",
+					"varname" : "ossia.model #1"
 				}
 
 			}
@@ -101,7 +101,7 @@
 					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 312.0, 113.0, 133.0, 22.0 ],
 					"style" : "",
-					"text" : "j.remote channelOffset",
+					"text" : "ossia.remote channelOffset",
 					"varname" : "channel_offset"
 				}
 
@@ -201,11 +201,11 @@
 				"type" : "iLaX"
 			}
 , 			{
-				"name" : "j.remote.mxo",
+				"name" : "ossia.remote.mxo",
 				"type" : "iLaX"
 			}
 , 			{
-				"name" : "j.view.mxo",
+				"name" : "ossia.view #1.mxo",
 				"type" : "iLaX"
 			}
  ],

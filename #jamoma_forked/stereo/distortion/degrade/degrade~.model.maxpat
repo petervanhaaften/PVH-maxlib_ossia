@@ -179,7 +179,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 251.0, 140.0, 228.0, 80.0 ],
-					"text" : "j.parameter bitdepth @type integer @range 1 24 @clipmode both @ramp/drive max @repetitions/filter 1 @description \"The number of bits that will be retained in each sample - use this for bit crunching effects\" @priority 2"
+					"text" : "ossia.parameter bitdepth @type int @range 1 24 @clip both @ramp/drive max @repetitions 0 @description \"The number of bits that will be retained in each sample - use this for bit crunching effects\" @priority 2"
 				}
 
 			}
@@ -194,7 +194,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 217.0, 44.0, 226.0, 80.0 ],
-					"text" : "j.parameter samplerate_ratio @type decimal @range 0. 1. @repetitions/filter 0 @clipmode both @ramp/drive max @description \"A ratio of the emulated sample-rate to the global sample-rate.\" @priority 1"
+					"text" : "ossia.parameter samplerate_ratio @type decimal @range 0. 1. @repetitions 1 @clip both @ramp/drive max @description \"A ratio of the emulated sample-rate to the global sample-rate.\" @priority 1"
 				}
 
 			}
@@ -209,7 +209,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 266.0, 295.0, 213.0, 31.0 ],
-					"text" : "j.model @description \"Emulate the use of lower sample-rates and bit-resolution.\""
+					"text" : "ossia.model #1 @description \"Emulate the use of lower sample-rates and bit-resolution.\""
 				}
 
 			}
@@ -337,11 +337,11 @@
 			}
  ],
 		"dependency_cache" : [ 			{
-				"name" : "j.model.mxo",
+				"name" : "ossia.model #1.mxo",
 				"type" : "iLaX"
 			}
 , 			{
-				"name" : "j.parameter.mxo",
+				"name" : "ossia.parameter.mxo",
 				"type" : "iLaX"
 			}
 , 			{

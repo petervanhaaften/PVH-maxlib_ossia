@@ -108,7 +108,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 951.0, 22.0, 151.0, 154.0 ],
-					"text" : "j.parameter delay/max_size @type integer @ramp/drive none @repetitions/filter 1 @range 0 1000000 @clipmode low @dataspace time @unit sample @priority 1 @description \"Maximum delay size in samples.\"",
+					"text" : "ossia.parameter delay/max_size @type int @ramp/drive none @repetitions 0 @range 0 1000000 @clip low @unit time.sample @priority 1 @description \"Maximum delay size in samples.\"",
 					"varname" : "delay/right[1]"
 				}
 
@@ -124,8 +124,8 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 507.0, 22.0, 159.0, 114.0 ],
-					"text" : "j.message delay @type integer @ramp/drive max @repetitions/filter 0 @range 0 1000000 @dataspace time @unit sample @description \"Delay time in samples to be applied to both channels.\"",
-					"varname" : "j.parameter.mxb[9]"
+					"text" : "ossia.parameter delay @mode set @type int @ramp/drive max @repetitions 1 @range 0 1000000 @unit time.sample @description \"Delay time in samples to be applied to both channels.\"",
+					"varname" : "ossia.parameter.mxb[9]"
 				}
 
 			}
@@ -140,7 +140,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 671.0, 232.0, 159.0, 127.0 ],
-					"text" : "j.parameter delay/right @type integer @ramp/drive max @repetitions/filter 1 @range 0 1000000 @clipmode both @dataspace time @unit sample @description \"Delay time in samples for right channel.\"",
+					"text" : "ossia.parameter delay/right @type int @ramp/drive max @repetitions 0 @range 0 1000000 @clip both @unit time.sample @description \"Delay time in samples for right channel.\"",
 					"varname" : "delay/right"
 				}
 
@@ -155,7 +155,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 507.0, 514.0, 296.0, 20.0 ],
-					"text" : "j.model @description \"Sample-accurate stereo delay.\"",
+					"text" : "ossia.model #1 @description \"Sample-accurate stereo delay.\"",
 					"varname" : "j.hub"
 				}
 
@@ -171,7 +171,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 507.0, 232.0, 128.0, 167.0 ],
-					"text" : "j.parameter delay/left @type integer @ramp/drive max @repetitions/filter 1 @range 0 1000000 @clipmode both @dataspace time @unit sample @description \"Delay time in samples for left channel.\"",
+					"text" : "ossia.parameter delay/left @type int @ramp/drive max @repetitions 0 @range 0 1000000 @clip both @unit time.sample @description \"Delay time in samples for left channel.\"",
 					"varname" : "delay/left"
 				}
 
@@ -503,11 +503,11 @@
 			}
  ],
 		"dependency_cache" : [ 			{
-				"name" : "j.parameter.mxo",
+				"name" : "ossia.parameter.mxo",
 				"type" : "iLaX"
 			}
 , 			{
-				"name" : "j.model.mxo",
+				"name" : "ossia.model #1.mxo",
 				"type" : "iLaX"
 			}
 , 			{

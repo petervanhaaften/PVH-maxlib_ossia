@@ -170,7 +170,7 @@
 					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 622.0, 236.0, 89.0, 22.0 ],
 					"style" : "",
-					"text" : "j.remote active"
+					"text" : "ossia.remote active"
 				}
 
 			}
@@ -183,7 +183,7 @@
 					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 347.0, 236.0, 80.0, 22.0 ],
 					"style" : "",
-					"text" : "j.remote gain"
+					"text" : "ossia.remote gain"
 				}
 
 			}
@@ -196,7 +196,7 @@
 					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 475.0, 236.0, 77.0, 22.0 ],
 					"style" : "",
-					"text" : "j.remote blur"
+					"text" : "ossia.remote blur"
 				}
 
 			}
@@ -466,7 +466,7 @@
 		}
 ,
 		"dependency_cache" : [ 			{
-				"name" : "j.remote.mxo",
+				"name" : "ossia.remote.mxo",
 				"type" : "iLaX"
 			}
  ],

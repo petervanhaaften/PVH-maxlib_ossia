@@ -60,7 +60,7 @@
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 645.0, 388.0, 158.0, 49.0 ],
 					"style" : "",
-					"text" : "j.model @description \"One-sided ring modulator using Hilbert filter.\""
+					"text" : "ossia.model #1 @description \"One-sided ring modulator using Hilbert filter.\""
 				}
 
 			}
@@ -149,7 +149,7 @@
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 546.0, 268.0, 399.0, 35.0 ],
 					"style" : "",
-					"text" : "j.parameter lower_sideband/active @type boolean @description \"Enable and disable lower sideband.\""
+					"text" : "ossia.parameter lower_sideband/active @type bool @description \"Enable and disable lower sideband.\""
 				}
 
 			}
@@ -166,7 +166,7 @@
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 405.333313, 22.0, 554.0, 49.0 ],
 					"style" : "",
-					"text" : "j.parameter modulating_frequency @type decimal @range -200. 1000. @clipmode none @ramp/function linear @ramp/drive max @description \"Modulator frequency (Hz). \" @dataspace time @unit Hz"
+					"text" : "ossia.parameter modulating_frequency @type decimal @range -200. 1000. @clip free @ramp/function linear @ramp/drive max @description \"Modulator frequency (Hz). \" @unit time.Hz"
 				}
 
 			}
@@ -1696,7 +1696,7 @@
 			}
  ],
 		"dependency_cache" : [ 			{
-				"name" : "j.parameter.mxo",
+				"name" : "ossia.parameter.mxo",
 				"type" : "iLaX"
 			}
 , 			{
@@ -1708,7 +1708,7 @@
 				"type" : "iLaX"
 			}
 , 			{
-				"name" : "j.model.mxo",
+				"name" : "ossia.model #1.mxo",
 				"type" : "iLaX"
 			}
  ],

@@ -38,7 +38,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
 					"patching_rect" : [ 399.0625, 171.0, 154.0, 154.0 ],
-					"text" : "j.parameter_array filter.[0]/frequency @type decimal @range 20. 20000. @clipmode both @ramp/drive max @repetitions/filter 1 @dataspace time @unit Hz @priority 3 @description \"Center frequency (Hz)\" @default 1000."
+					"text" : "ossia.parameter_array filter.[0]/frequency @type decimal @range 20. 20000. @clip both @ramp/drive max @repetitions 0 @unit time.Hz @priority 3 @description \"Center frequency (Hz)\" @default 1000."
 				}
 
 			}
@@ -67,7 +67,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
 					"patching_rect" : [ 741.1875, 171.0, 151.0, 141.0 ],
-					"text" : "j.parameter_array filter.[0]/octave_bandwidth @type decimal @ramp/drive max @range 0.01 10. @clipmode both @repetitions/filter 1 @description \"Filter bandwidth/slope width in octaves.\" @priority 5 @default 1"
+					"text" : "ossia.parameter_array filter.[0]/octave_bandwidth @type decimal @ramp/drive max @range 0.01 10. @clip both @repetitions 0 @description \"Filter bandwidth/slope width in octaves.\" @priority 5 @default 1"
 				}
 
 			}
@@ -82,7 +82,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
 					"patching_rect" : [ 228.0, 171.0, 160.0, 141.0 ],
-					"text" : "j.parameter_array filter.[0]/type @type string @priority 2 @description \"What kind of filter to use. Possible values: lowpass | highpass | bandpass | bandstop | peaknotch | lowshelf | highshelf | resonant | allpass \" @default peaknotch"
+					"text" : "ossia.parameter_array filter.[0]/type @type string @priority 2 @description \"What kind of filter to use. Possible values: lowpass | highpass | bandpass | bandstop | peaknotch | lowshelf | highshelf | resonant | allpass \" @default peaknotch"
 				}
 
 			}
@@ -1138,7 +1138,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
 					"patching_rect" : [ 570.125, 171.0, 141.0, 141.0 ],
-					"text" : "j.parameter_array filter.[0]/gain @type decimal @range -24 24 @clipmode both @ramp/drive max @repetitions/filter 1 @unit dB @priority 4 @dataspace gain @description \"Gain (dB)\" @default 0."
+					"text" : "ossia.parameter_array filter.[0]/gain @type decimal @range -24 24 @clip both @ramp/drive max @repetitions 0 @unit dB @priority 4 @dataspace gain @description \"Gain (dB)\" @default 0."
 				}
 
 			}
@@ -1168,7 +1168,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 77.0, 60.0, 132.0, 127.0 ],
-					"text" : "j.parameter bands @type integer @priority 1 @description \"Number of bands of the filter\" @tags setup @repetitions/filter 1 @clipmode both @range 1 24",
+					"text" : "ossia.parameter bands @type int @priority 1 @description \"Number of bands of the filter\" @tags setup @repetitions 0 @clip both @range 1 24",
 					"varname" : "bands[1]"
 				}
 
@@ -1184,7 +1184,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 69.75, 237.0, 132.0, 87.0 ],
-					"text" : "j.message filtergraph @description \"Messages to filtergraph. See the MSP reference for further details\""
+					"text" : "ossia.parameter filtergraph @mode set @description \"Messages to filtergraph. See the MSP reference for further details\""
 				}
 
 			}
@@ -1273,7 +1273,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 228.0, 748.0, 69.0, 20.0 ],
-					"text" : "j.model"
+					"text" : "ossia.model #1"
 				}
 
 			}
@@ -1719,7 +1719,7 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "j.model.mxo",
+				"name" : "ossia.model #1.mxo",
 				"type" : "iLaX"
 			}
 , 			{
@@ -1735,11 +1735,11 @@
 				"type" : "iLaX"
 			}
 , 			{
-				"name" : "j.parameter.mxo",
+				"name" : "ossia.parameter.mxo",
 				"type" : "iLaX"
 			}
 , 			{
-				"name" : "j.parameter_array.mxo",
+				"name" : "ossia.parameter_array.mxo",
 				"type" : "iLaX"
 			}
 , 			{

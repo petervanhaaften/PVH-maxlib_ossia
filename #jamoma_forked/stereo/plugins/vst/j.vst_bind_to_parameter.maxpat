@@ -220,7 +220,7 @@
 , 			{
 				"box" : 				{
 					"comment" : "",
-					"hint" : "Connect to j.remote",
+					"hint" : "Connect to ossia.remote",
 					"id" : "obj-155",
 					"maxclass" : "outlet",
 					"numinlets" : 1,

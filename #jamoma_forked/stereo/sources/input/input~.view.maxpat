@@ -91,8 +91,8 @@
 					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 336.0, 505.5, 113.0, 22.0 ],
 					"style" : "",
-					"text" : "j.remote audio/gain",
-					"varname" : "j.parameter.gain[1]"
+					"text" : "ossia.remote audio/gain",
+					"varname" : "ossia.parameter.gain[1]"
 				}
 
 			}
@@ -135,8 +135,8 @@
 					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 123.083344, 566.0, 195.0, 22.0 ],
 					"style" : "",
-					"text" : "j.remote audio/gain @unit midigain",
-					"varname" : "j.parameter.gain[2]"
+					"text" : "ossia.remote audio/gain @unit midigain",
+					"varname" : "ossia.parameter.gain[2]"
 				}
 
 			}
@@ -249,7 +249,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 451.916718, 854.0, 100.0, 22.0 ],
 					"style" : "",
-					"text" : "j.send file/direct"
+					"text" : "ossia.remote file/direct"
 				}
 
 			}
@@ -685,7 +685,7 @@
 					"outlettype" : [ "signal", "", "" ],
 					"patching_rect" : [ 260.083344, 698.0, 127.0, 22.0 ],
 					"style" : "",
-					"text" : "j.receive~ audio/out.R"
+					"text" : "ossia.remote~ audio/out.R"
 				}
 
 			}
@@ -700,7 +700,7 @@
 					"outlettype" : [ "signal", "", "" ],
 					"patching_rect" : [ 123.083344, 698.0, 125.0, 22.0 ],
 					"style" : "",
-					"text" : "j.receive~ audio/out.L"
+					"text" : "ossia.remote~ audio/out.L"
 				}
 
 			}
@@ -771,7 +771,7 @@
 					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 117.583344, 834.0, 144.0, 22.0 ],
 					"style" : "",
-					"text" : "j.remote balance/position"
+					"text" : "ossia.remote balance/position"
 				}
 
 			}
@@ -874,7 +874,7 @@
 					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 123.083344, 371.0, 151.0, 22.0 ],
 					"style" : "",
-					"text" : "j.remote input/audio/active",
+					"text" : "ossia.remote input/audio/active",
 					"varname" : "audio[1]"
 				}
 
@@ -890,7 +890,7 @@
 					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 123.083344, 455.0, 140.0, 22.0 ],
 					"style" : "",
-					"text" : "j.remote input/dspStatus"
+					"text" : "ossia.remote input/dspStatus"
 				}
 
 			}
@@ -1109,7 +1109,7 @@
 					"outlettype" : [ "", "", "" ],
 					"patching_rect" : [ 451.916718, 751.0, 141.0, 22.0 ],
 					"style" : "",
-					"text" : "j.receive file/time/relative"
+					"text" : "ossia.remote file/time/relative"
 				}
 
 			}
@@ -1124,7 +1124,7 @@
 					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 451.916718, 599.0, 147.0, 22.0 ],
 					"style" : "",
-					"text" : "j.remote file/time/absolute"
+					"text" : "ossia.remote file/time/absolute"
 				}
 
 			}
@@ -1139,7 +1139,7 @@
 					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 942.75, 647.0, 129.0, 22.0 ],
 					"style" : "",
-					"text" : "j.remote file/transpose"
+					"text" : "ossia.remote file/transpose"
 				}
 
 			}
@@ -1184,7 +1184,7 @@
 					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 514.25, 395.0, 156.0, 22.0 ],
 					"style" : "",
-					"text" : "j.remote testtone/frequency",
+					"text" : "ossia.remote testtone/frequency",
 					"varname" : "ch_1[2]"
 				}
 
@@ -1934,7 +1934,7 @@
 					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 514.25, 279.0, 128.0, 22.0 ],
 					"style" : "",
-					"text" : "j.remote clicktrain/rate",
+					"text" : "ossia.remote clicktrain/rate",
 					"varname" : "ch_1[1]"
 				}
 
@@ -1965,7 +1965,7 @@
 					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 564.25, 490.0, 141.0, 22.0 ],
 					"style" : "",
-					"text" : "j.remote input/channel.R",
+					"text" : "ossia.remote input/channel.R",
 					"varname" : "ch_2"
 				}
 
@@ -1981,7 +1981,7 @@
 					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 564.25, 460.0, 139.0, 22.0 ],
 					"style" : "",
-					"text" : "j.remote input/channel.L",
+					"text" : "ossia.remote input/channel.L",
 					"varname" : "ch_1"
 				}
 
@@ -1997,7 +1997,7 @@
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 51.75, 290.0, 41.0, 22.0 ],
 					"style" : "",
-					"text" : "j.view",
+					"text" : "ossia.view #1",
 					"varname" : "j.hub"
 				}
 
@@ -2028,8 +2028,8 @@
 					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 877.75, 136.0, 99.0, 22.0 ],
 					"style" : "",
-					"text" : "j.remote file/path",
-					"varname" : "j.parameter.mxb[10]"
+					"text" : "ossia.remote file/path",
+					"varname" : "ossia.parameter.mxb[10]"
 				}
 
 			}
@@ -2044,7 +2044,7 @@
 					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 514.25, 125.0, 93.0, 22.0 ],
 					"style" : "",
-					"text" : "j.remote source",
+					"text" : "ossia.remote source",
 					"varname" : "source_select"
 				}
 
@@ -2060,7 +2060,7 @@
 					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 958.25, 369.0, 98.0, 22.0 ],
 					"style" : "",
-					"text" : "j.remote file/play",
+					"text" : "ossia.remote file/play",
 					"varname" : "play"
 				}
 
@@ -2076,7 +2076,7 @@
 					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 958.25, 441.0, 99.0, 22.0 ],
 					"style" : "",
-					"text" : "j.remote file/loop",
+					"text" : "ossia.remote file/loop",
 					"varname" : "loop"
 				}
 
@@ -2752,11 +2752,11 @@
 				"type" : "iLaX"
 			}
 , 			{
-				"name" : "j.remote.mxo",
+				"name" : "ossia.remote.mxo",
 				"type" : "iLaX"
 			}
 , 			{
-				"name" : "j.view.mxo",
+				"name" : "ossia.view #1.mxo",
 				"type" : "iLaX"
 			}
 , 			{
@@ -2764,15 +2764,15 @@
 				"type" : "iLaX"
 			}
 , 			{
-				"name" : "j.receive.mxo",
+				"name" : "ossia.remote.mxo",
 				"type" : "iLaX"
 			}
 , 			{
-				"name" : "j.receive~.mxo",
+				"name" : "ossia.remote~.mxo",
 				"type" : "iLaX"
 			}
 , 			{
-				"name" : "j.send.mxo",
+				"name" : "ossia.remote.mxo",
 				"type" : "iLaX"
 			}
  ],

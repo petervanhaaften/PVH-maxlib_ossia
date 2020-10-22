@@ -146,7 +146,7 @@
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 800.0, 208.0, 157.0, 102.0 ],
 					"style" : "",
-					"text" : "j.model @description \"Multichannel audio output model. Distributes audio signals to DAC, and provides a master limiter and  gain effects as well as recording possibilities.\""
+					"text" : "ossia.model #1 @description \"Multichannel audio output model. Distributes audio signals to DAC, and provides a master limiter and  gain effects as well as recording possibilities.\""
 				}
 
 			}
@@ -250,7 +250,7 @@
 													"outlettype" : [ "", "", "" ],
 													"patching_rect" : [ 50.0, 178.0, 137.0, 22.0 ],
 													"style" : "",
-													"text" : "j.receive num_speakers"
+													"text" : "ossia.remote num_speakers"
 												}
 
 											}
@@ -419,7 +419,7 @@
 									"outlettype" : [ "", "" ],
 									"patching_rect" : [ 41.0, 68.0, 49.0, 22.0 ],
 									"style" : "",
-									"text" : "j.model"
+									"text" : "ossia.model #1"
 								}
 
 							}
@@ -497,7 +497,7 @@
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 471.5, 238.0, 112.0, 116.0 ],
 					"style" : "",
-					"text" : "j.parameter setup @type array @range 1 32 @clipmode low @description \"List of output channels that multicable signal is routed to.\"",
+					"text" : "ossia.parameter setup @type array @range 1 32 @clip low @description \"List of output channels that multicable signal is routed to.\"",
 					"varname" : "setup"
 				}
 
@@ -575,7 +575,7 @@
 									"outlettype" : [ "", "" ],
 									"patching_rect" : [ 50.0, 118.0, 148.0, 62.0 ],
 									"style" : "",
-									"text" : "j.message audio/active @type boolean @description \"Turn audio on/off\"",
+									"text" : "ossia.parameter audio/active @mode set @type bool @description \"Turn audio on/off\"",
 									"varname" : "record[1]"
 								}
 
@@ -592,7 +592,7 @@
 									"outlettype" : [ "", "" ],
 									"patching_rect" : [ 214.0, 118.0, 150.0, 62.0 ],
 									"style" : "",
-									"text" : "j.message dspStatus @type none @description \"Open DSP Status window.\""
+									"text" : "ossia.parameter dspStatus @mode set @type impulse @description \"Open DSP Status window.\""
 								}
 
 							}
@@ -623,7 +623,7 @@
 									"outlettype" : [ "", "" ],
 									"patching_rect" : [ 437.800049, 228.0, 147.0, 76.0 ],
 									"style" : "",
-									"text" : "j.return cpu @range 0. 100. @type decimal @description \"reports the cpu usage of the dsp processing\""
+									"text" : "ossia.parameter cpu @mode get @range 0. 100. @type decimal @description \"reports the cpu usage of the dsp processing\""
 								}
 
 							}
@@ -1136,7 +1136,7 @@
 					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 222.5, 271.0, 113.0, 22.0 ],
 					"style" : "",
-					"text" : "j.remote audio/gain"
+					"text" : "ossia.remote audio/gain"
 				}
 
 			}
@@ -1210,7 +1210,7 @@
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 94.5, 194.0, 210.0, 62.0 ],
 					"style" : "",
-					"text" : "j.return num_speakers @type integer @description \"Number of speaker channels being output. Value is inferred from the AudioGraph signal.\""
+					"text" : "j.return num_speakers @type int @description \"Number of speaker channels being output. Value is inferred from the AudioGraph signal.\""
 				}
 
 			}
@@ -2343,7 +2343,7 @@
 				"type" : "iLaX"
 			}
 , 			{
-				"name" : "j.remote.mxo",
+				"name" : "ossia.remote.mxo",
 				"type" : "iLaX"
 			}
 , 			{
@@ -2355,7 +2355,7 @@
 				"type" : "iLaX"
 			}
 , 			{
-				"name" : "j.model.mxo",
+				"name" : "ossia.model #1.mxo",
 				"type" : "iLaX"
 			}
 , 			{
@@ -2363,7 +2363,7 @@
 				"type" : "iLaX"
 			}
 , 			{
-				"name" : "j.parameter.mxo",
+				"name" : "ossia.parameter.mxo",
 				"type" : "iLaX"
 			}
 , 			{
@@ -2375,7 +2375,7 @@
 				"type" : "iLaX"
 			}
 , 			{
-				"name" : "j.receive.mxo",
+				"name" : "ossia.remote.mxo",
 				"type" : "iLaX"
 			}
  ],

@@ -134,7 +134,7 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 250.0, 100.0, 147.0, 22.0 ],
 									"style" : "",
-									"text" : "j.send visualisation/radius"
+									"text" : "ossia.remote visualisation/radius"
 								}
 
 							}
@@ -391,7 +391,7 @@
 									"outlettype" : [ "", "", "" ],
 									"patching_rect" : [ 613.0, 116.0, 223.0, 22.0 ],
 									"style" : "",
-									"text" : "j.receive speakers/number_of_channels"
+									"text" : "ossia.remote speakers/number_of_channels"
 								}
 
 							}
@@ -442,7 +442,7 @@
 									"outlettype" : [ "", "", "" ],
 									"patching_rect" : [ 367.0, 116.0, 216.0, 22.0 ],
 									"style" : "",
-									"text" : "j.receive sources/number_of_channels"
+									"text" : "ossia.remote sources/number_of_channels"
 								}
 
 							}
@@ -1708,7 +1708,7 @@
 					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 843.0, 412.0, 165.0, 35.0 ],
 					"style" : "",
-					"text" : "j.remote_array sources/channel.[32]/position"
+					"text" : "ossia.remote_array sources/channel.[32]/position"
 				}
 
 			}
@@ -1722,7 +1722,7 @@
 					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 1030.0, 412.0, 172.0, 35.0 ],
 					"style" : "",
-					"text" : "j.remote_array speakers/channel.[32]/position"
+					"text" : "ossia.remote_array speakers/channel.[32]/position"
 				}
 
 			}
@@ -1831,7 +1831,7 @@
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 34.0, 576.0, 41.0, 22.0 ],
 					"style" : "",
-					"text" : "j.view"
+					"text" : "ossia.view #1"
 				}
 
 			}
@@ -3338,19 +3338,19 @@
 				"type" : "iLaX"
 			}
 , 			{
-				"name" : "j.view.mxo",
+				"name" : "ossia.view #1.mxo",
 				"type" : "iLaX"
 			}
 , 			{
-				"name" : "j.remote_array.mxo",
+				"name" : "ossia.remote_array.mxo",
 				"type" : "iLaX"
 			}
 , 			{
-				"name" : "j.receive.mxo",
+				"name" : "ossia.remote.mxo",
 				"type" : "iLaX"
 			}
 , 			{
-				"name" : "j.send.mxo",
+				"name" : "ossia.remote.mxo",
 				"type" : "iLaX"
 			}
  ],

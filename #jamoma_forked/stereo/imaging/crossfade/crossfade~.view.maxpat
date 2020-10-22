@@ -130,7 +130,7 @@
 					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 377.0, 405.0, 106.0, 22.0 ],
 					"style" : "",
-					"text" : "j.remote mode",
+					"text" : "ossia.remote mode",
 					"varname" : "mode[1]"
 				}
 
@@ -146,7 +146,7 @@
 					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 377.0, 298.0, 108.0, 22.0 ],
 					"style" : "",
-					"text" : "j.remote shape",
+					"text" : "ossia.remote shape",
 					"varname" : "shape[1]"
 				}
 
@@ -257,7 +257,7 @@
 					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 141.0, 264.0, 119.0, 22.0 ],
 					"style" : "",
-					"text" : "j.remote position",
+					"text" : "ossia.remote position",
 					"varname" : "position[1]"
 				}
 
@@ -273,7 +273,7 @@
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 23.0, 147.0, 61.0, 22.0 ],
 					"style" : "",
-					"text" : "j.view"
+					"text" : "ossia.view #1"
 				}
 
 			}
@@ -288,7 +288,7 @@
 					"outlettype" : [ "signal", "", "" ],
 					"patching_rect" : [ 462.5, 3.0, 134.0, 22.0 ],
 					"style" : "",
-					"text" : "j.receive~ audio/out.R1"
+					"text" : "ossia.remote~ audio/out.R1"
 				}
 
 			}
@@ -303,7 +303,7 @@
 					"outlettype" : [ "signal", "", "" ],
 					"patching_rect" : [ 308.0, 3.0, 132.0, 22.0 ],
 					"style" : "",
-					"text" : "j.receive~ audio/out.L1"
+					"text" : "ossia.remote~ audio/out.L1"
 				}
 
 			}

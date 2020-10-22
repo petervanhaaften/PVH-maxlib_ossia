@@ -112,7 +112,7 @@
 					"outlettype" : [ "signal", "", "" ],
 					"patching_rect" : [ 477.5, 18.0, 127.0, 22.0 ],
 					"style" : "",
-					"text" : "j.receive~ audio/out.R"
+					"text" : "ossia.remote~ audio/out.R"
 				}
 
 			}
@@ -127,7 +127,7 @@
 					"outlettype" : [ "signal", "", "" ],
 					"patching_rect" : [ 323.0, 18.0, 125.0, 22.0 ],
 					"style" : "",
-					"text" : "j.receive~ audio/out.L"
+					"text" : "ossia.remote~ audio/out.L"
 				}
 
 			}
@@ -168,7 +168,7 @@
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 25.0, 318.0, 63.0, 22.0 ],
 					"style" : "",
-					"text" : "j.view"
+					"text" : "ossia.view #1"
 				}
 
 			}
@@ -183,7 +183,7 @@
 					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 248.0, 170.0, 105.0, 22.0 ],
 					"style" : "",
-					"text" : "j.remote oscillator",
+					"text" : "ossia.remote oscillator",
 					"varname" : "mode[1]"
 				}
 
@@ -201,7 +201,7 @@
 					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 248.0, 328.0, 94.0, 35.0 ],
 					"style" : "",
-					"text" : "j.remote note @unit midinote",
+					"text" : "ossia.remote note @unit midinote",
 					"varname" : "frequency"
 				}
 
@@ -350,15 +350,15 @@
 				"type" : "iLaX"
 			}
 , 			{
-				"name" : "j.remote.mxo",
+				"name" : "ossia.remote.mxo",
 				"type" : "iLaX"
 			}
 , 			{
-				"name" : "j.view.mxo",
+				"name" : "ossia.view #1.mxo",
 				"type" : "iLaX"
 			}
 , 			{
-				"name" : "j.receive~.mxo",
+				"name" : "ossia.remote~.mxo",
 				"type" : "iLaX"
 			}
  ],

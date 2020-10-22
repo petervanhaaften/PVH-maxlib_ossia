@@ -364,7 +364,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "signal", "", "" ],
 					"patching_rect" : [ 739.299988, 30.0, 127.0, 20.0 ],
-					"text" : "j.receive~ audio/out.R"
+					"text" : "ossia.remote~ audio/out.R"
 				}
 
 			}
@@ -406,7 +406,7 @@
 					"numoutlets" : 4,
 					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 132.0, 253.5, 286.0, 20.0 ],
-					"text" : "j.remote_array harmonic.[10]/gain @format array"
+					"text" : "ossia.remote_array harmonic.[10]/gain @format array"
 				}
 
 			}
@@ -420,7 +420,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 15.0, 204.0, 61.0, 20.0 ],
-					"text" : "j.view"
+					"text" : "ossia.view #1"
 				}
 
 			}
@@ -692,7 +692,7 @@
 					"numoutlets" : 4,
 					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 582.299988, 547.0, 239.0, 20.0 ],
-					"text" : "j.remote_array factor.[10] @format array"
+					"text" : "ossia.remote_array factor.[10] @format array"
 				}
 
 			}
@@ -734,7 +734,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "signal", "", "" ],
 					"patching_rect" : [ 604.0, 30.0, 125.0, 20.0 ],
-					"text" : "j.receive~ audio/out.L"
+					"text" : "ossia.remote~ audio/out.L"
 				}
 
 			}
@@ -796,7 +796,7 @@
 					"numoutlets" : 4,
 					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 388.299988, 90.0, 110.0, 20.0 ],
-					"text" : "j.remote frequency",
+					"text" : "ossia.remote frequency",
 					"varname" : "frequency"
 				}
 

@@ -271,7 +271,7 @@
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 537.0, 305.0, 396.0, 49.0 ],
 					"style" : "",
-					"text" : "j.model @description \"Allows crossfades between 2 stereo sources. The first two inputs are the first source while the second 2 inputs are the second source\""
+					"text" : "ossia.model #1 @description \"Allows crossfades between 2 stereo sources. The first two inputs are the first source while the second 2 inputs are the second source\""
 				}
 
 			}
@@ -287,7 +287,7 @@
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 290.0, 103.0, 253.0, 62.0 ],
 					"style" : "",
-					"text" : "j.parameter mode @type string @description \"Choose the calculation mode for the crossfade: fast uses a lookup table while precisision performs trig calculations\"",
+					"text" : "ossia.parameter mode @type string @description \"Choose the calculation mode for the crossfade: fast uses a lookup table while precisision performs trig calculations\"",
 					"varname" : "mode[1]"
 				}
 
@@ -304,7 +304,7 @@
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 312.0, 180.0, 208.0, 49.0 ],
 					"style" : "",
-					"text" : "j.parameter shape @type string @description \"Choose the shape of the crossfade: linear or equal-power\"",
+					"text" : "ossia.parameter shape @type string @description \"Choose the shape of the crossfade: linear or equal-power\"",
 					"varname" : "shape[1]"
 				}
 
@@ -321,7 +321,7 @@
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 186.0, 26.0, 376.0, 62.0 ],
 					"style" : "",
-					"text" : "j.parameter position @type decimal @range 1. 2. @ramp/drive max @description \"Set the position of the crossfade.  1 is entirely source 1 - 2 is entirely source 2 - positions in the middle are a location between source one and two.\"",
+					"text" : "ossia.parameter position @type decimal @range 1. 2. @ramp/drive max @description \"Set the position of the crossfade.  1 is entirely source 1 - 2 is entirely source 2 - positions in the middle are a location between source one and two.\"",
 					"varname" : "position"
 				}
 

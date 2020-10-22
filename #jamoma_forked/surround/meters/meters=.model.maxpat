@@ -764,8 +764,8 @@
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 803.0, 133.0, 331.0, 22.0 ],
 					"style" : "",
-					"text" : "j.model @description \"Meter bridge for mutlichannel signals\"",
-					"varname" : "j.model"
+					"text" : "ossia.model #1 @description \"Meter bridge for mutlichannel signals\"",
+					"varname" : "ossia.model #1"
 				}
 
 			}
@@ -806,7 +806,7 @@
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 157.0, 202.0, 121.666656, 35.0 ],
 					"style" : "",
-					"text" : "j.return channels @type integer",
+					"text" : "ossia.parameter channels @mode get @type int",
 					"varname" : "voices"
 				}
 
@@ -850,7 +850,7 @@
 					"outlettype" : [ "", "", "" ],
 					"patching_rect" : [ 116.5, 725.5, 574.0, 35.0 ],
 					"style" : "",
-					"text" : "j.return_array audio/amplitude.[32] @type decimal @format array @range -70. 6. @clipmode none @repetitions/filter 0 @dataspace gain @unit linear @description \"amplitude of the Nth multichannel cable\""
+					"text" : "j.return_array audio/amplitude.[32] @type decimal @format array @range -70. 6. @clip free @repetitions 1 @unit gain.linear @description \"amplitude of the Nth multichannel cable\""
 				}
 
 			}
@@ -1929,7 +1929,7 @@
 				"type" : "iLaX"
 			}
 , 			{
-				"name" : "j.model.mxo",
+				"name" : "ossia.model #1.mxo",
 				"type" : "iLaX"
 			}
 , 			{

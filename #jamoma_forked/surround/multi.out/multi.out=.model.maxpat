@@ -433,8 +433,8 @@
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 971.958862, 230.5, 174.0, 49.0 ],
 					"style" : "",
-					"text" : "j.model @description \"Unpack up to 32 mono signals onto a multi cable.\"",
-					"varname" : "j.model"
+					"text" : "ossia.model #1 @description \"Unpack up to 32 mono signals onto a multi cable.\"",
+					"varname" : "ossia.model #1"
 				}
 
 			}
@@ -476,7 +476,7 @@
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 207.248352, 98.0, 571.0, 35.0 ],
 					"style" : "",
-					"text" : "j.parameter channelOffset @type integer @repetitions/filter 0 @range 0 64 @clipmode low @description \"Set channel offset for signals. Only take effect the next time audio is started.\"",
+					"text" : "ossia.parameter channelOffset @type int @repetitions 1 @range 0 64 @clip low @description \"Set channel offset for signals. Only take effect the next time audio is started.\"",
 					"varname" : "channel_offset"
 				}
 
@@ -891,11 +891,11 @@
 				"type" : "iLaX"
 			}
 , 			{
-				"name" : "j.parameter.mxo",
+				"name" : "ossia.parameter.mxo",
 				"type" : "iLaX"
 			}
 , 			{
-				"name" : "j.model.mxo",
+				"name" : "ossia.model #1.mxo",
 				"type" : "iLaX"
 			}
  ],

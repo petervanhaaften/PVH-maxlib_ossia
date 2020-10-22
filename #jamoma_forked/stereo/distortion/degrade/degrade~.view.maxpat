@@ -93,7 +93,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "signal", "", "" ],
 					"patching_rect" : [ 478.0, 18.0, 127.0, 20.0 ],
-					"text" : "j.receive~ audio/out.R"
+					"text" : "ossia.remote~ audio/out.R"
 				}
 
 			}
@@ -107,7 +107,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "signal", "", "" ],
 					"patching_rect" : [ 323.0, 18.0, 125.0, 20.0 ],
-					"text" : "j.receive~ audio/out.L"
+					"text" : "ossia.remote~ audio/out.L"
 				}
 
 			}
@@ -147,7 +147,7 @@
 					"numoutlets" : 4,
 					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 360.0, 144.0, 106.0, 20.0 ],
-					"text" : "j.remote bitdepth"
+					"text" : "ossia.remote bitdepth"
 				}
 
 			}
@@ -161,7 +161,7 @@
 					"numoutlets" : 4,
 					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 169.0, 144.0, 154.0, 20.0 ],
-					"text" : "j.remote samplerate_ratio"
+					"text" : "ossia.remote samplerate_ratio"
 				}
 
 			}
@@ -198,7 +198,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 22.0, 119.0, 46.0, 20.0 ],
-					"text" : "j.view"
+					"text" : "ossia.view #1"
 				}
 
 			}

@@ -124,7 +124,7 @@
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 453.0, 12.5, 129.0, 102.0 ],
 					"style" : "",
-					"text" : "j.parameter invert @type boolean @description \"Sets the threshold below which a bin of the spectrum is attenuated.\""
+					"text" : "ossia.parameter invert @type bool @description \"Sets the threshold below which a bin of the spectrum is attenuated.\""
 				}
 
 			}
@@ -140,7 +140,7 @@
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 302.0, 12.5, 136.0, 143.0 ],
 					"style" : "",
-					"text" : "j.parameter response/decay @type decimal @range 0. 1. @clipmode both @ramp/drive max @ramp/function linear @description \"Sets the threshold below which a bin of the spectrum is attenuated..\""
+					"text" : "ossia.parameter response/decay @type decimal @range 0. 1. @clip both @ramp/drive max @ramp/function linear @description \"Sets the threshold below which a bin of the spectrum is attenuated..\""
 				}
 
 			}
@@ -156,7 +156,7 @@
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 175.0, 12.5, 124.0, 169.0 ],
 					"style" : "",
-					"text" : "j.parameter response/attack @type decimal @range 0. 1. @clipmode both @ramp/drive max @ramp/function linear @description \"Sets the threshold below which a bin of the spectrum is attenuated..\""
+					"text" : "ossia.parameter response/attack @type decimal @range 0. 1. @clip both @ramp/drive max @ramp/function linear @description \"Sets the threshold below which a bin of the spectrum is attenuated..\""
 				}
 
 			}
@@ -172,7 +172,7 @@
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 10.0, 12.5, 140.0, 129.0 ],
 					"style" : "",
-					"text" : "j.parameter threshold @type decimal @range -48. 18. @clipmode none @ramp/drive max @ramp/function linear @description \"Sets the threshold below which a bin of the spectrum is attenuated..\""
+					"text" : "ossia.parameter threshold @type decimal @range -48. 18. @clip free @ramp/drive max @ramp/function linear @description \"Sets the threshold below which a bin of the spectrum is attenuated..\""
 				}
 
 			}
@@ -187,7 +187,7 @@
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 864.0, 332.0, 72.0, 22.0 ],
 					"style" : "",
-					"text" : "j.model"
+					"text" : "ossia.model #1"
 				}
 
 			}
@@ -851,7 +851,7 @@
 				"type" : "iLaX"
 			}
 , 			{
-				"name" : "j.model.mxo",
+				"name" : "ossia.model #1.mxo",
 				"type" : "iLaX"
 			}
 , 			{
@@ -859,7 +859,7 @@
 				"type" : "iLaX"
 			}
 , 			{
-				"name" : "j.parameter.mxo",
+				"name" : "ossia.parameter.mxo",
 				"type" : "iLaX"
 			}
 , 			{

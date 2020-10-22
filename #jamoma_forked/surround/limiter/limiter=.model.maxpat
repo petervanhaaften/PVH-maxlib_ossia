@@ -90,7 +90,7 @@
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 352.0, 127.0, 211.0, 35.0 ],
 					"style" : "",
-					"text" : "j.model @description \"A mutlichannel AudioGraph limiter\"",
+					"text" : "ossia.model #1 @description \"A mutlichannel AudioGraph limiter\"",
 					"varname" : "j.hub"
 				}
 
@@ -165,7 +165,7 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "j.model.mxo",
+				"name" : "ossia.model #1.mxo",
 				"type" : "iLaX"
 			}
 , 			{
@@ -173,7 +173,7 @@
 				"type" : "iLaX"
 			}
 , 			{
-				"name" : "j.parameter.mxo",
+				"name" : "ossia.parameter.mxo",
 				"type" : "iLaX"
 			}
 , 			{

@@ -67,7 +67,7 @@
 					"outlettype" : [ "signal", "signal", "" ],
 					"patching_rect" : [ 18.0, 151.0, 158.0, 20.0 ],
 					"text" : "panning~.model #1",
-					"varname" : "j.model"
+					"varname" : "ossia.model #1"
 				}
 
 			}

@@ -63,7 +63,7 @@
 					"outlettype" : [ "", "", "" ],
 					"patching_rect" : [ 257.0, 93.0, 137.0, 22.0 ],
 					"style" : "",
-					"text" : "j.receive model:address"
+					"text" : "ossia.remote model:address"
 				}
 
 			}
@@ -141,7 +141,7 @@
 					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 470.500031, 228.0, 107.0, 49.0 ],
 					"style" : "",
-					"text" : "j.remote_array filter.[5]/frequency @format single"
+					"text" : "ossia.remote_array filter.[5]/frequency @format single"
 				}
 
 			}
@@ -157,7 +157,7 @@
 					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 598.000061, 228.0, 97.999939, 49.0 ],
 					"style" : "",
-					"text" : "j.remote_array filter.[5]/gain @format single"
+					"text" : "ossia.remote_array filter.[5]/gain @format single"
 				}
 
 			}
@@ -197,7 +197,7 @@
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 71.0, 528.0, 41.0, 22.0 ],
 					"style" : "",
-					"text" : "j.view"
+					"text" : "ossia.view #1"
 				}
 
 			}
@@ -333,7 +333,7 @@
 					"outlettype" : [ "", "", "" ],
 					"patching_rect" : [ 699.500061, 96.0, 91.0, 22.0 ],
 					"style" : "",
-					"text" : "j.receive bands"
+					"text" : "ossia.remote bands"
 				}
 
 			}
@@ -364,7 +364,7 @@
 					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 278.000061, 228.0, 100.0, 49.0 ],
 					"style" : "",
-					"text" : "j.remote_array filter.[5]/type @format single"
+					"text" : "ossia.remote_array filter.[5]/type @format single"
 				}
 
 			}
@@ -380,7 +380,7 @@
 					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 699.500061, 228.0, 151.0, 49.0 ],
 					"style" : "",
-					"text" : "j.remote_array filter.[5]/octave_bandwidth @format single"
+					"text" : "ossia.remote_array filter.[5]/octave_bandwidth @format single"
 				}
 
 			}
@@ -761,23 +761,23 @@
 				"type" : "iLaX"
 			}
 , 			{
-				"name" : "j.remote_array.mxo",
+				"name" : "ossia.remote_array.mxo",
 				"type" : "iLaX"
 			}
 , 			{
-				"name" : "j.receive.mxo",
+				"name" : "ossia.remote.mxo",
 				"type" : "iLaX"
 			}
 , 			{
-				"name" : "j.view.mxo",
+				"name" : "ossia.view #1.mxo",
 				"type" : "iLaX"
 			}
 , 			{
-				"name" : "j.remote.mxo",
+				"name" : "ossia.remote.mxo",
 				"type" : "iLaX"
 			}
 , 			{
-				"name" : "j.send.mxo",
+				"name" : "ossia.remote.mxo",
 				"type" : "iLaX"
 			}
  ],

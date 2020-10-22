@@ -64,7 +64,7 @@
 					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 648.0, 268.0, 113.0, 22.0 ],
 					"style" : "",
-					"text" : "j.remote audio/gain"
+					"text" : "ossia.remote audio/gain"
 				}
 
 			}
@@ -153,7 +153,7 @@
 									"outlettype" : [ "", "", "" ],
 									"patching_rect" : [ 256.0, 100.0, 173.0, 35.0 ],
 									"style" : "",
-									"text" : "j.receive sources/number_of_channels",
+									"text" : "ossia.remote sources/number_of_channels",
 									"varname" : "destination/voices[1]"
 								}
 
@@ -171,7 +171,7 @@
 									"outlettype" : [ "", "", "" ],
 									"patching_rect" : [ 50.0, 100.0, 175.0, 35.0 ],
 									"style" : "",
-									"text" : "j.receive speakers/number_of_channels",
+									"text" : "ossia.remote speakers/number_of_channels",
 									"varname" : "destination/voices"
 								}
 
@@ -327,7 +327,7 @@
 									"outlettype" : [ "", "" ],
 									"patching_rect" : [ 101.0, 161.0, 49.0, 22.0 ],
 									"style" : "",
-									"text" : "j.model"
+									"text" : "ossia.model #1"
 								}
 
 							}
@@ -343,7 +343,7 @@
 									"outlettype" : [ "", "" ],
 									"patching_rect" : [ 178.0, 107.5, 137.0, 129.0 ],
 									"style" : "",
-									"text" : "j.parameter dimensions @repetitions/filter 1 @type integer @range 2 3 @clipmode both @priority 2 @description \"Dimension of the loudspeaker setup (2D or 3D).\"",
+									"text" : "ossia.parameter dimensions @repetitions 0 @type int @range 2 3 @clip both @priority 2 @description \"Dimension of the loudspeaker setup (2D or 3D).\"",
 									"varname" : "destination/dimensions[1]"
 								}
 
@@ -421,7 +421,7 @@
 									"outlettype" : [ "", "" ],
 									"patching_rect" : [ 937.0, 328.0, 116.0, 143.0 ],
 									"style" : "",
-									"text" : "j.model speakers @priority 2 @amenities none @description \"Describing all parameters relating to the speaker setup that the scene is rendered to.\""
+									"text" : "ossia.model #1 speakers @priority 2 @amenities none @description \"Describing all parameters relating to the speaker setup that the scene is rendered to.\""
 								}
 
 							}
@@ -447,7 +447,7 @@
 									"outlettype" : [ "", "", "" ],
 									"patching_rect" : [ 639.0, 143.0, 171.0, 22.0 ],
 									"style" : "",
-									"text" : "j.receive number_of_channels"
+									"text" : "ossia.remote number_of_channels"
 								}
 
 							}
@@ -782,7 +782,7 @@
 									"outlettype" : [ "", "", "" ],
 									"patching_rect" : [ 639.0, 219.0, 146.0, 102.0 ],
 									"style" : "",
-									"text" : "j.parameter_array channel.[32]/position @type array @default 0. 1. 0. @dataspace position @unit xyz @description \"Position of the nth channel.\""
+									"text" : "ossia.parameter_array channel.[32]/position @type array @default 0. 1. 0. @unit position.xyz @description \"Position of the nth channel.\""
 								}
 
 							}
@@ -813,7 +813,7 @@
 									"outlettype" : [ "", "" ],
 									"patching_rect" : [ 92.0, 167.0, 189.0, 89.0 ],
 									"style" : "",
-									"text" : "j.parameter number_of_channels @type integer @range 1 32 @default 1 @clipmode both @description \"The number of speakers to diffuse to.\" @priority 1",
+									"text" : "ossia.parameter number_of_channels @type int @range 1 32 @default 1 @clip both @description \"The number of speakers to diffuse to.\" @priority 1",
 									"varname" : "voices[1]"
 								}
 
@@ -983,7 +983,7 @@
 									"outlettype" : [ "", "", "" ],
 									"patching_rect" : [ 747.0, 309.0, 107.0, 156.0 ],
 									"style" : "",
-									"text" : "j.parameter_array channel.[32]/gain @type decimal @dataspace gain @range -96. 12. @clipmode low @unit dB @default 0. @description \"Input gain for the nth channel.\""
+									"text" : "ossia.parameter_array channel.[32]/gain @type decimal @dataspace gain @range -96. 12. @clip low @unit dB @default 0. @description \"Input gain for the nth channel.\""
 								}
 
 							}
@@ -1000,7 +1000,7 @@
 									"outlettype" : [ "", "", "" ],
 									"patching_rect" : [ 913.0, 309.0, 108.0, 102.0 ],
 									"style" : "",
-									"text" : "j.parameter_array channel.[32]/active @type boolean @default 1 @description \"Mute or unmute the nth channel.\""
+									"text" : "ossia.parameter_array channel.[32]/active @type bool @default 1 @description \"Mute or unmute the nth channel.\""
 								}
 
 							}
@@ -1014,7 +1014,7 @@
 									"outlettype" : [ "", "" ],
 									"patching_rect" : [ 67.0, 52.0, 149.0, 89.0 ],
 									"style" : "",
-									"text" : "j.model @priority 3 @amenities none @description \"Describing all source-related parameters for a scene to be rendered using DBAP.\""
+									"text" : "ossia.model #1 @priority 3 @amenities none @description \"Describing all source-related parameters for a scene to be rendered using DBAP.\""
 								}
 
 							}
@@ -1040,7 +1040,7 @@
 									"outlettype" : [ "", "", "" ],
 									"patching_rect" : [ 383.0, 201.0, 171.0, 22.0 ],
 									"style" : "",
-									"text" : "j.receive number_of_channels"
+									"text" : "ossia.remote number_of_channels"
 								}
 
 							}
@@ -1057,7 +1057,7 @@
 									"outlettype" : [ "", "", "" ],
 									"patching_rect" : [ 574.0, 309.0, 125.0, 116.0 ],
 									"style" : "",
-									"text" : "j.parameter_array channel.[32]/blur @type decimal @range 0. 1. @default 0. @description \"Set spatial blur of the nth channel.\""
+									"text" : "ossia.parameter_array channel.[32]/blur @type decimal @range 0. 1. @default 0. @description \"Set spatial blur of the nth channel.\""
 								}
 
 							}
@@ -1074,7 +1074,7 @@
 									"outlettype" : [ "", "", "" ],
 									"patching_rect" : [ 383.0, 309.0, 125.0, 156.0 ],
 									"style" : "",
-									"text" : "j.parameter_array channel.[32]/position @type array @default 0. 1. 0. @range -20. 20. @clipmode none @dataspace position @unit xyz @description \"Position of the nth channel.\""
+									"text" : "ossia.parameter_array channel.[32]/position @type array @default 0. 1. 0. @range -20. 20. @clip free @unit position.xyz @description \"Position of the nth channel.\""
 								}
 
 							}
@@ -1091,7 +1091,7 @@
 									"outlettype" : [ "", "" ],
 									"patching_rect" : [ 67.0, 309.0, 125.0, 129.0 ],
 									"style" : "",
-									"text" : "j.parameter number_of_channels @type integer @range 1 32 @default 1 @clipmode both @description \"The number of sources to process.\" @priority 1",
+									"text" : "ossia.parameter number_of_channels @type int @range 1 32 @default 1 @clip both @description \"The number of sources to process.\" @priority 1",
 									"varname" : "voices"
 								}
 
@@ -1171,7 +1171,7 @@
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 974.0, 268.0, 212.0, 49.0 ],
 					"style" : "",
-					"text" : "j.model @description \"Vector base amplitude panning (VBAP) of multiple sources for multiple speakers.\""
+					"text" : "ossia.model #1 @description \"Vector base amplitude panning (VBAP) of multiple sources for multiple speakers.\""
 				}
 
 			}
@@ -1289,7 +1289,7 @@
 					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 504.0, 268.0, 117.0, 22.0 ],
 					"style" : "",
-					"text" : "j.remote audio/mute"
+					"text" : "ossia.remote audio/mute"
 				}
 
 			}
@@ -1361,7 +1361,7 @@
 									"outlettype" : [ "", "", "" ],
 									"patching_rect" : [ 1030.0, 423.0, 171.0, 22.0 ],
 									"style" : "",
-									"text" : "j.receive number_of_channels",
+									"text" : "ossia.remote number_of_channels",
 									"varname" : "voices[1]"
 								}
 
@@ -1507,7 +1507,7 @@
 									"outlettype" : [ "", "", "", "" ],
 									"patching_rect" : [ 637.0, 517.0, 155.0, 49.0 ],
 									"style" : "",
-									"text" : "j.remote_array sources/channel.[32]/gain @unit linear"
+									"text" : "ossia.remote_array sources/channel.[32]/gain @unit linear"
 								}
 
 							}
@@ -1521,7 +1521,7 @@
 									"outlettype" : [ "", "", "", "" ],
 									"patching_rect" : [ 805.0, 517.0, 158.0, 35.0 ],
 									"style" : "",
-									"text" : "j.remote_array sources/channel.[32]/active"
+									"text" : "ossia.remote_array sources/channel.[32]/active"
 								}
 
 							}
@@ -1535,7 +1535,7 @@
 									"outlettype" : [ "", "", "", "" ],
 									"patching_rect" : [ 476.0, 517.0, 144.0, 35.0 ],
 									"style" : "",
-									"text" : "j.remote_array sources/channel.[32]/blur"
+									"text" : "ossia.remote_array sources/channel.[32]/blur"
 								}
 
 							}
@@ -1549,7 +1549,7 @@
 									"outlettype" : [ "", "", "", "" ],
 									"patching_rect" : [ 289.0, 517.0, 171.0, 49.0 ],
 									"style" : "",
-									"text" : "j.remote_array sources/channel.[32]/position @unit aed"
+									"text" : "ossia.remote_array sources/channel.[32]/position @unit aed"
 								}
 
 							}
@@ -1576,7 +1576,7 @@
 									"outlettype" : [ "", "", "", "" ],
 									"patching_rect" : [ 637.0, 253.0, 155.0, 49.0 ],
 									"style" : "",
-									"text" : "j.remote_array sources/channel.[32]/gain @unit linear"
+									"text" : "ossia.remote_array sources/channel.[32]/gain @unit linear"
 								}
 
 							}
@@ -1590,7 +1590,7 @@
 									"outlettype" : [ "", "", "", "" ],
 									"patching_rect" : [ 805.0, 253.0, 158.0, 35.0 ],
 									"style" : "",
-									"text" : "j.remote_array sources/channel.[32]/active"
+									"text" : "ossia.remote_array sources/channel.[32]/active"
 								}
 
 							}
@@ -1604,7 +1604,7 @@
 									"outlettype" : [ "", "", "", "" ],
 									"patching_rect" : [ 476.0, 253.0, 144.0, 35.0 ],
 									"style" : "",
-									"text" : "j.remote_array sources/channel.[32]/blur"
+									"text" : "ossia.remote_array sources/channel.[32]/blur"
 								}
 
 							}
@@ -1618,7 +1618,7 @@
 									"outlettype" : [ "", "", "", "" ],
 									"patching_rect" : [ 289.0, 253.0, 166.75, 35.0 ],
 									"style" : "",
-									"text" : "j.remote_array sources/channel.[32]/position"
+									"text" : "ossia.remote_array sources/channel.[32]/position"
 								}
 
 							}
@@ -1631,7 +1631,7 @@
 									"outlettype" : [ "", "", "" ],
 									"patching_rect" : [ 289.0, 143.0, 171.0, 22.0 ],
 									"style" : "",
-									"text" : "j.receive number_of_channels",
+									"text" : "ossia.remote number_of_channels",
 									"varname" : "voices"
 								}
 
@@ -2266,7 +2266,7 @@
 									"outlettype" : [ "", "", "" ],
 									"patching_rect" : [ 78.666664, 41.0, 175.0, 35.0 ],
 									"style" : "",
-									"text" : "j.receive speakers/number_of_channels",
+									"text" : "ossia.remote speakers/number_of_channels",
 									"varname" : "destination/voices[1]"
 								}
 
@@ -2359,7 +2359,7 @@
 									"outlettype" : [ "", "", "" ],
 									"patching_rect" : [ 345.75, 34.0, 131.0, 35.0 ],
 									"style" : "",
-									"text" : "j.receive renderer/dimensions"
+									"text" : "ossia.remote renderer/dimensions"
 								}
 
 							}
@@ -2402,7 +2402,7 @@
 									"outlettype" : [ "", "", "", "" ],
 									"patching_rect" : [ 78.666664, 217.0, 174.0, 49.0 ],
 									"style" : "",
-									"text" : "j.remote_array speakers/channel.[32]/position @unit aed @format array"
+									"text" : "ossia.remote_array speakers/channel.[32]/position @unit aed @format array"
 								}
 
 							}
@@ -3003,11 +3003,11 @@
 			}
  ],
 		"dependency_cache" : [ 			{
-				"name" : "j.remote_array.mxo",
+				"name" : "ossia.remote_array.mxo",
 				"type" : "iLaX"
 			}
 , 			{
-				"name" : "j.receive.mxo",
+				"name" : "ossia.remote.mxo",
 				"type" : "iLaX"
 			}
 , 			{
@@ -3015,7 +3015,7 @@
 				"type" : "iLaX"
 			}
 , 			{
-				"name" : "j.remote.mxo",
+				"name" : "ossia.remote.mxo",
 				"type" : "iLaX"
 			}
 , 			{
@@ -3027,15 +3027,15 @@
 				"type" : "iLaX"
 			}
 , 			{
-				"name" : "j.model.mxo",
+				"name" : "ossia.model #1.mxo",
 				"type" : "iLaX"
 			}
 , 			{
-				"name" : "j.parameter.mxo",
+				"name" : "ossia.parameter.mxo",
 				"type" : "iLaX"
 			}
 , 			{
-				"name" : "j.parameter_array.mxo",
+				"name" : "ossia.parameter_array.mxo",
 				"type" : "iLaX"
 			}
 , 			{

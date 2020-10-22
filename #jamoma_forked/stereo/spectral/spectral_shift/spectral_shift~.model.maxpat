@@ -280,7 +280,7 @@
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
 									"patching_rect" : [ 327.0, 60.0, 151.0, 127.0 ],
-									"text" : "j.parameter feedback/gain @type decimal @ramp/drive max @repetitions/filter 1 @range -60 6 @clipmode both @description \"Feedback gain leven (dB).\" @dataspace gain @unit dB",
+									"text" : "ossia.parameter feedback/gain @type decimal @ramp/drive max @repetitions 0 @range -60 6 @clip both @description \"Feedback gain leven (dB).\" @unit gain.dB",
 									"varname" : "feedback"
 								}
 
@@ -296,7 +296,7 @@
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
 									"patching_rect" : [ 503.0, 60.0, 156.0, 127.0 ],
-									"text" : "j.parameter feedback/time @type decimal @ramp/drive max @repetitions/filter 1 @range 0 200 @clipmode both @description \"Feedback delay time in milliseconds.\" @dataspace time @unit ms",
+									"text" : "ossia.parameter feedback/time @type decimal @ramp/drive max @repetitions 0 @range 0 200 @clip both @description \"Feedback delay time in milliseconds.\" @unit time.ms",
 									"varname" : "right"
 								}
 
@@ -537,7 +537,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 779.0, 339.0, 297.0, 20.0 ],
-					"text" : "j.model @description \"Spectral shifting with feedback\""
+					"text" : "ossia.model #1 @description \"Spectral shifting with feedback\""
 				}
 
 			}
@@ -702,7 +702,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 17.0, 27.0, 188.0, 87.0 ],
-					"text" : "j.parameter frequency/shift @type decimal @range -500 500 @dataspace time @unit Hz @description \"Slide all frequency bins up or down (Hz).\""
+					"text" : "ossia.parameter frequency/shift @type decimal @range -500 500 @unit time.Hz @description \"Slide all frequency bins up or down (Hz).\""
 				}
 
 			}
@@ -717,7 +717,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 204.0, 27.0, 156.0, 74.0 ],
-					"text" : "j.parameter frequency/scale @type decimal @range -48. 48. @description \"Pitch shift in semitones.\""
+					"text" : "ossia.parameter frequency/scale @type decimal @range -48. 48. @description \"Pitch shift in semitones.\""
 				}
 
 			}
@@ -972,7 +972,7 @@
 				"type" : "iLaX"
 			}
 , 			{
-				"name" : "j.parameter.mxo",
+				"name" : "ossia.parameter.mxo",
 				"type" : "iLaX"
 			}
 , 			{
@@ -980,7 +980,7 @@
 				"type" : "iLaX"
 			}
 , 			{
-				"name" : "j.model.mxo",
+				"name" : "ossia.model #1.mxo",
 				"type" : "iLaX"
 			}
 , 			{

@@ -102,7 +102,7 @@
 									"outlettype" : [ "", "" ],
 									"patching_rect" : [ 14.0, 1.0, 427.0, 22.0 ],
 									"style" : "",
-									"text" : "j.parameter speed @type decimal @description \"playback speed.\" @default 1."
+									"text" : "ossia.parameter speed @type decimal @description \"playback speed.\" @default 1."
 								}
 
 							}
@@ -128,7 +128,7 @@
 									"outlettype" : [ "", "" ],
 									"patching_rect" : [ 110.0, 247.0, 562.0, 22.0 ],
 									"style" : "",
-									"text" : "j.parameter mode @type string @description \"Sets the timestretching mode to be used.\" @default basic"
+									"text" : "ossia.parameter mode @type string @description \"Sets the timestretching mode to be used.\" @default basic"
 								}
 
 							}
@@ -155,7 +155,7 @@
 									"outlettype" : [ "", "" ],
 									"patching_rect" : [ 80.5, 166.0, 473.0, 35.0 ],
 									"style" : "",
-									"text" : "j.parameter quality @type string @description \"Choose the quality for timestretching output. \" @default basic"
+									"text" : "ossia.parameter quality @type string @description \"Choose the quality for timestretching output. \" @default basic"
 								}
 
 							}
@@ -181,7 +181,7 @@
 									"outlettype" : [ "", "" ],
 									"patching_rect" : [ 50.0, 100.0, 488.0, 22.0 ],
 									"style" : "",
-									"text" : "j.parameter timestretch @type boolean @description \"enables timestretching.\" @default 0"
+									"text" : "ossia.parameter timestretch @type bool @description \"enables timestretching.\" @default 0"
 								}
 
 							}
@@ -354,7 +354,7 @@
 									"outlettype" : [ "", "" ],
 									"patching_rect" : [ 573.0, 100.0, 707.0, 35.0 ],
 									"style" : "",
-									"text" : "j.parameter formant @type decimal @description \"sets the amount of formant scaling when pitchshifting is performed.\" @default 1. @range 0.5 2. @clipmode both"
+									"text" : "ossia.parameter formant @type decimal @description \"sets the amount of formant scaling when pitchshifting is performed.\" @default 1. @range 0.5 2. @clip both"
 								}
 
 							}
@@ -381,7 +381,7 @@
 									"outlettype" : [ "", "" ],
 									"patching_rect" : [ 50.0, 100.0, 511.0, 35.0 ],
 									"style" : "",
-									"text" : "j.parameter formantcorrection @type boolean @description \"enables formant correction when pitch correction is performed.\" @default 0"
+									"text" : "ossia.parameter formantcorrection @type bool @description \"enables formant correction when pitch correction is performed.\" @default 0"
 								}
 
 							}
@@ -518,7 +518,7 @@
 									"outlettype" : [ "", "" ],
 									"patching_rect" : [ 136.0, 296.0, 730.0, 35.0 ],
 									"style" : "",
-									"text" : "j.parameter basictuning @type integer @description \"Sets a tuning standard based on a frequency for A for pitch correction operations\" @default 440 @range 400 500 @clipmode both"
+									"text" : "ossia.parameter basictuning @type int @description \"Sets a tuning standard based on a frequency for A for pitch correction operations\" @default 440 @range 400 500 @clip both"
 								}
 
 							}
@@ -545,7 +545,7 @@
 									"outlettype" : [ "", "" ],
 									"patching_rect" : [ 42.0, 27.0, 578.0, 35.0 ],
 									"style" : "",
-									"text" : "j.parameter pitchcorrection @type boolean @description \"enable/disables the formant-corrected chromatic intonation correction.\" @default 0"
+									"text" : "ossia.parameter pitchcorrection @type bool @description \"enable/disables the formant-corrected chromatic intonation correction.\" @default 0"
 								}
 
 							}
@@ -572,7 +572,7 @@
 									"outlettype" : [ "", "" ],
 									"patching_rect" : [ 130.0, 186.0, 769.0, 35.0 ],
 									"style" : "",
-									"text" : "j.parameter pitchshift @type decimal @description \"Specify pitchshift as a factor of the original pitch (i.e. 2.0 = doubling of pitch, .5 = halving of the original pitch, etc.).\" @default 1. @range 0.01 10. @clipmode both @dataspace time @unit speed"
+									"text" : "ossia.parameter pitchshift @type decimal @description \"Specify pitchshift as a factor of the original pitch (i.e. 2.0 = doubling of pitch, .5 = halving of the original pitch, etc.).\" @default 1. @range 0.01 10. @clip both @unit time.speed"
 								}
 
 							}
@@ -599,7 +599,7 @@
 									"outlettype" : [ "", "" ],
 									"patching_rect" : [ 83.0, 105.0, 819.0, 35.0 ],
 									"style" : "",
-									"text" : "j.parameter slurtime @type decimal @description \"Set the time it takes for the correction to reach the full correction amount.\" @default 2. @range 0. 20. @clipmode both"
+									"text" : "ossia.parameter slurtime @type decimal @description \"Set the time it takes for the correction to reach the full correction amount.\" @default 2. @range 0. 20. @clip both"
 								}
 
 							}
@@ -772,7 +772,7 @@
 									"outlettype" : [ "", "" ],
 									"patching_rect" : [ 111.0, 172.0, 331.0, 35.0 ],
 									"style" : "",
-									"text" : "j.parameter originallength @type array @description \"The original length of the the audio file in beats.\" @default 1 0 0"
+									"text" : "ossia.parameter originallength @type array @description \"The original length of the the audio file in beats.\" @default 1 0 0"
 								}
 
 							}
@@ -841,7 +841,7 @@
 									"outlettype" : [ "", "" ],
 									"patching_rect" : [ 50.0, 15.0, 570.0, 49.0 ],
 									"style" : "",
-									"text" : "j.parameter followglobaltempo @type boolean @description \"When followgobaltempo is enabled, sfplay~ will calculate the current tempo out of the ratio between originaltempo and global tempo and adapt to global tempo changes.\" @default 0"
+									"text" : "ossia.parameter followglobaltempo @type bool @description \"When followgobaltempo is enabled, sfplay~ will calculate the current tempo out of the ratio between originaltempo and global tempo and adapt to global tempo changes.\" @default 0"
 								}
 
 							}
@@ -867,7 +867,7 @@
 									"outlettype" : [ "", "" ],
 									"patching_rect" : [ 90.0, 103.0, 601.0, 22.0 ],
 									"style" : "",
-									"text" : "j.parameter originaltempo @type decimal @description \"The original tempo of the the audio file.\" @default 120."
+									"text" : "ossia.parameter originaltempo @type decimal @description \"The original tempo of the the audio file.\" @default 120."
 								}
 
 							}
@@ -1048,7 +1048,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 161.0, 181.5, 87.0, 22.0 ],
 					"style" : "",
-					"text" : "j.send file/play"
+					"text" : "ossia.remote file/play"
 				}
 
 			}
@@ -1120,7 +1120,7 @@
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 580.0, 93.0, 132.0, 76.0 ],
 					"style" : "",
-					"text" : "j.parameter file/play @type boolean @repetitions/filter 0 @description \"Play sound file.\""
+					"text" : "ossia.parameter file/play @type bool @repetitions 1 @description \"Play sound file.\""
 				}
 
 			}
@@ -1137,7 +1137,7 @@
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 24.0, 34.0, 250.0, 35.0 ],
 					"style" : "",
-					"text" : "j.parameter file/path @type string @priority 2 @description \"the path to a sound file\""
+					"text" : "ossia.parameter file/path @type string @priority 2 @description \"the path to a sound file\""
 				}
 
 			}
@@ -1154,8 +1154,8 @@
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 726.0, 93.0, 144.0, 129.0 ],
 					"style" : "",
-					"text" : "j.message file/direct @type generic @repetitions/filter 0 @description container for various messages sent directly to the sfplay~ object. Refer to the MSP documentation for further details.",
-					"varname" : "j.parameter.mxb[9]"
+					"text" : "ossia.parameter file/direct @mode set @type list @repetitions 1 @description container for various messages sent directly to the sfplay~ object. Refer to the MSP documentation for further details.",
+					"varname" : "ossia.parameter.mxb[9]"
 				}
 
 			}
@@ -1172,7 +1172,7 @@
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 897.0, 93.0, 121.0, 62.0 ],
 					"style" : "",
-					"text" : "j.parameter file/loop @type boolean @description \"Loop soundfile.\"",
+					"text" : "ossia.parameter file/loop @type bool @description \"Loop soundfile.\"",
 					"varname" : "loop"
 				}
 
@@ -1282,7 +1282,7 @@
 									"outlettype" : [ "", "" ],
 									"patching_rect" : [ 97.0, 363.0, 157.0, 87.0 ],
 									"style" : "",
-									"text" : "j.return file/time/relative @type decimal @range 0. 1. @description \"Current relative position in sound file, expressed in the range (0, 1).\""
+									"text" : "ossia.parameter file/time/relative @mode get @type decimal @range 0. 1. @description \"Current relative position in sound file, expressed in the range (0, 1).\""
 								}
 
 							}
@@ -1299,7 +1299,7 @@
 									"outlettype" : [ "", "" ],
 									"patching_rect" : [ 271.0, 363.0, 156.0, 100.0 ],
 									"style" : "",
-									"text" : "j.return file/time/absolute @type decimal @dataspace time @unit s @description \"Current absolute position in sound file, expressed in seconds.\""
+									"text" : "ossia.parameter file/time/absolute @mode get @type decimal @unit time.s @description \"Current absolute position in sound file, expressed in seconds.\""
 								}
 
 							}
@@ -1744,7 +1744,7 @@
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 1102.0, 330.0, 134.0, 49.0 ],
 					"style" : "",
-					"text" : "j.model @description \"Stereo sound file player.\" @tags audio"
+					"text" : "ossia.model #1 @description \"Stereo sound file player.\" @tags audio"
 				}
 
 			}
@@ -2104,7 +2104,7 @@
 				"type" : "iLaX"
 			}
 , 			{
-				"name" : "j.model.mxo",
+				"name" : "ossia.model #1.mxo",
 				"type" : "iLaX"
 			}
 , 			{
@@ -2112,7 +2112,7 @@
 				"type" : "iLaX"
 			}
 , 			{
-				"name" : "j.parameter.mxo",
+				"name" : "ossia.parameter.mxo",
 				"type" : "iLaX"
 			}
 , 			{
@@ -2120,7 +2120,7 @@
 				"type" : "iLaX"
 			}
 , 			{
-				"name" : "j.send.mxo",
+				"name" : "ossia.remote.mxo",
 				"type" : "iLaX"
 			}
  ],

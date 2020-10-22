@@ -329,7 +329,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 567.785706, 701.5, 134.0, 33.0 ],
-					"text" : "j.model @description \"Stereo echo module.\""
+					"text" : "ossia.model #1 @description \"Stereo echo module.\""
 				}
 
 			}
@@ -344,7 +344,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 415.0, 44.5, 121.0, 154.0 ],
-					"text" : "j.message clear @type none @description \"Clear the feedback, filter, and limiter histories to return to a clean slate.  Useful in the event that some rogue samples wound up stuck in the feedback loops.\""
+					"text" : "ossia.parameter clear @mode set @type impulse @description \"Clear the feedback, filter, and limiter histories to return to a clean slate.  Useful in the event that some rogue samples wound up stuck in the feedback loops.\""
 				}
 
 			}
@@ -359,7 +359,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 768.285706, 399.0, 133.0, 208.0 ],
-					"text" : "j.parameter feedback/mode @type string @description \"Feedback mode. 'pingpong': crossed-over feedback between the two delays. 'stereo': two mono delay lines each with independent feedback paths.'pingleft' and 'pingright' feed the left or the right delay outputs back.\"",
+					"text" : "ossia.parameter feedback/mode @type string @description \"Feedback mode. 'pingpong': crossed-over feedback between the two delays. 'stereo': two mono delay lines each with independent feedback paths.'pingleft' and 'pingright' feed the left or the right delay outputs back.\"",
 					"varname" : "feedback[2]"
 				}
 
@@ -375,7 +375,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 567.785706, 399.0, 151.0, 154.0 ],
-					"text" : "j.parameter feedback/gain @type decimal @ramp/drive max @repetitions/filter 1 @range -70. 0. @clipmode both @description Feedback. @dataspace gain @unit db @description \"Feedback gain in dB.\"",
+					"text" : "ossia.parameter feedback/gain @type decimal @ramp/drive max @repetitions 0 @range -70. 0. @clip both @description Feedback. @unit gain.db @description \"Feedback gain in dB.\"",
 					"varname" : "feedback"
 				}
 
@@ -391,7 +391,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 730.285706, 143.5, 151.0, 154.0 ],
-					"text" : "j.parameter delay/right @type integer @ramp/drive max @repetitions/filter 1 @range 0 10000 @clipmode both @dataspace time @unit ms @description \"Delay time in milliseconds for right channel.\"",
+					"text" : "ossia.parameter delay/right @type int @ramp/drive max @repetitions 0 @range 0 10000 @clip both @unit time.ms @description \"Delay time in milliseconds for right channel.\"",
 					"varname" : "right"
 				}
 
@@ -407,7 +407,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 567.785706, 143.5, 146.0, 154.0 ],
-					"text" : "j.parameter delay/left @type integer @ramp/drive max @repetitions/filter 1 @range 0 10000 @clipmode both @dataspace time @unit ms @description \"Delay time in milliseconds for left channel.\"",
+					"text" : "ossia.parameter delay/left @type int @ramp/drive max @repetitions 0 @range 0 10000 @clip both @unit time.ms @description \"Delay time in milliseconds for left channel.\"",
 					"varname" : "left"
 				}
 
@@ -1136,7 +1136,7 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "j.parameter.mxo",
+				"name" : "ossia.parameter.mxo",
 				"type" : "iLaX"
 			}
 , 			{
@@ -1144,7 +1144,7 @@
 				"type" : "iLaX"
 			}
 , 			{
-				"name" : "j.model.mxo",
+				"name" : "ossia.model #1.mxo",
 				"type" : "iLaX"
 			}
 , 			{

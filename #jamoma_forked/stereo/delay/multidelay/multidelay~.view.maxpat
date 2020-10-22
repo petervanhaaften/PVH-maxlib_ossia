@@ -128,7 +128,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "signal", "", "" ],
 					"patching_rect" : [ 644.0, 17.0, 127.0, 20.0 ],
-					"text" : "j.receive~ audio/out.R"
+					"text" : "ossia.remote~ audio/out.R"
 				}
 
 			}
@@ -142,7 +142,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "signal", "", "" ],
 					"patching_rect" : [ 497.0, 17.0, 125.0, 20.0 ],
-					"text" : "j.receive~ audio/out.L"
+					"text" : "ossia.remote~ audio/out.L"
 				}
 
 			}
@@ -184,7 +184,7 @@
 					"numoutlets" : 4,
 					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 476.0, 237.0, 139.0, 20.0 ],
-					"text" : "j.remote feedback/mode",
+					"text" : "ossia.remote feedback/mode",
 					"varname" : "feedback[2]"
 				}
 
@@ -199,7 +199,7 @@
 					"numoutlets" : 4,
 					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 332.5, 176.0, 132.0, 20.0 ],
-					"text" : "j.remote feedback/gain",
+					"text" : "ossia.remote feedback/gain",
 					"varname" : "feedback[1]"
 				}
 
@@ -702,7 +702,7 @@
 					"numoutlets" : 4,
 					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 258.0, 356.0, 113.0, 20.0 ],
-					"text" : "j.remote delay/right",
+					"text" : "ossia.remote delay/right",
 					"varname" : "right[1]"
 				}
 
@@ -827,7 +827,7 @@
 					"numoutlets" : 4,
 					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 126.0, 356.0, 105.0, 20.0 ],
-					"text" : "j.remote delay/left",
+					"text" : "ossia.remote delay/left",
 					"varname" : "left[1]"
 				}
 
@@ -842,8 +842,8 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 34.0, 286.0, 41.0, 20.0 ],
-					"text" : "j.view",
-					"varname" : "j.model"
+					"text" : "ossia.view #1",
+					"varname" : "ossia.model #1"
 				}
 
 			}
@@ -869,7 +869,7 @@
 					"numoutlets" : 4,
 					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 95.0, 176.0, 112.0, 20.0 ],
-					"text" : "j.remote delay/max",
+					"text" : "ossia.remote delay/max",
 					"varname" : "maxdelay"
 				}
 
@@ -1130,15 +1130,15 @@
 				"type" : "iLaX"
 			}
 , 			{
-				"name" : "j.remote.mxo",
+				"name" : "ossia.remote.mxo",
 				"type" : "iLaX"
 			}
 , 			{
-				"name" : "j.view.mxo",
+				"name" : "ossia.view #1.mxo",
 				"type" : "iLaX"
 			}
 , 			{
-				"name" : "j.receive~.mxo",
+				"name" : "ossia.remote~.mxo",
 				"type" : "iLaX"
 			}
  ]

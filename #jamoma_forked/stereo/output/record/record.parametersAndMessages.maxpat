@@ -476,7 +476,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 630.5, 81.5, 123.0, 74.0 ],
-					"text" : "j.parameter file/type @type string @description \"Recording: Set file type for sound files.\"",
+					"text" : "ossia.parameter file/type @type string @description \"Recording: Set file type for sound files.\"",
 					"varname" : "record/filetype"
 				}
 
@@ -534,7 +534,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 372.5, 81.5, 138.0, 87.0 ],
-					"text" : "j.message file/path @type string @description \"Starts recording to a file with specified filename and path.\""
+					"text" : "ossia.parameter file/path @mode set @type string @description \"Starts recording to a file with specified filename and path.\""
 				}
 
 			}
@@ -549,7 +549,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 50.0, 81.5, 125.0, 100.0 ],
-					"text" : "j.message active @type boolean @description \"1: Select a file to record to, and start recording. 0: Stop recording.\"",
+					"text" : "ossia.parameter active @mode set @type bool @description \"1: Select a file to record to, and start recording. 0: Stop recording.\"",
 					"varname" : "record"
 				}
 
@@ -618,7 +618,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 200.5, 529.5, 131.5, 87.0 ],
-					"text" : "j.parameter samptype @type string @description \"Recording: Set sample type for sound files.\"",
+					"text" : "ossia.parameter samptype @type string @description \"Recording: Set sample type for sound files.\"",
 					"varname" : "record/samptype"
 				}
 
@@ -875,7 +875,7 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "j.parameter.mxo",
+				"name" : "ossia.parameter.mxo",
 				"type" : "iLaX"
 			}
 , 			{

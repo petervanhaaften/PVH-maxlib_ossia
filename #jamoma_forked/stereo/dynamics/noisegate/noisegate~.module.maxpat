@@ -67,7 +67,7 @@
 					"outlettype" : [ "signal", "signal", "" ],
 					"patching_rect" : [ 30.0, 177.0, 158.0, 20.0 ],
 					"text" : "noisegate~.model #1",
-					"varname" : "j.model"
+					"varname" : "ossia.model #1"
 				}
 
 			}

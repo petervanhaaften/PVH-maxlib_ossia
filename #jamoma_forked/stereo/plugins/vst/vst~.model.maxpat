@@ -62,7 +62,7 @@
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 341.333344, 326.5, 150.0, 116.0 ],
 					"style" : "",
-					"text" : "j.return vst/parameters @type generic @description \"List of available parameters for the currently loaded plugin. Views can use this list to decide what parameters to bind to.\""
+					"text" : "ossia.parameter vst/parameters @mode get @type list @description \"List of available parameters for the currently loaded plugin. Views can use this list to decide what parameters to bind to.\""
 				}
 
 			}
@@ -79,7 +79,7 @@
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 263.0, 96.0, 190.0, 49.0 ],
 					"style" : "",
-					"text" : "j.return vst/available_plugins @type generic @description \"List of available plugins.\""
+					"text" : "j.return vst/available_plugins @type list @description \"List of available plugins.\""
 				}
 
 			}
@@ -386,7 +386,7 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 64.0, 528.5, 43.0, 20.0 ],
 									"style" : "",
-									"text" : "j.send"
+									"text" : "ossia.remote"
 								}
 
 							}
@@ -1054,7 +1054,7 @@
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 498.0, 326.5, 146.0, 89.0 ],
 					"style" : "",
-					"text" : "j.return vst/programs @type generic @description \"List of available programs (presets) for the currently loaded plugin.\""
+					"text" : "ossia.parameter vst/programs @mode get @type list @description \"List of available programs (presets) for the currently loaded plugin.\""
 				}
 
 			}
@@ -1221,7 +1221,7 @@
 									"outlettype" : [ "", "" ],
 									"patching_rect" : [ 331.0, 109.0, 188.0, 60.0 ],
 									"style" : "",
-									"text" : "j.message vst/title @type string @description \"Change the title displayed for the name of the plug-ins\" edit window."
+									"text" : "ossia.parameter vst/title @mode set @type string @description \"Change the title displayed for the name of the plug-ins\" edit window."
 								}
 
 							}
@@ -1237,7 +1237,7 @@
 									"outlettype" : [ "", "" ],
 									"patching_rect" : [ 83.0, 109.0, 220.0, 74.0 ],
 									"style" : "",
-									"text" : "j.message vst/open @type generic @description \"Open the plug-in's edit window. Two optional integer values specifying the left and top window \rcoordinates respectively.\""
+									"text" : "ossia.parameter vst/open @mode set @type list @description \"Open the plug-in's edit window. Two optional integer values specifying the left and top window \rcoordinates respectively.\""
 								}
 
 							}
@@ -1379,7 +1379,7 @@
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 341.333344, 481.0, 161.0, 62.0 ],
 					"style" : "",
-					"text" : "j.model @tags audio effects @description \"Wrap VST and AudioUnit plug-ins as a Jamoma model.\""
+					"text" : "ossia.model #1 @tags audio effects @description \"Wrap VST and AudioUnit plug-ins as a Jamoma model.\""
 				}
 
 			}
@@ -1780,7 +1780,7 @@
 									"outlettype" : [ "", "" ],
 									"patching_rect" : [ 384.0, 254.0, 500.0, 20.0 ],
 									"style" : "",
-									"text" : "j.message program @type integer @range 0 127 @description \"Program change message.\"",
+									"text" : "ossia.parameter program @mode set @type int @range 0 127 @description \"Program change message.\"",
 									"varname" : "pgmin_connect"
 								}
 
@@ -1796,7 +1796,7 @@
 									"outlettype" : [ "", "" ],
 									"patching_rect" : [ 384.0, 333.0, 434.0, 20.0 ],
 									"style" : "",
-									"text" : "j.message pitchbend @type integer @range 0 16383 @description \"Pitch bend\""
+									"text" : "ossia.parameter pitchbend @mode set @type int @range 0 16383 @description \"Pitch bend\""
 								}
 
 							}
@@ -1811,7 +1811,7 @@
 									"outlettype" : [ "", "" ],
 									"patching_rect" : [ 384.0, 557.0, 396.0, 20.0 ],
 									"style" : "",
-									"text" : "j.message note @type generic @description \"MIDI note: [pitch, velocity]\""
+									"text" : "ossia.parameter note @mode set @type list @description \"MIDI note: [pitch, velocity]\""
 								}
 
 							}
@@ -1826,7 +1826,7 @@
 									"outlettype" : [ "", "" ],
 									"patching_rect" : [ 384.0, 88.0, 540.0, 20.0 ],
 									"style" : "",
-									"text" : "j.message monoAftertouch @type integer @range 0 127 @description \"Mono (channel) aftertouch.\""
+									"text" : "ossia.parameter monoAftertouch @mode set @type int @range 0 127 @description \"Mono (channel) aftertouch.\""
 								}
 
 							}
@@ -1841,7 +1841,7 @@
 									"outlettype" : [ "", "" ],
 									"patching_rect" : [ 384.0, 181.0, 553.0, 20.0 ],
 									"style" : "",
-									"text" : "j.message polyAftertouch @type generic @description \"Polyphonic aftertouch: [pressure, keynumber]\""
+									"text" : "ossia.parameter polyAftertouch @mode set @type list @description \"Polyphonic aftertouch: [pressure, keynumber]\""
 								}
 
 							}
@@ -1856,7 +1856,7 @@
 									"outlettype" : [ "", "", "" ],
 									"patching_rect" : [ 384.0, 415.5, 527.0, 20.0 ],
 									"style" : "",
-									"text" : "j.message_array cc.[128] @type integer @format single @description \"MIDI CC: [number, value]\"",
+									"text" : "j.message_array cc.[128] @type int @format single @description \"MIDI CC: [number, value]\"",
 									"varname" : "ctlin_connect_2"
 								}
 
@@ -2118,7 +2118,7 @@
 									"outlettype" : [ "", "" ],
 									"patching_rect" : [ 36.0, 16.0, 170.0, 87.0 ],
 									"style" : "",
-									"text" : "j.parameter vst/program @type string @priority 2 @ramp/drive none @repetitions/filter 0 @description \"Change VST program.\"",
+									"text" : "ossia.parameter vst/program @type string @priority 2 @ramp/drive none @repetitions 1 @description \"Change VST program.\"",
 									"varname" : "vst/program"
 								}
 
@@ -2135,7 +2135,7 @@
 									"outlettype" : [ "", "" ],
 									"patching_rect" : [ 472.0, 16.0, 167.0, 60.0 ],
 									"style" : "",
-									"text" : "j.message vst/write/bank @type string @description \"Write current effect settings to a program bank file.\""
+									"text" : "ossia.parameter vst/write/bank @mode set @type string @description \"Write current effect settings to a program bank file.\""
 								}
 
 							}
@@ -2151,7 +2151,7 @@
 									"outlettype" : [ "", "" ],
 									"patching_rect" : [ 221.0, 16.0, 215.0, 60.0 ],
 									"style" : "",
-									"text" : "j.message vst/read @type string @description \"Read a VST file \rof effect programs, either in bank or individual program format.\""
+									"text" : "ossia.parameter vst/read @mode set @type string @description \"Read a VST file \rof effect programs, either in bank or individual program format.\""
 								}
 
 							}
@@ -2167,7 +2167,7 @@
 									"outlettype" : [ "", "" ],
 									"patching_rect" : [ 677.0, 16.0, 202.0, 60.0 ],
 									"style" : "",
-									"text" : "j.message vst/write/program @type string @description \"Write current settings to an  individual effect program file.\""
+									"text" : "ossia.parameter vst/write/program @mode set @type string @description \"Write current settings to an  individual effect program file.\""
 								}
 
 							}
@@ -2393,7 +2393,7 @@
 													"outlettype" : [ "", "", "", "" ],
 													"patching_rect" : [ 202.0, 25.0, 127.0, 20.0 ],
 													"style" : "",
-													"text" : "j.remote vst/programs"
+													"text" : "ossia.remote vst/programs"
 												}
 
 											}
@@ -2891,7 +2891,7 @@
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 114.0, 300.0, 276.999969, 60.0 ],
 													"style" : "",
-													"text" : "sprintf script newdefault parameter[%ld] 700 %ld j.parameter %s @type decimal @value %f @range 0. 1. @clipmode both @priority 3 @description \"VST plugin parameter value.\""
+													"text" : "sprintf script newdefault parameter[%ld] 700 %ld ossia.parameter %s @type decimal @value %f @range 0. 1. @clip both @priority 3 @description \"VST plugin parameter value.\""
 												}
 
 											}
@@ -5800,7 +5800,7 @@
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 263.0, 156.0, 262.0, 76.0 ],
 					"style" : "",
-					"text" : "j.parameter vst/plug @type string @priority 1 @repetitions/filter 1 @description \"Load a VST effect.  An optional argument define what VST plug-in to open. The plug-in has to be in the Max search path.\"",
+					"text" : "ossia.parameter vst/plug @type string @priority 1 @repetitions 0 @description \"Load a VST effect.  An optional argument define what VST plug-in to open. The plug-in has to be in the Max search path.\"",
 					"varname" : "vst/plug"
 				}
 

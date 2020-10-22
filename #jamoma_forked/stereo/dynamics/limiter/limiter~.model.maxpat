@@ -85,7 +85,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 224.5, 175.5, 150.0, 33.0 ],
-					"text" : "j.model @description \"A stereo limiter\"",
+					"text" : "ossia.model #1 @description \"A stereo limiter\"",
 					"varname" : "j.hub"
 				}
 
@@ -301,7 +301,7 @@
 				"type" : "iLaX"
 			}
 , 			{
-				"name" : "j.model.mxo",
+				"name" : "ossia.model #1.mxo",
 				"type" : "iLaX"
 			}
 , 			{
@@ -309,7 +309,7 @@
 				"type" : "iLaX"
 			}
 , 			{
-				"name" : "j.parameter.mxo",
+				"name" : "ossia.parameter.mxo",
 				"type" : "iLaX"
 			}
 , 			{

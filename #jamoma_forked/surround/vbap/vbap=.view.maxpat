@@ -71,7 +71,7 @@
 					"outlettype" : [ "", "", "" ],
 					"patching_rect" : [ 36.0, 86.0, 137.0, 22.0 ],
 					"style" : "",
-					"text" : "j.receive model:address"
+					"text" : "ossia.remote model:address"
 				}
 
 			}
@@ -123,7 +123,7 @@
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 147.0, 365.0, 41.0, 22.0 ],
 					"style" : "",
-					"text" : "j.view"
+					"text" : "ossia.view #1"
 				}
 
 			}
@@ -213,7 +213,7 @@
 					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 528.0, 42.0, 168.0, 22.0 ],
 					"style" : "",
-					"text" : "j.remote renderer/dimensions",
+					"text" : "ossia.remote renderer/dimensions",
 					"varname" : "voices[2]"
 				}
 
@@ -227,7 +227,7 @@
 					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 528.0, 149.0, 223.0, 22.0 ],
 					"style" : "",
-					"text" : "j.remote speakers/number_of_channels",
+					"text" : "ossia.remote speakers/number_of_channels",
 					"varname" : "voices[1]"
 				}
 
@@ -292,7 +292,7 @@
 					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 528.0, 113.0, 214.0, 22.0 ],
 					"style" : "",
-					"text" : "j.remote sources/number_of_channels",
+					"text" : "ossia.remote sources/number_of_channels",
 					"varname" : "voices"
 				}
 
@@ -468,15 +468,15 @@
 				"type" : "iLaX"
 			}
 , 			{
-				"name" : "j.remote.mxo",
+				"name" : "ossia.remote.mxo",
 				"type" : "iLaX"
 			}
 , 			{
-				"name" : "j.view.mxo",
+				"name" : "ossia.view #1.mxo",
 				"type" : "iLaX"
 			}
 , 			{
-				"name" : "j.receive.mxo",
+				"name" : "ossia.remote.mxo",
 				"type" : "iLaX"
 			}
  ],

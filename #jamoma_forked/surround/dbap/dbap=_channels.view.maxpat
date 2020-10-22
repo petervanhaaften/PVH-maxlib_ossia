@@ -46,7 +46,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 643.0, 3.5, 219.0, 37.0 ],
 					"style" : "",
-					"text" : "Apparently this ned to be in same patch as j.view for it to work"
+					"text" : "Apparently this ned to be in same patch as ossia.view #1 for it to work"
 				}
 
 			}
@@ -534,7 +534,7 @@
 									"outlettype" : [ "", "", "" ],
 									"patching_rect" : [ 871.5, 389.0, 179.0, 35.0 ],
 									"style" : "",
-									"text" : "j.receive speakers/number_of_channels",
+									"text" : "ossia.remote speakers/number_of_channels",
 									"varname" : "voices[2]"
 								}
 
@@ -590,7 +590,7 @@
 									"outlettype" : [ "", "", "", "" ],
 									"patching_rect" : [ 918.0, 657.0, 199.0, 22.0 ],
 									"style" : "",
-									"text" : "j.remote visualisation/view_speaker"
+									"text" : "ossia.remote visualisation/view_speaker"
 								}
 
 							}
@@ -603,7 +603,7 @@
 									"outlettype" : [ "", "", "", "" ],
 									"patching_rect" : [ 982.0, 159.0, 193.0, 22.0 ],
 									"style" : "",
-									"text" : "j.remote visualisation/view_source"
+									"text" : "ossia.remote visualisation/view_source"
 								}
 
 							}
@@ -616,7 +616,7 @@
 									"outlettype" : [ "", "", "", "" ],
 									"patching_rect" : [ 706.0, 825.0, 159.0, 22.0 ],
 									"style" : "",
-									"text" : "j.remote visualisation/radius"
+									"text" : "ossia.remote visualisation/radius"
 								}
 
 							}
@@ -629,7 +629,7 @@
 									"outlettype" : [ "", "", "", "" ],
 									"patching_rect" : [ 341.0, 732.0, 157.0, 22.0 ],
 									"style" : "",
-									"text" : "j.remote visualisation/active"
+									"text" : "ossia.remote visualisation/active"
 								}
 
 							}
@@ -642,7 +642,7 @@
 									"outlettype" : [ "", "", "" ],
 									"patching_rect" : [ 576.0, 440.0, 160.0, 22.0 ],
 									"style" : "",
-									"text" : "j.receive visualisation/image"
+									"text" : "ossia.remote visualisation/image"
 								}
 
 							}
@@ -722,7 +722,7 @@
 									"outlettype" : [ "", "", "" ],
 									"patching_rect" : [ 704.5, 121.0, 179.0, 35.0 ],
 									"style" : "",
-									"text" : "j.receive speakers/number_of_channels",
+									"text" : "ossia.remote speakers/number_of_channels",
 									"varname" : "voices[1]"
 								}
 
@@ -749,7 +749,7 @@
 									"outlettype" : [ "", "", "", "" ],
 									"patching_rect" : [ 581.0, 131.0, 54.0, 22.0 ],
 									"style" : "",
-									"text" : "j.remote"
+									"text" : "ossia.remote"
 								}
 
 							}
@@ -1516,7 +1516,7 @@
 													"outlettype" : [ "", "", "" ],
 													"patching_rect" : [ 744.5, 72.0, 210.0, 22.0 ],
 													"style" : "",
-													"text" : "j.receive sources/number_of_channels"
+													"text" : "ossia.remote sources/number_of_channels"
 												}
 
 											}
@@ -2442,7 +2442,7 @@
 					"outlettype" : [ "", "", "" ],
 					"patching_rect" : [ 495.0, 11.0, 137.0, 22.0 ],
 					"style" : "",
-					"text" : "j.receive model:address"
+					"text" : "ossia.remote model:address"
 				}
 
 			}
@@ -2480,7 +2480,7 @@
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 42.0, 293.0, 41.0, 22.0 ],
 					"style" : "",
-					"text" : "j.view"
+					"text" : "ossia.view #1"
 				}
 
 			}
@@ -2650,11 +2650,11 @@
 				"type" : "iLaX"
 			}
 , 			{
-				"name" : "j.view.mxo",
+				"name" : "ossia.view #1.mxo",
 				"type" : "iLaX"
 			}
 , 			{
-				"name" : "j.receive.mxo",
+				"name" : "ossia.remote.mxo",
 				"type" : "iLaX"
 			}
 , 			{
@@ -2662,7 +2662,7 @@
 				"type" : "iLaX"
 			}
 , 			{
-				"name" : "j.remote.mxo",
+				"name" : "ossia.remote.mxo",
 				"type" : "iLaX"
 			}
  ],

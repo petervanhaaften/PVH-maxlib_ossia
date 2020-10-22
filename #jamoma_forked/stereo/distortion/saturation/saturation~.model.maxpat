@@ -78,7 +78,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 725.0, 17.0, 124.0, 87.0 ],
-					"text" : "j.parameter active @type boolean @description \"When not active, the saturation effect is bypassed.\"",
+					"text" : "ossia.parameter active @type bool @description \"When not active, the saturation effect is bypassed.\"",
 					"varname" : "mode[1]"
 				}
 
@@ -122,7 +122,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 396.0, 17.0, 134.0, 127.0 ],
-					"text" : "j.parameter preamp @ramp/drive max @repetitions/filter 1 @type decimal @range -12 48 @clipmode none @description \"Preamp (dB).\" @dataspace gain @unit dB",
+					"text" : "ossia.parameter preamp @ramp/drive max @repetitions 0 @type decimal @range -12 48 @clip free @description \"Preamp (dB).\" @unit gain.dB",
 					"varname" : "preamp"
 				}
 
@@ -137,7 +137,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 368.0, 327.0, 309.0, 20.0 ],
-					"text" : "j.model @description \"Saturation (distortion) effect.\""
+					"text" : "ossia.model #1 @description \"Saturation (distortion) effect.\""
 				}
 
 			}
@@ -208,7 +208,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 570.0, 17.0, 137.0, 74.0 ],
-					"text" : "j.parameter mode @type generic @description \"Mode: Table used for waveshaping.\"",
+					"text" : "ossia.parameter mode @type list @description \"Mode: Table used for waveshaping.\"",
 					"varname" : "mode"
 				}
 
@@ -224,7 +224,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 222.0, 17.0, 132.0, 114.0 ],
-					"text" : "j.parameter depth @ramp/drive max @repetitions/filter 1 @type decimal @range 0 99 @clipmode both @description \"Saturation: Depth.\"",
+					"text" : "ossia.parameter depth @ramp/drive max @repetitions 0 @type decimal @range 0 99 @clip both @description \"Saturation: Depth.\"",
 					"varname" : "depth"
 				}
 
@@ -541,7 +541,7 @@
 			}
  ],
 		"dependency_cache" : [ 			{
-				"name" : "j.parameter.mxo",
+				"name" : "ossia.parameter.mxo",
 				"type" : "iLaX"
 			}
 , 			{
@@ -553,7 +553,7 @@
 				"type" : "iLaX"
 			}
 , 			{
-				"name" : "j.model.mxo",
+				"name" : "ossia.model #1.mxo",
 				"type" : "iLaX"
 			}
 , 			{

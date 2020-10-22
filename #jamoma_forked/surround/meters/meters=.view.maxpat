@@ -146,7 +146,7 @@
 					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 407.0, 41.5, 331.0, 22.0 ],
 					"style" : "",
-					"text" : "j.remote_array audio/amplitude.[32] @format array @unit db"
+					"text" : "ossia.remote_array audio/amplitude.[32] @format array @unit db"
 				}
 
 			}
@@ -161,8 +161,8 @@
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 30.0, 300.0, 41.0, 22.0 ],
 					"style" : "",
-					"text" : "j.view",
-					"varname" : "j.model"
+					"text" : "ossia.view #1",
+					"varname" : "ossia.model #1"
 				}
 
 			}
@@ -287,11 +287,11 @@
 				"type" : "iLaX"
 			}
 , 			{
-				"name" : "j.view.mxo",
+				"name" : "ossia.view #1.mxo",
 				"type" : "iLaX"
 			}
 , 			{
-				"name" : "j.remote_array.mxo",
+				"name" : "ossia.remote_array.mxo",
 				"type" : "iLaX"
 			}
  ],

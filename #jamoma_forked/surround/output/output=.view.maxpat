@@ -75,7 +75,7 @@
 					"outlettype" : [ "", "", "" ],
 					"patching_rect" : [ 41.0, 198.0, 137.0, 22.0 ],
 					"style" : "",
-					"text" : "j.receive model:address"
+					"text" : "ossia.remote model:address"
 				}
 
 			}
@@ -150,8 +150,8 @@
 					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 441.0, 219.433014, 113.0, 22.0 ],
 					"style" : "",
-					"text" : "j.remote audio/gain",
-					"varname" : "j.parameter.gain[1]"
+					"text" : "ossia.remote audio/gain",
+					"varname" : "ossia.parameter.gain[1]"
 				}
 
 			}
@@ -194,8 +194,8 @@
 					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 441.0, 129.433014, 195.0, 22.0 ],
 					"style" : "",
-					"text" : "j.remote audio/gain @unit midigain",
-					"varname" : "j.parameter.gain"
+					"text" : "ossia.remote audio/gain @unit midigain",
+					"varname" : "ossia.parameter.gain"
 				}
 
 			}
@@ -511,7 +511,7 @@
 					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 668.0, 300.0, 99.0, 22.0 ],
 					"style" : "",
-					"text" : "j.remote cpu"
+					"text" : "ossia.remote cpu"
 				}
 
 			}
@@ -526,7 +526,7 @@
 					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 668.0, 172.0, 144.0, 22.0 ],
 					"style" : "",
-					"text" : "j.remote audio/active",
+					"text" : "ossia.remote audio/active",
 					"varname" : "audio[1]"
 				}
 
@@ -542,7 +542,7 @@
 					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 668.0, 254.0, 111.0, 22.0 ],
 					"style" : "",
-					"text" : "j.remote dspStatus"
+					"text" : "ossia.remote dspStatus"
 				}
 
 			}
@@ -763,7 +763,7 @@
 					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 965.0, 355.0, 136.0, 22.0 ],
 					"style" : "",
-					"text" : "j.remote record/file/time"
+					"text" : "ossia.remote record/file/time"
 				}
 
 			}
@@ -1181,7 +1181,7 @@
 					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 965.0, 238.0, 149.0, 22.0 ],
 					"style" : "",
-					"text" : "j.remote record/active",
+					"text" : "ossia.remote record/active",
 					"varname" : "record"
 				}
 
@@ -1224,7 +1224,7 @@
 					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 1081.0, 145.0, 169.0, 22.0 ],
 					"style" : "",
-					"text" : "j.remote record/samptype",
+					"text" : "ossia.remote record/samptype",
 					"varname" : "record/samptype"
 				}
 
@@ -1240,7 +1240,7 @@
 					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 1081.0, 80.0, 136.0, 22.0 ],
 					"style" : "",
-					"text" : "j.remote record/file/type",
+					"text" : "ossia.remote record/file/type",
 					"varname" : "record/filetype"
 				}
 
@@ -1387,7 +1387,7 @@
 					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 750.0, 488.0, 147.0, 22.0 ],
 					"style" : "",
-					"text" : "j.remote limiter/active",
+					"text" : "ossia.remote limiter/active",
 					"varname" : "limiter/active"
 				}
 
@@ -1403,7 +1403,7 @@
 					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 750.0, 626.432983, 155.0, 22.0 ],
 					"style" : "",
-					"text" : "j.remote limiter/release",
+					"text" : "ossia.remote limiter/release",
 					"varname" : "limiter/release"
 				}
 
@@ -1419,7 +1419,7 @@
 					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 750.0, 567.0, 156.0, 22.0 ],
 					"style" : "",
-					"text" : "j.remote limiter/preamp",
+					"text" : "ossia.remote limiter/preamp",
 					"varname" : "limiter/preamp"
 				}
 
@@ -1544,7 +1544,7 @@
 									"outlettype" : [ "", "", "" ],
 									"patching_rect" : [ 391.666656, 396.0, 137.0, 22.0 ],
 									"style" : "",
-									"text" : "j.receive num_speakers"
+									"text" : "ossia.remote num_speakers"
 								}
 
 							}
@@ -1813,7 +1813,7 @@
 									"outlettype" : [ "", "", "", "" ],
 									"patching_rect" : [ 289.0, 341.0, 87.0, 22.0 ],
 									"style" : "",
-									"text" : "j.remote setup",
+									"text" : "ossia.remote setup",
 									"varname" : "setup"
 								}
 
@@ -3080,8 +3080,8 @@
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 41.0, 501.433014, 41.0, 22.0 ],
 					"style" : "",
-					"text" : "j.view",
-					"varname" : "j.model"
+					"text" : "ossia.view #1",
+					"varname" : "ossia.model #1"
 				}
 
 			}
@@ -3640,15 +3640,15 @@
 				"type" : "iLaX"
 			}
 , 			{
-				"name" : "j.view.mxo",
+				"name" : "ossia.view #1.mxo",
 				"type" : "iLaX"
 			}
 , 			{
-				"name" : "j.remote.mxo",
+				"name" : "ossia.remote.mxo",
 				"type" : "iLaX"
 			}
 , 			{
-				"name" : "j.receive.mxo",
+				"name" : "ossia.remote.mxo",
 				"type" : "iLaX"
 			}
 , 			{

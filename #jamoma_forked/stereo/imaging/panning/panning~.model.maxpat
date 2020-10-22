@@ -80,7 +80,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 549.5, 32.5, 127.0, 141.0 ],
-					"text" : "j.parameter mode @type string @description \"Choose internal calculation mode for panning: fast uses a lookup table while precision performs trigonometric calculations.\"",
+					"text" : "ossia.parameter mode @type string @description \"Choose internal calculation mode for panning: fast uses a lookup table while precision performs trigonometric calculations.\"",
 					"varname" : "mode[1]"
 				}
 
@@ -96,7 +96,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 385.5, 32.5, 127.0, 100.0 ],
-					"text" : "j.parameter shape @type string @description \"Choose the panning function: linear, squareroot, or equal-power.\"",
+					"text" : "ossia.parameter shape @type string @description \"Choose the panning function: linear, squareroot, or equal-power.\"",
 					"varname" : "shape[1]"
 				}
 
@@ -112,7 +112,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 202.5, 32.5, 133.0, 127.0 ],
-					"text" : "j.parameter position @type decimal @range -1 1. @ramp/drive max @clipmode both @description \"set the position of the panpot.  -1 == fully left, 0 == center, 1== fully right\"",
+					"text" : "ossia.parameter position @type decimal @range -1 1. @ramp/drive max @clip both @description \"set the position of the panpot.  -1 == fully left, 0 == center, 1== fully right\"",
 					"varname" : "position"
 				}
 
@@ -603,7 +603,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 257.0, 291.0, 184.0, 33.0 ],
-					"text" : "j.model @description \"Panning  a mono sound source to stereo.\""
+					"text" : "ossia.model #1 @description \"Panning  a mono sound source to stereo.\""
 				}
 
 			}
@@ -722,7 +722,7 @@
 			}
  ],
 		"dependency_cache" : [ 			{
-				"name" : "j.model.mxo",
+				"name" : "ossia.model #1.mxo",
 				"type" : "iLaX"
 			}
 , 			{
@@ -730,7 +730,7 @@
 				"type" : "iLaX"
 			}
 , 			{
-				"name" : "j.parameter.mxo",
+				"name" : "ossia.parameter.mxo",
 				"type" : "iLaX"
 			}
 , 			{

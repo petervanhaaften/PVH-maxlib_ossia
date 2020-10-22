@@ -76,7 +76,7 @@
 					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 528.75, 432.0, 130.5, 35.0 ],
 					"style" : "",
-					"text" : "j.remote frequency @unit midinote",
+					"text" : "ossia.remote frequency @unit midinote",
 					"varname" : "cf[3]"
 				}
 
@@ -120,7 +120,7 @@
 					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 524.5, 625.0, 83.0, 22.0 ],
 					"style" : "",
-					"text" : "j.remote clear"
+					"text" : "ossia.remote clear"
 				}
 
 			}
@@ -323,7 +323,7 @@
 					"outlettype" : [ "signal", "", "" ],
 					"patching_rect" : [ 464.5, 22.0, 125.0, 22.0 ],
 					"style" : "",
-					"text" : "j.receive~ audio/out.2"
+					"text" : "ossia.remote~ audio/out.2"
 				}
 
 			}
@@ -338,7 +338,7 @@
 					"outlettype" : [ "signal", "", "" ],
 					"patching_rect" : [ 331.0, 22.0, 125.0, 22.0 ],
 					"style" : "",
-					"text" : "j.receive~ audio/out.1"
+					"text" : "ossia.remote~ audio/out.1"
 				}
 
 			}
@@ -381,7 +381,7 @@
 					"outlettype" : [ "", "", "" ],
 					"patching_rect" : [ 144.0, 175.0, 80.0, 22.0 ],
 					"style" : "",
-					"text" : "j.receive type",
+					"text" : "ossia.remote type",
 					"varname" : "filtertype[2]"
 				}
 
@@ -397,7 +397,7 @@
 					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 524.5, 173.0, 80.0, 22.0 ],
 					"style" : "",
-					"text" : "j.remote type",
+					"text" : "ossia.remote type",
 					"varname" : "filtertype[1]"
 				}
 
@@ -414,7 +414,7 @@
 					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 62.0, 437.5, 147.0, 22.0 ],
 					"style" : "",
-					"text" : "j.remote gain @unit linear",
+					"text" : "ossia.remote gain @unit linear",
 					"varname" : "filtergain[1]"
 				}
 
@@ -430,7 +430,7 @@
 					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 117.5, 348.0, 154.0, 22.0 ],
 					"style" : "",
-					"text" : "j.remote octave_bandwidth",
+					"text" : "ossia.remote octave_bandwidth",
 					"varname" : "q[1]"
 				}
 
@@ -446,7 +446,7 @@
 					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 38.5, 510.0, 110.0, 22.0 ],
 					"style" : "",
-					"text" : "j.remote frequency",
+					"text" : "ossia.remote frequency",
 					"varname" : "cf[1]"
 				}
 
@@ -462,7 +462,7 @@
 					"outlettype" : [ "", "", "" ],
 					"patching_rect" : [ 15.0, 175.0, 111.0, 22.0 ],
 					"style" : "",
-					"text" : "j.receive filtergraph"
+					"text" : "ossia.remote filtergraph"
 				}
 
 			}
@@ -477,7 +477,7 @@
 					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 524.5, 348.0, 83.0, 22.0 ],
 					"style" : "",
-					"text" : "j.remote gain",
+					"text" : "ossia.remote gain",
 					"varname" : "filtergain"
 				}
 
@@ -493,7 +493,7 @@
 					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 524.5, 273.0, 154.0, 22.0 ],
 					"style" : "",
-					"text" : "j.remote octave_bandwidth",
+					"text" : "ossia.remote octave_bandwidth",
 					"varname" : "q"
 				}
 
@@ -509,7 +509,7 @@
 					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 406.75, 464.0, 110.0, 22.0 ],
 					"style" : "",
-					"text" : "j.remote frequency",
+					"text" : "ossia.remote frequency",
 					"varname" : "cf"
 				}
 
@@ -565,8 +565,8 @@
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 35.0, 667.0, 41.0, 22.0 ],
 					"style" : "",
-					"text" : "j.view",
-					"varname" : "j.model"
+					"text" : "ossia.view #1",
+					"varname" : "ossia.model #1"
 				}
 
 			}
@@ -876,19 +876,19 @@
 				"type" : "iLaX"
 			}
 , 			{
-				"name" : "j.view.mxo",
+				"name" : "ossia.view #1.mxo",
 				"type" : "iLaX"
 			}
 , 			{
-				"name" : "j.remote.mxo",
+				"name" : "ossia.remote.mxo",
 				"type" : "iLaX"
 			}
 , 			{
-				"name" : "j.receive.mxo",
+				"name" : "ossia.remote.mxo",
 				"type" : "iLaX"
 			}
 , 			{
-				"name" : "j.receive~.mxo",
+				"name" : "ossia.remote~.mxo",
 				"type" : "iLaX"
 			}
  ],

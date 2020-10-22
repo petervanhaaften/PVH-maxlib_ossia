@@ -122,7 +122,7 @@
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 758.0, 185.0, 142.0, 49.0 ],
 					"style" : "",
-					"text" : "j.model @description \"Get information on multichannel signal.\""
+					"text" : "ossia.model #1 @description \"Get information on multichannel signal.\""
 				}
 
 			}
@@ -150,7 +150,7 @@
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 561.5, 271.0, 150.0, 76.0 ],
 					"style" : "",
-					"text" : "j.return numChannels @type integer @description \"Number of channels in the multichannel signal.\""
+					"text" : "ossia.parameter numChannels @mode get @type int @description \"Number of channels in the multichannel signal.\""
 				}
 
 			}
@@ -166,7 +166,7 @@
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 246.5, 271.0, 130.0, 102.0 ],
 					"style" : "",
-					"text" : "j.return samplerate @type integer @dataspace time @unit Hz @dataspace time @unit Hz @description \"Sample rate (Hz).\""
+					"text" : "ossia.parameter samplerate @mode get @type int @unit time.Hz @unit time.Hz @description \"Sample rate (Hz).\""
 				}
 
 			}
@@ -182,7 +182,7 @@
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 404.0, 271.0, 110.0, 62.0 ],
 					"style" : "",
-					"text" : "j.return vectorsize @type integer \"Multichannel signal vector size.\""
+					"text" : "ossia.parameter vectorsize @mode get @type int \"Multichannel signal vector size.\""
 				}
 
 			}
@@ -251,7 +251,7 @@
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 181.0, 135.5, 221.0, 49.0 ],
 					"style" : "",
-					"text" : "j.message update @type none @description \"refreshes the signal information if necessary\""
+					"text" : "ossia.parameter update @mode set @type impulse @description \"refreshes the signal information if necessary\""
 				}
 
 			}
@@ -379,7 +379,7 @@
 				"type" : "iLaX"
 			}
 , 			{
-				"name" : "j.model.mxo",
+				"name" : "ossia.model #1.mxo",
 				"type" : "iLaX"
 			}
  ],

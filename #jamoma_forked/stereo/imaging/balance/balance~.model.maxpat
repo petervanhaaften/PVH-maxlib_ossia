@@ -80,7 +80,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 629.0, 11.5, 197.0, 87.0 ],
-					"text" : "j.parameter mode @type string @description \"Choose internal calculation mode for panning: FastMode uses a lookup table while PrecisionMode performs trigonometric calculations\"",
+					"text" : "ossia.parameter mode @type string @description \"Choose internal calculation mode for panning: FastMode uses a lookup table while PrecisionMode performs trigonometric calculations\"",
 					"varname" : "mode[1]"
 				}
 
@@ -96,7 +96,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 444.0, 11.5, 127.0, 100.0 ],
-					"text" : "j.parameter shape @type string @description \"Choose the panning function: linear, squareroot, or equal-power\"",
+					"text" : "ossia.parameter shape @type string @description \"Choose the panning function: linear, squareroot, or equal-power\"",
 					"varname" : "shape[1]"
 				}
 
@@ -112,7 +112,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 262.0, 11.5, 166.0, 114.0 ],
-					"text" : "j.parameter position @type decimal @range -1 1. @ramp/drive max @clipmode both @description \"set the position of the panpot.  -1 == fully left, 0 == center, 1== fully right\"",
+					"text" : "ossia.parameter position @type decimal @range -1 1. @ramp/drive max @clip both @description \"set the position of the panpot.  -1 == fully left, 0 == center, 1== fully right\"",
 					"varname" : "position"
 				}
 
@@ -661,7 +661,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 232.0, 231.5, 215.0, 33.0 ],
-					"text" : "j.model @description \"Balancing the two channels of a stereo signal.\""
+					"text" : "ossia.model #1 @description \"Balancing the two channels of a stereo signal.\""
 				}
 
 			}
@@ -788,7 +788,7 @@
 			}
  ],
 		"dependency_cache" : [ 			{
-				"name" : "j.model.mxo",
+				"name" : "ossia.model #1.mxo",
 				"type" : "iLaX"
 			}
 , 			{
@@ -796,7 +796,7 @@
 				"type" : "iLaX"
 			}
 , 			{
-				"name" : "j.parameter.mxo",
+				"name" : "ossia.parameter.mxo",
 				"type" : "iLaX"
 			}
 , 			{

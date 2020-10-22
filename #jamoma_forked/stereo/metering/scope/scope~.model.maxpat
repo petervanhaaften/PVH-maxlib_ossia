@@ -50,8 +50,8 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 155.5, 68.5, 145.0, 141.0 ],
-					"text" : "j.parameter range @type decimal @range -36 36 @clipmode low @repetitions/filter 1 @ramp/drive max @dataspace gain @unit db @description \"range of values above and below the zero line to display.\"",
-					"varname" : "j.parameter.mxb[4]"
+					"text" : "ossia.parameter range @type decimal @range -36 36 @clip low @repetitions 0 @ramp/drive max @unit gain.db @description \"range of values above and below the zero line to display.\"",
+					"varname" : "ossia.parameter.mxb[4]"
 				}
 
 			}
@@ -66,7 +66,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 13.0, 68.5, 129.0, 87.0 ],
-					"text" : "j.parameter monitored_model @type string @description \"Name of the model that is to be monitored.\""
+					"text" : "ossia.parameter monitored_model @type string @description \"Name of the model that is to be monitored.\""
 				}
 
 			}
@@ -81,8 +81,8 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 310.0, 68.5, 133.0, 100.0 ],
-					"text" : "j.parameter buffer/pixel @type integer @range 2 8092 @clipmode both @description \"buffers per pixel, control the scope display\"",
-					"varname" : "j.parameter.mxb[1]"
+					"text" : "ossia.parameter buffer/pixel @type int @range 2 8092 @clip both @description \"buffers per pixel, control the scope display\"",
+					"varname" : "ossia.parameter.mxb[1]"
 				}
 
 			}
@@ -97,8 +97,8 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 466.5, 68.5, 149.0, 100.0 ],
-					"text" : "j.parameter buffer/samples @type integer @range 8 256 @clipmode both @description \"samples per buffer, control the scope display\"",
-					"varname" : "j.parameter.mxb[5]"
+					"text" : "ossia.parameter buffer/samples @type int @range 8 256 @clip both @description \"samples per buffer, control the scope display\"",
+					"varname" : "ossia.parameter.mxb[5]"
 				}
 
 			}
@@ -113,8 +113,8 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 641.0, 68.5, 137.0, 87.0 ],
-					"text" : "j.model @description \"An oscilloscope emulator for viewing waverforms or analyzing phase relationships.\"",
-					"varname" : "j.model"
+					"text" : "ossia.model #1 @description \"An oscilloscope emulator for viewing waverforms or analyzing phase relationships.\"",
+					"varname" : "ossia.model #1"
 				}
 
 			}
@@ -150,11 +150,11 @@
 			}
  ],
 		"dependency_cache" : [ 			{
-				"name" : "j.model.mxo",
+				"name" : "ossia.model #1.mxo",
 				"type" : "iLaX"
 			}
 , 			{
-				"name" : "j.parameter.mxo",
+				"name" : "ossia.parameter.mxo",
 				"type" : "iLaX"
 			}
  ]

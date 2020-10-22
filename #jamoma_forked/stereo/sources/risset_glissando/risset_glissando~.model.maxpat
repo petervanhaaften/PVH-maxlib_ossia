@@ -75,7 +75,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 635.0, 208.5, 136.0, 141.0 ],
-					"text" : "j.parameter rolloff @type decimal @range -96 0. @clipmode high @ramp/drive max @ramp/function linear @description \"Rolloff in dB for the Gaussian windowing function.\" @dataspace gain @unit dB",
+					"text" : "ossia.parameter rolloff @type decimal @range -96 0. @clip high @ramp/drive max @ramp/function linear @description \"Rolloff in dB for the Gaussian windowing function.\" @unit gain.dB",
 					"varname" : "rolloff"
 				}
 
@@ -91,7 +91,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 602.0, 12.5, 136.0, 154.0 ],
-					"text" : "j.parameter oscillators @type integer @range 1 64 @clipmode both @ramp/drive none @description \"Maximum number of oscillators to use. Tha actual number of oscillators used might be lower, depending on range and spacing.\"",
+					"text" : "ossia.parameter oscillators @type int @range 1 64 @clip both @ramp/drive none @description \"Maximum number of oscillators to use. Tha actual number of oscillators used might be lower, depending on range and spacing.\"",
 					"varname" : "oscillators"
 				}
 
@@ -107,7 +107,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 170.0, 12.5, 191.0, 100.0 ],
-					"text" : "j.parameter rate @type decimal @range -12 12 @clipmode none @ramp/drive max @ramp/function linear @description \"Rate of the glissando movement as MIDI pitch difference per second.\"",
+					"text" : "ossia.parameter rate @type decimal @range -12 12 @clip free @ramp/drive max @ramp/function linear @description \"Rate of the glissando movement as MIDI pitch difference per second.\"",
 					"varname" : "rate"
 				}
 
@@ -123,7 +123,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 375.5, 12.5, 211.0, 74.0 ],
-					"text" : "j.parameter spacing @type decimal @range 0 12 @clipmode low @ramp/drive max @ramp/function linear @description \"Spacing between adjecent oscillators (as MIDI values).\"",
+					"text" : "ossia.parameter spacing @type decimal @range 0 12 @clip low @ramp/drive max @ramp/function linear @description \"Spacing between adjecent oscillators (as MIDI values).\"",
 					"varname" : "spacing"
 				}
 
@@ -139,7 +139,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 25.5, 12.5, 136.0, 100.0 ],
-					"text" : "j.parameter range @type array @ramp/drive max @ramp/function linear @description \"The range of the sweeps as MIDI values.\"",
+					"text" : "ossia.parameter range @type array @ramp/drive max @ramp/function linear @description \"The range of the sweeps as MIDI values.\"",
 					"varname" : "range"
 				}
 
@@ -197,8 +197,8 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 461.0, 597.5, 169.0, 47.0 ],
-					"text" : "j.model @description \"Audio module generating Risset/Shepard glissando.\"",
-					"varname" : "j.model"
+					"text" : "ossia.model #1 @description \"Audio module generating Risset/Shepard glissando.\"",
+					"varname" : "ossia.model #1"
 				}
 
 			}
@@ -2451,7 +2451,7 @@
 			}
  ],
 		"dependency_cache" : [ 			{
-				"name" : "j.model.mxo",
+				"name" : "ossia.model #1.mxo",
 				"type" : "iLaX"
 			}
 , 			{
@@ -2459,7 +2459,7 @@
 				"type" : "iLaX"
 			}
 , 			{
-				"name" : "j.parameter.mxo",
+				"name" : "ossia.parameter.mxo",
 				"type" : "iLaX"
 			}
  ]

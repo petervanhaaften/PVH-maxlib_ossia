@@ -91,7 +91,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 161.0, 123.0, 162.0, 33.0 ],
-					"text" : "j.model @description \"Record stereo sound files.\""
+					"text" : "ossia.model #1 @description \"Record stereo sound files.\""
 				}
 
 			}
@@ -156,7 +156,7 @@
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
 									"patching_rect" : [ 50.0, 161.0, 409.0, 33.0 ],
-									"text" : "j.return file/time @type decimal @dataspace time @unit s @description \"Elapsed time for current recording, expressed in seconds.\""
+									"text" : "ossia.parameter file/time @mode get @type decimal @unit time.s @description \"Elapsed time for current recording, expressed in seconds.\""
 								}
 
 							}
@@ -357,7 +357,7 @@
 				"type" : "iLaX"
 			}
 , 			{
-				"name" : "j.model.mxo",
+				"name" : "ossia.model #1.mxo",
 				"type" : "iLaX"
 			}
 , 			{
@@ -365,7 +365,7 @@
 				"type" : "iLaX"
 			}
 , 			{
-				"name" : "j.parameter.mxo",
+				"name" : "ossia.parameter.mxo",
 				"type" : "iLaX"
 			}
 , 			{

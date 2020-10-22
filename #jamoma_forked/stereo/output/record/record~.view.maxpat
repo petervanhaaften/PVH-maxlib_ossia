@@ -116,7 +116,7 @@
 					"numoutlets" : 4,
 					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 550.0, 87.0, 109.0, 20.0 ],
-					"text" : "j.remote samptype",
+					"text" : "ossia.remote samptype",
 					"varname" : "record/samptype[1]"
 				}
 
@@ -131,7 +131,7 @@
 					"numoutlets" : 4,
 					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 550.0, 22.0, 99.0, 20.0 ],
-					"text" : "j.remote file/type",
+					"text" : "ossia.remote file/type",
 					"varname" : "record/filetype[1]"
 				}
 
@@ -146,7 +146,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "signal", "", "" ],
 					"patching_rect" : [ 275.0, 373.5, 120.0, 20.0 ],
-					"text" : "j.receive~ audio/in.R"
+					"text" : "ossia.remote~ audio/in.R"
 				}
 
 			}
@@ -160,7 +160,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "signal", "", "" ],
 					"patching_rect" : [ 138.0, 373.5, 118.0, 20.0 ],
-					"text" : "j.receive~ audio/in.L"
+					"text" : "ossia.remote~ audio/in.L"
 				}
 
 			}
@@ -202,7 +202,7 @@
 					"numoutlets" : 4,
 					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 433.999969, 180.0, 89.0, 20.0 ],
-					"text" : "j.remote active",
+					"text" : "ossia.remote active",
 					"varname" : "record[1]"
 				}
 
@@ -349,7 +349,7 @@
 					"numoutlets" : 4,
 					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 401.0, 478.0, 99.0, 20.0 ],
-					"text" : "j.remote file/time"
+					"text" : "ossia.remote file/time"
 				}
 
 			}
@@ -741,7 +741,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 45.0, 226.0, 63.0, 20.0 ],
-					"text" : "j.view",
+					"text" : "ossia.view #1",
 					"varname" : "j.hub"
 				}
 
@@ -1042,11 +1042,11 @@
 				"type" : "iLaX"
 			}
 , 			{
-				"name" : "j.view.mxo",
+				"name" : "ossia.view #1.mxo",
 				"type" : "iLaX"
 			}
 , 			{
-				"name" : "j.remote.mxo",
+				"name" : "ossia.remote.mxo",
 				"type" : "iLaX"
 			}
 , 			{
@@ -1054,7 +1054,7 @@
 				"type" : "iLaX"
 			}
 , 			{
-				"name" : "j.receive~.mxo",
+				"name" : "ossia.remote~.mxo",
 				"type" : "iLaX"
 			}
  ]

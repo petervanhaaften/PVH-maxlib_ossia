@@ -46,7 +46,7 @@
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 178.5, 206.5, 212.0, 49.0 ],
 					"style" : "",
-					"text" : "j.return num_channels @type integer @description \"Number of channels in the audio stream.\""
+					"text" : "j.return num_channels @type int @description \"Number of channels in the audio stream.\""
 				}
 
 			}
@@ -151,7 +151,7 @@
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 468.0, 180.5, 251.0, 35.0 ],
 					"style" : "",
-					"text" : "j.model @description \"Display waveform of real-time multi-channel signal as jitter matrix.\""
+					"text" : "ossia.model #1 @description \"Display waveform of real-time multi-channel signal as jitter matrix.\""
 				}
 
 			}
@@ -229,7 +229,7 @@
 									"outlettype" : [ "", "" ],
 									"patching_rect" : [ 350.0, 20.0, 157.0, 62.0 ],
 									"style" : "",
-									"text" : "j.parameter active @type boolean @description \"Is monitoring currently active?\""
+									"text" : "ossia.parameter active @type bool @description \"Is monitoring currently active?\""
 								}
 
 							}
@@ -245,7 +245,7 @@
 									"outlettype" : [ "", "" ],
 									"patching_rect" : [ 130.0, 20.0, 224.0, 62.0 ],
 									"style" : "",
-									"text" : "j.parameter downSample @type integer @range 1 250 @clipmode low @description \"Downsampling for slower scrolling\""
+									"text" : "ossia.parameter downSample @type int @range 1 250 @clip low @description \"Downsampling for slower scrolling\""
 								}
 
 							}
@@ -420,7 +420,7 @@
 													"outlettype" : [ "", "", "" ],
 													"patching_rect" : [ 45.0, 16.0, 137.0, 22.0 ],
 													"style" : "",
-													"text" : "j.receive num_channels"
+													"text" : "ossia.remote num_channels"
 												}
 
 											}
@@ -1986,7 +1986,7 @@
 				"type" : "iLaX"
 			}
 , 			{
-				"name" : "j.receive.mxo",
+				"name" : "ossia.remote.mxo",
 				"type" : "iLaX"
 			}
 , 			{
@@ -1994,11 +1994,11 @@
 				"type" : "iLaX"
 			}
 , 			{
-				"name" : "j.parameter.mxo",
+				"name" : "ossia.parameter.mxo",
 				"type" : "iLaX"
 			}
 , 			{
-				"name" : "j.model.mxo",
+				"name" : "ossia.model #1.mxo",
 				"type" : "iLaX"
 			}
 , 			{

@@ -115,7 +115,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "signal", "", "" ],
 					"patching_rect" : [ 517.0, 25.0, 127.0, 20.0 ],
-					"text" : "j.receive~ audio/out.R"
+					"text" : "ossia.remote~ audio/out.R"
 				}
 
 			}
@@ -129,7 +129,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "signal", "", "" ],
 					"patching_rect" : [ 337.0, 25.0, 125.0, 20.0 ],
-					"text" : "j.receive~ audio/out.L"
+					"text" : "ossia.remote~ audio/out.L"
 				}
 
 			}
@@ -143,7 +143,7 @@
 					"numoutlets" : 4,
 					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 508.0, 175.0, 126.0, 20.0 ],
-					"text" : "j.remote lfo/depth",
+					"text" : "ossia.remote lfo/depth",
 					"varname" : "#1/lfo/depth"
 				}
 
@@ -158,7 +158,7 @@
 					"numoutlets" : 4,
 					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 337.0, 175.0, 149.0, 20.0 ],
-					"text" : "j.remote lfo/frequency",
+					"text" : "ossia.remote lfo/frequency",
 					"varname" : "#1/lfo/frequency"
 				}
 
@@ -201,7 +201,7 @@
 					"numoutlets" : 4,
 					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 171.0, 175.0, 129.0, 20.0 ],
-					"text" : "j.remote lfo/phase",
+					"text" : "ossia.remote lfo/phase",
 					"varname" : "tremolo/phase_offset"
 				}
 
@@ -216,8 +216,8 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 20.0, 245.0, 63.0, 20.0 ],
-					"text" : "j.view",
-					"varname" : "j.model"
+					"text" : "ossia.view #1",
+					"varname" : "ossia.model #1"
 				}
 
 			}
@@ -390,15 +390,15 @@
 				"type" : "iLaX"
 			}
 , 			{
-				"name" : "j.view.mxo",
+				"name" : "ossia.view #1.mxo",
 				"type" : "iLaX"
 			}
 , 			{
-				"name" : "j.remote.mxo",
+				"name" : "ossia.remote.mxo",
 				"type" : "iLaX"
 			}
 , 			{
-				"name" : "j.receive~.mxo",
+				"name" : "ossia.remote~.mxo",
 				"type" : "iLaX"
 			}
  ]

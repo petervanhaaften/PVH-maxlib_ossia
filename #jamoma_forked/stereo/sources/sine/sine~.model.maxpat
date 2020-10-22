@@ -145,7 +145,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 12.0, 17.0, 148.0, 60.0 ],
-					"text" : "j.parameter oscillator @type string @description \"choose the waveform type.\"",
+					"text" : "ossia.parameter oscillator @type string @description \"choose the waveform type.\"",
 					"varname" : "mode[1]"
 				}
 
@@ -161,7 +161,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 866.0, 23.0, 206.0, 60.0 ],
-					"text" : "j.parameter note @type decimal @range 0. 20000. @ramp/drive max @dataspace time @unit midinote @description \"Frequency used.\"",
+					"text" : "ossia.parameter note @type decimal @range 0. 20000. @ramp/drive max @unit time.midinote @description \"Frequency used.\"",
 					"varname" : "frequency"
 				}
 
@@ -177,8 +177,8 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 231.0, 373.0, 164.0, 47.0 ],
-					"text" : "j.model @description \"Play sine tones - square - triangle waves etc.\"",
-					"varname" : "j.model"
+					"text" : "ossia.model #1 @description \"Play sine tones - square - triangle waves etc.\"",
+					"varname" : "ossia.model #1"
 				}
 
 			}
@@ -1428,11 +1428,11 @@
 			}
  ],
 		"dependency_cache" : [ 			{
-				"name" : "j.model.mxo",
+				"name" : "ossia.model #1.mxo",
 				"type" : "iLaX"
 			}
 , 			{
-				"name" : "j.parameter.mxo",
+				"name" : "ossia.parameter.mxo",
 				"type" : "iLaX"
 			}
 , 			{
