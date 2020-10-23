@@ -42,7 +42,7 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-5",
-					"index" : 0,
+					"index" : 2,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -54,7 +54,7 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-4",
-					"index" : 0,
+					"index" : 1,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -66,7 +66,7 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-3",
-					"index" : 0,
+					"index" : 1,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -107,8 +107,9 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "signal", "" ],
-					"patching_rect" : [ 45.0, 135.0, 201.0, 22.0 ],
-					"text" : "ossia.pvh.functiongen~.model #1"
+					"patching_rect" : [ 45.0, 135.0, 270.0, 22.0 ],
+					"text" : "ossia.pvh.functiongen~.model #1",
+					"varname" : "ossia.pvh.functiongen~.model"
 				}
 
 			}
@@ -134,55 +135,7 @@
 				}
 
 			}
- ],
-		"parameters" : 		{
-			"obj-2::obj-1" : [ "shape[4]", "shape", 0 ],
-			"obj-2::obj-16" : [ "shape[3]", "shape", 0 ],
-			"obj-2::obj-4" : [ "attack[1]", "attack", 0 ],
-			"obj-2::obj-6" : [ "deay[1]", "decay", 0 ],
-			"parameterbanks" : 			{
-
-			}
-,
-			"inherited_shortname" : 1
-		}
-,
-		"dependency_cache" : [ 			{
-				"name" : "ossia.pvh.functiongen~.model.maxpat",
-				"bootpath" : "~/src/Max/PVH-maxlib_ossia/pvh.functiongen~",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "ossia.pvh.functiongen~.view.maxpat",
-				"bootpath" : "~/src/Max/PVH-maxlib_ossia/pvh.functiongen~",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "ossia.model.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "ossia.parameter.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "j.message.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "ossia.view.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "ossia.remote.mxo",
-				"type" : "iLaX"
-			}
- ],
-		"autosave" : 0
+ ]
 	}
 
 }

@@ -255,7 +255,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 680.0, 635.0, 229.0, 35.0 ],
+					"patching_rect" : [ 680.0, 635.0, 230.0, 35.0 ],
 					"text" : "ossia.model #1 @description \"ADSR from BEAP modular\""
 				}
 
@@ -307,8 +307,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 471.382934999999975, 200.0, 201.0, 22.0 ],
-					"text" : "ossia.parameter release @type float"
+					"patching_rect" : [ 471.382934999999975, 200.0, 423.0, 22.0 ],
+					"text" : "ossia.parameter release @type float @default 1 @range 0.5 8000. @clip both"
 				}
 
 			}

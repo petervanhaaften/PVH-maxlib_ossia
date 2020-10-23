@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 590.0, 199.0, 477.0, 647.0 ],
+		"rect" : [ 78.0, 98.0, 477.0, 647.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -40,22 +40,12 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
-					"args" : [ "3d3e" ],
-					"bgmode" : 0,
-					"border" : 0,
-					"clickthrough" : 0,
-					"enablehscroll" : 0,
-					"enablevscroll" : 0,
-					"id" : "obj-7",
-					"lockeddragscroll" : 0,
-					"maxclass" : "bpatcher",
-					"name" : "ossia.output=.module.maxpat",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"offset" : [ 0.0, 0.0 ],
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 90.0, 485.0, 302.0, 71.0 ],
-					"viewvisibility" : 1
+					"id" : "obj-1",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 0,
+					"patching_rect" : [ 40.0, 446.0, 35.0, 22.0 ],
+					"text" : "dac~"
 				}
 
 			}
@@ -75,28 +65,7 @@
 					"numoutlets" : 2,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "signal", "" ],
-					"patching_rect" : [ 220.0, 378.0, 150.0, 73.0 ],
-					"viewvisibility" : 1
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"args" : [ "asdasdasdasd" ],
-					"bgmode" : 0,
-					"border" : 0,
-					"clickthrough" : 0,
-					"enablehscroll" : 0,
-					"enablevscroll" : 0,
-					"id" : "obj-1",
-					"lockeddragscroll" : 0,
-					"maxclass" : "bpatcher",
-					"name" : "ossia.pvh.gainslider~.module.maxpat",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"offset" : [ 0.0, 0.0 ],
-					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 0.0, 378.0, 27.0, 130.0 ],
+					"patching_rect" : [ 186.0, 279.0, 150.0, 73.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -130,7 +99,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 220.0, 303.0, 150.0, 33.0 ],
+					"patching_rect" : [ 331.0, 213.0, 135.0, 33.0 ],
 					"text" : "cant close from sustain with release set to 0"
 				}
 
@@ -143,7 +112,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 172.0, 132.0, 24.0, 24.0 ]
+					"patching_rect" : [ 186.0, 89.0, 24.0, 24.0 ]
 				}
 
 			}
@@ -163,18 +132,8 @@
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 172.0, 167.0, 276.0, 83.0 ],
+					"patching_rect" : [ 186.0, 124.0, 276.0, 83.0 ],
 					"viewvisibility" : 1
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-6",
-					"maxclass" : "ezdac~",
-					"numinlets" : 2,
-					"numoutlets" : 0,
-					"patching_rect" : [ 0.0, 525.0, 45.0, 45.0 ]
 				}
 
 			}
@@ -203,22 +162,6 @@
  ],
 		"lines" : [ 			{
 				"patchline" : 				{
-					"destination" : [ "obj-6", 1 ],
-					"order" : 0,
-					"source" : [ "obj-1", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-6", 0 ],
-					"order" : 1,
-					"source" : [ "obj-1", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-3", 1 ],
 					"source" : [ "obj-15", 0 ]
 				}
@@ -240,7 +183,16 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-1", 1 ],
+					"order" : 0,
+					"source" : [ "obj-3", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-1", 0 ],
+					"order" : 1,
 					"source" : [ "obj-3", 0 ]
 				}
 
@@ -314,20 +266,6 @@
 			"obj-4::obj-2::obj-16" : [ "shape[3]", "shape", 0 ],
 			"obj-4::obj-2::obj-4" : [ "attack[1]", "attack", 0 ],
 			"obj-4::obj-2::obj-6" : [ "deay[1]", "decay", 0 ],
-			"obj-7::obj-2::obj-103" : [ "live.text[40]", "live.text", 0 ],
-			"obj-7::obj-2::obj-126" : [ "live.text[39]", "live.text", 0 ],
-			"obj-7::obj-2::obj-19" : [ "live.slider[1]", "live.slider", 0 ],
-			"obj-7::obj-2::obj-20" : [ "live.text[38]", "live.text[3]", 0 ],
-			"obj-7::obj-2::obj-6::obj-12" : [ "Lookahead", "Lookahead", 0 ],
-			"obj-7::obj-2::obj-6::obj-13" : [ "Release", "Release", 0 ],
-			"obj-7::obj-2::obj-6::obj-15" : [ "Postamp", "Postamp", 0 ],
-			"obj-7::obj-2::obj-6::obj-27" : [ "Threshold", "Threshold", 0 ],
-			"obj-7::obj-2::obj-6::obj-30" : [ "live.menu", "live.menu", 0 ],
-			"obj-7::obj-2::obj-6::obj-42" : [ "live.text[37]", "live.text", 0 ],
-			"obj-7::obj-2::obj-6::obj-45" : [ "live.text[36]", "live.text", 0 ],
-			"obj-7::obj-2::obj-6::obj-5" : [ "Preamp", "Preamp", 0 ],
-			"obj-7::obj-2::obj-6::obj-6" : [ "live.text", "live.text", 0 ],
-			"obj-7::obj-2::obj-81" : [ "live.text[9]", "live.text[1]", 0 ],
 			"parameterbanks" : 			{
 
 			}
@@ -475,26 +413,6 @@
 ,
 				"obj-3::obj-2::obj-9" : 				{
 					"parameter_longname" : "live.text[14]"
-				}
-,
-				"obj-7::obj-2::obj-103" : 				{
-					"parameter_longname" : "live.text[40]"
-				}
-,
-				"obj-7::obj-2::obj-126" : 				{
-					"parameter_longname" : "live.text[39]"
-				}
-,
-				"obj-7::obj-2::obj-20" : 				{
-					"parameter_longname" : "live.text[38]"
-				}
-,
-				"obj-7::obj-2::obj-6::obj-42" : 				{
-					"parameter_longname" : "live.text[37]"
-				}
-,
-				"obj-7::obj-2::obj-6::obj-45" : 				{
-					"parameter_longname" : "live.text[36]"
 				}
 
 			}
@@ -649,27 +567,6 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "ossia.pvh.gainslider~.module.maxpat",
-				"bootpath" : "~/src/Max/PVH-maxlib_ossia/ossia.pvh.gainslider~",
-				"patcherrelativepath" : "../ossia.pvh.gainslider~",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "ossia.pvh.gainslider~.model.maxpat",
-				"bootpath" : "~/src/Max/PVH-maxlib_ossia/ossia.pvh.gainslider~",
-				"patcherrelativepath" : "../ossia.pvh.gainslider~",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "ossia.pvh.gainslider~.view.maxpat",
-				"bootpath" : "~/src/Max/PVH-maxlib_ossia/ossia.pvh.gainslider~",
-				"patcherrelativepath" : "../ossia.pvh.gainslider~",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
 				"name" : "ossia.pvh.functiongen~.module.maxpat",
 				"bootpath" : "~/src/Max/PVH-maxlib_ossia/ossia.pvh.functiongen~",
 				"patcherrelativepath" : "../ossia.pvh.functiongen~",
@@ -687,41 +584,6 @@
 				"name" : "ossia.pvh.functiongen~.view.maxpat",
 				"bootpath" : "~/src/Max/PVH-maxlib_ossia/ossia.pvh.functiongen~",
 				"patcherrelativepath" : "../ossia.pvh.functiongen~",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "ossia.output=.module.maxpat",
-				"bootpath" : "~/src/Max/tml-ossia/nav/ossia.mc.out=",
-				"patcherrelativepath" : "../../tml-ossia/nav/ossia.mc.out=",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "ossia.output=.model.maxpat",
-				"bootpath" : "~/src/Max/tml-ossia/nav/ossia.mc.out=",
-				"patcherrelativepath" : "../../tml-ossia/nav/ossia.mc.out=",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "ossia.limiter=.model.maxpat",
-				"bootpath" : "~/src/Max/tml-ossia/nav/ossia.limiter=",
-				"patcherrelativepath" : "../../tml-ossia/nav/ossia.limiter=",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "ossia.output=.view.maxpat",
-				"bootpath" : "~/src/Max/tml-ossia/nav/ossia.mc.out=",
-				"patcherrelativepath" : "../../tml-ossia/nav/ossia.mc.out=",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "ossia.limiter=.view.maxpat",
-				"bootpath" : "~/src/Max/tml-ossia/nav/ossia.limiter=",
-				"patcherrelativepath" : "../../tml-ossia/nav/ossia.limiter=",
 				"type" : "JSON",
 				"implicit" : 1
 			}

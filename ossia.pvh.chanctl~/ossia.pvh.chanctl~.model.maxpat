@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 102.0, 221.0, 640.0, 439.0 ],
+		"rect" : [ 649.0, 230.0, 640.0, 439.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -68,13 +68,13 @@
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
 					"id" : "obj-15",
-					"linecount" : 2,
+					"linecount" : 3,
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 229.0, 73.0, 225.0, 35.0 ],
-					"text" : "ossia.parameter audio/gain @type float @description \"control gain of output\"",
+					"patching_rect" : [ 229.0, 60.0, 195.0, 49.0 ],
+					"text" : "ossia.parameter audio/gain @type float @description \"control gain of output\" @default 0.",
 					"varname" : "record[1]"
 				}
 
