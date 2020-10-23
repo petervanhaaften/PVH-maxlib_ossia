@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 84.0, 128.0, 640.0, 480.0 ],
+		"rect" : [ 57.0, 379.0, 640.0, 480.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -147,7 +147,8 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "signal", "" ],
 					"patching_rect" : [ 15.0, 360.0, 214.0, 22.0 ],
-					"text" : "ossia.pvh.complexosc~.model #1"
+					"text" : "ossia.pvh.complexosc~.model #1",
+					"varname" : "ossia.pvh.complexosc~.model"
 				}
 
 			}
