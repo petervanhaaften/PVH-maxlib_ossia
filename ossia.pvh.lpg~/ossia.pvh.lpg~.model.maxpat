@@ -104,7 +104,7 @@
 									"maxclass" : "outlet",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 65.0, 272.0, 30.0, 30.0 ]
+									"patching_rect" : [ 64.666666666666657, 223.0, 30.0, 30.0 ]
 								}
 
 							}
@@ -1722,7 +1722,7 @@
  ]
 									}
 ,
-									"patching_rect" : [ 155.0, 130.0, 150.0, 22.0 ],
+									"patching_rect" : [ 143.333333333333343, 88.0, 150.0, 22.0 ],
 									"saved_object_attributes" : 									{
 										"description" : "",
 										"digest" : "",
@@ -1753,7 +1753,7 @@
 										}
 ,
 										"classnamespace" : "box",
-										"rect" : [ 787.0, 311.0, 585.0, 375.0 ],
+										"rect" : [ 705.0, 300.0, 581.0, 394.0 ],
 										"bglocked" : 0,
 										"openinpresentation" : 0,
 										"default_fontsize" : 12.0,
@@ -2603,7 +2603,7 @@
  ]
 									}
 ,
-									"patching_rect" : [ 65.0, 175.0, 255.0, 22.0 ],
+									"patching_rect" : [ 64.666666666666657, 126.0, 255.0, 22.0 ],
 									"saved_object_attributes" : 									{
 										"description" : "",
 										"digest" : "",
@@ -2621,7 +2621,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 54.0, 18.0, 41.0, 20.0 ],
+									"patching_rect" : [ 65.0, 18.0, 41.0, 20.0 ],
 									"text" : "sig in"
 								}
 
@@ -2646,7 +2646,7 @@
 									"numinlets" : 0,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 54.0, 40.0, 30.0, 30.0 ]
+									"patching_rect" : [ 65.0, 40.0, 30.0, 30.0 ]
 								}
 
 							}
@@ -2833,8 +2833,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 240.0, 135.0, 119.0, 76.0 ],
-					"text" : "ossia.model #1 @amenities audio @description \"buchla style lowpass gate\""
+					"patching_rect" : [ 240.0, 135.0, 90.0, 76.0 ],
+					"text" : "ossia.model #1 @description \"buchla style lowpass gate\""
 				}
 
 			}

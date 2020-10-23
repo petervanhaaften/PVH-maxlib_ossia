@@ -107,7 +107,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 2,
 					"numoutlets" : 2,
-					"outlettype" : [ "signal", "" ],
+					"outlettype" : [ "multichannelsignal", "" ],
 					"patching_rect" : [ 15.0, 165.0, 164.0, 22.0 ],
 					"text" : "ossia.pvh.lpg~.model #1",
 					"varname" : "ossia.pvh.lpg~.model"
