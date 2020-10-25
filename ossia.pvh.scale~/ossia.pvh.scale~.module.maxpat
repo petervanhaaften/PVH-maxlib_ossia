@@ -40,17 +40,6 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
-					"id" : "obj-7",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 342.0, 266.0, 100.0, 22.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"comment" : "",
 					"id" : "obj-6",
 					"index" : 2,
@@ -116,7 +105,7 @@
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 0.0, 0.0, 166.0, 346.0 ],
+					"patching_rect" : [ 0.0, 0.0, 165.0, 327.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 0.0, 0.0, 166.0, 324.0 ],
 					"viewvisibility" : 1

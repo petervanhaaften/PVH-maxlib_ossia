@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 378.0, 78.0, 952.0, 972.0 ],
+		"rect" : [ 1099.0, 78.0, 952.0, 867.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -39,6 +39,17 @@
 		"subpatcher_template" : "",
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-16",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 250.0, 37.0, 52.0, 20.0 ],
+					"text" : "sig in"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"color" : [ 0.317647, 0.654902, 0.976471, 1.0 ],
 					"fontname" : "Verdana",
@@ -118,13 +129,13 @@
 					"fontname" : "Verdana",
 					"fontsize" : 10.0,
 					"id" : "obj-95",
-					"linecount" : 7,
+					"linecount" : 5,
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 550.0, 421.5, 145.0, 94.0 ],
-					"text" : "ossia.parameter filter/gain @type decimal @range -24 24 @clip both @ramp/drive scheduler @repetitions 0 @description \"Gain (dB)\" @unit gain.dB @default 1.",
+					"patching_rect" : [ 550.0, 421.5, 171.0, 69.0 ],
+					"text" : "ossia.parameter filter/gain @type decimal @range -24 24 @clip both @repetitions 0 @description \"Gain (dB)\" @unit gain.dB @default 1.",
 					"varname" : "filtergain[1]"
 				}
 
@@ -325,23 +336,11 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-83",
-					"index" : 0,
+					"index" : 1,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 251.0, 1377.5, 30.0, 30.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-77",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "signal", "" ],
-					"patching_rect" : [ 251.0, 1345.0, 50.0, 22.0 ],
-					"text" : "j.out~ L"
 				}
 
 			}
@@ -868,71 +867,14 @@
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-73",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "signal", "" ],
-					"patching_rect" : [ 296.0, 144.5, 75.0, 22.0 ],
-					"text" : "j.in~ audio"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"color" : [ 0.113725, 0.580392, 0.737255, 1.0 ],
-					"fontname" : "Verdana",
-					"fontsize" : 10.0,
-					"id" : "obj-39",
-					"linecount" : 6,
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 251.0, 12.0, 101.0, 81.0 ],
-					"text" : "ossia.parameter mute @type int @range 0. 0. @clip low @description \"to be replaced\"",
-					"varname" : "reference[11]"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontname" : "Arial",
-					"fontsize" : 12.0,
-					"id" : "obj-16",
-					"maxclass" : "newobj",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "int" ],
-					"patching_rect" : [ 251.0, 102.0, 32.5, 22.0 ],
-					"text" : "!- 1"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontname" : "Arial",
-					"fontsize" : 12.0,
-					"id" : "obj-74",
-					"maxclass" : "newobj",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 251.0, 177.0, 60.0, 22.0 ],
-					"text" : "gate~"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"comment" : "",
 					"id" : "obj-76",
-					"index" : 0,
+					"index" : 1,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 296.0, 102.0, 25.0, 25.0 ]
+					"outlettype" : [ "signal" ],
+					"patching_rect" : [ 251.0, 64.0, 25.0, 25.0 ]
 				}
 
 			}
@@ -940,7 +882,7 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-71",
-					"index" : 0,
+					"index" : 2,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -970,7 +912,7 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-72",
-					"index" : 0,
+					"index" : 2,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -1072,7 +1014,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 771.0, 920.5, 162.0, 57.0 ],
+					"patching_rect" : [ 771.0, 920.5, 165.0, 57.0 ],
 					"text" : "ossia.parameter pre-slide/down @type decimal @range 0. 20000. @clip low @description \"slide down\"",
 					"varname" : "reference[14]"
 				}
@@ -1089,7 +1031,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 771.0, 822.5, 148.0, 57.0 ],
+					"patching_rect" : [ 771.0, 822.5, 154.0, 57.0 ],
 					"text" : "ossia.parameter pre-slide/up @type decimal @range 0. 20000. @clip low @description \"slide up\"",
 					"varname" : "reference[2]"
 				}
@@ -1122,7 +1064,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 16.0, 982.0, 145.0, 69.0 ],
+					"patching_rect" : [ 16.0, 982.0, 147.0, 69.0 ],
 					"text" : "ossia.parameter ramp/down @type decimal @range 0. 20000. @clip low @description \"ramp down\"",
 					"varname" : "reference[16]"
 				}
@@ -2021,7 +1963,7 @@
  ],
 		"lines" : [ 			{
 				"patchline" : 				{
-					"destination" : [ "obj-77", 0 ],
+					"destination" : [ "obj-83", 0 ],
 					"order" : 1,
 					"source" : [ "obj-1", 0 ]
 				}
@@ -2112,13 +2054,6 @@
 				"patchline" : 				{
 					"destination" : [ "obj-115", 0 ],
 					"source" : [ "obj-15", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-74", 0 ],
-					"source" : [ "obj-16", 0 ]
 				}
 
 			}
@@ -2269,14 +2204,6 @@
 					"destination" : [ "obj-1", 6 ],
 					"midpoints" : [ 780.5, 1017.0, 746.0, 1017.0, 746.0, 1219.0, 349.75, 1219.0 ],
 					"source" : [ "obj-38", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-16", 0 ],
-					"midpoints" : [ 260.5, 97.0, 260.5, 97.0 ],
-					"source" : [ "obj-39", 0 ]
 				}
 
 			}
@@ -2443,39 +2370,17 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-74", 1 ],
-					"source" : [ "obj-73", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-100", 0 ],
 					"order" : 1,
-					"source" : [ "obj-74", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-19", 1 ],
-					"midpoints" : [ 260.5, 209.5, 426.791626000000008, 209.5 ],
-					"order" : 0,
-					"source" : [ "obj-74", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-73", 0 ],
 					"source" : [ "obj-76", 0 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-83", 0 ],
-					"source" : [ "obj-77", 0 ]
+					"destination" : [ "obj-19", 1 ],
+					"order" : 0,
+					"source" : [ "obj-76", 0 ]
 				}
 
 			}
@@ -2536,29 +2441,7 @@
 				}
 
 			}
- ],
-		"dependency_cache" : [ 			{
-				"name" : "ossia.parameter.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "ossia.model.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "j.in~.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "ossia.remote.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "j.out~.mxo",
-				"type" : "iLaX"
-			}
- ],
-		"autosave" : 0
+ ]
 	}
 
 }

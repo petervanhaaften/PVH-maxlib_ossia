@@ -70,7 +70,7 @@
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "" ],
+					"outlettype" : [ "bang" ],
 					"patching_rect" : [ 45.0, 90.0, 30.0, 30.0 ]
 				}
 
@@ -94,7 +94,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 0.0, 0.0, 150.0, 70.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 0.0, 150.0, 70.0 ],
+					"presentation_rect" : [ 0.0, 0.0, 158.0, 70.0 ],
 					"viewvisibility" : 1
 				}
 

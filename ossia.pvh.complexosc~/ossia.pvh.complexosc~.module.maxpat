@@ -65,26 +65,13 @@
 , 			{
 				"box" : 				{
 					"comment" : "",
-					"id" : "obj-8",
-					"index" : 4,
-					"maxclass" : "inlet",
-					"numinlets" : 0,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 152.0, 315.0, 30.0, 30.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"comment" : "",
 					"id" : "obj-7",
 					"index" : 3,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 106.333336000000003, 315.0, 30.0, 30.0 ]
+					"patching_rect" : [ 210.0, 315.0, 30.0, 30.0 ]
 				}
 
 			}
@@ -97,7 +84,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 60.666668000000001, 315.0, 30.0, 30.0 ]
+					"patching_rect" : [ 112.5, 315.0, 30.0, 30.0 ]
 				}
 
 			}
@@ -122,7 +109,7 @@
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 152.0, 405.0, 30.0, 30.0 ]
+					"patching_rect" : [ 210.0, 405.0, 30.0, 30.0 ]
 				}
 
 			}
@@ -143,9 +130,9 @@
 					"annotation" : "Complex PM oscillator",
 					"id" : "obj-1",
 					"maxclass" : "newobj",
-					"numinlets" : 4,
+					"numinlets" : 3,
 					"numoutlets" : 2,
-					"outlettype" : [ "signal", "" ],
+					"outlettype" : [ "multichannelsignal", "" ],
 					"patching_rect" : [ 15.0, 360.0, 214.0, 22.0 ],
 					"text" : "ossia.pvh.complexosc~.model #1",
 					"varname" : "ossia.pvh.complexosc~.model"
@@ -185,13 +172,6 @@
 				"patchline" : 				{
 					"destination" : [ "obj-1", 2 ],
 					"source" : [ "obj-7", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-1", 3 ],
-					"source" : [ "obj-8", 0 ]
 				}
 
 			}

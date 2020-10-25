@@ -71,7 +71,7 @@
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "" ],
+					"outlettype" : [ "int" ],
 					"patching_rect" : [ 45.0, 165.0, 30.0, 30.0 ]
 				}
 
@@ -93,9 +93,9 @@
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 0.0, 0.0, 300.0, 140.0 ],
+					"patching_rect" : [ -1.0, 0.0, 301.0, 79.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 0.0, 300.0, 140.0 ],
+					"presentation_rect" : [ 0.0, 0.0, 300.0, 79.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -108,8 +108,8 @@
 					"maxclass" : "newobj",
 					"numinlets" : 2,
 					"numoutlets" : 1,
-					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 45.0, 225.0, 158.0, 22.0 ],
+					"outlettype" : [ "multichannelsignal" ],
+					"patching_rect" : [ 45.0, 225.0, 210.0, 22.0 ],
 					"text" : "ossia.pvh.adsr~.model #1"
 				}
 
