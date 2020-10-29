@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 1009.0, 78.0, 640.0, 480.0 ],
+		"rect" : [ 66.0, 205.0, 640.0, 480.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -40,11 +40,88 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-9",
+					"maxclass" : "button",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 255.0, 297.0, 24.0, 24.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-7",
+					"maxclass" : "scope~",
+					"numinlets" : 2,
+					"numoutlets" : 0,
+					"patching_rect" : [ 315.0, 405.0, 130.0, 130.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"args" : [ "crap1" ],
+					"bgmode" : 0,
+					"border" : 0,
+					"clickthrough" : 0,
+					"enablehscroll" : 0,
+					"enablevscroll" : 0,
+					"id" : "obj-6",
+					"lockeddragscroll" : 0,
+					"maxclass" : "bpatcher",
+					"name" : "ossia.pvh.functiongen~.module.maxpat",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"offset" : [ 0.0, 0.0 ],
+					"outlettype" : [ "multichannelsignal", "float" ],
+					"patching_rect" : [ 255.0, 330.0, 166.0, 75.0 ],
+					"varname" : "ossia.pvh.functiongen~.module",
+					"viewvisibility" : 1
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-5",
+					"maxclass" : "meter~",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "float" ],
+					"patching_rect" : [ 135.0, 510.0, 80.0, 13.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"args" : [ "lpg1" ],
+					"bgmode" : 0,
+					"border" : 0,
+					"clickthrough" : 0,
+					"enablehscroll" : 0,
+					"enablevscroll" : 0,
+					"id" : "obj-4",
+					"lockeddragscroll" : 0,
+					"maxclass" : "bpatcher",
+					"name" : "ossia.pvh.lpg~.module.maxpat",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"offset" : [ 0.0, 0.0 ],
+					"outlettype" : [ "multichannelsignal" ],
+					"patching_rect" : [ 79.0, 420.0, 168.0, 78.0 ],
+					"varname" : "ossia.pvh.lpg~.module",
+					"viewvisibility" : 1
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-3",
 					"maxclass" : "newobj",
 					"numinlets" : 2,
 					"numoutlets" : 0,
-					"patching_rect" : [ 205.0, 335.0, 35.0, 22.0 ],
+					"patching_rect" : [ 79.0, 540.0, 35.0, 22.0 ],
 					"text" : "dac~"
 				}
 
@@ -56,7 +133,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "float" ],
-					"patching_rect" : [ 83.0, 295.0, 80.0, 13.0 ]
+					"patching_rect" : [ 114.5, 348.0, 80.0, 13.0 ]
 				}
 
 			}
@@ -76,7 +153,7 @@
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "multichannelsignal" ],
-					"patching_rect" : [ 73.0, 49.0, 151.0, 206.0 ],
+					"patching_rect" : [ 79.0, 125.0, 151.0, 206.0 ],
 					"varname" : "ossia.pvh.complexosc~.module",
 					"viewvisibility" : 1
 				}
@@ -86,14 +163,6 @@
 		"lines" : [ 			{
 				"patchline" : 				{
 					"destination" : [ "obj-2", 0 ],
-					"order" : 2,
-					"source" : [ "obj-1", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-3", 1 ],
 					"order" : 0,
 					"source" : [ "obj-1", 0 ]
 				}
@@ -101,9 +170,56 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-3", 0 ],
+					"destination" : [ "obj-4", 0 ],
 					"order" : 1,
 					"source" : [ "obj-1", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-3", 1 ],
+					"order" : 1,
+					"source" : [ "obj-4", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-3", 0 ],
+					"order" : 2,
+					"source" : [ "obj-4", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-5", 0 ],
+					"order" : 0,
+					"source" : [ "obj-4", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-4", 1 ],
+					"order" : 1,
+					"source" : [ "obj-6", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-7", 0 ],
+					"order" : 0,
+					"source" : [ "obj-6", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-6", 0 ],
+					"source" : [ "obj-9", 0 ]
 				}
 
 			}
@@ -144,6 +260,44 @@
 			"obj-1::obj-2::obj-48" : [ "live.toggle", "live.toggle", 0 ],
 			"obj-1::obj-2::obj-51" : [ "live.toggle[3]", "live.toggle", 0 ],
 			"obj-1::obj-2::obj-9" : [ "live.dial[4]", "noise_filt", 0 ],
+			"obj-4::obj-2::obj-1" : [ "vcaness", "vcaness", 0 ],
+			"obj-4::obj-2::obj-10" : [ "live.text[23]", "1", 2 ],
+			"obj-4::obj-2::obj-100" : [ "live.text[34]", "live.text", 0 ],
+			"obj-4::obj-2::obj-12" : [ "live.text[24]", "live.text", 0 ],
+			"obj-4::obj-2::obj-126" : [ "live.text[33]", "live.text", 0 ],
+			"obj-4::obj-2::obj-16::obj-100" : [ "live.text[22]", "live.text", 0 ],
+			"obj-4::obj-2::obj-16::obj-12" : [ "live.numbox[2]", "live.numbox", 0 ],
+			"obj-4::obj-2::obj-31" : [ "resonance", "reson", 0 ],
+			"obj-4::obj-2::obj-66" : [ "offset", "offset", 0 ],
+			"obj-4::obj-2::obj-6::obj-66::obj-10::obj-10::obj-145" : [ "live.menu[9]", "live.menu", 0 ],
+			"obj-4::obj-2::obj-6::obj-66::obj-10::obj-196" : [ "live.text[16]", "live.text", 0 ],
+			"obj-4::obj-2::obj-6::obj-66::obj-182" : [ "live.text[17]", "live.text[4]", 0 ],
+			"obj-4::obj-2::obj-6::obj-67::obj-10::obj-10::obj-145" : [ "live.menu[10]", "live.menu", 0 ],
+			"obj-4::obj-2::obj-6::obj-67::obj-10::obj-196" : [ "live.text[18]", "live.text", 0 ],
+			"obj-4::obj-2::obj-6::obj-67::obj-182" : [ "live.text[19]", "live.text[4]", 0 ],
+			"obj-4::obj-2::obj-6::obj-68::obj-10::obj-10::obj-145" : [ "live.menu[11]", "live.menu", 0 ],
+			"obj-4::obj-2::obj-6::obj-68::obj-10::obj-196" : [ "live.text[20]", "live.text", 0 ],
+			"obj-4::obj-2::obj-6::obj-68::obj-182" : [ "live.text[21]", "live.text[4]", 0 ],
+			"obj-4::obj-2::obj-9" : [ "live.text[25]", "1", 2 ],
+			"obj-6::obj-2::obj-1" : [ "shape[4]", "shape", 0 ],
+			"obj-6::obj-2::obj-12" : [ "live.text[52]", "live.text", 0 ],
+			"obj-6::obj-2::obj-13::obj-100" : [ "live.text[39]", "live.text", 0 ],
+			"obj-6::obj-2::obj-13::obj-12" : [ "live.numbox[3]", "live.numbox", 0 ],
+			"obj-6::obj-2::obj-16" : [ "shape[3]", "shape", 0 ],
+			"obj-6::obj-2::obj-4" : [ "attack[1]", "attack", 0 ],
+			"obj-6::obj-2::obj-6" : [ "deay[1]", "decay", 0 ],
+			"obj-6::obj-2::obj-8::obj-66::obj-10::obj-10::obj-145" : [ "live.menu[12]", "live.menu", 0 ],
+			"obj-6::obj-2::obj-8::obj-66::obj-10::obj-196" : [ "live.text[26]", "live.text", 0 ],
+			"obj-6::obj-2::obj-8::obj-66::obj-182" : [ "live.text[27]", "live.text[4]", 0 ],
+			"obj-6::obj-2::obj-8::obj-67::obj-10::obj-10::obj-145" : [ "live.menu[13]", "live.menu", 0 ],
+			"obj-6::obj-2::obj-8::obj-67::obj-10::obj-196" : [ "live.text[28]", "live.text", 0 ],
+			"obj-6::obj-2::obj-8::obj-67::obj-182" : [ "live.text[29]", "live.text[4]", 0 ],
+			"obj-6::obj-2::obj-8::obj-68::obj-10::obj-10::obj-145" : [ "live.menu[14]", "live.menu", 0 ],
+			"obj-6::obj-2::obj-8::obj-68::obj-10::obj-196" : [ "live.text[35]", "live.text", 0 ],
+			"obj-6::obj-2::obj-8::obj-68::obj-182" : [ "live.text[36]", "live.text[4]", 0 ],
+			"obj-6::obj-2::obj-8::obj-70::obj-10::obj-10::obj-145" : [ "live.menu[15]", "live.menu", 0 ],
+			"obj-6::obj-2::obj-8::obj-70::obj-10::obj-196" : [ "live.text[37]", "live.text", 0 ],
+			"obj-6::obj-2::obj-8::obj-70::obj-182" : [ "live.text[38]", "live.text[4]", 0 ],
 			"parameterbanks" : 			{
 
 			}
@@ -219,6 +373,118 @@
 ,
 				"obj-1::obj-2::obj-1::obj-70::obj-182" : 				{
 					"parameter_longname" : "live.text[6]"
+				}
+,
+				"obj-4::obj-2::obj-10" : 				{
+					"parameter_longname" : "live.text[23]"
+				}
+,
+				"obj-4::obj-2::obj-12" : 				{
+					"parameter_longname" : "live.text[24]"
+				}
+,
+				"obj-4::obj-2::obj-16::obj-100" : 				{
+					"parameter_longname" : "live.text[22]"
+				}
+,
+				"obj-4::obj-2::obj-16::obj-12" : 				{
+					"parameter_longname" : "live.numbox[2]"
+				}
+,
+				"obj-4::obj-2::obj-6::obj-66::obj-10::obj-10::obj-145" : 				{
+					"parameter_longname" : "live.menu[9]"
+				}
+,
+				"obj-4::obj-2::obj-6::obj-66::obj-10::obj-196" : 				{
+					"parameter_longname" : "live.text[16]"
+				}
+,
+				"obj-4::obj-2::obj-6::obj-66::obj-182" : 				{
+					"parameter_longname" : "live.text[17]"
+				}
+,
+				"obj-4::obj-2::obj-6::obj-67::obj-10::obj-10::obj-145" : 				{
+					"parameter_longname" : "live.menu[10]"
+				}
+,
+				"obj-4::obj-2::obj-6::obj-67::obj-10::obj-196" : 				{
+					"parameter_longname" : "live.text[18]"
+				}
+,
+				"obj-4::obj-2::obj-6::obj-67::obj-182" : 				{
+					"parameter_longname" : "live.text[19]"
+				}
+,
+				"obj-4::obj-2::obj-6::obj-68::obj-10::obj-10::obj-145" : 				{
+					"parameter_longname" : "live.menu[11]"
+				}
+,
+				"obj-4::obj-2::obj-6::obj-68::obj-10::obj-196" : 				{
+					"parameter_longname" : "live.text[20]"
+				}
+,
+				"obj-4::obj-2::obj-6::obj-68::obj-182" : 				{
+					"parameter_longname" : "live.text[21]"
+				}
+,
+				"obj-4::obj-2::obj-9" : 				{
+					"parameter_longname" : "live.text[25]"
+				}
+,
+				"obj-6::obj-2::obj-13::obj-100" : 				{
+					"parameter_longname" : "live.text[39]"
+				}
+,
+				"obj-6::obj-2::obj-13::obj-12" : 				{
+					"parameter_longname" : "live.numbox[3]"
+				}
+,
+				"obj-6::obj-2::obj-8::obj-66::obj-10::obj-10::obj-145" : 				{
+					"parameter_longname" : "live.menu[12]"
+				}
+,
+				"obj-6::obj-2::obj-8::obj-66::obj-10::obj-196" : 				{
+					"parameter_longname" : "live.text[26]"
+				}
+,
+				"obj-6::obj-2::obj-8::obj-66::obj-182" : 				{
+					"parameter_longname" : "live.text[27]"
+				}
+,
+				"obj-6::obj-2::obj-8::obj-67::obj-10::obj-10::obj-145" : 				{
+					"parameter_longname" : "live.menu[13]"
+				}
+,
+				"obj-6::obj-2::obj-8::obj-67::obj-10::obj-196" : 				{
+					"parameter_longname" : "live.text[28]"
+				}
+,
+				"obj-6::obj-2::obj-8::obj-67::obj-182" : 				{
+					"parameter_longname" : "live.text[29]"
+				}
+,
+				"obj-6::obj-2::obj-8::obj-68::obj-10::obj-10::obj-145" : 				{
+					"parameter_longname" : "live.menu[14]"
+				}
+,
+				"obj-6::obj-2::obj-8::obj-68::obj-10::obj-196" : 				{
+					"parameter_longname" : "live.text[35]"
+				}
+,
+				"obj-6::obj-2::obj-8::obj-68::obj-182" : 				{
+					"parameter_longname" : "live.text[36]"
+				}
+,
+				"obj-6::obj-2::obj-8::obj-70::obj-10::obj-10::obj-145" : 				{
+					"parameter_longname" : "live.menu[15]"
+				}
+,
+				"obj-6::obj-2::obj-8::obj-70::obj-10::obj-196" : 				{
+					"parameter_longname" : "live.text[37]"
+				}
+,
+				"obj-6::obj-2::obj-8::obj-70::obj-182" : 				{
+					"parameter_longname" : "live.text[38]"
 				}
 
 			}
@@ -317,6 +583,62 @@
 				"implicit" : 1
 			}
 , 			{
+				"name" : "ossia.pvh.lpg~.module.maxpat",
+				"bootpath" : "~/src/Max/PVH-maxlib_ossia/ossia.pvh.lpg~",
+				"patcherrelativepath" : "../ossia.pvh.lpg~",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "ossia.pvh.lpg~.model.maxpat",
+				"bootpath" : "~/src/Max/PVH-maxlib_ossia/ossia.pvh.lpg~",
+				"patcherrelativepath" : "../ossia.pvh.lpg~",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "poly_LPG_pvhedit.maxpat",
+				"bootpath" : "~/src/Max/PVH-maxlib_ossia/ossia.pvh.lpg~",
+				"patcherrelativepath" : "../ossia.pvh.lpg~",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "LPG_nonlin.gendsp",
+				"bootpath" : "~/src/Max/PVH-maxlib_ossia/ossia.pvh.lpg~",
+				"patcherrelativepath" : "../ossia.pvh.lpg~",
+				"type" : "gDSP",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "ossia.pvh.lpg~.view.maxpat",
+				"bootpath" : "~/src/Max/PVH-maxlib_ossia/ossia.pvh.lpg~",
+				"patcherrelativepath" : "../ossia.pvh.lpg~",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "ossia.pvh.functiongen~.module.maxpat",
+				"bootpath" : "~/src/Max/PVH-maxlib_ossia/ossia.pvh.functiongen~",
+				"patcherrelativepath" : "../ossia.pvh.functiongen~",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "ossia.pvh.functiongen~.model.maxpat",
+				"bootpath" : "~/src/Max/PVH-maxlib_ossia/ossia.pvh.functiongen~",
+				"patcherrelativepath" : "../ossia.pvh.functiongen~",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "ossia.pvh.functiongen~.view.maxpat",
+				"bootpath" : "~/src/Max/PVH-maxlib_ossia/ossia.pvh.functiongen~",
+				"patcherrelativepath" : "../ossia.pvh.functiongen~",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "ossia.model.mxo",
 				"type" : "iLaX"
 			}
@@ -354,6 +676,10 @@
 			}
 , 			{
 				"name" : "ossia.attribute.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "j.message.mxo",
 				"type" : "iLaX"
 			}
  ],

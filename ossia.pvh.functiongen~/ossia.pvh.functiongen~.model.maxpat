@@ -69,8 +69,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "multichannelsignal", "int" ],
-					"patching_rect" : [ 10.0, 171.0, 246.0, 22.0 ],
-					"text" : "ossia.pvh.chanctl~.model #1"
+					"patching_rect" : [ 10.0, 171.0, 176.0, 22.0 ],
+					"text" : "ossia.pvh.chanctl~.model audio"
 				}
 
 			}
@@ -120,7 +120,6 @@
 						"style" : "",
 						"subpatcher_template" : "",
 						"assistshowspatchername" : 0,
-						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"format" : 6,
@@ -271,7 +270,6 @@
 										"style" : "",
 										"subpatcher_template" : "",
 										"assistshowspatchername" : 0,
-										"visible" : 1,
 										"boxes" : [ 											{
 												"box" : 												{
 													"id" : "obj-9",
@@ -1692,7 +1690,6 @@
 														"style" : "",
 														"subpatcher_template" : "",
 														"assistshowspatchername" : 0,
-														"visible" : 1,
 														"boxes" : [ 															{
 																"box" : 																{
 																	"format" : 6,
@@ -2819,7 +2816,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 214.0, 204.0, 251.0, 35.0 ],
+					"patching_rect" : [ 214.0, 204.0, 252.0, 35.0 ],
 					"text" : "ossia.model #1 @description \"AD variable shape function generator\""
 				}
 
