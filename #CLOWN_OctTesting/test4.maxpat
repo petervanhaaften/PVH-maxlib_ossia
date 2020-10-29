@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 66.0, 205.0, 640.0, 480.0 ],
+		"rect" : [ 532.0, 243.0, 653.0, 688.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -40,13 +40,78 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-14",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 285.0, 120.0, 50.0, 22.0 ],
+					"text" : "signal"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"args" : [ "input1" ],
+					"bgmode" : 0,
+					"border" : 0,
+					"clickthrough" : 0,
+					"enablehscroll" : 0,
+					"enablevscroll" : 0,
+					"id" : "obj-12",
+					"lockeddragscroll" : 0,
+					"maxclass" : "bpatcher",
+					"name" : "ossia.pvh.minput~.module.maxpat",
+					"numinlets" : 0,
+					"numoutlets" : 2,
+					"offset" : [ 0.0, 0.0 ],
+					"outlettype" : [ "signal", "signal" ],
+					"patching_rect" : [ 315.0, 30.0, 90.0, 60.0 ],
+					"viewvisibility" : 1
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-11",
+					"maxclass" : "meter~",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "float" ],
+					"patching_rect" : [ 90.0, 510.0, 80.0, 13.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"args" : [ "pan" ],
+					"bgmode" : 0,
+					"border" : 0,
+					"clickthrough" : 0,
+					"enablehscroll" : 0,
+					"enablevscroll" : 0,
+					"id" : "obj-8",
+					"lockeddragscroll" : 0,
+					"maxclass" : "bpatcher",
+					"name" : "ossia.pvh.balance~.module.maxpat",
+					"numinlets" : 2,
+					"numoutlets" : 2,
+					"offset" : [ 0.0, 0.0 ],
+					"outlettype" : [ "signal", "signal" ],
+					"patching_rect" : [ 15.0, 415.0, 152.0, 75.0 ],
+					"viewvisibility" : 1
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-9",
 					"maxclass" : "button",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 255.0, 297.0, 24.0, 24.0 ]
+					"patching_rect" : [ 191.0, 187.0, 24.0, 24.0 ]
 				}
 
 			}
@@ -56,7 +121,7 @@
 					"maxclass" : "scope~",
 					"numinlets" : 2,
 					"numoutlets" : 0,
-					"patching_rect" : [ 315.0, 405.0, 130.0, 130.0 ]
+					"patching_rect" : [ 191.0, 310.0, 130.0, 130.0 ]
 				}
 
 			}
@@ -76,7 +141,7 @@
 					"numoutlets" : 2,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "multichannelsignal", "float" ],
-					"patching_rect" : [ 255.0, 330.0, 166.0, 75.0 ],
+					"patching_rect" : [ 191.0, 220.0, 154.0, 80.0 ],
 					"varname" : "ossia.pvh.functiongen~.module",
 					"viewvisibility" : 1
 				}
@@ -89,7 +154,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "float" ],
-					"patching_rect" : [ 135.0, 510.0, 80.0, 13.0 ]
+					"patching_rect" : [ 71.0, 400.0, 80.0, 13.0 ]
 				}
 
 			}
@@ -109,7 +174,7 @@
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "multichannelsignal" ],
-					"patching_rect" : [ 79.0, 420.0, 168.0, 78.0 ],
+					"patching_rect" : [ 15.0, 310.0, 168.0, 78.0 ],
 					"varname" : "ossia.pvh.lpg~.module",
 					"viewvisibility" : 1
 				}
@@ -121,7 +186,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 2,
 					"numoutlets" : 0,
-					"patching_rect" : [ 79.0, 540.0, 35.0, 22.0 ],
+					"patching_rect" : [ 15.0, 510.0, 35.0, 22.0 ],
 					"text" : "dac~"
 				}
 
@@ -133,7 +198,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "float" ],
-					"patching_rect" : [ 114.5, 348.0, 80.0, 13.0 ]
+					"patching_rect" : [ 50.5, 238.0, 80.0, 13.0 ]
 				}
 
 			}
@@ -153,7 +218,7 @@
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "multichannelsignal" ],
-					"patching_rect" : [ 79.0, 125.0, 151.0, 206.0 ],
+					"patching_rect" : [ 15.0, 15.0, 151.0, 206.0 ],
 					"varname" : "ossia.pvh.complexosc~.module",
 					"viewvisibility" : 1
 				}
@@ -178,7 +243,14 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-3", 1 ],
+					"destination" : [ "obj-14", 1 ],
+					"source" : [ "obj-12", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-5", 0 ],
 					"order" : 1,
 					"source" : [ "obj-4", 0 ]
 				}
@@ -186,16 +258,16 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-3", 0 ],
-					"order" : 2,
+					"destination" : [ "obj-8", 1 ],
+					"order" : 0,
 					"source" : [ "obj-4", 0 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-5", 0 ],
-					"order" : 0,
+					"destination" : [ "obj-8", 0 ],
+					"order" : 2,
 					"source" : [ "obj-4", 0 ]
 				}
 
@@ -218,6 +290,22 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-3", 1 ],
+					"order" : 0,
+					"source" : [ "obj-8", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-3", 0 ],
+					"order" : 1,
+					"source" : [ "obj-8", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-6", 0 ],
 					"source" : [ "obj-9", 0 ]
 				}
@@ -225,6 +313,8 @@
 			}
  ],
 		"parameters" : 		{
+			"obj-12::obj-1::obj-13" : [ "live.numbox[4]", "live.numbox", 0 ],
+			"obj-12::obj-1::obj-4" : [ "live.numbox", "live.numbox", 0 ],
 			"obj-1::obj-2::obj-10" : [ "live.dial", "morph", 0 ],
 			"obj-1::obj-2::obj-12" : [ "live.dial[2]", "index", 0 ],
 			"obj-1::obj-2::obj-16" : [ "live.dial[3]", "noise", 0 ],
@@ -298,11 +388,18 @@
 			"obj-6::obj-2::obj-8::obj-70::obj-10::obj-10::obj-145" : [ "live.menu[15]", "live.menu", 0 ],
 			"obj-6::obj-2::obj-8::obj-70::obj-10::obj-196" : [ "live.text[37]", "live.text", 0 ],
 			"obj-6::obj-2::obj-8::obj-70::obj-182" : [ "live.text[38]", "live.text[4]", 0 ],
+			"obj-8::obj-1::obj-10" : [ "Balance", "Balance", 0 ],
+			"obj-8::obj-1::obj-21" : [ "live.menu", "Shape", 0 ],
+			"obj-8::obj-1::obj-22" : [ "live.menu[16]", "Shape", 0 ],
 			"parameterbanks" : 			{
 
 			}
 ,
 			"parameter_overrides" : 			{
+				"obj-12::obj-1::obj-13" : 				{
+					"parameter_longname" : "live.numbox[4]"
+				}
+,
 				"obj-1::obj-2::obj-1::obj-105::obj-10::obj-10::obj-145" : 				{
 					"parameter_longname" : "live.menu[8]"
 				}
@@ -486,6 +583,10 @@
 				"obj-6::obj-2::obj-8::obj-70::obj-182" : 				{
 					"parameter_longname" : "live.text[38]"
 				}
+,
+				"obj-8::obj-1::obj-22" : 				{
+					"parameter_longname" : "live.menu[16]"
+				}
 
 			}
 ,
@@ -639,6 +740,48 @@
 				"implicit" : 1
 			}
 , 			{
+				"name" : "ossia.pvh.balance~.module.maxpat",
+				"bootpath" : "~/src/Max/PVH-maxlib_ossia/ossia.pvh.balance~",
+				"patcherrelativepath" : "../ossia.pvh.balance~",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "ossia.pvh.balance~.model.maxpat",
+				"bootpath" : "~/src/Max/PVH-maxlib_ossia/ossia.pvh.balance~",
+				"patcherrelativepath" : "../ossia.pvh.balance~",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "ossia.pvh.balance~.view.maxpat",
+				"bootpath" : "~/src/Max/PVH-maxlib_ossia/ossia.pvh.balance~",
+				"patcherrelativepath" : "../ossia.pvh.balance~",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "ossia.pvh.minput~.module.maxpat",
+				"bootpath" : "~/src/Max/PVH-maxlib_ossia/ossia.pvh.minput~",
+				"patcherrelativepath" : "../ossia.pvh.minput~",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "ossia.pvh.minput~.model.maxpat",
+				"bootpath" : "~/src/Max/PVH-maxlib_ossia/ossia.pvh.minput~",
+				"patcherrelativepath" : "../ossia.pvh.minput~",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "ossia.pvh.minput~.view.maxpat",
+				"bootpath" : "~/src/Max/PVH-maxlib_ossia/ossia.pvh.minput~",
+				"patcherrelativepath" : "../ossia.pvh.minput~",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "ossia.model.mxo",
 				"type" : "iLaX"
 			}
@@ -680,6 +823,10 @@
 			}
 , 			{
 				"name" : "j.message.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "j.panorama~.mxo",
 				"type" : "iLaX"
 			}
  ],
