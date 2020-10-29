@@ -47,7 +47,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 165.0, 195.0, 50.0, 22.0 ]
+					"patching_rect" : [ 195.0, 210.0, 50.0, 22.0 ]
 				}
 
 			}
@@ -4388,8 +4388,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "multichannelsignal", "int" ],
-					"patching_rect" : [ 15.0, 150.0, 201.0, 22.0 ],
-					"text" : "ossia.pvh.chanctl~.model #1"
+					"patching_rect" : [ 15.0, 150.0, 176.0, 22.0 ],
+					"text" : "ossia.pvh.chanctl~.model audio"
 				}
 
 			}
@@ -4457,7 +4457,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 360.0, 75.0, 90.0, 76.0 ],
+					"patching_rect" : [ 360.0, 75.0, 88.0, 76.0 ],
 					"text" : "ossia.model #1 @description \"Complex PM oscillator\"",
 					"varname" : "ossia.model #1"
 				}
