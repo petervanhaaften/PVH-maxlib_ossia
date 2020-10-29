@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 532.0, 243.0, 653.0, 688.0 ],
+		"rect" : [ -61.0, 229.0, 1027.0, 688.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -40,13 +40,83 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-23",
+					"maxclass" : "button",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 610.0, 316.5, 24.0, 24.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"args" : [ "asdf" ],
+					"bgmode" : 0,
+					"border" : 0,
+					"clickthrough" : 0,
+					"enablehscroll" : 0,
+					"enablevscroll" : 0,
+					"id" : "obj-20",
+					"lockeddragscroll" : 0,
+					"maxclass" : "bpatcher",
+					"name" : "ossia.pvh.trigfind~.module.maxpat",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"offset" : [ 0.0, 0.0 ],
+					"outlettype" : [ "bang" ],
+					"patching_rect" : [ 610.0, 117.5, 165.0, 175.0 ],
+					"viewvisibility" : 1
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-19",
+					"linecount" : 6,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 296.0, 453.0, 150.0, 87.0 ],
+					"text" : "trigfind\npvh.minimax\nmessy\njohnson\nscalecoll\ngateseqa"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"format" : 6,
+					"id" : "obj-17",
+					"maxclass" : "flonum",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "bang" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 210.0, 13.0, 50.0, 22.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-14",
-					"maxclass" : "message",
+					"maxclass" : "toggle",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "int" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 162.0, 13.0, 24.0, 24.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-10",
+					"maxclass" : "newobj",
 					"numinlets" : 2,
 					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 285.0, 120.0, 50.0, 22.0 ],
-					"text" : "signal"
+					"outlettype" : [ "bang" ],
+					"patching_rect" : [ 159.0, 45.0, 63.0, 22.0 ],
+					"text" : "metro 250"
 				}
 
 			}
@@ -66,7 +136,28 @@
 					"numoutlets" : 2,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "signal", "signal" ],
-					"patching_rect" : [ 315.0, 30.0, 90.0, 60.0 ],
+					"patching_rect" : [ 313.0, 107.0, 76.0, 61.0 ],
+					"viewvisibility" : 1
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"args" : [ "scale1" ],
+					"bgmode" : 0,
+					"border" : 0,
+					"clickthrough" : 0,
+					"enablehscroll" : 0,
+					"enablevscroll" : 0,
+					"id" : "obj-15",
+					"lockeddragscroll" : 0,
+					"maxclass" : "bpatcher",
+					"name" : "ossia.pvh.scale~.module.maxpat",
+					"numinlets" : 2,
+					"numoutlets" : 2,
+					"offset" : [ 0.0, 0.0 ],
+					"outlettype" : [ "signal", "" ],
+					"patching_rect" : [ 391.0, 107.0, 164.0, 330.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -78,7 +169,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "float" ],
-					"patching_rect" : [ 90.0, 510.0, 80.0, 13.0 ]
+					"patching_rect" : [ 25.5, 530.0, 80.0, 13.0 ]
 				}
 
 			}
@@ -98,7 +189,7 @@
 					"numoutlets" : 2,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "signal", "signal" ],
-					"patching_rect" : [ 15.0, 415.0, 152.0, 75.0 ],
+					"patching_rect" : [ 6.0, 453.0, 152.0, 75.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -111,7 +202,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 191.0, 187.0, 24.0, 24.0 ]
+					"patching_rect" : [ 159.0, 72.0, 24.0, 24.0 ]
 				}
 
 			}
@@ -121,7 +212,7 @@
 					"maxclass" : "scope~",
 					"numinlets" : 2,
 					"numoutlets" : 0,
-					"patching_rect" : [ 191.0, 310.0, 130.0, 130.0 ]
+					"patching_rect" : [ 173.0, 186.0, 138.0, 124.0 ]
 				}
 
 			}
@@ -141,7 +232,7 @@
 					"numoutlets" : 2,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "multichannelsignal", "float" ],
-					"patching_rect" : [ 191.0, 220.0, 154.0, 80.0 ],
+					"patching_rect" : [ 159.0, 99.5, 152.0, 76.0 ],
 					"varname" : "ossia.pvh.functiongen~.module",
 					"viewvisibility" : 1
 				}
@@ -154,7 +245,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "float" ],
-					"patching_rect" : [ 71.0, 400.0, 80.0, 13.0 ]
+					"patching_rect" : [ 25.5, 432.0, 80.0, 13.0 ]
 				}
 
 			}
@@ -174,7 +265,7 @@
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "multichannelsignal" ],
-					"patching_rect" : [ 15.0, 310.0, 168.0, 78.0 ],
+					"patching_rect" : [ 6.0, 348.0, 168.0, 78.0 ],
 					"varname" : "ossia.pvh.lpg~.module",
 					"viewvisibility" : 1
 				}
@@ -186,7 +277,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 2,
 					"numoutlets" : 0,
-					"patching_rect" : [ 15.0, 510.0, 35.0, 22.0 ],
+					"patching_rect" : [ 6.0, 564.0, 35.0, 22.0 ],
 					"text" : "dac~"
 				}
 
@@ -198,7 +289,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "float" ],
-					"patching_rect" : [ 50.5, 238.0, 80.0, 13.0 ]
+					"patching_rect" : [ 25.5, 324.0, 80.0, 13.0 ]
 				}
 
 			}
@@ -218,7 +309,7 @@
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "multichannelsignal" ],
-					"patching_rect" : [ 15.0, 15.0, 151.0, 206.0 ],
+					"patching_rect" : [ 6.0, 107.0, 151.0, 206.0 ],
 					"varname" : "ossia.pvh.complexosc~.module",
 					"viewvisibility" : 1
 				}
@@ -243,8 +334,29 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-14", 1 ],
-					"source" : [ "obj-12", 0 ]
+					"destination" : [ "obj-9", 0 ],
+					"source" : [ "obj-10", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-10", 0 ],
+					"source" : [ "obj-14", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-10", 1 ],
+					"source" : [ "obj-17", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-23", 0 ],
+					"source" : [ "obj-20", 0 ]
 				}
 
 			}
@@ -274,7 +386,16 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-20", 0 ],
+					"order" : 2,
+					"source" : [ "obj-6", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-4", 1 ],
+					"midpoints" : [ 168.5, 334.0, 164.5, 334.0 ],
 					"order" : 1,
 					"source" : [ "obj-6", 0 ]
 				}
@@ -290,6 +411,14 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-11", 0 ],
+					"order" : 1,
+					"source" : [ "obj-8", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-3", 1 ],
 					"order" : 0,
 					"source" : [ "obj-8", 0 ]
@@ -299,7 +428,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-3", 0 ],
-					"order" : 1,
+					"order" : 2,
 					"source" : [ "obj-8", 0 ]
 				}
 
@@ -761,6 +890,27 @@
 				"implicit" : 1
 			}
 , 			{
+				"name" : "ossia.pvh.scale~.module.maxpat",
+				"bootpath" : "~/src/Max/PVH-maxlib_ossia/ossia.pvh.scale~",
+				"patcherrelativepath" : "../ossia.pvh.scale~",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "ossia.pvh.scale~.model.maxpat",
+				"bootpath" : "~/src/Max/PVH-maxlib_ossia/ossia.pvh.scale~",
+				"patcherrelativepath" : "../ossia.pvh.scale~",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "ossia.pvh.scale~.view.maxpat",
+				"bootpath" : "~/src/Max/PVH-maxlib_ossia/ossia.pvh.scale~",
+				"patcherrelativepath" : "../ossia.pvh.scale~",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "ossia.pvh.minput~.module.maxpat",
 				"bootpath" : "~/src/Max/PVH-maxlib_ossia/ossia.pvh.minput~",
 				"patcherrelativepath" : "../ossia.pvh.minput~",
@@ -778,6 +928,34 @@
 				"name" : "ossia.pvh.minput~.view.maxpat",
 				"bootpath" : "~/src/Max/PVH-maxlib_ossia/ossia.pvh.minput~",
 				"patcherrelativepath" : "../ossia.pvh.minput~",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "ossia.pvh.trigfind~.module.maxpat",
+				"bootpath" : "~/src/Max/PVH-maxlib_ossia/ossia.pvh.trigfind~",
+				"patcherrelativepath" : "../ossia.pvh.trigfind~",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "ossia.pvh.trigfind~.model.maxpat",
+				"bootpath" : "~/src/Max/PVH-maxlib_ossia/ossia.pvh.trigfind~",
+				"patcherrelativepath" : "../ossia.pvh.trigfind~",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "ossia.pvh.minmax~.model.maxpat",
+				"bootpath" : "~/src/Max/PVH-maxlib_ossia/ossia.pvh.minmax~",
+				"patcherrelativepath" : "../ossia.pvh.minmax~",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "ossia.pvh.trigfind~.view.maxpat",
+				"bootpath" : "~/src/Max/PVH-maxlib_ossia/ossia.pvh.trigfind~",
+				"patcherrelativepath" : "../ossia.pvh.trigfind~",
 				"type" : "JSON",
 				"implicit" : 1
 			}
