@@ -4,7 +4,7 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 1,
-			"revision" : 7,
+			"revision" : 8,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -64,7 +64,7 @@
 			}
 , 			{
 				"box" : 				{
-					"comment" : "",
+					"comment" : "wavefolder",
 					"id" : "obj-7",
 					"index" : 3,
 					"maxclass" : "inlet",
@@ -77,7 +77,7 @@
 			}
 , 			{
 				"box" : 				{
-					"comment" : "",
+					"comment" : "mod index",
 					"id" : "obj-6",
 					"index" : 2,
 					"maxclass" : "inlet",
@@ -90,7 +90,7 @@
 			}
 , 			{
 				"box" : 				{
-					"comment" : "",
+					"comment" : "carrier in",
 					"id" : "obj-5",
 					"index" : 1,
 					"maxclass" : "inlet",
@@ -103,19 +103,7 @@
 			}
 , 			{
 				"box" : 				{
-					"comment" : "",
-					"id" : "obj-4",
-					"index" : 2,
-					"maxclass" : "outlet",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 210.0, 405.0, 30.0, 30.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"comment" : "",
+					"comment" : "sig out",
 					"id" : "obj-3",
 					"index" : 1,
 					"maxclass" : "outlet",
@@ -131,9 +119,9 @@
 					"id" : "obj-1",
 					"maxclass" : "newobj",
 					"numinlets" : 3,
-					"numoutlets" : 2,
-					"outlettype" : [ "multichannelsignal", "" ],
-					"patching_rect" : [ 15.0, 360.0, 214.0, 22.0 ],
+					"numoutlets" : 1,
+					"outlettype" : [ "multichannelsignal" ],
+					"patching_rect" : [ 15.0, 360.0, 226.0, 22.0 ],
 					"text" : "ossia.pvh.complexosc~.model #1",
 					"varname" : "ossia.pvh.complexosc~.model"
 				}
@@ -144,13 +132,6 @@
 				"patchline" : 				{
 					"destination" : [ "obj-3", 0 ],
 					"source" : [ "obj-1", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-4", 0 ],
-					"source" : [ "obj-1", 1 ]
 				}
 
 			}

@@ -4,13 +4,13 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 1,
-			"revision" : 7,
+			"revision" : 8,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 78.0, 640.0, 480.0 ],
+		"rect" : [ 34.0, 78.0, 256.0, 707.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -52,7 +52,7 @@
 			}
 , 			{
 				"box" : 				{
-					"comment" : "",
+					"comment" : "control sig modulation in",
 					"id" : "obj-4",
 					"index" : 2,
 					"maxclass" : "inlet",
@@ -65,7 +65,7 @@
 			}
 , 			{
 				"box" : 				{
-					"comment" : "",
+					"comment" : "sig in",
 					"id" : "obj-3",
 					"index" : 1,
 					"maxclass" : "inlet",

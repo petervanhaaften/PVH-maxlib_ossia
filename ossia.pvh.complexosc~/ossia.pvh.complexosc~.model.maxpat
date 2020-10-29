@@ -4,7 +4,7 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 1,
-			"revision" : 7,
+			"revision" : 8,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -75,7 +75,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 1,
-							"revision" : 7,
+							"revision" : 8,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -109,7 +109,6 @@
 						"style" : "",
 						"subpatcher_template" : "",
 						"assistshowspatchername" : 0,
-						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-1",
@@ -278,7 +277,7 @@
 										"appversion" : 										{
 											"major" : 8,
 											"minor" : 1,
-											"revision" : 7,
+											"revision" : 8,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -341,7 +340,7 @@
 														"appversion" : 														{
 															"major" : 8,
 															"minor" : 1,
-															"revision" : 7,
+															"revision" : 8,
 															"architecture" : "x64",
 															"modernui" : 1
 														}
@@ -534,7 +533,7 @@
 														"appversion" : 														{
 															"major" : 8,
 															"minor" : 1,
-															"revision" : 7,
+															"revision" : 8,
 															"architecture" : "x64",
 															"modernui" : 1
 														}
@@ -810,7 +809,7 @@
 														"appversion" : 														{
 															"major" : 8,
 															"minor" : 1,
-															"revision" : 7,
+															"revision" : 8,
 															"architecture" : "x64",
 															"modernui" : 1
 														}
@@ -1003,7 +1002,7 @@
 														"appversion" : 														{
 															"major" : 8,
 															"minor" : 1,
-															"revision" : 7,
+															"revision" : 8,
 															"architecture" : "x64",
 															"modernui" : 1
 														}
@@ -1279,7 +1278,7 @@
 														"appversion" : 														{
 															"major" : 8,
 															"minor" : 1,
-															"revision" : 7,
+															"revision" : 8,
 															"architecture" : "x64",
 															"modernui" : 1
 														}
@@ -1472,7 +1471,7 @@
 														"appversion" : 														{
 															"major" : 8,
 															"minor" : 1,
-															"revision" : 7,
+															"revision" : 8,
 															"architecture" : "x64",
 															"modernui" : 1
 														}
@@ -1748,7 +1747,7 @@
 														"appversion" : 														{
 															"major" : 8,
 															"minor" : 1,
-															"revision" : 7,
+															"revision" : 8,
 															"architecture" : "x64",
 															"modernui" : 1
 														}
@@ -1941,7 +1940,7 @@
 														"appversion" : 														{
 															"major" : 8,
 															"minor" : 1,
-															"revision" : 7,
+															"revision" : 8,
 															"architecture" : "x64",
 															"modernui" : 1
 														}
@@ -2217,7 +2216,7 @@
 														"appversion" : 														{
 															"major" : 8,
 															"minor" : 1,
-															"revision" : 7,
+															"revision" : 8,
 															"architecture" : "x64",
 															"modernui" : 1
 														}
@@ -2409,7 +2408,7 @@
 														"appversion" : 														{
 															"major" : 8,
 															"minor" : 1,
-															"revision" : 7,
+															"revision" : 8,
 															"architecture" : "x64",
 															"modernui" : 1
 														}
@@ -2685,7 +2684,7 @@
 														"appversion" : 														{
 															"major" : 8,
 															"minor" : 1,
-															"revision" : 7,
+															"revision" : 8,
 															"architecture" : "x64",
 															"modernui" : 1
 														}
@@ -2878,7 +2877,7 @@
 														"appversion" : 														{
 															"major" : 8,
 															"minor" : 1,
-															"revision" : 7,
+															"revision" : 8,
 															"architecture" : "x64",
 															"modernui" : 1
 														}
@@ -3154,7 +3153,7 @@
 														"appversion" : 														{
 															"major" : 8,
 															"minor" : 1,
-															"revision" : 7,
+															"revision" : 8,
 															"architecture" : "x64",
 															"modernui" : 1
 														}
@@ -3347,7 +3346,7 @@
 														"appversion" : 														{
 															"major" : 8,
 															"minor" : 1,
-															"revision" : 7,
+															"revision" : 8,
 															"architecture" : "x64",
 															"modernui" : 1
 														}
@@ -4188,7 +4187,7 @@
 									"numinlets" : 0,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 50.0, 40.0, 30.0, 30.0 ]
+									"patching_rect" : [ 50.0, 45.0, 30.0, 30.0 ]
 								}
 
 							}
@@ -4201,7 +4200,7 @@
 									"numinlets" : 0,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 400.0, 40.0, 30.0, 30.0 ]
+									"patching_rect" : [ 395.0, 40.0, 30.0, 30.0 ]
 								}
 
 							}
@@ -4389,7 +4388,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "multichannelsignal", "int" ],
-					"patching_rect" : [ 15.0, 150.0, 172.0, 22.0 ],
+					"patching_rect" : [ 15.0, 150.0, 201.0, 22.0 ],
 					"text" : "ossia.pvh.chanctl~.model #1"
 				}
 
@@ -4449,18 +4448,6 @@
 			}
 , 			{
 				"box" : 				{
-					"comment" : "Messages from ossia.model #1",
-					"id" : "obj-7",
-					"index" : 2,
-					"maxclass" : "outlet",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 360.0, 210.0, 27.0, 27.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"color" : [ 0.941176, 0.690196, 0.196078, 1.0 ],
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
@@ -4481,13 +4468,6 @@
 				"patchline" : 				{
 					"destination" : [ "obj-21", 1 ],
 					"source" : [ "obj-1", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-7", 0 ],
-					"source" : [ "obj-19", 0 ]
 				}
 
 			}

@@ -4,13 +4,13 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 1,
-			"revision" : 7,
+			"revision" : 8,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 59.0, 103.0, 640.0, 480.0 ],
+		"rect" : [ 501.0, 408.0, 640.0, 480.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -40,19 +40,19 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
-					"comment" : "",
+					"comment" : "floating point out, set time with 'smp'",
 					"id" : "obj-5",
 					"index" : 2,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 227.0, 165.0, 30.0, 30.0 ]
+					"patching_rect" : [ 300.0, 165.0, 30.0, 30.0 ]
 				}
 
 			}
 , 			{
 				"box" : 				{
-					"comment" : "",
+					"comment" : "sig out",
 					"id" : "obj-4",
 					"index" : 1,
 					"maxclass" : "outlet",
@@ -64,7 +64,7 @@
 			}
 , 			{
 				"box" : 				{
-					"comment" : "",
+					"comment" : "trig in, bang or '1'",
 					"id" : "obj-3",
 					"index" : 1,
 					"maxclass" : "inlet",
@@ -92,7 +92,7 @@
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 0.0, 0.0, 150.0, 70.0 ],
+					"patching_rect" : [ 0.0, 0.0, 160.0, 69.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 0.0, 0.0, 158.0, 70.0 ],
 					"viewvisibility" : 1
@@ -106,7 +106,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 2,
-					"outlettype" : [ "signal", "" ],
+					"outlettype" : [ "multichannelsignal", "float" ],
 					"patching_rect" : [ 45.0, 135.0, 270.0, 22.0 ],
 					"text" : "ossia.pvh.functiongen~.model #1",
 					"varname" : "ossia.pvh.functiongen~.model"
@@ -124,6 +124,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-5", 0 ],
+					"midpoints" : [ 305.5, 154.0 ],
 					"source" : [ "obj-1", 1 ]
 				}
 
