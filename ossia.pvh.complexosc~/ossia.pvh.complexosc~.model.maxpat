@@ -322,7 +322,7 @@
 													"numinlets" : 1,
 													"numoutlets" : 2,
 													"outlettype" : [ "", "" ],
-													"patching_rect" : [ 795.0, 15.0, 147.0, 89.0 ],
+													"patching_rect" : [ 795.0, 15.0, 148.0, 89.0 ],
 													"text" : "ossia.parameter squareorsaw @type int @range 0 1 @description \"Switch morph function from sine2saw to sine2square\"",
 													"varname" : "frequency[8]"
 												}
@@ -432,8 +432,8 @@
 																	"numinlets" : 1,
 																	"numoutlets" : 2,
 																	"outlettype" : [ "", "" ],
-																	"patching_rect" : [ 150.0, 15.0, 105.0, 45.0 ],
-																	"text" : "ossia.parameter mod/noisefilt @type decimalar",
+																	"patching_rect" : [ 150.0, 15.0, 90.0, 45.0 ],
+																	"text" : "ossia.parameter mod/noisefilt @type float",
 																	"varname" : "params/rate[6]"
 																}
 
@@ -901,8 +901,8 @@
 																	"numinlets" : 1,
 																	"numoutlets" : 2,
 																	"outlettype" : [ "", "" ],
-																	"patching_rect" : [ 135.0, 15.0, 105.0, 45.0 ],
-																	"text" : "ossia.parameter mod/modnoise @type decimalar",
+																	"patching_rect" : [ 135.0, 15.0, 90.0, 45.0 ],
+																	"text" : "ossia.parameter mod/modnoise @type float",
 																	"varname" : "params/rate[6]"
 																}
 
@@ -1370,8 +1370,8 @@
 																	"numinlets" : 1,
 																	"numoutlets" : 2,
 																	"outlettype" : [ "", "" ],
-																	"patching_rect" : [ 180.0, 15.0, 95.0, 45.0 ],
-																	"text" : "ossia.parameter mod/wavefolder @type decimalar",
+																	"patching_rect" : [ 180.0, 15.0, 90.0, 45.0 ],
+																	"text" : "ossia.parameter mod/wavefolder @type float",
 																	"varname" : "params/rate[6]"
 																}
 
@@ -1753,7 +1753,7 @@
 														}
 ,
 														"classnamespace" : "box",
-														"rect" : [ 140.0, 503.0, 404.0, 179.0 ],
+														"rect" : [ 140.0, 503.0, 648.0, 313.0 ],
 														"bglocked" : 0,
 														"openinpresentation" : 0,
 														"default_fontsize" : 12.0,
@@ -1839,8 +1839,8 @@
 																	"numinlets" : 1,
 																	"numoutlets" : 2,
 																	"outlettype" : [ "", "" ],
-																	"patching_rect" : [ 150.0, 15.0, 105.0, 45.0 ],
-																	"text" : "ossia.parameter mod/modindex @type decimalar",
+																	"patching_rect" : [ 150.0, 15.0, 90.0, 45.0 ],
+																	"text" : "ossia.parameter mod/modindex @type float",
 																	"varname" : "params/rate[6]"
 																}
 
@@ -2222,7 +2222,7 @@
 														}
 ,
 														"classnamespace" : "box",
-														"rect" : [ 73.0, 274.0, 766.0, 347.0 ],
+														"rect" : [ 72.0, 274.0, 766.0, 347.0 ],
 														"bglocked" : 0,
 														"openinpresentation" : 0,
 														"default_fontsize" : 12.0,
@@ -2261,7 +2261,7 @@
 																	"numinlets" : 1,
 																	"numoutlets" : 2,
 																	"outlettype" : [ "", "" ],
-																	"patching_rect" : [ 15.0, 15.0, 124.0, 102.0 ],
+																	"patching_rect" : [ 15.0, 15.0, 126.0, 102.0 ],
 																	"text" : "ossia.parameter modfreq @type decimal @range 0. 1. @priority 2 @unit time.hz @description \"Carrier sin-->saw morphing\"",
 																	"varname" : "frequency[2]"
 																}
@@ -2307,8 +2307,8 @@
 																	"numinlets" : 1,
 																	"numoutlets" : 2,
 																	"outlettype" : [ "", "" ],
-																	"patching_rect" : [ 150.0, 15.0, 105.0, 45.0 ],
-																	"text" : "ossia.parameter mod/modfreq @type decimalar",
+																	"patching_rect" : [ 150.0, 15.0, 104.0, 45.0 ],
+																	"text" : "ossia.parameter mod/modfreq @type float",
 																	"varname" : "params/rate[6]"
 																}
 
@@ -2744,7 +2744,7 @@
 																	"numinlets" : 1,
 																	"numoutlets" : 2,
 																	"outlettype" : [ "", "" ],
-																	"patching_rect" : [ 255.0, 15.0, 145.0, 35.0 ],
+																	"patching_rect" : [ 255.0, 15.0, 147.0, 35.0 ],
 																	"text" : "ossia.nav.oscroute.model mapcarriersinsaw",
 																	"varname" : "ossia.nav.oscroute.model"
 																}
@@ -2776,8 +2776,8 @@
 																	"numinlets" : 1,
 																	"numoutlets" : 2,
 																	"outlettype" : [ "", "" ],
-																	"patching_rect" : [ 135.0, 15.0, 105.0, 45.0 ],
-																	"text" : "ossia.parameter mod/carriersinsaw @type decimalar",
+																	"patching_rect" : [ 135.0, 15.0, 90.0, 45.0 ],
+																	"text" : "ossia.parameter mod/carriersinsaw @type float",
 																	"varname" : "params/rate[6]"
 																}
 
@@ -3213,7 +3213,7 @@
 																	"numinlets" : 1,
 																	"numoutlets" : 2,
 																	"outlettype" : [ "", "" ],
-																	"patching_rect" : [ 240.0, 15.0, 146.0, 35.0 ],
+																	"patching_rect" : [ 240.0, 15.0, 147.0, 35.0 ],
 																	"text" : "ossia.nav.oscroute.model mapcarrierfreq",
 																	"varname" : "ossia.nav.oscroute.model"
 																}
@@ -3245,8 +3245,8 @@
 																	"numinlets" : 1,
 																	"numoutlets" : 2,
 																	"outlettype" : [ "", "" ],
-																	"patching_rect" : [ 135.0, 15.0, 96.0, 45.0 ],
-																	"text" : "ossia.parameter mod/carrierfreq @type decimalar",
+																	"patching_rect" : [ 135.0, 15.0, 90.0, 45.0 ],
+																	"text" : "ossia.parameter mod/carrierfreq @type float",
 																	"varname" : "params/rate[6]"
 																}
 
@@ -3717,7 +3717,7 @@
 													"numinlets" : 1,
 													"numoutlets" : 2,
 													"outlettype" : [ "", "" ],
-													"patching_rect" : [ 225.0, 15.0, 118.0, 129.0 ],
+													"patching_rect" : [ 225.0, 15.0, 121.0, 129.0 ],
 													"text" : "ossia.parameter modratioman @type int @range 0 1 @priority 1 @description \"Switch from ratio modulator frequency to manual frequency selection\"",
 													"varname" : "frequency[7]"
 												}

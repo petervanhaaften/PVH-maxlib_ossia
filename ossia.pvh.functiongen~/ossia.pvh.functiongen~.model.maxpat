@@ -352,8 +352,8 @@
 																	"numinlets" : 1,
 																	"numoutlets" : 2,
 																	"outlettype" : [ "", "" ],
-																	"patching_rect" : [ 120.0, 217.0, 255.0, 21.0 ],
-																	"text" : "j.message modAmt/decay_shape @type decimal",
+																	"patching_rect" : [ 120.0, 217.0, 237.0, 21.0 ],
+																	"text" : "j.message modAmt/decay_shape @type float",
 																	"varname" : "/modAmt/delay[7]"
 																}
 
@@ -367,8 +367,8 @@
 																	"numinlets" : 1,
 																	"numoutlets" : 2,
 																	"outlettype" : [ "", "" ],
-																	"patching_rect" : [ 85.0, 135.0, 273.0, 21.0 ],
-																	"text" : "ossia.parameter mod/decay_shape @type decimalar",
+																	"patching_rect" : [ 85.0, 135.0, 246.0, 21.0 ],
+																	"text" : "ossia.parameter mod/decay_shape @type float",
 																	"varname" : "params/rate[6]"
 																}
 
@@ -810,8 +810,8 @@
 																	"numinlets" : 1,
 																	"numoutlets" : 2,
 																	"outlettype" : [ "", "" ],
-																	"patching_rect" : [ 120.0, 217.0, 307.0, 21.0 ],
-																	"text" : "ossia.parameter modAmt/decay @mode set @type decimal",
+																	"patching_rect" : [ 120.0, 217.0, 291.0, 21.0 ],
+																	"text" : "ossia.parameter modAmt/decay @mode set @type float",
 																	"varname" : "/modAmt/delay[7]"
 																}
 
@@ -825,8 +825,8 @@
 																	"numinlets" : 1,
 																	"numoutlets" : 2,
 																	"outlettype" : [ "", "" ],
-																	"patching_rect" : [ 85.0, 135.0, 237.0, 21.0 ],
-																	"text" : "ossia.parameter mod/decay @type decimalar",
+																	"patching_rect" : [ 85.0, 135.0, 210.0, 21.0 ],
+																	"text" : "ossia.parameter mod/decay @type float",
 																	"varname" : "params/rate[6]"
 																}
 
@@ -1268,8 +1268,8 @@
 																	"numinlets" : 1,
 																	"numoutlets" : 2,
 																	"outlettype" : [ "", "" ],
-																	"patching_rect" : [ 120.0, 217.0, 257.0, 21.0 ],
-																	"text" : "j.message modAmt/attack_shape @type decimal",
+																	"patching_rect" : [ 120.0, 217.0, 239.0, 21.0 ],
+																	"text" : "j.message modAmt/attack_shape @type float",
 																	"varname" : "/modAmt/delay[7]"
 																}
 
@@ -1283,8 +1283,8 @@
 																	"numinlets" : 1,
 																	"numoutlets" : 2,
 																	"outlettype" : [ "", "" ],
-																	"patching_rect" : [ 85.0, 135.0, 275.0, 21.0 ],
-																	"text" : "ossia.parameter mod/attack_shape @type decimalar",
+																	"patching_rect" : [ 85.0, 135.0, 248.0, 21.0 ],
+																	"text" : "ossia.parameter mod/attack_shape @type float",
 																	"varname" : "params/rate[6]"
 																}
 
@@ -1739,8 +1739,8 @@
 																	"numinlets" : 1,
 																	"numoutlets" : 2,
 																	"outlettype" : [ "", "" ],
-																	"patching_rect" : [ 120.0, 217.0, 309.0, 21.0 ],
-																	"text" : "ossia.parameter modAmt/attack @mode set @type decimal",
+																	"patching_rect" : [ 120.0, 217.0, 293.0, 21.0 ],
+																	"text" : "ossia.parameter modAmt/attack @mode set @type float",
 																	"varname" : "/modAmt/delay[7]"
 																}
 
@@ -1754,8 +1754,8 @@
 																	"numinlets" : 1,
 																	"numoutlets" : 2,
 																	"outlettype" : [ "", "" ],
-																	"patching_rect" : [ 85.0, 135.0, 239.0, 21.0 ],
-																	"text" : "ossia.parameter mod/attack @type decimalar",
+																	"patching_rect" : [ 85.0, 135.0, 212.0, 21.0 ],
+																	"text" : "ossia.parameter mod/attack @type float",
 																	"varname" : "params/rate[6]"
 																}
 
@@ -2523,7 +2523,7 @@
 									"maxclass" : "inlet",
 									"numinlets" : 0,
 									"numoutlets" : 1,
-									"outlettype" : [ "bang" ],
+									"outlettype" : [ "" ],
 									"patching_rect" : [ 50.0, 40.0, 30.0, 30.0 ]
 								}
 
@@ -2853,7 +2853,7 @@
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "bang" ],
+					"outlettype" : [ "" ],
 					"patching_rect" : [ 10.0, 31.0, 30.0, 30.0 ]
 				}
 
