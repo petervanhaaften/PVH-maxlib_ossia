@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 57.0, 379.0, 640.0, 480.0 ],
+		"rect" : [ 878.0, 409.0, 382.0, 480.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -40,7 +40,6 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
-					"annotation" : "none",
 					"args" : [ "#1" ],
 					"bgmode" : 0,
 					"border" : 0,
@@ -55,9 +54,9 @@
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 0.0, 0.0, 148.0, 209.0 ],
+					"patching_rect" : [ 0.0, 0.0, 150.0, 210.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 0.0, 150.0, 208.0 ],
+					"presentation_rect" : [ 0.0, 0.0, 150.0, 210.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -155,6 +154,16 @@
 					"source" : [ "obj-7", 0 ]
 				}
 
+			}
+ ],
+		"styles" : [ 			{
+				"name" : "Jamoma_highlighted_orange",
+				"default" : 				{
+					"accentcolor" : [ 1.0, 0.5, 0.0, 1.0 ]
+				}
+,
+				"parentstyle" : "",
+				"multi" : 0
 			}
  ]
 	}

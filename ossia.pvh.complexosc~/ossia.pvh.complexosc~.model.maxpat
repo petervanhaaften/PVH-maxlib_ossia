@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 226.0, 333.0, 899.0, 697.0 ],
+		"rect" : [ 901.0, 347.0, 899.0, 697.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -81,7 +81,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 467.0, 235.0, 941.0, 608.0 ],
+						"rect" : [ 580.0, 223.0, 941.0, 608.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -283,7 +283,7 @@
 										}
 ,
 										"classnamespace" : "box",
-										"rect" : [ 63.0, 104.0, 962.0, 226.0 ],
+										"rect" : [ 354.0, 110.0, 962.0, 226.0 ],
 										"bglocked" : 0,
 										"openinpresentation" : 0,
 										"default_fontsize" : 12.0,
@@ -399,7 +399,7 @@
 																	"maxclass" : "newobj",
 																	"numinlets" : 1,
 																	"numoutlets" : 2,
-																	"outlettype" : [ "", "" ],
+																	"outlettype" : [ "float", "" ],
 																	"patching_rect" : [ 270.0, 15.0, 150.0, 35.0 ],
 																	"text" : "ossia.nav.oscroute.model mapnoisefilt",
 																	"varname" : "ossia.nav.oscroute.model"
@@ -868,7 +868,7 @@
 																	"maxclass" : "newobj",
 																	"numinlets" : 1,
 																	"numoutlets" : 2,
-																	"outlettype" : [ "", "" ],
+																	"outlettype" : [ "float", "" ],
 																	"patching_rect" : [ 255.0, 15.0, 128.0, 35.0 ],
 																	"text" : "ossia.nav.oscroute.model mapmodnoise",
 																	"varname" : "ossia.nav.oscroute.model"
@@ -1337,7 +1337,7 @@
 																	"maxclass" : "newobj",
 																	"numinlets" : 1,
 																	"numoutlets" : 2,
-																	"outlettype" : [ "", "" ],
+																	"outlettype" : [ "float", "" ],
 																	"patching_rect" : [ 285.0, 15.0, 150.0, 35.0 ],
 																	"text" : "ossia.nav.oscroute.model mapwavefolder",
 																	"varname" : "ossia.nav.oscroute.model"
@@ -1806,7 +1806,7 @@
 																	"maxclass" : "newobj",
 																	"numinlets" : 1,
 																	"numoutlets" : 2,
-																	"outlettype" : [ "", "" ],
+																	"outlettype" : [ "float", "" ],
 																	"patching_rect" : [ 270.0, 15.0, 135.0, 35.0 ],
 																	"text" : "ossia.nav.oscroute.model mapmodindex",
 																	"varname" : "ossia.nav.oscroute.model"
@@ -2274,7 +2274,7 @@
 																	"maxclass" : "newobj",
 																	"numinlets" : 1,
 																	"numoutlets" : 2,
-																	"outlettype" : [ "", "" ],
+																	"outlettype" : [ "float", "" ],
 																	"patching_rect" : [ 270.0, 15.0, 214.0, 22.0 ],
 																	"text" : "ossia.nav.oscroute.model mapmodfreq",
 																	"varname" : "ossia.nav.oscroute.model"
@@ -2743,7 +2743,7 @@
 																	"maxclass" : "newobj",
 																	"numinlets" : 1,
 																	"numoutlets" : 2,
-																	"outlettype" : [ "", "" ],
+																	"outlettype" : [ "float", "" ],
 																	"patching_rect" : [ 255.0, 15.0, 147.0, 35.0 ],
 																	"text" : "ossia.nav.oscroute.model mapcarriersinsaw",
 																	"varname" : "ossia.nav.oscroute.model"
@@ -3212,7 +3212,7 @@
 																	"maxclass" : "newobj",
 																	"numinlets" : 1,
 																	"numoutlets" : 2,
-																	"outlettype" : [ "", "" ],
+																	"outlettype" : [ "float", "" ],
 																	"patching_rect" : [ 240.0, 15.0, 147.0, 35.0 ],
 																	"text" : "ossia.nav.oscroute.model mapcarrierfreq",
 																	"varname" : "ossia.nav.oscroute.model"

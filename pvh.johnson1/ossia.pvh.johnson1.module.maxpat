@@ -2,13 +2,14 @@
 	"patcher" : 	{
 		"fileversion" : 1,
 		"appversion" : 		{
-			"major" : 7,
-			"minor" : 3,
-			"revision" : 5,
+			"major" : 8,
+			"minor" : 1,
+			"revision" : 8,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
+		"classnamespace" : "box",
 		"rect" : [ 258.0, 192.0, 640.0, 480.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
@@ -36,16 +37,16 @@
 		"tags" : "",
 		"style" : "",
 		"subpatcher_template" : "",
+		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-6",
-					"index" : 2,
+					"index" : 0,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 75.0, 357.0, 30.0, 30.0 ],
-					"style" : ""
+					"patching_rect" : [ 75.0, 357.0, 30.0, 30.0 ]
 				}
 
 			}
@@ -53,12 +54,11 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-5",
-					"index" : 1,
+					"index" : 0,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 5.0, 357.0, 30.0, 30.0 ],
-					"style" : ""
+					"patching_rect" : [ 5.0, 357.0, 30.0, 30.0 ]
 				}
 
 			}
@@ -66,13 +66,12 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-4",
-					"index" : 1,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "int" ],
-					"patching_rect" : [ 5.0, 258.0, 30.0, 30.0 ],
-					"style" : ""
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 5.0, 258.0, 30.0, 30.0 ]
 				}
 
 			}
@@ -84,9 +83,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
-					"patching_rect" : [ 5.0, 312.0, 159.0, 22.0 ],
-					"style" : "",
-					"text" : "pvh.johnson1.model #1"
+					"patching_rect" : [ 5.0, 312.0, 164.0, 22.0 ],
+					"text" : "ossia.pvh.johnson1.model #1"
 				}
 
 			}
@@ -102,13 +100,12 @@
 					"id" : "obj-2",
 					"lockeddragscroll" : 0,
 					"maxclass" : "bpatcher",
-					"name" : "pvh.johnson1.view.maxpat",
+					"name" : "ossia.pvh.johnson1.view.maxpat",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 0.0, 0.0, 150.0, 245.0 ],
-					"presentation_rect" : [ 0.0, 0.0, 150.0, 245.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -135,7 +132,57 @@
 				}
 
 			}
- ]
+ ],
+		"parameters" : 		{
+			"obj-2::obj-144" : [ "live.text[26]", "live.text", 0 ],
+			"obj-2::obj-145" : [ "live.text[25]", "live.text", 0 ],
+			"obj-2::obj-183" : [ "live.numbox[9]", "live.numbox", 0 ],
+			"parameterbanks" : 			{
+
+			}
+,
+			"inherited_shortname" : 1
+		}
+,
+		"dependency_cache" : [ 			{
+				"name" : "ossia.pvh.johnson1.view.maxpat",
+				"bootpath" : "~/src/Max/PVH-maxlib_ossia/pvh.johnson1",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "ossia.pvh.johnson1.model.maxpat",
+				"bootpath" : "~/src/Max/PVH-maxlib_ossia/pvh.johnson1",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "johnson1max_3.js",
+				"bootpath" : "~/src/Max/PVH-maxlib_ossia/pvh.johnson1/include",
+				"patcherrelativepath" : "./include",
+				"type" : "TEXT",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "ossia.view.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "ossia.remote.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "ossia.model.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "ossia.parameter.mxo",
+				"type" : "iLaX"
+			}
+ ],
+		"autosave" : 0
 	}
 
 }
