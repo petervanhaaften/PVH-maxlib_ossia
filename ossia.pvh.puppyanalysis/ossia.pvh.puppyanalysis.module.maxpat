@@ -2,14 +2,15 @@
 	"patcher" : 	{
 		"fileversion" : 1,
 		"appversion" : 		{
-			"major" : 7,
-			"minor" : 3,
-			"revision" : 5,
+			"major" : 8,
+			"minor" : 1,
+			"revision" : 8,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 194.0, 343.0, 640.0, 480.0 ],
+		"classnamespace" : "box",
+		"rect" : [ 197.0, 221.0, 640.0, 480.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -36,6 +37,7 @@
 		"tags" : "",
 		"style" : "",
 		"subpatcher_template" : "",
+		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
 					"comment" : "",
@@ -44,8 +46,7 @@
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 162.0, 252.0, 30.0, 30.0 ],
-					"style" : ""
+					"patching_rect" : [ 162.0, 252.0, 30.0, 30.0 ]
 				}
 
 			}
@@ -57,8 +58,7 @@
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 19.0, 252.0, 30.0, 30.0 ],
-					"style" : ""
+					"patching_rect" : [ 19.0, 252.0, 30.0, 30.0 ]
 				}
 
 			}
@@ -70,9 +70,8 @@
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 162.0, 168.0, 30.0, 30.0 ],
-					"style" : ""
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 162.0, 168.0, 30.0, 30.0 ]
 				}
 
 			}
@@ -84,9 +83,8 @@
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 19.0, 168.0, 30.0, 30.0 ],
-					"style" : ""
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 19.0, 168.0, 30.0, 30.0 ]
 				}
 
 			}
@@ -98,8 +96,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "bang", "" ],
-					"patching_rect" : [ 19.0, 214.0, 174.0, 22.0 ],
-					"style" : "",
+					"patching_rect" : [ 19.0, 214.0, 250.0, 22.0 ],
 					"text" : "ossia.pvh.puppyanalysis.model #1"
 				}
 
@@ -122,7 +119,6 @@
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1.0, 1.0, 150.0, 105.0 ],
-					"presentation_rect" : [ 0.0, 0.0, 150.0, 105.0 ],
 					"viewvisibility" : 1
 				}
 
