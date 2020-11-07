@@ -42,11 +42,11 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-6",
-					"index" : 0,
+					"index" : 2,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 75.0, 357.0, 30.0, 30.0 ]
+					"patching_rect" : [ 128.0, 225.0, 30.0, 30.0 ]
 				}
 
 			}
@@ -54,11 +54,11 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-5",
-					"index" : 0,
+					"index" : 1,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 5.0, 357.0, 30.0, 30.0 ]
+					"patching_rect" : [ 30.0, 225.0, 30.0, 30.0 ]
 				}
 
 			}
@@ -66,25 +66,25 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-4",
-					"index" : 0,
+					"index" : 1,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 5.0, 258.0, 30.0, 30.0 ]
+					"patching_rect" : [ 30.0, 135.0, 30.0, 30.0 ]
 				}
 
 			}
 , 			{
 				"box" : 				{
-					"annotation" : "none",
+					"annotation" : "Stereo echo module.",
 					"id" : "obj-3",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
-					"numoutlets" : 3,
-					"outlettype" : [ "", "", "" ],
-					"patching_rect" : [ 5.0, 312.0, 164.0, 22.0 ],
-					"text" : "ossia.pvh.johnson1.model #1"
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
+					"patching_rect" : [ 30.0, 180.0, 166.0, 22.0 ],
+					"text" : "ossia.pvh.euclid.model #1"
 				}
 
 			}
@@ -100,12 +100,12 @@
 					"id" : "obj-2",
 					"lockeddragscroll" : 0,
 					"maxclass" : "bpatcher",
-					"name" : "ossia.pvh.johnson1.view.maxpat",
+					"name" : "ossia.pvh.euclid.view.maxpat",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 0.0, 0.0, 150.0, 245.0 ],
+					"patching_rect" : [ 0.0, 0.0, 150.0, 105.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -132,57 +132,7 @@
 				}
 
 			}
- ],
-		"parameters" : 		{
-			"obj-2::obj-144" : [ "live.text[26]", "live.text", 0 ],
-			"obj-2::obj-145" : [ "live.text[25]", "live.text", 0 ],
-			"obj-2::obj-183" : [ "live.numbox[9]", "live.numbox", 0 ],
-			"parameterbanks" : 			{
-
-			}
-,
-			"inherited_shortname" : 1
-		}
-,
-		"dependency_cache" : [ 			{
-				"name" : "ossia.pvh.johnson1.view.maxpat",
-				"bootpath" : "~/src/Max/PVH-maxlib_ossia/pvh.johnson1",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "ossia.pvh.johnson1.model.maxpat",
-				"bootpath" : "~/src/Max/PVH-maxlib_ossia/pvh.johnson1",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "johnson1max_3.js",
-				"bootpath" : "~/src/Max/PVH-maxlib_ossia/pvh.johnson1/include",
-				"patcherrelativepath" : "./include",
-				"type" : "TEXT",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "ossia.view.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "ossia.remote.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "ossia.model.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "ossia.parameter.mxo",
-				"type" : "iLaX"
-			}
- ],
-		"autosave" : 0
+ ]
 	}
 
 }

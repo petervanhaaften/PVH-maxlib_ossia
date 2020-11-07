@@ -2,13 +2,14 @@
 	"patcher" : 	{
 		"fileversion" : 1,
 		"appversion" : 		{
-			"major" : 7,
-			"minor" : 3,
-			"revision" : 5,
+			"major" : 8,
+			"minor" : 1,
+			"revision" : 8,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
+		"classnamespace" : "box",
 		"rect" : [ 59.0, 103.0, 678.0, 669.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
@@ -36,6 +37,7 @@
 		"tags" : "",
 		"style" : "",
 		"subpatcher_template" : "",
+		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
 					"id" : "obj-20",
@@ -44,7 +46,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 5.0, 34.0, 111.0, 47.0 ],
-					"style" : "",
 					"text" : "& then raise\ngain, and change\ntrigs/length/offsets"
 				}
 
@@ -52,6 +53,7 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-15",
+					"lastchannelcount" : 0,
 					"maxclass" : "live.gain~",
 					"numinlets" : 2,
 					"numoutlets" : 5,
@@ -60,12 +62,12 @@
 					"patching_rect" : [ 101.0, 463.0, 48.0, 136.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_initial" : [ 0.0 ],
 							"parameter_longname" : "live.gain~",
+							"parameter_mmax" : 6.0,
+							"parameter_mmin" : -70.0,
 							"parameter_shortname" : "live.gain~",
 							"parameter_type" : 0,
-							"parameter_mmin" : -70.0,
-							"parameter_mmax" : 6.0,
-							"parameter_initial" : [ 0.0 ],
 							"parameter_unitstyle" : 4
 						}
 
@@ -84,7 +86,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 543.0, 70.0, 29.5, 22.0 ],
-					"style" : "",
 					"text" : "7 3"
 				}
 
@@ -98,7 +99,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
 					"patching_rect" : [ 543.0, 37.0, 69.0, 22.0 ],
-					"style" : "",
 					"text" : "delay 1000"
 				}
 
@@ -111,7 +111,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 294.0, 133.0, 150.0, 127.0 ],
-					"style" : "",
 					"text" : "euclidian rhythm generator\n\ninput number of triggers per bar & length of bar, then feed a clock. . .  \n\nrhythm will be outputted as individual bangs"
 				}
 
@@ -124,7 +123,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 101.0, 399.0, 67.0, 22.0 ],
-					"style" : "",
 					"text" : "lores~ 100"
 				}
 
@@ -136,7 +134,6 @@
 					"numinlets" : 2,
 					"numoutlets" : 0,
 					"patching_rect" : [ 101.0, 609.0, 37.0, 22.0 ],
-					"style" : "",
 					"text" : "dac~"
 				}
 
@@ -149,7 +146,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 101.0, 366.0, 46.0, 22.0 ],
-					"style" : "",
 					"text" : "noise~"
 				}
 
@@ -162,7 +158,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 101.0, 432.0, 29.5, 22.0 ],
-					"style" : "",
 					"text" : "*~"
 				}
 
@@ -175,7 +170,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 112.0, 303.0, 54.0, 22.0 ],
-					"style" : "",
 					"text" : "1, 0 150"
 				}
 
@@ -188,7 +182,6 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "signal", "bang" ],
 					"patching_rect" : [ 112.0, 337.0, 36.0, 22.0 ],
-					"style" : "",
 					"text" : "line~"
 				}
 
@@ -200,7 +193,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 5.0, 8.0, 78.0, 20.0 ],
-					"style" : "",
 					"text" : "START -->"
 				}
 
@@ -214,7 +206,6 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "int", "int" ],
 					"patching_rect" : [ 543.0, 104.0, 61.0, 22.0 ],
-					"style" : "",
 					"text" : "unpack i i"
 				}
 
@@ -228,7 +219,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
 					"patching_rect" : [ 543.0, 8.0, 60.0, 22.0 ],
-					"style" : "",
 					"text" : "loadbang"
 				}
 
@@ -242,7 +232,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 543.0, 190.5, 155.0, 22.0 ],
-					"style" : "",
 					"text" : "j.send /example1/barlength"
 				}
 
@@ -256,7 +245,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 543.0, 156.0, 179.0, 22.0 ],
-					"style" : "",
 					"text" : "j.send /example1/triggersperbar"
 				}
 
@@ -268,8 +256,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 136.0, 249.0, 41.0, 41.0 ],
-					"style" : ""
+					"parameter_enable" : 0,
+					"patching_rect" : [ 136.0, 249.0, 41.0, 41.0 ]
 				}
 
 			}
@@ -281,8 +269,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 112.0, 8.0, 24.0, 24.0 ],
-					"style" : ""
+					"patching_rect" : [ 112.0, 8.0, 24.0, 24.0 ]
 				}
 
 			}
@@ -294,7 +281,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
 					"patching_rect" : [ 112.0, 49.0, 65.0, 22.0 ],
-					"style" : "",
 					"text" : "metro 200"
 				}
 
@@ -307,8 +293,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 132.0, 109.0, 50.0, 22.0 ],
-					"style" : ""
+					"patching_rect" : [ 132.0, 109.0, 50.0, 22.0 ]
 				}
 
 			}
@@ -320,7 +305,6 @@
 					"numoutlets" : 4,
 					"outlettype" : [ "int", "", "", "int" ],
 					"patching_rect" : [ 112.0, 79.0, 61.0, 22.0 ],
-					"style" : "",
 					"text" : "counter"
 				}
 
@@ -336,13 +320,12 @@
 					"id" : "obj-1",
 					"lockeddragscroll" : 0,
 					"maxclass" : "bpatcher",
-					"name" : "pvh.euclid.module.maxpat",
+					"name" : "ossia.pvh.euclid.module.maxpat",
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 112.0, 133.0, 150.0, 105.0 ],
-					"presentation_rect" : [ 0.0, 0.0, 150.0, 105.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -487,48 +470,49 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-15" : [ "live.gain~", "live.gain~", 0 ]
+			"obj-15" : [ "live.gain~", "live.gain~", 0 ],
+			"parameterbanks" : 			{
+
+			}
+,
+			"inherited_shortname" : 1
 		}
 ,
 		"dependency_cache" : [ 			{
-				"name" : "pvh.euclid.module.maxpat",
-				"bootpath" : "~/src/Max/PVH-maxlib/pvh.euclid",
+				"name" : "ossia.pvh.euclid.module.maxpat",
+				"bootpath" : "~/src/Max/PVH-maxlib_ossia/##ossia.pvh.euclid",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "pvh.euclid.view.maxpat",
-				"bootpath" : "~/src/Max/PVH-maxlib/pvh.euclid",
+				"name" : "ossia.pvh.euclid.view.maxpat",
+				"bootpath" : "~/src/Max/PVH-maxlib_ossia/##ossia.pvh.euclid",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "pvh.euclid.model.maxpat",
-				"bootpath" : "~/src/Max/PVH-maxlib/pvh.euclid",
+				"name" : "ossia.pvh.euclid.model.maxpat",
+				"bootpath" : "~/src/Max/PVH-maxlib_ossia/##ossia.pvh.euclid",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "j.ui.mxo",
+				"name" : "ossia.view.mxo",
 				"type" : "iLaX"
 			}
 , 			{
-				"name" : "j.view.mxo",
+				"name" : "ossia.remote.mxo",
 				"type" : "iLaX"
 			}
 , 			{
-				"name" : "j.remote.mxo",
+				"name" : "ossia.model.mxo",
 				"type" : "iLaX"
 			}
 , 			{
-				"name" : "j.model.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "j.parameter.mxo",
+				"name" : "ossia.parameter.mxo",
 				"type" : "iLaX"
 			}
 , 			{
