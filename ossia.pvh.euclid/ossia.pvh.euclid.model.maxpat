@@ -2,14 +2,15 @@
 	"patcher" : 	{
 		"fileversion" : 1,
 		"appversion" : 		{
-			"major" : 7,
-			"minor" : 3,
-			"revision" : 5,
+			"major" : 8,
+			"minor" : 1,
+			"revision" : 8,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 385.0, 536.0, 722.0, 480.0 ],
+		"classnamespace" : "box",
+		"rect" : [ 473.0, 289.0, 722.0, 480.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -36,6 +37,7 @@
 		"tags" : "",
 		"style" : "",
 		"subpatcher_template" : "",
+		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
 					"id" : "obj-17",
@@ -44,7 +46,6 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 167.0, 434.0, 65.0, 22.0 ],
-					"style" : "",
 					"text" : "j.out TRIG"
 				}
 
@@ -58,8 +59,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 167.0, 90.0, 30.0, 30.0 ],
-					"style" : ""
+					"patching_rect" : [ 167.0, 90.0, 30.0, 30.0 ]
 				}
 
 			}
@@ -71,7 +71,6 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 167.0, 134.0, 53.0, 22.0 ],
-					"style" : "",
 					"text" : "j.in CLK"
 				}
 
@@ -87,9 +86,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 420.0, 142.0, 300.0, 49.0 ],
-					"style" : "",
-					"text" : "ossia.parameter barlength @type int @ramp/drive max @repetitions 0 @range 0 10000 @clip both @dataspace time @description \"length of bar\"",
+					"patching_rect" : [ 420.0, 142.0, 289.0, 49.0 ],
+					"text" : "ossia.parameter barlength @type int @repetitions 0 @range 0 10000 @clip both @description \"length of bar\"",
 					"varname" : "left[2]"
 				}
 
@@ -100,14 +98,13 @@
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
 					"id" : "obj-12",
-					"linecount" : 3,
+					"linecount" : 2,
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 386.0, 75.5, 302.0, 49.0 ],
-					"style" : "",
-					"text" : "ossia.parameter offset @type int @ramp/drive max @repetitions 0 @range 0 10000 @clip both @dataspace time @description \"rhythm offset/rotation\"",
+					"patching_rect" : [ 386.0, 75.5, 322.0, 35.0 ],
+					"text" : "ossia.parameter offset @type int @repetitions 0 @range 0 10000 @clip both @description \"rhythm offset/rotation\"",
 					"varname" : "left[1]"
 				}
 
@@ -123,9 +120,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 334.0, 8.5, 371.0, 49.0 ],
-					"style" : "",
-					"text" : "ossia.parameter triggersperbar @type int @ramp/drive max @repetitions 0 @range 0 10000 @clip both @dataspace time @description \"specify desired number of hits per bar\"",
+					"patching_rect" : [ 334.0, 8.5, 367.0, 49.0 ],
+					"text" : "ossia.parameter triggersperbar @type int @repetitions 0 @range 0 10000 @clip both @description \"specify desired number of hits per bar\"",
 					"varname" : "left"
 				}
 
@@ -138,8 +134,7 @@
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 601.0, 486.5, 25.0, 25.0 ],
-					"style" : ""
+					"patching_rect" : [ 601.0, 486.5, 25.0, 25.0 ]
 				}
 
 			}
@@ -151,10 +146,9 @@
 					"linecount" : 2,
 					"maxclass" : "newobj",
 					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 601.0, 421.0, 134.0, 35.0 ],
-					"style" : "",
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 601.0, 421.0, 182.0, 35.0 ],
 					"text" : "ossia.model #1 @description \"Stereo echo module.\""
 				}
 
@@ -167,7 +161,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 765.0, 379.0, 177.0, 100.0 ],
-					"style" : "",
 					"text" : "based on a Pure Data patch by someone else which was itself based on a mcgill paper by another person whose name escapes me.\n\ni will add a reference eventually"
 				}
 
@@ -180,8 +173,7 @@
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 167.0, 472.0, 30.0, 30.0 ],
-					"style" : ""
+					"patching_rect" : [ 167.0, 472.0, 30.0, 30.0 ]
 				}
 
 			}
@@ -193,7 +185,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 221.0, 391.0, 150.0, 33.0 ],
-					"style" : "",
 					"text" : "<-- bang out on each hit. (Silent on rest.)"
 				}
 
@@ -206,7 +197,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 167.0, 15.5, 154.0, 47.0 ],
-					"style" : "",
 					"text" : "send an integer to find out if there should be a hit on that beat"
 				}
 
@@ -219,7 +209,6 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "bang", "" ],
 					"patching_rect" : [ 167.0, 391.0, 52.0, 22.0 ],
-					"style" : "",
 					"text" : "select 1"
 				}
 
@@ -232,7 +221,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"patching_rect" : [ 167.0, 350.0, 29.5, 22.0 ],
-					"style" : "",
 					"text" : "<"
 				}
 
@@ -245,7 +233,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"patching_rect" : [ 167.0, 299.0, 29.5, 22.0 ],
-					"style" : "",
 					"text" : "%"
 				}
 
@@ -258,7 +245,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"patching_rect" : [ 167.0, 254.0, 29.5, 22.0 ],
-					"style" : "",
 					"text" : "*"
 				}
 
@@ -271,7 +257,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"patching_rect" : [ 167.0, 204.0, 29.5, 22.0 ],
-					"style" : "",
 					"text" : "+"
 				}
 

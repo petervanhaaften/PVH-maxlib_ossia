@@ -2,16 +2,17 @@
 	"patcher" : 	{
 		"fileversion" : 1,
 		"appversion" : 		{
-			"major" : 7,
-			"minor" : 3,
-			"revision" : 5,
+			"major" : 8,
+			"minor" : 1,
+			"revision" : 8,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 258.0, 192.0, 640.0, 480.0 ],
+		"classnamespace" : "box",
+		"rect" : [ 500.0, 165.0, 640.0, 480.0 ],
 		"bglocked" : 0,
-		"openinpresentation" : 0,
+		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
 		"default_fontface" : 0,
 		"default_fontname" : "Arial",
@@ -36,6 +37,7 @@
 		"tags" : "",
 		"style" : "",
 		"subpatcher_template" : "",
+		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
 					"comment" : "",
@@ -44,8 +46,7 @@
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 128.0, 225.0, 30.0, 30.0 ],
-					"style" : ""
+					"patching_rect" : [ 75.0, 357.0, 30.0, 30.0 ]
 				}
 
 			}
@@ -57,8 +58,7 @@
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 30.0, 225.0, 30.0, 30.0 ],
-					"style" : ""
+					"patching_rect" : [ 5.0, 357.0, 30.0, 30.0 ]
 				}
 
 			}
@@ -70,23 +70,21 @@
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "int" ],
-					"patching_rect" : [ 30.0, 135.0, 30.0, 30.0 ],
-					"style" : ""
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 5.0, 258.0, 30.0, 30.0 ]
 				}
 
 			}
 , 			{
 				"box" : 				{
-					"annotation" : "Stereo echo module.",
+					"annotation" : "none",
 					"id" : "obj-3",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 30.0, 180.0, 141.0, 22.0 ],
-					"style" : "",
-					"text" : "ossia.pvh.euclid.model #1"
+					"numoutlets" : 3,
+					"outlettype" : [ "", "", "" ],
+					"patching_rect" : [ 5.0, 312.0, 199.0, 22.0 ],
+					"text" : "ossia.pvh.johnson1.model #1"
 				}
 
 			}
@@ -102,13 +100,14 @@
 					"id" : "obj-2",
 					"lockeddragscroll" : 0,
 					"maxclass" : "bpatcher",
-					"name" : "ossia.pvh.euclid.view.maxpat",
+					"name" : "ossia.pvh.johnson1.view.maxpat",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 0.0, 0.0, 150.0, 105.0 ],
-					"presentation_rect" : [ 0.0, 0.0, 150.0, 105.0 ],
+					"patching_rect" : [ 0.0, 0.0, 150.0, 245.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 0.0, 0.0, 150.0, 245.0 ],
 					"viewvisibility" : 1
 				}
 
