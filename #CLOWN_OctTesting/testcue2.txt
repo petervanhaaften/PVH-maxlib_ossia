@@ -1,0 +1,10 @@
+/test/attack	float: 6076.633
+/test/attack_curve	float: 1
+/test/decay	float: 1682.1663
+/test/decay_curve	float: 1
+/test/predelay	float: 2307.025
+/test/release	float: 2673.6846
+/test/release_curve	float: 1
+/test/sustain	float: 66.14173
+/test/test/gain	float: 0
+/test/test/mute	bool: false
