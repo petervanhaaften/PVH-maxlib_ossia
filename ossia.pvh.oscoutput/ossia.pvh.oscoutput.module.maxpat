@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 864.0, 94.0, 409.0, 501.0 ],
+		"rect" : [ 60.0, 405.0, 881.0, 542.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -41,11 +41,11 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-4",
-					"index" : 0,
+					"index" : 1,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 45.0, 150.0, 30.0, 30.0 ]
+					"patching_rect" : [ 60.0, 165.0, 30.0, 30.0 ]
 				}
 
 			}
@@ -53,12 +53,12 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-3",
-					"index" : 0,
+					"index" : 1,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 45.0, 60.0, 30.0, 30.0 ]
+					"patching_rect" : [ 60.0, 75.0, 30.0, 30.0 ]
 				}
 
 			}
@@ -77,9 +77,9 @@
 					"numinlets" : 0,
 					"numoutlets" : 0,
 					"offset" : [ 0.0, 0.0 ],
-					"patching_rect" : [ 0.0, 0.0, 180.0, 30.0 ],
+					"patching_rect" : [ 0.0, 0.0, 435.0, 30.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 0.0, 180.0, 30.0 ],
+					"presentation_rect" : [ 0.0, 0.0, 436.0, 30.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -92,8 +92,9 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 45.0, 105.0, 167.0, 22.0 ],
-					"text" : "ossia.pvh.oscoutput.model #1"
+					"patching_rect" : [ 60.0, 120.0, 180.0, 22.0 ],
+					"text" : "ossia.pvh.oscoutput.model #1",
+					"varname" : "ossia.pvh.oscoutput.model"
 				}
 
 			}
@@ -112,35 +113,7 @@
 				}
 
 			}
- ],
-		"dependency_cache" : [ 			{
-				"name" : "ossia.pvh.oscoutput.model.maxpat",
-				"bootpath" : "~/src/Max/PVH-maxlib_ossia/ossia.pvh.oscoutput",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "ossia.pvh.oscoutput.view.maxpat",
-				"bootpath" : "~/src/Max/PVH-maxlib_ossia/ossia.pvh.oscoutput",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "ossia.model.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "ossia.view.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "ossia.remote.mxo",
-				"type" : "iLaX"
-			}
- ],
-		"autosave" : 0
+ ]
 	}
 
 }
