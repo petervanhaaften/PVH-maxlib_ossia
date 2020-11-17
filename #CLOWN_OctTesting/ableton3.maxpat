@@ -46,7 +46,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 618.0, 302.0, 50.0, 22.0 ],
-					"text" : "871"
+					"text" : "0.66876"
 				}
 
 			}
@@ -59,7 +59,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 730.0, 414.0, 50.0, 35.0 ],
-					"text" : "/value/ 871"
+					"text" : "/value/ 0.66876"
 				}
 
 			}
@@ -92,6 +92,8 @@
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "", "", "" ],
 					"patching_rect" : [ 319.0, 283.0, 154.0, 75.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 319.0, 283.0, 154.0, 75.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -113,6 +115,8 @@
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 501.0, 229.0, 270.0, 24.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 501.0, 229.0, 270.0, 24.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -134,6 +138,8 @@
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 501.0, 197.0, 270.0, 24.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 501.0, 197.0, 270.0, 24.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -155,6 +161,8 @@
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 501.0, 165.0, 270.0, 24.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 501.0, 165.0, 270.0, 24.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -176,6 +184,8 @@
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 501.0, 133.0, 270.0, 24.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 501.0, 133.0, 270.0, 24.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -197,6 +207,8 @@
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 501.0, 101.0, 270.0, 24.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 501.0, 101.0, 270.0, 24.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -218,6 +230,8 @@
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 501.0, 69.0, 270.0, 24.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 501.0, 69.0, 270.0, 24.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -239,6 +253,8 @@
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 501.0, 37.0, 270.0, 24.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 501.0, 37.0, 270.0, 24.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -260,6 +276,8 @@
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 501.0, 5.0, 270.0, 24.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 501.0, 5.0, 270.0, 24.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -281,6 +299,8 @@
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "float" ],
 					"patching_rect" : [ 319.0, 229.0, 180.0, 30.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 319.0, 229.0, 180.0, 30.0 ],
 					"varname" : "ossia.nav.oscroute.module[7]",
 					"viewvisibility" : 1
 				}
@@ -303,6 +323,8 @@
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "float" ],
 					"patching_rect" : [ 319.0, 197.0, 180.0, 30.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 319.0, 197.0, 180.0, 30.0 ],
 					"varname" : "ossia.nav.oscroute.module[6]",
 					"viewvisibility" : 1
 				}
@@ -325,6 +347,8 @@
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "float" ],
 					"patching_rect" : [ 319.0, 165.0, 180.0, 30.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 319.0, 165.0, 180.0, 30.0 ],
 					"varname" : "ossia.nav.oscroute.module[5]",
 					"viewvisibility" : 1
 				}
@@ -347,6 +371,8 @@
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "float" ],
 					"patching_rect" : [ 319.0, 133.0, 180.0, 30.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 319.0, 133.0, 180.0, 30.0 ],
 					"varname" : "ossia.nav.oscroute.module[4]",
 					"viewvisibility" : 1
 				}
@@ -369,6 +395,8 @@
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "float" ],
 					"patching_rect" : [ 319.0, 101.0, 180.0, 30.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 319.0, 101.0, 180.0, 30.0 ],
 					"varname" : "ossia.nav.oscroute.module[3]",
 					"viewvisibility" : 1
 				}
@@ -391,6 +419,8 @@
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "float" ],
 					"patching_rect" : [ 319.0, 69.0, 180.0, 30.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 319.0, 69.0, 180.0, 30.0 ],
 					"varname" : "ossia.nav.oscroute.module[2]",
 					"viewvisibility" : 1
 				}
@@ -413,6 +443,8 @@
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "float" ],
 					"patching_rect" : [ 319.0, 37.0, 180.0, 30.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 319.0, 37.0, 180.0, 30.0 ],
 					"varname" : "ossia.nav.oscroute.module[1]",
 					"viewvisibility" : 1
 				}
@@ -435,6 +467,8 @@
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "float" ],
 					"patching_rect" : [ 319.0, 5.0, 180.0, 30.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 319.0, 5.0, 180.0, 30.0 ],
 					"varname" : "ossia.nav.oscroute.module",
 					"viewvisibility" : 1
 				}
@@ -458,6 +492,8 @@
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 13.0, 5.0, 300.0, 390.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 13.0, 5.0, 300.0, 390.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -972,10 +1008,8 @@
 				"name" : "jpink",
 				"default" : 				{
 					"color" : [ 0.619608, 0.0, 0.360784, 1.0 ],
-					"accentcolor" : [ 0.619608, 0.0, 0.360784, 1.0 ],
-					"elementcolor" : [ 0.619608, 0.0, 0.360784, 1.0 ],
 					"patchlinecolor" : [ 0.65, 0.65, 0.65, 1.0 ],
-					"textcolor" : [ 0.619608, 0.0, 0.360784, 1.0 ],
+					"clearcolor" : [ 0.113725, 0.607843, 0.607843, 1.0 ],
 					"bgfillcolor" : 					{
 						"type" : "color",
 						"color" : [ 0.619608, 0.0, 0.360784, 1.0 ],
@@ -986,9 +1020,11 @@
 						"autogradient" : 0
 					}
 ,
-					"clearcolor" : [ 0.113725, 0.607843, 0.607843, 1.0 ],
 					"bgcolor" : [ 0.862745, 0.870588, 0.878431, 1.0 ],
-					"selectioncolor" : [ 0.619608, 0.0, 0.360784, 1.0 ]
+					"accentcolor" : [ 0.619608, 0.0, 0.360784, 1.0 ],
+					"selectioncolor" : [ 0.619608, 0.0, 0.360784, 1.0 ],
+					"elementcolor" : [ 0.619608, 0.0, 0.360784, 1.0 ],
+					"textcolor" : [ 0.619608, 0.0, 0.360784, 1.0 ]
 				}
 ,
 				"parentstyle" : "",

@@ -233,7 +233,7 @@
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "" ],
+					"outlettype" : [ "float" ],
 					"patching_rect" : [ 42.0, 27.0, 30.0, 30.0 ],
 					"varname" : "ossia.nav.oscroute.model"
 				}
@@ -247,8 +247,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 56.0, 468.0, 126.0, 22.0 ],
-					"text" : "ossia.view #1"
+					"patching_rect" : [ 56.0, 468.0, 135.0, 22.0 ],
+					"text" : "ossia.model #1"
 				}
 
 			}
