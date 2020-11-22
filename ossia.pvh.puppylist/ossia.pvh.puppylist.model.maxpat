@@ -2,14 +2,15 @@
 	"patcher" : 	{
 		"fileversion" : 1,
 		"appversion" : 		{
-			"major" : 7,
-			"minor" : 3,
-			"revision" : 5,
+			"major" : 8,
+			"minor" : 1,
+			"revision" : 8,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 346.0, 199.0, 723.0, 676.0 ],
+		"classnamespace" : "box",
+		"rect" : [ 346.0, 199.0, 398.0, 676.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -36,7 +37,34 @@
 		"tags" : "",
 		"style" : "",
 		"subpatcher_template" : "",
+		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
+				"box" : 				{
+					"color" : [ 1.0, 0.682352941176471, 0.0, 1.0 ],
+					"id" : "obj-5",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
+					"patching_rect" : [ 123.0, 272.0, 229.0, 22.0 ],
+					"text" : "ossia.parameter listbang2 @type impulse"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"color" : [ 1.0, 0.682352941176471, 0.0, 1.0 ],
+					"id" : "obj-3",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
+					"patching_rect" : [ 12.0, 172.0, 229.0, 22.0 ],
+					"text" : "ossia.parameter listbang1 @type impulse"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-27",
@@ -44,9 +72,8 @@
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 152.0, 74.0, 30.0, 30.0 ],
-					"style" : ""
+					"outlettype" : [ "bang" ],
+					"patching_rect" : [ 152.0, 74.0, 30.0, 30.0 ]
 				}
 
 			}
@@ -58,9 +85,8 @@
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 53.0, 74.0, 30.0, 30.0 ],
-					"style" : ""
+					"outlettype" : [ "bang" ],
+					"patching_rect" : [ 53.0, 74.0, 30.0, 30.0 ]
 				}
 
 			}
@@ -72,7 +98,6 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 53.0, 278.0, 40.0, 22.0 ],
-					"style" : "",
 					"text" : "zl.reg"
 				}
 
@@ -84,8 +109,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 74.0, 248.0, 63.0, 22.0 ],
-					"style" : "",
+					"patching_rect" : [ 95.0, 248.0, 63.0, 22.0 ],
 					"text" : "sprintf %s"
 				}
 
@@ -98,7 +122,6 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 152.0, 375.0, 40.0, 22.0 ],
-					"style" : "",
 					"text" : "zl.reg"
 				}
 
@@ -110,8 +133,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 173.0, 345.0, 63.0, 22.0 ],
-					"style" : "",
+					"patching_rect" : [ 206.0, 348.0, 63.0, 22.0 ],
 					"text" : "sprintf %s"
 				}
 
@@ -124,9 +146,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 173.0, 302.0, 228.0, 22.0 ],
-					"style" : "",
-					"text" : "ossia.parameter list2 @type string @default 0"
+					"patching_rect" : [ 173.0, 302.0, 237.0, 22.0 ],
+					"text" : "ossia.parameter list2 @type list @default 0"
 				}
 
 			}
@@ -138,8 +159,7 @@
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 54.0, 473.0, 30.0, 30.0 ],
-					"style" : ""
+					"patching_rect" : [ 54.0, 473.0, 30.0, 30.0 ]
 				}
 
 			}
@@ -151,9 +171,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 74.0, 210.0, 228.0, 22.0 ],
-					"style" : "",
-					"text" : "ossia.parameter list1 @type string @default 0"
+					"patching_rect" : [ 74.0, 210.0, 237.0, 22.0 ],
+					"text" : "ossia.parameter list1 @type list @default 0"
 				}
 
 			}
@@ -165,8 +184,7 @@
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 362.0, 454.5, 25.0, 25.0 ],
-					"style" : ""
+					"patching_rect" : [ 362.0, 454.5, 25.0, 25.0 ]
 				}
 
 			}
@@ -179,10 +197,9 @@
 					"linecount" : 2,
 					"maxclass" : "newobj",
 					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "" ],
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
 					"patching_rect" : [ 362.0, 389.0, 252.0, 35.0 ],
-					"style" : "",
 					"text" : "ossia.model #1 @description \"puppy sound to puppy lights\""
 				}
 
@@ -197,7 +214,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-24", 0 ],
+					"destination" : [ "obj-23", 1 ],
 					"source" : [ "obj-10", 0 ]
 				}
 
@@ -239,8 +256,22 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-6", 0 ],
+					"destination" : [ "obj-23", 0 ],
+					"source" : [ "obj-3", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-20", 1 ],
 					"source" : [ "obj-4", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-20", 0 ],
+					"source" : [ "obj-5", 0 ]
 				}
 
 			}
