@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 60.0, 405.0, 881.0, 542.0 ],
+		"rect" : [ 93.0, 467.0, 881.0, 542.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -40,13 +40,24 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-6",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 321.0, 166.0, 131.0, 22.0 ],
+					"text" : "send~ #1-meter"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"comment" : "",
 					"id" : "obj-5",
 					"index" : 2,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 252.0, 165.0, 30.0, 30.0 ]
+					"patching_rect" : [ 282.0, 166.0, 30.0, 30.0 ]
 				}
 
 			}
@@ -90,7 +101,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 0,
 					"offset" : [ 0.0, 0.0 ],
-					"patching_rect" : [ 0.0, 0.0, 435.0, 30.0 ],
+					"patching_rect" : [ 0.0, 0.0, 405.0, 25.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 0.0, 0.0, 436.0, 30.0 ],
 					"viewvisibility" : 1
@@ -105,8 +116,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "signal" ],
-					"patching_rect" : [ 60.0, 120.0, 211.0, 22.0 ],
-					"text" : "ossia.pvh.oscreceive.model #1",
+					"patching_rect" : [ 60.0, 120.0, 241.0, 22.0 ],
+					"text" : "ossia.pvh.oscreceive.model #1 #2",
 					"varname" : "ossia.pvh.oscoutput.model"
 				}
 
@@ -122,6 +133,15 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-5", 0 ],
+					"order" : 1,
+					"source" : [ "obj-1", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-6", 0 ],
+					"order" : 0,
 					"source" : [ "obj-1", 1 ]
 				}
 
