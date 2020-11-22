@@ -40,6 +40,18 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"comment" : "osc list out",
+					"id" : "obj-2",
+					"index" : 1,
+					"maxclass" : "outlet",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 42.0, 539.0, 30.0, 30.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-16",
 					"maxclass" : "comment",
 					"numinlets" : 1,
@@ -100,9 +112,9 @@
 			}
 , 			{
 				"box" : 				{
-					"comment" : "",
+					"comment" : "sig out",
 					"id" : "obj-6",
-					"index" : 1,
+					"index" : 2,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -196,7 +208,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 103.0, 240.5, 254.0, 22.0 ],
-					"text" : "ossia.parameter port @type int @default 8888"
+					"text" : "ossia.parameter port @type int @default #2"
 				}
 
 			}
@@ -277,8 +289,17 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-2", 0 ],
+					"order" : 1,
+					"source" : [ "obj-13", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-7", 0 ],
 					"midpoints" : [ 51.5, 371.0, 112.5, 371.0 ],
+					"order" : 0,
 					"source" : [ "obj-13", 0 ]
 				}
 

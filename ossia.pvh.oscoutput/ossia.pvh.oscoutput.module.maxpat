@@ -4,7 +4,7 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 1,
-			"revision" : 3,
+			"revision" : 8,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -37,6 +37,7 @@
 		"tags" : "",
 		"style" : "",
 		"subpatcher_template" : "",
+		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
 					"comment" : "",
@@ -57,7 +58,7 @@
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "" ],
+					"outlettype" : [ "float" ],
 					"patching_rect" : [ 60.0, 75.0, 30.0, 30.0 ]
 				}
 
@@ -91,9 +92,9 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 60.0, 120.0, 180.0, 22.0 ],
-					"text" : "ossia.pvh.oscoutput.model #1",
+					"outlettype" : [ "signal" ],
+					"patching_rect" : [ 60.0, 120.0, 223.0, 22.0 ],
+					"text" : "ossia.pvh.oscoutput.model #1 #2",
 					"varname" : "ossia.pvh.oscoutput.model"
 				}
 
