@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 60.0, 405.0, 881.0, 542.0 ],
+		"rect" : [ 78.0, 273.0, 881.0, 542.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -58,7 +58,7 @@
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "float" ],
+					"outlettype" : [ "" ],
 					"patching_rect" : [ 60.0, 75.0, 30.0, 30.0 ]
 				}
 
@@ -78,9 +78,9 @@
 					"numinlets" : 0,
 					"numoutlets" : 0,
 					"offset" : [ 0.0, 0.0 ],
-					"patching_rect" : [ 0.0, 0.0, 435.0, 30.0 ],
+					"patching_rect" : [ 0.0, 0.0, 672.0, 33.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 0.0, 436.0, 30.0 ],
+					"presentation_rect" : [ 0.0, 0.0, 673.0, 30.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -91,9 +91,9 @@
 					"id" : "obj-1",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 60.0, 120.0, 223.0, 22.0 ],
+					"numoutlets" : 2,
+					"outlettype" : [ "", "signal" ],
+					"patching_rect" : [ 60.0, 120.0, 243.0, 22.0 ],
 					"text" : "ossia.pvh.oscoutput.model #1 #2",
 					"varname" : "ossia.pvh.oscoutput.model"
 				}
