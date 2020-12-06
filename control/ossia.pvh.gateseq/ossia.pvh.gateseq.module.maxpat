@@ -2,14 +2,15 @@
 	"patcher" : 	{
 		"fileversion" : 1,
 		"appversion" : 		{
-			"major" : 7,
-			"minor" : 3,
-			"revision" : 5,
+			"major" : 8,
+			"minor" : 1,
+			"revision" : 8,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 781.0, 484.0, 640.0, 480.0 ],
+		"classnamespace" : "box",
+		"rect" : [ 59.0, 103.0, 640.0, 480.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -36,58 +37,72 @@
 		"tags" : "",
 		"style" : "",
 		"subpatcher_template" : "",
+		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
-					"format" : 6,
-					"id" : "obj-5",
-					"maxclass" : "flonum",
+					"comment" : "",
+					"id" : "obj-4",
+					"index" : 0,
+					"maxclass" : "outlet",
 					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "bang" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 95.0, 208.0, 50.0, 22.0 ],
-					"style" : ""
+					"numoutlets" : 0,
+					"patching_rect" : [ 30.0, 225.0, 30.0, 30.0 ]
 				}
 
 			}
 , 			{
 				"box" : 				{
+					"comment" : "",
 					"id" : "obj-3",
-					"maxclass" : "button",
-					"numinlets" : 1,
+					"index" : 0,
+					"maxclass" : "inlet",
+					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 88.0, 33.0, 24.0, 24.0 ],
-					"style" : ""
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 30.0, 150.0, 30.0, 30.0 ]
 				}
 
 			}
 , 			{
 				"box" : 				{
-					"args" : [ "helppatch" ],
+					"annotation" : "none",
+					"args" : [ "#1" ],
 					"bgmode" : 0,
 					"border" : 0,
 					"clickthrough" : 0,
 					"enablehscroll" : 0,
 					"enablevscroll" : 0,
-					"id" : "obj-1",
+					"id" : "obj-2",
 					"lockeddragscroll" : 0,
 					"maxclass" : "bpatcher",
-					"name" : "pvh.gateseq.module.maxpat",
+					"name" : "ossia.pvh.gateseq.view.maxpat",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 87.0, 85.0, 300.0, 105.0 ],
-					"presentation_rect" : [ 0.0, 0.0, 300.0, 105.0 ],
+					"patching_rect" : [ 0.0, 0.0, 285.0, 103.0 ],
 					"viewvisibility" : 1
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"annotation" : "simple gate sequencer with variable steps and reset",
+					"color" : [ 0.941176, 0.690196, 0.196078, 1.0 ],
+					"id" : "obj-1",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
+					"patching_rect" : [ 30.0, 192.0, 197.0, 22.0 ],
+					"text" : "ossia.pvh.gateseq.model #1"
 				}
 
 			}
  ],
 		"lines" : [ 			{
 				"patchline" : 				{
-					"destination" : [ "obj-5", 0 ],
+					"destination" : [ "obj-4", 0 ],
 					"source" : [ "obj-1", 0 ]
 				}
 
@@ -101,59 +116,45 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-1::obj-2::obj-95" : [ "Steps[2]", "Steps", 0 ],
-			"obj-1::obj-2::obj-28" : [ "Attack[1]", "Attack", 0 ],
-			"obj-1::obj-2::obj-125" : [ "PatternGrid[6]", "PatternGrid", 0 ],
-			"obj-1::obj-1::obj-125" : [ "PatternGrid", "PatternGrid", 0 ]
+			"obj-1::obj-125" : [ "PatternGrid[10]", "PatternGrid", 0 ],
+			"obj-2::obj-125" : [ "PatternGrid[6]", "PatternGrid", 0 ],
+			"obj-2::obj-28" : [ "Attack[1]", "Attack", 0 ],
+			"obj-2::obj-95" : [ "Steps[2]", "Steps", 0 ],
+			"parameterbanks" : 			{
+
+			}
+,
+			"inherited_shortname" : 1
 		}
 ,
 		"dependency_cache" : [ 			{
-				"name" : "pvh.gateseq.module.maxpat",
-				"bootpath" : "~/src/PVH-maxlib-ossia/pvh.gateseq",
+				"name" : "ossia.pvh.gateseq.model.maxpat",
+				"bootpath" : "~/src/Max/PVH-maxlib_ossia/control/ossia.pvh.gateseq",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "pvh.gateseq.model.maxpat",
-				"bootpath" : "~/src/PVH-maxlib-ossia/pvh.gateseq",
+				"name" : "ossia.pvh.gateseq.view.maxpat",
+				"bootpath" : "~/src/Max/PVH-maxlib_ossia/control/ossia.pvh.gateseq",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "pvh.gateseq.view.maxpat",
-				"bootpath" : "~/src/PVH-maxlib-ossia/pvh.gateseq",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "j.model.mxo",
+				"name" : "ossia.model.mxo",
 				"type" : "iLaX"
 			}
 , 			{
-				"name" : "j.parameter.mxo",
+				"name" : "ossia.parameter.mxo",
 				"type" : "iLaX"
 			}
 , 			{
-				"name" : "j.ui.mxo",
+				"name" : "ossia.view.mxo",
 				"type" : "iLaX"
 			}
 , 			{
-				"name" : "j.view.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "j.remote.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "j.receive.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "j.send.mxo",
+				"name" : "ossia.remote.mxo",
 				"type" : "iLaX"
 			}
  ],

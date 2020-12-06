@@ -2,13 +2,14 @@
 	"patcher" : 	{
 		"fileversion" : 1,
 		"appversion" : 		{
-			"major" : 7,
-			"minor" : 3,
-			"revision" : 5,
+			"major" : 8,
+			"minor" : 1,
+			"revision" : 8,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
+		"classnamespace" : "box",
 		"rect" : [ 349.0, 506.0, 640.0, 480.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
@@ -36,17 +37,17 @@
 		"tags" : "",
 		"style" : "",
 		"subpatcher_template" : "",
+		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
 					"comment" : "degree num 1-7",
 					"id" : "obj-5",
-					"index" : 1,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 45.0, 175.0, 30.0, 30.0 ],
-					"style" : ""
+					"patching_rect" : [ 45.0, 175.0, 30.0, 30.0 ]
 				}
 
 			}
@@ -63,7 +64,6 @@
 					"presentation" : 1,
 					"presentation_linecount" : 12,
 					"presentation_rect" : [ 292.0, 138.0, 108.0, 167.0 ],
-					"style" : "",
 					"text" : "1. major\n2. harmonic minor\n3. phrygian major\n4. locrian major\n5. natural minor\n6. dorian mode\n7. mixolydian\n8. phrygian\n9. lydian\n10. locrian\n11. gypsy\n12. whole tone"
 				}
 
@@ -72,12 +72,11 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-4",
-					"index" : 1,
+					"index" : 0,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 45.0, 255.0, 30.0, 30.0 ],
-					"style" : ""
+					"patching_rect" : [ 45.0, 255.0, 30.0, 30.0 ]
 				}
 
 			}
@@ -87,13 +86,12 @@
 					"comment" : "scalenum 1-12",
 					"hint" : "",
 					"id" : "obj-3",
-					"index" : 2,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 145.5, 175.0, 30.0, 30.0 ],
-					"style" : ""
+					"patching_rect" : [ 145.5, 175.0, 30.0, 30.0 ]
 				}
 
 			}
@@ -109,7 +107,7 @@
 					"id" : "obj-2",
 					"lockeddragscroll" : 0,
 					"maxclass" : "bpatcher",
-					"name" : "pvh.scalecoll.view.maxpat",
+					"name" : "ossia.pvh.scalecoll.view.maxpat",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
@@ -130,9 +128,8 @@
 					"numinlets" : 3,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 45.0, 225.0, 220.0, 22.0 ],
-					"style" : "",
-					"text" : "pvh.scalecoll.model #1"
+					"patching_rect" : [ 45.0, 225.0, 161.0, 22.0 ],
+					"text" : "ossia.pvh.scalecoll.model #1"
 				}
 
 			}
@@ -158,7 +155,43 @@
 				}
 
 			}
- ]
+ ],
+		"dependency_cache" : [ 			{
+				"name" : "ossia.pvh.scalecoll.model.maxpat",
+				"bootpath" : "~/src/Max/PVH-maxlib_ossia/#todo/pvh.scalecoll",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "ossia.pvh.scalecoll.view.maxpat",
+				"bootpath" : "~/src/Max/PVH-maxlib_ossia/#todo/pvh.scalecoll",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "ossia.model.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "ossia.parameter.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "j.ui.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "ossia.view.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "ossia.remote.mxo",
+				"type" : "iLaX"
+			}
+ ],
+		"autosave" : 0
 	}
 
 }
