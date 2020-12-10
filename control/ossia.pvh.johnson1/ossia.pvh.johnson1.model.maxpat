@@ -102,7 +102,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "bang" ],
-									"patching_rect" : [ 123.0, 270.0, 37.0, 22.0 ],
+									"patching_rect" : [ 123.0, 312.0, 37.0, 22.0 ],
 									"text" : "del 1"
 								}
 
@@ -115,7 +115,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 3,
 									"outlettype" : [ "", "", "" ],
-									"patching_rect" : [ 138.0, 242.0, 152.0, 22.0 ],
+									"patching_rect" : [ 138.0, 242.0, 152.0, 35.0 ],
 									"text" : "ossia.remote reset @type impulse"
 								}
 
@@ -140,7 +140,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 3,
 									"outlettype" : [ "", "", "" ],
-									"patching_rect" : [ 123.0, 302.0, 167.0, 22.0 ],
+									"patching_rect" : [ 123.0, 344.0, 167.0, 35.0 ],
 									"text" : "ossia.remote process @type impulse"
 								}
 
@@ -284,7 +284,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 410.722289999999987, 199.75, 54.0, 22.0 ],
-					"text" : "seq7 *"
+					"text" : "process"
 				}
 
 			}
@@ -513,7 +513,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 17.0, 10.5, 118.0, 22.0 ],
+					"patching_rect" : [ 372.0, 460.5, 159.0, 22.0 ],
 					"text" : "ossia.model #1"
 				}
 
@@ -1146,7 +1146,7 @@
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "" ],
+					"outlettype" : [ "bang" ],
 					"patching_rect" : [ 566.722290000000044, 31.5, 30.0, 30.0 ]
 				}
 
