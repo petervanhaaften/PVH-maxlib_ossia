@@ -1,0 +1,41 @@
+{
+	"one" : 	{
+		"johnson1/origin" : "j01",
+		"johnson1/seq_five" : "j01",
+		"johnson1/seq_four" : "j01",
+		"johnson1/seq_one" : "j01",
+		"johnson1/seq_seven" : "j01",
+		"johnson1/seq_six" : "j01",
+		"johnson1/seq_three" : "j01",
+		"johnson1/seq_two" : "j01",
+		"johnson1/seq_zero" : "j01",
+		"johnson1/value" : 0
+	}
+,
+	"two" : 	{
+		"johnson1/origin" : "j0101",
+		"johnson1/seq_five" : "j0101",
+		"johnson1/seq_four" : "j0101",
+		"johnson1/seq_one" : "j0101",
+		"johnson1/seq_seven" : "j0101",
+		"johnson1/seq_six" : "j0101",
+		"johnson1/seq_three" : "j0101",
+		"johnson1/seq_two" : "j0101",
+		"johnson1/seq_zero" : "j0101",
+		"johnson1/value" : 0
+	}
+,
+	"three" : 	{
+		"johnson1/origin" : "j01010101",
+		"johnson1/seq_five" : "j01010101",
+		"johnson1/seq_four" : "j01010101",
+		"johnson1/seq_one" : "j01010101",
+		"johnson1/seq_seven" : "j01010101",
+		"johnson1/seq_six" : "j01010101",
+		"johnson1/seq_three" : "j01010101",
+		"johnson1/seq_two" : "j01010101",
+		"johnson1/seq_zero" : "j01010101",
+		"johnson1/value" : 0
+	}
+
+}
