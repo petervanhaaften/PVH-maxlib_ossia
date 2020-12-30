@@ -1,10 +1,10 @@
 {
-	"patch-help" : 	{
-		"help/holdtime" : 2000,
-		"help/list1" : 100,
-		"help/list2" : 10,
-		"help/pulsetime" : 4000,
-		"help/radio-modectl" : 1
+	"cue-hekp" : 	{
+		"help/holdtime" : 500,
+		"help/list1" : "255 0 22 222",
+		"help/list2" : "33 33 33 33 33",
+		"help/pulsetime" : 3000,
+		"help/radio-modectl" : 0
 	}
 
 }
