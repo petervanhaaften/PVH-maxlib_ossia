@@ -1,0 +1,10 @@
+{
+	"patch-help" : 	{
+		"help/holdtime" : 2000,
+		"help/list1" : 100,
+		"help/list2" : 10,
+		"help/pulsetime" : 4000,
+		"help/radio-modectl" : 1
+	}
+
+}
