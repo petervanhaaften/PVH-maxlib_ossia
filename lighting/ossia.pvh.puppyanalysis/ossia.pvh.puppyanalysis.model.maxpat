@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 756.0, 102.0, 490.0, 744.0 ],
+		"rect" : [ 332.0, 406.0, 490.0, 744.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -131,7 +131,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 115.0, 570.0, 134.0, 22.0 ],
+					"patching_rect" : [ 147.5, 568.0, 134.0, 22.0 ],
 					"text" : "ossia.parameter testtrig"
 				}
 
@@ -151,14 +151,13 @@
 			}
 , 			{
 				"box" : 				{
-					"color" : [ 0.941176, 0.690196, 0.196078, 1.0 ],
+					"color" : [ 0.196078431372549, 0.258823529411765, 0.941176470588235, 1.0 ],
 					"id" : "obj-2",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
-					"numoutlets" : 3,
-					"outlettype" : [ "", "", "" ],
-					"patching_rect" : [ 99.5, 623.0, 112.0, 22.0 ],
-					"text" : "ossia.remote trigvis"
+					"numoutlets" : 0,
+					"patching_rect" : [ 150.0, 630.0, 87.0, 22.0 ],
+					"text" : "send #1-trigvis"
 				}
 
 			}
@@ -644,7 +643,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 442.0, 234.0, 252.0, 35.0 ],
+					"patching_rect" : [ 442.0, 234.0, 256.0, 35.0 ],
 					"text" : "ossia.model #1 @description \"puppy sound to puppy lights\""
 				}
 
