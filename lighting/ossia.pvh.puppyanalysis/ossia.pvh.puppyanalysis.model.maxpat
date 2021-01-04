@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 332.0, 406.0, 490.0, 744.0 ],
+		"rect" : [ 710.0, 196.0, 490.0, 744.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -45,7 +45,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 91.75, 582.0, 29.5, 22.0 ],
+					"patching_rect" : [ 150.0, 600.0, 29.5, 22.0 ],
 					"text" : "1"
 				}
 
@@ -125,14 +125,14 @@
 			}
 , 			{
 				"box" : 				{
-					"color" : [ 0.941176, 0.690196, 0.196078, 1.0 ],
+					"color" : [ 0.196078431372549, 0.258823529411765, 0.941176470588235, 1.0 ],
 					"id" : "obj-20",
 					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 147.5, 568.0, 134.0, 22.0 ],
-					"text" : "ossia.parameter testtrig"
+					"numinlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 150.0, 560.0, 162.0, 22.0 ],
+					"text" : "receive #1 testtrig"
 				}
 
 			}
@@ -156,7 +156,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 150.0, 630.0, 87.0, 22.0 ],
+					"patching_rect" : [ 150.0, 630.0, 145.0, 22.0 ],
 					"text" : "send #1-trigvis"
 				}
 
@@ -255,7 +255,7 @@
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "" ],
+					"outlettype" : [ "multichannelsignal" ],
 					"patching_rect" : [ 80.0, 18.0, 30.0, 30.0 ]
 				}
 
@@ -681,7 +681,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-24", 0 ],
-					"order" : 1,
+					"order" : 0,
 					"source" : [ "obj-13", 0 ]
 				}
 
@@ -689,7 +689,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-4", 0 ],
-					"order" : 0,
+					"order" : 1,
 					"source" : [ "obj-13", 0 ]
 				}
 
@@ -749,7 +749,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-2", 0 ],
+					"destination" : [ "obj-24", 0 ],
 					"order" : 0,
 					"source" : [ "obj-20", 0 ]
 				}
