@@ -1,13 +1,15 @@
 #include "FastLED.h"
 
-#define NUM_LEDS 34
-#define DATA_PIN 2
+//#define NUM_LEDS 233
+//#define NUM_LEDS 74
+#define NUM_LEDS 74
+#define DATA_PIN 1
 
 CRGB leds[NUM_LEDS];
 
 int red = 0;              // red value 
 int green = 0;           // green value
-int blue = 0;            // blue value
+int blue = 100;            // blue value
 
 void setup() {
     Serial.begin(57600);     // initialize serial communication
@@ -33,5 +35,5 @@ void loop() {
 
   
   FastLED.show();
-  LEDS.delay(2);
+  //LEDS.delay(2);
 }
