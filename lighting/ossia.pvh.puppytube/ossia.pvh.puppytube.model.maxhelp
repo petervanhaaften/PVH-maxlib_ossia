@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 59.0, 103.0, 640.0, 480.0 ],
+		"rect" : [ 59.0, 100.0, 640.0, 480.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -54,13 +54,12 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-3",
-					"linecount" : 21,
+					"linecount" : 22,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 225.0, 43.747771999999941, 319.0, 288.0 ],
-					"presentation_linecount" : 33,
-					"text" : "puppytube\n(part of the PVH-maxlib puppy lighting suite)\n\npuppytube receives a 0 or 1 on its left inlet.\n\npuppytube has two modes, bypass, and candle.\n\nin bypass mode: all functions of puppytube are bypassed, whatever is sent to the left inlet, is sent to the left outlet.\n\nin candle mode: a '1' message on left inlet turns on candle flickering animation, a '0' message on left inlet turns off animation.\n\nfrequency of random DMX value generation for candle mode can be set in 'candle frq'.\n\namplitude of DMX value generation for candle mode can be set in 'candle amp'. a value of 100 means the highest possible random DMX value will be 100. the lowest is always 0."
+					"patching_rect" : [ 225.0, 43.747771999999941, 320.0, 301.0 ],
+					"text" : "puppytube\n(part of the PVH-maxlib puppy lighting suite)\n\npuppytube receives a 0 or positive integer (any value) on its left inlet.\n\npuppytube has two modes, bypass, and candle.\n\nin bypass mode: all functions of puppytube are bypassed, whatever is sent to the left inlet, is sent to the left outlet.\n\nin candle mode: a 'positive integer' message on left inlet turns on candle flickering animation, a '0' message on left inlet turns off animation.\n\nfrequency of random DMX value generation for candle mode can be set in 'candle frq'.\n\namplitude of DMX value generation for candle mode can be set in 'candle amp'. a value of 100 means the highest possible random DMX value will be 100. the lowest is always 0."
 				}
 
 			}
@@ -144,21 +143,21 @@
 ,
 		"dependency_cache" : [ 			{
 				"name" : "ossia.pvh.puppytube.module.maxpat",
-				"bootpath" : "~/src/Max/PVH-maxlib_ossia/lighting/ossia.pvh.puppytube",
+				"bootpath" : "~/src/PVH-maxlib_ossia/lighting/ossia.pvh.puppytube",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "ossia.pvh.puppytube.model.maxpat",
-				"bootpath" : "~/src/Max/PVH-maxlib_ossia/lighting/ossia.pvh.puppytube",
+				"bootpath" : "~/src/PVH-maxlib_ossia/lighting/ossia.pvh.puppytube",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "ossia.pvh.puppytube.view.maxpat",
-				"bootpath" : "~/src/Max/PVH-maxlib_ossia/lighting/ossia.pvh.puppytube",
+				"bootpath" : "~/src/PVH-maxlib_ossia/lighting/ossia.pvh.puppytube",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
@@ -216,6 +215,10 @@
 , 			{
 				"name" : "jpink",
 				"default" : 				{
+					"elementcolor" : [ 0.619608, 0.0, 0.360784, 1.0 ],
+					"color" : [ 0.619608, 0.0, 0.360784, 1.0 ],
+					"bgcolor" : [ 0.862745, 0.870588, 0.878431, 1.0 ],
+					"selectioncolor" : [ 0.619608, 0.0, 0.360784, 1.0 ],
 					"clearcolor" : [ 0.113725, 0.607843, 0.607843, 1.0 ],
 					"bgfillcolor" : 					{
 						"type" : "color",
@@ -227,13 +230,9 @@
 						"autogradient" : 0
 					}
 ,
-					"accentcolor" : [ 0.619608, 0.0, 0.360784, 1.0 ],
-					"bgcolor" : [ 0.862745, 0.870588, 0.878431, 1.0 ],
-					"patchlinecolor" : [ 0.65, 0.65, 0.65, 1.0 ],
 					"textcolor" : [ 0.619608, 0.0, 0.360784, 1.0 ],
-					"elementcolor" : [ 0.619608, 0.0, 0.360784, 1.0 ],
-					"color" : [ 0.619608, 0.0, 0.360784, 1.0 ],
-					"selectioncolor" : [ 0.619608, 0.0, 0.360784, 1.0 ]
+					"accentcolor" : [ 0.619608, 0.0, 0.360784, 1.0 ],
+					"patchlinecolor" : [ 0.65, 0.65, 0.65, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
