@@ -4,13 +4,13 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 1,
-			"revision" : 0,
+			"revision" : 8,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 316.0, 91.0, 1330.0, 926.0 ],
+		"rect" : [ 30.0, 80.0, 1330.0, 810.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -37,7 +37,32 @@
 		"tags" : "",
 		"style" : "",
 		"subpatcher_template" : "",
+		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-8",
+					"maxclass" : "newobj",
+					"numinlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 74.0, 302.0, 77.0, 22.0 ],
+					"text" : "r fadetoblack"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-5",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 74.0, 330.0, 95.0, 22.0 ],
+					"text" : "0 0 0 0 0 0 0 0 0"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"format" : 6,
 					"id" : "obj-71",
@@ -356,7 +381,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 1,
-							"revision" : 0,
+							"revision" : 8,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -389,6 +414,7 @@
 						"tags" : "",
 						"style" : "",
 						"subpatcher_template" : "",
+						"assistshowspatchername" : 0,
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-154",
@@ -990,7 +1016,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 284.728637999999989, 295.0, 391.0, 22.0 ],
+					"patching_rect" : [ 284.728637999999989, 295.0, 393.0, 22.0 ],
 					"text" : "ossia.parameter light6 @type int @range 0 255 @description NOTHING"
 				}
 
@@ -1003,7 +1029,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 217.228637999999989, 147.0, 376.0, 22.0 ],
+					"patching_rect" : [ 217.228637999999989, 147.0, 377.0, 22.0 ],
 					"text" : "ossia.parameter light5 @type int @range 0 255 @description dimmer"
 				}
 
@@ -1144,7 +1170,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 681.0, 444.0, 336.0, 22.0 ],
+					"patching_rect" : [ 681.0, 444.0, 359.0, 22.0 ],
 					"text" : "ossia.parameter fade @type float @description \"line fade for light\""
 				}
 
@@ -1191,9 +1217,9 @@
 					"id" : "obj-11",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 992.0, 723.59997599999997, 249.0, 22.0 ],
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 992.0, 723.59997599999997, 319.0, 22.0 ],
 					"text" : "ossia.model #1 @description \"4 channel light control\""
 				}
 
@@ -1206,7 +1232,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 269.228637999999989, 266.0, 364.0, 22.0 ],
+					"patching_rect" : [ 269.228637999999989, 266.0, 365.0, 22.0 ],
 					"text" : "ossia.parameter light4 @type int @range 0 255 @description white"
 				}
 
@@ -1219,7 +1245,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 257.128639000000021, 237.0, 359.0, 22.0 ],
+					"patching_rect" : [ 257.128639000000021, 237.0, 360.0, 22.0 ],
 					"text" : "ossia.parameter light3 @type int @range 0 255 @description blue"
 				}
 
@@ -1232,7 +1258,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 242.928634999999986, 206.0, 367.0, 22.0 ],
+					"patching_rect" : [ 242.928634999999986, 206.0, 368.0, 22.0 ],
 					"text" : "ossia.parameter light2 @type int @range 0 255 @description green"
 				}
 
@@ -1245,7 +1271,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 228.728637999999989, 176.0, 353.0, 22.0 ],
+					"patching_rect" : [ 228.728637999999989, 176.0, 355.0, 22.0 ],
 					"text" : "ossia.parameter light1 @type int @range 0 255 @description red"
 				}
 
@@ -1589,6 +1615,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-30", 0 ],
+					"source" : [ "obj-5", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-127", 1 ],
 					"midpoints" : [ 690.5, 481.0, 272.728637999999989, 481.0 ],
 					"order" : 4,
@@ -1663,6 +1696,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-35", 0 ],
 					"source" : [ "obj-7", 3 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-5", 0 ],
+					"source" : [ "obj-8", 0 ]
 				}
 
 			}
