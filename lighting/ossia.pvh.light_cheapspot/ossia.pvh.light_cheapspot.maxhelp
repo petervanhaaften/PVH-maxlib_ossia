@@ -4,7 +4,7 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 1,
-			"revision" : 0,
+			"revision" : 8,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -37,6 +37,7 @@
 		"tags" : "",
 		"style" : "",
 		"subpatcher_template" : "",
+		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
 					"fontname" : "Arial",
@@ -44,8 +45,7 @@
 					"id" : "obj-9",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "bang" ],
+					"numoutlets" : 0,
 					"patching_rect" : [ 319.0, 379.0, 397.0, 22.0 ],
 					"text" : "imp.artnet.controller @unicast_ip 192.168.2.73 @mode 4 @framerate 44"
 				}
@@ -59,7 +59,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 115.0, 507.0, 52.0, 35.0 ],
+					"patching_rect" : [ 115.0, 507.0, 55.0, 35.0 ],
 					"text" : "0 0 0 43 0 0 0"
 				}
 
@@ -101,7 +101,7 @@
 					"id" : "obj-2",
 					"lockeddragscroll" : 0,
 					"maxclass" : "bpatcher",
-					"name" : "pvh.light_shehds.module.maxpat",
+					"name" : "ossia.pvh.light_shehds.module.maxpat",
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"offset" : [ 0.0, 0.0 ],
@@ -123,10 +123,9 @@
 					"lockeddragscroll" : 0,
 					"maxclass" : "bpatcher",
 					"name" : "cue_manager.module.maxpat",
-					"numinlets" : 1,
-					"numoutlets" : 1,
+					"numinlets" : 0,
+					"numoutlets" : 0,
 					"offset" : [ 0.0, 0.0 ],
-					"outlettype" : [ "" ],
 					"patching_rect" : [ 290.0, 58.0, 300.0, 175.0 ],
 					"viewvisibility" : 1
 				}
@@ -147,13 +146,6 @@
  ],
 		"lines" : [ 			{
 				"patchline" : 				{
-					"destination" : [ "obj-4", 1 ],
-					"source" : [ "obj-2", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-8", 1 ],
 					"order" : 1,
 					"source" : [ "obj-5", 0 ]
@@ -170,124 +162,47 @@
 			}
  ],
 		"dependency_cache" : [ 			{
-				"name" : "cue_manager.module.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/Jamoma/patchers/models/data/cue_manager",
-				"patcherrelativepath" : "../../../../Documents/Max 8/Packages/Jamoma/patchers/models/data/cue_manager",
+				"name" : "ossia.pvh.light_shehds.module.maxpat",
+				"bootpath" : "~/src/PVH-maxlib_ossia/lighting/ossia.pvh.light_shehds",
+				"patcherrelativepath" : "../ossia.pvh.light_shehds",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "cue_manager.model.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/Jamoma/patchers/models/data/cue_manager",
-				"patcherrelativepath" : "../../../../Documents/Max 8/Packages/Jamoma/patchers/models/data/cue_manager",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "cue_manager.view.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/Jamoma/patchers/models/data/cue_manager",
-				"patcherrelativepath" : "../../../../Documents/Max 8/Packages/Jamoma/patchers/models/data/cue_manager",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "thru.maxpat",
-				"bootpath" : "C74:/patchers/m4l/Pluggo for Live resources/patches",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "j.datetime.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/Jamoma/patchers/components/data/datetime",
-				"patcherrelativepath" : "../../../../Documents/Max 8/Packages/Jamoma/patchers/components/data/datetime",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "j.namespace_selector.maxpat",
-				"bootpath" : "~/Documents/Max 8/Packages/Jamoma/patchers/components/namespace/namespace_selector",
-				"patcherrelativepath" : "../../../../Documents/Max 8/Packages/Jamoma/patchers/components/namespace/namespace_selector",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "pvh.light_shehds.module.maxpat",
-				"bootpath" : "~/src/partyline/dmx/pvh.light_shehds",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "pvh.light_shehds.model.maxpat",
-				"bootpath" : "~/src/partyline/dmx/pvh.light_shehds",
-				"patcherrelativepath" : ".",
+				"name" : "ossia.pvh.light_shehds.model.maxpat",
+				"bootpath" : "~/src/PVH-maxlib_ossia/lighting/ossia.pvh.light_shehds",
+				"patcherrelativepath" : "../ossia.pvh.light_shehds",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "historylite.maxpat",
-				"bootpath" : "~/src/Projects/puppylight/2_include/_dreprecated/pvh.light_sixbar_old/include",
-				"patcherrelativepath" : "../../../Projects/puppylight/2_include/_dreprecated/pvh.light_sixbar_old/include",
+				"bootpath" : "~/src/PVH-maxlib_ossia/utilities/pvh.historylite",
+				"patcherrelativepath" : "../../utilities/pvh.historylite",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "pvh.light_shehds.view.maxpat",
-				"bootpath" : "~/src/partyline/dmx/pvh.light_shehds",
-				"patcherrelativepath" : ".",
+				"name" : "ossia.pvh.light_shehds.view.maxpat",
+				"bootpath" : "~/src/PVH-maxlib_ossia/lighting/ossia.pvh.light_shehds",
+				"patcherrelativepath" : "../ossia.pvh.light_shehds",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "j.cue.mxo",
+				"name" : "ossia.parameter.mxo",
 				"type" : "iLaX"
 			}
 , 			{
-				"name" : "j.init.mxo",
+				"name" : "ossia.model.mxo",
 				"type" : "iLaX"
 			}
 , 			{
-				"name" : "j.model.mxo",
+				"name" : "ossia.view.mxo",
 				"type" : "iLaX"
 			}
 , 			{
-				"name" : "j.receive.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "j.message.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "j.send.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "j.return.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "j.parameter.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "j.ui.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "j.view.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "j.remote.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "j.namespace.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "imp.artnet.controller.mxo",
+				"name" : "ossia.remote.mxo",
 				"type" : "iLaX"
 			}
  ],

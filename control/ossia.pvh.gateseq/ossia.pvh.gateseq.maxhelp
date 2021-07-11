@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 781.0, 484.0, 596.0, 480.0 ],
+		"rect" : [ 371.0, 516.0, 596.0, 480.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -39,6 +39,30 @@
 		"subpatcher_template" : "",
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-8",
+					"maxclass" : "toggle",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "int" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 40.0, 45.0, 24.0, 24.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-2",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"patching_rect" : [ 75.0, 17.0, 63.0, 22.0 ],
+					"text" : "metro 200"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-11",
 					"maxclass" : "comment",
@@ -138,8 +162,22 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-3", 0 ],
+					"source" : [ "obj-2", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-1", 0 ],
 					"source" : [ "obj-3", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-2", 0 ],
+					"source" : [ "obj-8", 0 ]
 				}
 
 			}
@@ -165,21 +203,21 @@
 ,
 		"dependency_cache" : [ 			{
 				"name" : "ossia.pvh.gateseq.module.maxpat",
-				"bootpath" : "~/src/Max/PVH-maxlib_ossia/#todo/pvh.gateseq",
+				"bootpath" : "~/src/PVH-maxlib_ossia/control/ossia.pvh.gateseq",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "ossia.pvh.gateseq.model.maxpat",
-				"bootpath" : "~/src/Max/PVH-maxlib_ossia/#todo/pvh.gateseq",
+				"bootpath" : "~/src/PVH-maxlib_ossia/control/ossia.pvh.gateseq",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "ossia.pvh.gateseq.view.maxpat",
-				"bootpath" : "~/src/Max/PVH-maxlib_ossia/#todo/pvh.gateseq",
+				"bootpath" : "~/src/PVH-maxlib_ossia/control/ossia.pvh.gateseq",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
