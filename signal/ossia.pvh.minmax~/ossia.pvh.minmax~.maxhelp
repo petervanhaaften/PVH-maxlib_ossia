@@ -4,7 +4,7 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 1,
-			"revision" : 7,
+			"revision" : 8,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -167,7 +167,7 @@
 					"id" : "obj-2",
 					"lockeddragscroll" : 0,
 					"maxclass" : "bpatcher",
-					"name" : "ossia.pvh.minmax.view.maxpat",
+					"name" : "ossia.pvh.minmax~.view.maxpat",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
@@ -183,10 +183,10 @@
 					"id" : "obj-1",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 233.0, 325.0, 167.0, 22.0 ],
-					"text" : "ossia.pvh.minmax.model help"
+					"numoutlets" : 3,
+					"outlettype" : [ "float", "float", "" ],
+					"patching_rect" : [ 233.0, 325.0, 174.0, 22.0 ],
+					"text" : "ossia.pvh.minmax~.model help"
 				}
 
 			}
@@ -207,29 +207,21 @@
 			}
  ],
 		"dependency_cache" : [ 			{
-				"name" : "ossia.pvh.minmax.model.maxpat",
-				"bootpath" : "~/src/Max/PVH-maxlib_ossia/ossia.pvh.minmax",
+				"name" : "ossia.pvh.minmax~.model.maxpat",
+				"bootpath" : "~/src/PVH-maxlib_ossia/signal/ossia.pvh.minmax~",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "ossia.pvh.minmax.view.maxpat",
-				"bootpath" : "~/src/Max/PVH-maxlib_ossia/ossia.pvh.minmax",
+				"name" : "ossia.pvh.minmax~.view.maxpat",
+				"bootpath" : "~/src/PVH-maxlib_ossia/signal/ossia.pvh.minmax~",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "ossia.parameter.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "j.out.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "j.in~.mxo",
 				"type" : "iLaX"
 			}
 , 			{
@@ -241,15 +233,7 @@
 				"type" : "iLaX"
 			}
 , 			{
-				"name" : "j.ui.mxo",
-				"type" : "iLaX"
-			}
-, 			{
 				"name" : "ossia.view.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "j.return.mxo",
 				"type" : "iLaX"
 			}
  ],
