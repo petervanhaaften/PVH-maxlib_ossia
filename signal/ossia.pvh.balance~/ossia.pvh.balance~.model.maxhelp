@@ -2,13 +2,14 @@
 	"patcher" : 	{
 		"fileversion" : 1,
 		"appversion" : 		{
-			"major" : 7,
-			"minor" : 0,
-			"revision" : 5,
-			"architecture" : "x86",
+			"major" : 8,
+			"minor" : 1,
+			"revision" : 8,
+			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
+		"classnamespace" : "box",
 		"rect" : [ 321.0, 87.0, 511.0, 554.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
@@ -38,6 +39,7 @@
 		"subpatcher_template" : "",
 		"showrootpatcherontab" : 0,
 		"showontab" : 0,
+		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
 					"border" : 0,
@@ -50,7 +52,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 10.0, 10.0, 334.981384, 57.567627 ]
+					"patching_rect" : [ 10.0, 10.0, 334.981383999999991, 57.567627000000002 ]
 				}
 
 			}
@@ -65,13 +67,14 @@
 					"patcher" : 					{
 						"fileversion" : 1,
 						"appversion" : 						{
-							"major" : 7,
-							"minor" : 0,
-							"revision" : 5,
-							"architecture" : "x86",
+							"major" : 8,
+							"minor" : 1,
+							"revision" : 8,
+							"architecture" : "x64",
 							"modernui" : 1
 						}
 ,
+						"classnamespace" : "box",
 						"rect" : [ 321.0, 113.0, 511.0, 528.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
@@ -100,13 +103,17 @@
 						"style" : "",
 						"subpatcher_template" : "",
 						"showontab" : 1,
+						"assistshowspatchername" : 0,
 						"boxes" : [ 							{
 								"box" : 								{
+									"basictuning" : 440,
 									"clipheight" : 65.0,
 									"data" : 									{
 										"clips" : [ 											{
-												"filename" : "/Applications/Max.app/Contents/Resources/C74/media/msp/brushes.aif",
+												"absolutepath" : "brushes.aif",
+												"filename" : "brushes.aif",
 												"filekind" : "audiofile",
+												"id" : "u640001656",
 												"loop" : 1,
 												"content_state" : 												{
 													"originaltempo" : [ 120.0 ],
@@ -130,13 +137,21 @@
  ]
 									}
 ,
+									"followglobaltempo" : 0,
+									"formantcorrection" : 0,
 									"id" : "obj-11",
 									"maxclass" : "playlist~",
+									"mode" : "basic",
 									"numinlets" : 1,
 									"numoutlets" : 5,
+									"originallength" : [ 0.0, "ticks" ],
+									"originaltempo" : 120.0,
 									"outlettype" : [ "signal", "signal", "signal", "", "dictionary" ],
+									"parameter_enable" : 0,
 									"patching_rect" : [ 41.0, 128.0, 409.0, 65.0 ],
-									"style" : ""
+									"pitchcorrection" : 0,
+									"quality" : "basic",
+									"timestretch" : [ 0 ]
 								}
 
 							}
@@ -146,14 +161,11 @@
 									"fontname" : "Arial",
 									"fontsize" : 12.0,
 									"id" : "obj-1",
-									"linecount" : 2,
 									"maxclass" : "message",
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 124.0, 272.0, 100.0, 35.0 ],
-									"style" : "",
-									"text" : "shape EqualPower"
+									"patching_rect" : [ 124.0, 272.0, 100.0, 22.0 ]
 								}
 
 							}
@@ -169,13 +181,12 @@
 									"id" : "obj-4",
 									"lockeddragscroll" : 0,
 									"maxclass" : "bpatcher",
-									"name" : "balance~.view.maxpat",
+									"name" : "ossia.pvh.balance~.view.maxpat",
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"offset" : [ 0.0, 0.0 ],
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 304.0, 225.0, 150.0, 70.0 ],
-									"presentation_rect" : [ 555.0, 449.0, 150.0, 70.0 ],
 									"viewvisibility" : 1
 								}
 
@@ -186,33 +197,32 @@
 									"id" : "obj-6",
 									"maxclass" : "newobj",
 									"numinlets" : 2,
-									"numoutlets" : 3,
-									"outlettype" : [ "signal", "signal", "" ],
-									"patching_rect" : [ 41.0, 225.0, 183.0, 23.0 ],
-									"style" : "",
-									"text" : "balance~.model balance"
+									"numoutlets" : 2,
+									"outlettype" : [ "", "" ],
+									"patching_rect" : [ 41.0, 225.0, 208.0, 23.0 ],
+									"text" : "ossia.pvh.balance~.model balance"
 								}
 
 							}
 , 							{
 								"box" : 								{
 									"id" : "obj-8",
+									"lastchannelcount" : 0,
 									"maxclass" : "live.gain~",
 									"numinlets" : 2,
 									"numoutlets" : 5,
 									"outlettype" : [ "signal", "signal", "", "float", "list" ],
 									"parameter_enable" : 1,
 									"patching_rect" : [ 41.0, 272.0, 48.0, 165.0 ],
-									"presentation_rect" : [ 0.0, 0.0, 48.0, 50.0 ],
 									"saved_attribute_attributes" : 									{
 										"valueof" : 										{
+											"parameter_initial" : [ -30 ],
+											"parameter_initial_enable" : 1,
 											"parameter_longname" : "Gain",
+											"parameter_mmax" : 6.0,
+											"parameter_mmin" : -70.0,
 											"parameter_shortname" : "Gain",
 											"parameter_type" : 0,
-											"parameter_mmin" : -70.0,
-											"parameter_mmax" : 6.0,
-											"parameter_initial_enable" : 1,
-											"parameter_initial" : [ -30 ],
 											"parameter_unitstyle" : 4
 										}
 
@@ -229,8 +239,7 @@
 									"maxclass" : "ezdac~",
 									"numinlets" : 2,
 									"numoutlets" : 0,
-									"patching_rect" : [ 41.0, 452.0, 45.0, 45.0 ],
-									"style" : ""
+									"patching_rect" : [ 41.0, 452.0, 45.0, 45.0 ]
 								}
 
 							}
@@ -240,13 +249,13 @@
 									"filename" : "helpdetails.js",
 									"id" : "obj-2",
 									"ignoreclick" : 1,
-									"jsarguments" : [ "balance~.model" ],
+									"jsarguments" : [ "ossia.pvh.balance~.model" ],
 									"maxclass" : "jsui",
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 10.0, 10.0, 425.0, 79.0 ]
+									"patching_rect" : [ 10.0, 10.0, 571.0, 78.0 ]
 								}
 
 							}
@@ -254,8 +263,6 @@
 						"lines" : [ 							{
 								"patchline" : 								{
 									"destination" : [ "obj-6", 1 ],
-									"disabled" : 0,
-									"hidden" : 0,
 									"source" : [ "obj-11", 1 ]
 								}
 
@@ -263,27 +270,14 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-6", 0 ],
-									"disabled" : 0,
-									"hidden" : 0,
 									"source" : [ "obj-11", 0 ]
 								}
 
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-1", 1 ],
-									"disabled" : 0,
-									"hidden" : 0,
-									"source" : [ "obj-6", 2 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
 									"destination" : [ "obj-8", 1 ],
-									"disabled" : 0,
-									"hidden" : 0,
-									"midpoints" : [ 132.5, 259.5, 79.5, 259.5 ],
+									"midpoints" : [ 239.5, 259.5, 79.5, 259.5 ],
 									"source" : [ "obj-6", 1 ]
 								}
 
@@ -291,8 +285,6 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-8", 0 ],
-									"disabled" : 0,
-									"hidden" : 0,
 									"source" : [ "obj-6", 0 ]
 								}
 
@@ -300,8 +292,6 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-9", 1 ],
-									"disabled" : 0,
-									"hidden" : 0,
 									"midpoints" : [ 57.75, 444.0, 76.5, 444.0 ],
 									"source" : [ "obj-8", 1 ]
 								}
@@ -310,8 +300,6 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-9", 0 ],
-									"disabled" : 0,
-									"hidden" : 0,
 									"source" : [ "obj-8", 0 ]
 								}
 
@@ -325,11 +313,9 @@
 						"digest" : "",
 						"fontsize" : 13.0,
 						"globalpatchername" : "",
-						"style" : "",
 						"tags" : ""
 					}
 ,
-					"style" : "",
 					"text" : "p basic",
 					"varname" : "basic_tab"
 				}
@@ -346,13 +332,14 @@
 					"patcher" : 					{
 						"fileversion" : 1,
 						"appversion" : 						{
-							"major" : 7,
-							"minor" : 0,
-							"revision" : 5,
-							"architecture" : "x86",
+							"major" : 8,
+							"minor" : 1,
+							"revision" : 8,
+							"architecture" : "x64",
 							"modernui" : 1
 						}
 ,
+						"classnamespace" : "box",
 						"rect" : [ 0.0, 26.0, 511.0, 528.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
@@ -381,6 +368,7 @@
 						"style" : "",
 						"subpatcher_template" : "",
 						"showontab" : 1,
+						"assistshowspatchername" : 0,
 						"boxes" : [  ],
 						"lines" : [  ]
 					}
@@ -390,11 +378,9 @@
 						"description" : "",
 						"digest" : "",
 						"globalpatchername" : "",
-						"style" : "",
 						"tags" : ""
 					}
 ,
-					"style" : "",
 					"text" : "p ?",
 					"varname" : "q_tab"
 				}
@@ -403,10 +389,22 @@
  ],
 		"lines" : [  ],
 		"parameters" : 		{
-			"obj-2::obj-4::obj-22" : [ "live.menu[1]", "Shape", 0 ],
 			"obj-2::obj-4::obj-10" : [ "Balance", "Balance", 0 ],
+			"obj-2::obj-4::obj-21" : [ "live.menu", "Shape", 0 ],
+			"obj-2::obj-4::obj-22" : [ "live.menu[1]", "Shape", 0 ],
 			"obj-2::obj-8" : [ "Gain", "Gain", 0 ],
-			"obj-2::obj-4::obj-21" : [ "live.menu", "Shape", 0 ]
+			"parameterbanks" : 			{
+
+			}
+,
+			"parameter_overrides" : 			{
+				"obj-2::obj-4::obj-22" : 				{
+					"parameter_longname" : "live.menu[1]"
+				}
+
+			}
+,
+			"inherited_shortname" : 1
 		}
 ,
 		"dependency_cache" : [ 			{
@@ -416,14 +414,16 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "balance~.model.maxpat",
-				"bootpath" : "~/Documents/GITHUB/JamomaMax/Jamoma/patchers/modules/audio/stereo/Imaging/balance~",
+				"name" : "ossia.pvh.balance~.model.maxpat",
+				"bootpath" : "~/src/PVH-maxlib_ossia/signal/ossia.pvh.balance~",
+				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "balance~.view.maxpat",
-				"bootpath" : "~/Documents/GITHUB/JamomaMax/Jamoma/patchers/modules/audio/stereo/Imaging/balance~",
+				"name" : "ossia.pvh.balance~.view.maxpat",
+				"bootpath" : "~/src/PVH-maxlib_ossia/signal/ossia.pvh.balance~",
+				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
@@ -440,39 +440,23 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "j.model.mxo",
+				"name" : "ossia.parameter.mxo",
 				"type" : "iLaX"
 			}
 , 			{
-				"name" : "j.panorama~.mxo",
+				"name" : "ossia.model.mxo",
 				"type" : "iLaX"
 			}
 , 			{
-				"name" : "j.parameter.mxo",
+				"name" : "ossia.view.mxo",
 				"type" : "iLaX"
 			}
 , 			{
-				"name" : "j.out~.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "j.ui.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "j.view.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "j.remote.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "j.receive~.mxo",
+				"name" : "ossia.remote.mxo",
 				"type" : "iLaX"
 			}
  ],
-		"embedsnapshot" : 0
+		"autosave" : 0
 	}
 
 }

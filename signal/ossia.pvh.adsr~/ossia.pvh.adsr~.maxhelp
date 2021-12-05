@@ -4,13 +4,13 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 1,
-			"revision" : 7,
+			"revision" : 8,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 744.0, 78.0, 650.0, 480.0 ],
+		"rect" : [ 744.0, 79.0, 650.0, 480.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -146,8 +146,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
-					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 122.0, 178.0, 300.0, 140.0 ],
+					"outlettype" : [ "multichannelsignal" ],
+					"patching_rect" : [ 122.0, 178.0, 275.0, 82.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -202,6 +202,9 @@
  ],
 		"parameters" : 		{
 			"obj-1::obj-2::obj-1" : [ "Predelay[2]", "Predelay", 0 ],
+			"obj-1::obj-2::obj-14::obj-100" : [ "live.text[15]", "live.text", 0 ],
+			"obj-1::obj-2::obj-14::obj-12" : [ "live.numbox[1]", "live.numbox", 0 ],
+			"obj-1::obj-2::obj-17" : [ "live.dial[5]", "live.dial", 0 ],
 			"obj-1::obj-2::obj-29" : [ "Decay", "Decay", 0 ],
 			"obj-1::obj-2::obj-31" : [ "Release", "Release", 0 ],
 			"obj-1::obj-2::obj-32" : [ "Sustain", "Sustain", 0 ],
@@ -249,31 +252,45 @@
 ,
 		"dependency_cache" : [ 			{
 				"name" : "ossia.pvh.adsr~.module.maxpat",
-				"bootpath" : "~/src/Max/PVH-maxlib_ossia/ossia.pvh.adsr~",
+				"bootpath" : "~/src/PVH-maxlib_ossia/signal/ossia.pvh.adsr~",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "ossia.pvh.adsr~.model.maxpat",
-				"bootpath" : "~/src/Max/PVH-maxlib_ossia/ossia.pvh.adsr~",
+				"bootpath" : "~/src/PVH-maxlib_ossia/signal/ossia.pvh.adsr~",
 				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "ossia.pvh.chanctl~.model.maxpat",
+				"bootpath" : "~/src/PVH-maxlib_ossia/signal/ossia.pvh.chanctl~",
+				"patcherrelativepath" : "../ossia.pvh.chanctl~",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "ossia.pvh.adsr~.view.maxpat",
-				"bootpath" : "~/src/Max/PVH-maxlib_ossia/ossia.pvh.adsr~",
+				"bootpath" : "~/src/PVH-maxlib_ossia/signal/ossia.pvh.adsr~",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "ossia.parameter.mxo",
-				"type" : "iLaX"
+				"name" : "ossia.pvh.chanctl~.view.maxpat",
+				"bootpath" : "~/src/PVH-maxlib_ossia/signal/ossia.pvh.chanctl~",
+				"patcherrelativepath" : "../ossia.pvh.chanctl~",
+				"type" : "JSON",
+				"implicit" : 1
 			}
 , 			{
 				"name" : "ossia.model.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "ossia.parameter.mxo",
 				"type" : "iLaX"
 			}
 , 			{
