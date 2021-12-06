@@ -97,7 +97,7 @@
 					"id" : "obj-2",
 					"lockeddragscroll" : 0,
 					"maxclass" : "bpatcher",
-					"name" : "ossia.pvh.oscreceive.view.maxpat",
+					"name" : "ossia.pvh.oscmapping.view.maxpat",
 					"numinlets" : 0,
 					"numoutlets" : 0,
 					"offset" : [ 0.0, 0.0 ],
@@ -116,8 +116,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "signal" ],
-					"patching_rect" : [ 60.0, 120.0, 241.0, 22.0 ],
-					"text" : "ossia.pvh.oscreceive.model #1 #2",
+					"patching_rect" : [ 60.0, 120.0, 248.0, 22.0 ],
+					"text" : "ossia.pvh.oscmapping.model #1 #2",
 					"varname" : "ossia.pvh.oscoutput.model"
 				}
 
