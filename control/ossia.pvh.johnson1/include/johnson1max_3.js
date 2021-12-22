@@ -74,7 +74,7 @@ function process(){
         // send out processed origin from outlet
         if (i == (originLength - 1)){
             originFinal = originNew.split("")
-            outlet(0, originFinal);
+            //outlet(0, originFinal);
 
         }
     }
