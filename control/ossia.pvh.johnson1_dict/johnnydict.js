@@ -94,27 +94,35 @@ function process(){
 
 		// rebuilding origin, adding new target on each cycle of for loop
         originNew = originNew + target
-
+/*
 		//once origin is rebuilt, stick it into the dict
         if (i == (originLength - 1)){
             //originFinal = originNew
 			originFinal = originNew.split("")
         }
+*/
+
     }
+    // test bang function run at end of process
+    bang()
+    outlet(1, "bang");
+}
+
+function processController(){
+    process()
+    originFinal = originNew.split("")
+    process()
+    originFinal2 = originNew.split("")
 }
 
 function bang(){
 	//set up dict process
 	basic_getting_and_setting();
+    
 
-	//print out origin for debug
-	post("ORIGIN_FINAL: ")
-	post()	
-	post(originFinal)
-	post()
 
-	outlet(0, originFinal[itr]);
-    outlet(1, originFinal.length);
+	//outlet(0, originFinal[itr]);
+    //outlet(1, originFinal.length);
 	//need to fill originFinal2
 	//and find way to switch them out when reprocessing is needed
 	/*
