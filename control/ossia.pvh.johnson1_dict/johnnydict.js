@@ -28,6 +28,7 @@ var itr = -1;
 // empty global arrays to hold transformed origins
 var originFinal = [];
 var originFinal2 = [];
+var originNew = "";
 
 //establish dict setup first
 function basic_getting_and_setting()
