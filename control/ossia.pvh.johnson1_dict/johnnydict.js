@@ -23,12 +23,15 @@ var seq7Val  		= "";
 
 // max-> iteration value for incoming bang
 // controls function that reprocesses origin
-var itr = -1;
+var itr = 1;
 
 // empty global arrays to hold transformed origins
-var originFinal = [];
-var originFinal2 = [];
-var originNew = "";
+var originFinal1     = [];
+var originFinal2    = [];
+var originCut       = "";
+var originLength    = "";
+var originNew       = ""
+var target          = ""
 
 //establish dict setup first
 function basic_getting_and_setting()
@@ -52,17 +55,72 @@ function basic_getting_and_setting()
 	d.set("seq5", seq5Val);
 	d.set("seq6", seq6Val);
 	d.set("seq7", seq7Val);
-	d.set("originFinal", originFinal);
+	d.set("originFinal1", originFinal1);
 	d.set("originFinal2", originFinal2);
 }
 
+function transformOrigin(){
+    for (var a = 1; a < 3; a++) {
+        post("out loop")
+        post(a)
+        post()
+        // run through each character in origin,
+        // and replace with seq0-seq7
+        for (var i = 0; i < originLength; i++) {
+            post("in loop")
+            post(i)
+            switch(originCut[i]) {
+                case "0":
+                    target = seq0Val;
+                    break;
+                case "1":
+                    target = seq1Val;
+                    break;
+                case "2":
+                    target = seq2Val;
+                    break;
+                case "3":
+                    target = seq3Val;
+                    break;
+                case "4":
+                    target = seq4Val;
+                    break;
+                case "5":
+                    target = seq5Val;
+                    break;
+                case "6":
+                    target = seq6Val;
+                    break;
+                case "7":
+                    target = seq7Val;
+                    break;
+            }
+            // rebuilding origin, adding new target on each cycle of for loop
+            originNew = originNew + target
+
+            //once origin is rebuilt, stick it into the dict
+            if (i == (originLength - 1)){
+                originName = 'originFinal' + a
+                post("originanme")
+                post(originName)
+                //originFinal = originNew
+                originName = originNew.split("")
+                //originFinal2 = originNew.split("")
+            }
+        }
+    
+    
+    }
+
+}
 //trigger processing with 'process' msg
 function process(){
+    iter = 1;
     // split individual origin characters into array
-    var originCut       = origin.split("");
-    var originLength    = originCut.length;
-    var originNew       = ""
-	var target   = ""
+    originCut       = origin.split("");
+    originLength    = originCut.length;
+    transformOrigin()
+    /*
     // run through each character in origin,
     // and replace with seq0-seq7
     for (var i = 0; i < originLength; i++) {
@@ -95,15 +153,17 @@ function process(){
 
 		// rebuilding origin, adding new target on each cycle of for loop
         originNew = originNew + target
-/*
+
 		//once origin is rebuilt, stick it into the dict
         if (i == (originLength - 1)){
             //originFinal = originNew
 			originFinal = originNew.split("")
+            originFinal2 = originNew.split("")
         }
-*/
+
 
     }
+    */
     // test bang function run at end of process
     bang()
     outlet(1, "bang");
@@ -111,7 +171,7 @@ function process(){
 
 function processController(){
     process()
-    originFinal = originNew.split("")
+    originFinal1 = originNew.split("")
     process()
     originFinal2 = originNew.split("")
 }
