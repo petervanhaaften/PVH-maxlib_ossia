@@ -1,11 +1,11 @@
 // max-> set up inlets/outlets/assist strings
 inlets = 1;
-outlets = 3;
+outlets = 4;
 setinletassist(0,"inlet for all");
-setoutletassist(0,"single array element");
-setoutletassist(1,"transformed origin length");
-setoutletassist(2,"utility messages");
-
+setoutletassist(0,"???");
+setoutletassist(1,"bang out, processFirst done");
+setoutletassist(2,"bang out, processSecond done");
+setoutletassist(3,"utility messages out");
 // origin sequence, each character in origin
 // will be replaced by a corresponding sequence
 var origin		    = "";
@@ -57,6 +57,7 @@ function basic_getting_and_setting()
 	d.set("seq7", seq7Val);
 	d.set("originFinal1", originFinal1);
 	d.set("originFinal2", originFinal2);
+    d.set("originNew", originNew);
 }
 
 function transformOrigin(){
@@ -99,100 +100,111 @@ function transformOrigin(){
 function processFirst(){
     iter = 1;
     // split individual origin characters into array
-    originCut       = origin.split("");
+    originCut       = originNew.split("");
     originLength    = originCut.length;
     transformOrigin()
     // drop origin into dict as split list
     originFinal1 = originNew.split("")
-    // switch original origin with the transformed origin, in anticpation of next process
-    origin = originNew
     basic_getting_and_setting()
     outlet(1, "bang");
+    outlet(3, "originNew_" + originNew);
 }
 
 function processSecond(){
     iter = 1;
     // split individual origin characters into array
-    originCut       = origin.split("");
+    originCut       = originNew.split("");
     originLength    = originCut.length;
     transformOrigin()
     //drop origin into dict as split list
     originFinal2 = originNew.split("")
-    // switch original origin with the transformed origin, in anticpation of next process
-    origin = originNew
     basic_getting_and_setting()
-    outlet(1, "bang");
+    outlet(2, "bang");
+    outlet(3, "originNew_" + originNew);
 }
 
 
 function bang(){
-	//set up dict process
-	//basic_getting_and_setting();
-	//outlet(0, originFinal[itr]);
-    //outlet(1, originFinal.length);
-	//need to fill originFinal2
-	//and find way to switch them out when reprocessing is needed
 	/*
-        origin =  originFinal.toString();
-        itr = -1
-        // send transformed origin back thorugh process
-        process();
+        any need?
 	*/
+}
 
+function reset(){
+	/*
+        reset all to nothing
+	*/
+    var origin		    = "";
+    var seq0Val 		= "";
+    var seq1Val 		= "";
+    var seq2Val  		= "";
+    var seq3Val  		= "";
+    var seq4Val 		= "";
+    var seq5Val  		= "";
+    var seq6Val  		= "";
+    var seq7Val  		= "";
+    var originFinal1     = [];
+    var originFinal2    = [];
+    var originCut       = "";
+    var originLength    = "";
+    var originNew       = ""
+    var target          = ""
+    outlet(3, "internal reset")
 }
 
 // functions for changing seq0-seq9 & origin
 function seq0(s0In){
     seq0Val = s0In;
     //print text of saved sequence
-    outlet(2, "seq0sav:_" + seq0Val);
+    outlet(3, "seq0sav:_" + seq0Val);
     itr = -1;
 }
 
 function seq1(s1In){
     seq1Val = s1In;
-    outlet(2, "seq1sav:_" + seq1Val);
+    outlet(3, "seq1sav:_" + seq1Val);
     itr = -1;
 }
 
 function seq2(s2In){
     seq2Val = s2In;
-    outlet(2, "seq2sav:_" + seq2Val);
+    outlet(3, "seq2sav:_" + seq2Val);
     itr = -1;
 }
 
 function seq3(s3In){
     seq3Val = s3In;
-    outlet(2, "seq3sav:_" + seq3Val);
+    outlet(3, "seq3sav:_" + seq3Val);
     itr = -1;
 }
 
 function seq4(s4In){
     seq4Val = s4In;
-    outlet(2, "seq4sav:_" + seq4Val);
+    outlet(3, "seq4sav:_" + seq4Val);
     itr = -1;
 }
 
 function seq5(s5In){
     seq5Val = s5In;
-    outlet(2, "seq5sav:_" + seq5Val);
+    outlet(3, "seq5sav:_" + seq5Val);
     itr = -1;
 }
 
 function seq6(s6In){
     seq6Val = s6In;
-    outlet(2, "seq6sav:_" + seq6Val);
+    outlet(3, "seq6sav:_" + seq6Val);
     itr = -1;
 }
 
 function seq7(s7In){
     seq7Val = s7In;
-    outlet(2, "seq7sav:_" + seq7Val);
+    outlet(3, "seq7sav:_" + seq7Val);
     itr = -1;
 }
 
 function seqOrigin(originIn){
     origin = originIn;
-    outlet(2, "seqOriginsav:_" + origin);
+    originNew = originIn;
+    outlet(3, "seqOriginsav:_" + origin);
     itr = -1;
 }
