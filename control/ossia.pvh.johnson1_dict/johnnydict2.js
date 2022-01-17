@@ -134,6 +134,14 @@ function reset(){
 	/*
         reset all to nothing
 	*/
+    var originNew       = origin
+    outlet(3, "internal reset")
+}
+
+function clear(){
+	/*
+        reset all to nothing
+	*/
     var origin		    = "";
     var seq0Val 		= "";
     var seq1Val 		= "";
