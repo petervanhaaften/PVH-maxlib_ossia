@@ -684,8 +684,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 258.666687000000024, 98.0, 151.0, 19.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 38.600002000000003, 23.0, 108.0, 19.0 ],
-					"text" : "0110"
+					"presentation_rect" : [ 38.600002000000003, 23.0, 108.0, 19.0 ]
 				}
 
 			}
@@ -825,8 +824,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 258.666687000000024, 247.0, 151.0, 19.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 38.600002000000003, 67.0, 108.0, 19.0 ],
-					"text" : "11011"
+					"presentation_rect" : [ 38.600002000000003, 67.0, 108.0, 19.0 ]
 				}
 
 			}
@@ -846,8 +844,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 258.666687000000024, 176.0, 151.0, 19.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 38.600002000000003, 45.0, 108.0, 19.0 ],
-					"text" : "0111"
+					"presentation_rect" : [ 38.600002000000003, 45.0, 108.0, 19.0 ]
 				}
 
 			}
