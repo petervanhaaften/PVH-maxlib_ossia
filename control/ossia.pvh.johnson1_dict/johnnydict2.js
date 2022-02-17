@@ -134,7 +134,9 @@ function reset(){
 	/*
         reset all to nothing
 	*/
-    var originNew       = origin
+	var seq0       = "3333333"
+    var originNew       = "10101"
+	basic_getting_and_setting()
     outlet(3, "internal reset")
 }
 
