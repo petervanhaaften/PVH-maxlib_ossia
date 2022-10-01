@@ -117,7 +117,7 @@
 					"patching_rect" : [ 426.0, 145.0, 150.0, 20.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 55.0, 15.0, 150.0, 20.0 ],
-					"text" : "my_samp1"
+					"text" : "#1"
 				}
 
 			}
@@ -204,7 +204,7 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-4",
-					"index" : 1,
+					"index" : 0,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -216,11 +216,11 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-1",
-					"index" : 1,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "signal" ],
+					"outlettype" : [ "" ],
 					"patching_rect" : [ 100.250003278255463, 73.0, 30.0, 30.0 ]
 				}
 
@@ -394,8 +394,8 @@
 					"numinlets" : 11,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 97.750003278255463, 345.999966204166412, 161.0, 22.0 ],
-					"text" : "andreagroovy #1 #2"
+					"patching_rect" : [ 97.750003278255463, 345.999966204166412, 138.0, 22.0 ],
+					"text" : "pvh.andreagroovy #1 #2"
 				}
 
 			}
@@ -544,7 +544,16 @@
 				}
 
 			}
- ]
+ ],
+		"dependency_cache" : [ 			{
+				"name" : "pvh.andreagroovy.maxpat",
+				"bootpath" : "~/src/PVH-maxlib_ossia/utilities/andreagroovy",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+ ],
+		"autosave" : 0
 	}
 
 }
