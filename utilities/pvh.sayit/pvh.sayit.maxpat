@@ -3,7 +3,7 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 3,
+			"minor" : 5,
 			"revision" : 0,
 			"architecture" : "x64",
 			"modernui" : 1
@@ -40,9 +40,22 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"comment" : "msg in",
+					"id" : "obj-4",
+					"index" : 2,
+					"maxclass" : "inlet",
+					"numinlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 199.0, 69.0, 30.0, 30.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"comment" : "manual trig",
 					"id" : "obj-2",
-					"index" : 3,
+					"index" : 4,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -53,7 +66,7 @@
 			}
 , 			{
 				"box" : 				{
-					"comment" : "value",
+					"comment" : "int in",
 					"id" : "obj-1",
 					"index" : 1,
 					"maxclass" : "inlet",
@@ -68,12 +81,12 @@
 				"box" : 				{
 					"comment" : "metro trig on off",
 					"id" : "obj-3",
-					"index" : 2,
+					"index" : 3,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "int" ],
-					"patching_rect" : [ 212.333360999822617, 66.0, 30.0, 30.0 ]
+					"outlettype" : [ "float" ],
+					"patching_rect" : [ 234.833360999822617, 69.0, 30.0, 30.0 ]
 				}
 
 			}
@@ -169,6 +182,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-218", 0 ],
 					"source" : [ "obj-3", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-223", 0 ],
+					"source" : [ "obj-4", 0 ]
 				}
 
 			}
