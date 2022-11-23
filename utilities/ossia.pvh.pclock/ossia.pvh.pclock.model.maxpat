@@ -3,8 +3,8 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 3,
-			"revision" : 0,
+			"minor" : 5,
+			"revision" : 1,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -179,8 +179,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 173.0, 174.0, 446.0, 35.0 ],
-					"text" : "ossia.parameter bpm @type float @repetitions 0 @range 1 5000 @clip low @unit time.ms @default 100"
+					"patching_rect" : [ 173.0, 174.0, 462.0, 35.0 ],
+					"text" : "ossia.parameter bpm @type float @range 1 5000 @clip low @unit time.ms @default 100"
 				}
 
 			}
