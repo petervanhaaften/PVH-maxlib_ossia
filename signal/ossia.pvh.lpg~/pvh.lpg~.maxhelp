@@ -2,14 +2,15 @@
 	"patcher" : 	{
 		"fileversion" : 1,
 		"appversion" : 		{
-			"major" : 7,
-			"minor" : 3,
-			"revision" : 5,
+			"major" : 8,
+			"minor" : 5,
+			"revision" : 1,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
-		"rect" : [ -8.0, 180.0, 605.0, 379.0 ],
+		"classnamespace" : "box",
+		"rect" : [ 34.0, 180.0, 605.0, 379.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -36,6 +37,7 @@
 		"tags" : "",
 		"style" : "",
 		"subpatcher_template" : "",
+		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
 					"bubble" : 1,
@@ -47,7 +49,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 90.0, 172.0, 90.0, 52.0 ],
-					"style" : "",
 					"text" : "wet/dry mix control"
 				}
 
@@ -60,8 +61,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 270.0, 165.0, 50.0, 22.0 ],
-					"style" : ""
+					"patching_rect" : [ 270.0, 165.0, 50.0, 22.0 ]
 				}
 
 			}
@@ -72,7 +72,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 240.0, 270.0, 34.0, 20.0 ],
-					"style" : "",
 					"text" : "--->"
 				}
 
@@ -85,7 +84,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 180.0, 270.0, 64.0, 60.0 ],
-					"style" : "",
 					"text" : "raise amplitude to  hear output !"
 				}
 
@@ -98,7 +96,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 390.0, 135.0, 41.0, 22.0 ],
-					"style" : "",
 					"text" : "r start"
 				}
 
@@ -110,7 +107,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 240.0, 15.0, 150.0, 20.0 ],
-					"style" : "",
 					"text" : "START test patch !!---->"
 				}
 
@@ -123,8 +119,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 390.0, 15.0, 37.0, 37.0 ],
-					"style" : ""
+					"parameter_enable" : 0,
+					"patching_rect" : [ 390.0, 15.0, 37.0, 37.0 ]
 				}
 
 			}
@@ -135,7 +131,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 390.0, 60.0, 43.0, 22.0 ],
-					"style" : "",
 					"text" : "s start"
 				}
 
@@ -149,13 +144,14 @@
 					"patcher" : 					{
 						"fileversion" : 1,
 						"appversion" : 						{
-							"major" : 7,
-							"minor" : 3,
-							"revision" : 5,
+							"major" : 8,
+							"minor" : 5,
+							"revision" : 1,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
 ,
+						"classnamespace" : "box",
 						"rect" : [ 766.0, 232.0, 640.0, 480.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
@@ -183,6 +179,7 @@
 						"tags" : "",
 						"style" : "",
 						"subpatcher_template" : "",
+						"assistshowspatchername" : 0,
 						"boxes" : [ 							{
 								"box" : 								{
 									"bgmode" : 0,
@@ -192,6 +189,7 @@
 									"enablevscroll" : 0,
 									"id" : "obj-8",
 									"lockeddragscroll" : 0,
+									"lockedsize" : 0,
 									"maxclass" : "bpatcher",
 									"name" : "cue_manager.module.maxpat",
 									"numinlets" : 1,
@@ -199,7 +197,6 @@
 									"offset" : [ 0.0, 0.0 ],
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 102.0, 263.0, 300.0, 175.0 ],
-									"presentation_rect" : [ 0.0, 0.0, 300.0, 175.0 ],
 									"viewvisibility" : 1
 								}
 
@@ -212,7 +209,6 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 50.0, 55.0, 41.0, 22.0 ],
-									"style" : "",
 									"text" : "r start"
 								}
 
@@ -224,8 +220,8 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "bang" ],
-									"patching_rect" : [ 50.0, 85.0, 24.0, 24.0 ],
-									"style" : ""
+									"parameter_enable" : 0,
+									"patching_rect" : [ 50.0, 85.0, 24.0, 24.0 ]
 								}
 
 							}
@@ -237,7 +233,6 @@
 									"numoutlets" : 2,
 									"outlettype" : [ "bang", "bang" ],
 									"patching_rect" : [ 50.0, 117.0, 34.0, 22.0 ],
-									"style" : "",
 									"text" : "t b b"
 								}
 
@@ -250,7 +245,6 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "bang" ],
 									"patching_rect" : [ 65.0, 149.0, 37.0, 22.0 ],
-									"style" : "",
 									"text" : "del 5"
 								}
 
@@ -263,7 +257,6 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 323.0, 180.0, 130.0, 22.0 ],
-									"style" : "",
 									"text" : "recall test"
 								}
 
@@ -276,7 +269,6 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 50.0, 180.0, 170.0, 22.0 ],
-									"style" : "",
 									"text" : "file/path pvh.lpg~.maxhelpcue"
 								}
 
@@ -339,11 +331,9 @@
 						"description" : "",
 						"digest" : "",
 						"globalpatchername" : "",
-						"style" : "",
 						"tags" : ""
 					}
 ,
-					"style" : "",
 					"text" : "p help_cueloader"
 				}
 
@@ -352,12 +342,12 @@
 				"box" : 				{
 					"id" : "obj-17",
 					"maxclass" : "gain~",
+					"multichannelvariant" : 0,
 					"numinlets" : 1,
 					"numoutlets" : 2,
-					"outlettype" : [ "signal", "int" ],
+					"outlettype" : [ "signal", "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 270.0, 270.0, 105.0, 26.0 ],
-					"style" : ""
+					"patching_rect" : [ 270.0, 270.0, 105.0, 26.0 ]
 				}
 
 			}
@@ -369,7 +359,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
 					"patching_rect" : [ 390.0, 165.0, 65.0, 22.0 ],
-					"style" : "",
 					"text" : "metro 250"
 				}
 
@@ -382,7 +371,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 15.0, 15.0, 212.0, 141.0 ],
-					"style" : "",
 					"text" : "LPG digital model in Gen~ created by Julian Parker & Stefano D'angelo. \n\nSee: 'A Digital Model of the Buchla Lowpass-Gate' Proc. of the 16th Int. Conference on Digital Audio Effects (DAFx-13), Maynooth, Ireland, September 2-6, 2013\n\nmodified for Jamoma by pvh in 2017"
 				}
 
@@ -398,14 +386,14 @@
 					"enablevscroll" : 0,
 					"id" : "obj-14",
 					"lockeddragscroll" : 0,
+					"lockedsize" : 0,
 					"maxclass" : "bpatcher",
-					"name" : "pvh.functiongen.view~.maxpat",
+					"name" : "ossia.pvh.functiongen~.view.maxpat",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 420.0, 240.0, 150.0, 70.0 ],
-					"presentation_rect" : [ 0.0, 0.0, 150.0, 70.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -414,13 +402,13 @@
 				"box" : 				{
 					"annotation" : "AD variable shape function generator",
 					"id" : "obj-11",
+					"linecount" : 2,
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 2,
-					"outlettype" : [ "signal", "" ],
-					"patching_rect" : [ 390.0, 195.0, 203.0, 22.0 ],
-					"style" : "",
-					"text" : "pvh.functiongen.model~ functiontest"
+					"outlettype" : [ "multichannelsignal", "float" ],
+					"patching_rect" : [ 390.0, 195.0, 171.0, 35.0 ],
+					"text" : "ossia.pvh.functiongen~.model functiontest"
 				}
 
 			}
@@ -430,8 +418,7 @@
 					"maxclass" : "ezdac~",
 					"numinlets" : 2,
 					"numoutlets" : 0,
-					"patching_rect" : [ 270.0, 315.0, 45.0, 45.0 ],
-					"style" : ""
+					"patching_rect" : [ 270.0, 315.0, 45.0, 45.0 ]
 				}
 
 			}
@@ -445,14 +432,13 @@
 					"enablevscroll" : 0,
 					"id" : "obj-3",
 					"lockeddragscroll" : 0,
+					"lockedsize" : 0,
 					"maxclass" : "bpatcher",
 					"name" : "pvh.lpg~.view.maxpat",
-					"numinlets" : 1,
-					"numoutlets" : 1,
+					"numinlets" : 0,
+					"numoutlets" : 0,
 					"offset" : [ 0.0, 0.0 ],
-					"outlettype" : [ "" ],
 					"patching_rect" : [ 15.0, 225.0, 150.0, 105.0 ],
-					"presentation_rect" : [ 0.0, 0.0, 150.0, 105.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -465,10 +451,9 @@
 					"maxclass" : "newobj",
 					"numinlets" : 2,
 					"numoutlets" : 2,
-					"outlettype" : [ "signal", "" ],
-					"patching_rect" : [ 270.0, 240.0, 131.0, 22.0 ],
-					"style" : "",
-					"text" : "pvh.lpg~.model lpgtest"
+					"outlettype" : [ "multichannelsignal", "" ],
+					"patching_rect" : [ 270.0, 240.0, 160.0, 22.0 ],
+					"text" : "ossia.pvh.lpg~.model lpgtest"
 				}
 
 			}
@@ -480,7 +465,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 270.0, 195.0, 78.0, 22.0 ],
-					"style" : "",
 					"text" : "phasor~ 100"
 				}
 
@@ -553,165 +537,169 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-14::obj-8::obj-68::obj-182" : [ "live.text[15]", "live.text[4]", 0 ],
-			"obj-3::obj-1" : [ "vcaness", "vcaness", 0 ],
-			"obj-14::obj-16" : [ "shape[2]", "shape", 0 ],
-			"obj-14::obj-8::obj-67::obj-182" : [ "live.text[13]", "live.text[4]", 0 ],
-			"obj-14::obj-8::obj-67::obj-10::obj-10::obj-145" : [ "live.menu[7]", "live.menu", 0 ],
+			"obj-14::obj-1" : [ "shape[4]", "shape", 0 ],
+			"obj-14::obj-12" : [ "live.text[52]", "live.text", 0 ],
+			"obj-14::obj-13::obj-100" : [ "live.text[18]", "live.text", 0 ],
+			"obj-14::obj-13::obj-12" : [ "live.numbox[1]", "live.numbox", 0 ],
+			"obj-14::obj-16" : [ "shape[3]", "shape", 0 ],
+			"obj-14::obj-4" : [ "attack[1]", "attack", 0 ],
+			"obj-14::obj-6" : [ "deay[1]", "decay", 0 ],
+			"obj-14::obj-8::obj-66::obj-10::obj-10::obj-145" : [ "live.menu[4]", "live.menu", 0 ],
+			"obj-14::obj-8::obj-66::obj-10::obj-32" : [ "live.text[1]", "live.text", 0 ],
+			"obj-14::obj-8::obj-66::obj-10::obj-7" : [ "live.text", "live.text", 0 ],
+			"obj-14::obj-8::obj-66::obj-182" : [ "live.text[11]", "live.text[4]", 0 ],
+			"obj-14::obj-8::obj-66::obj-7::obj-123::obj-14" : [ "live.text[167]", "live.text", 0 ],
+			"obj-14::obj-8::obj-66::obj-7::obj-123::obj-15" : [ "live.text[166]", "live.text", 0 ],
+			"obj-14::obj-8::obj-67::obj-10::obj-10::obj-145" : [ "live.menu[5]", "live.menu", 0 ],
+			"obj-14::obj-8::obj-67::obj-10::obj-32" : [ "live.text[3]", "live.text", 0 ],
+			"obj-14::obj-8::obj-67::obj-10::obj-7" : [ "live.text[2]", "live.text", 0 ],
+			"obj-14::obj-8::obj-67::obj-182" : [ "live.text[6]", "live.text[4]", 0 ],
+			"obj-14::obj-8::obj-67::obj-7::obj-123::obj-14" : [ "live.text[4]", "live.text", 0 ],
+			"obj-14::obj-8::obj-67::obj-7::obj-123::obj-15" : [ "live.text[5]", "live.text", 0 ],
+			"obj-14::obj-8::obj-68::obj-10::obj-10::obj-145" : [ "live.menu[6]", "live.menu", 0 ],
+			"obj-14::obj-8::obj-68::obj-10::obj-32" : [ "live.text[7]", "live.text", 0 ],
+			"obj-14::obj-8::obj-68::obj-10::obj-7" : [ "live.text[8]", "live.text", 0 ],
+			"obj-14::obj-8::obj-68::obj-182" : [ "live.text[10]", "live.text[4]", 0 ],
+			"obj-14::obj-8::obj-68::obj-7::obj-123::obj-14" : [ "live.text[9]", "live.text", 0 ],
+			"obj-14::obj-8::obj-68::obj-7::obj-123::obj-15" : [ "live.text[12]", "live.text", 0 ],
+			"obj-14::obj-8::obj-70::obj-10::obj-10::obj-145" : [ "live.menu[7]", "live.menu", 0 ],
+			"obj-14::obj-8::obj-70::obj-10::obj-32" : [ "live.text[13]", "live.text", 0 ],
+			"obj-14::obj-8::obj-70::obj-10::obj-7" : [ "live.text[14]", "live.text", 0 ],
 			"obj-14::obj-8::obj-70::obj-182" : [ "live.text[17]", "live.text[4]", 0 ],
-			"obj-3::obj-6::obj-68::obj-182" : [ "live.text[4]", "live.text[4]", 0 ],
-			"obj-3::obj-6::obj-67::obj-10::obj-10::obj-145" : [ "live.menu[1]", "live.menu", 0 ],
-			"obj-14::obj-8::obj-66::obj-10::obj-196" : [ "live.text[10]", "live.text", 0 ],
-			"obj-14::obj-4" : [ "attack", "attack", 0 ],
-			"obj-14::obj-8::obj-70::obj-10::obj-10::obj-145" : [ "live.menu[9]", "live.menu", 0 ],
-			"obj-3::obj-6::obj-67::obj-182" : [ "live.text[2]", "live.text[4]", 0 ],
-			"obj-3::obj-66" : [ "offset", "offset", 0 ],
-			"obj-14::obj-8::obj-68::obj-10::obj-196" : [ "live.text[14]", "live.text", 0 ],
-			"obj-3::obj-6::obj-66::obj-10::obj-10::obj-145" : [ "live.menu[4]", "live.menu", 0 ],
-			"obj-14::obj-8::obj-68::obj-10::obj-10::obj-145" : [ "live.menu[8]", "live.menu", 0 ],
-			"obj-14::obj-1" : [ "shape", "shape", 0 ],
-			"obj-3::obj-6::obj-66::obj-182" : [ "live.text[8]", "live.text[4]", 0 ],
-			"obj-3::obj-6::obj-67::obj-10::obj-196" : [ "live.text[1]", "live.text", 0 ],
-			"obj-3::obj-31" : [ "resonance", "reson", 0 ],
-			"obj-3::obj-6::obj-68::obj-10::obj-10::obj-145" : [ "live.menu[5]", "live.menu", 0 ],
-			"obj-14::obj-8::obj-67::obj-10::obj-196" : [ "live.text[12]", "live.text", 0 ],
-			"obj-14::obj-8::obj-66::obj-10::obj-10::obj-145" : [ "live.menu[6]", "live.menu", 0 ],
-			"obj-14::obj-8::obj-70::obj-10::obj-196" : [ "live.text[16]", "live.text", 0 ],
-			"obj-14::obj-6" : [ "decay", "decay", 0 ],
-			"obj-3::obj-6::obj-66::obj-10::obj-196" : [ "live.text[9]", "live.text", 0 ],
-			"obj-3::obj-6::obj-68::obj-10::obj-196" : [ "live.text[3]", "live.text", 0 ],
-			"obj-14::obj-8::obj-66::obj-182" : [ "live.text[11]", "live.text[4]", 0 ]
+			"obj-14::obj-8::obj-70::obj-7::obj-123::obj-14" : [ "live.text[16]", "live.text", 0 ],
+			"obj-14::obj-8::obj-70::obj-7::obj-123::obj-15" : [ "live.text[15]", "live.text", 0 ],
+			"parameterbanks" : 			{
+				"0" : 				{
+					"index" : 0,
+					"name" : "",
+					"parameters" : [ "-", "-", "-", "-", "-", "-", "-", "-" ]
+				}
+
+			}
+,
+			"parameter_overrides" : 			{
+				"obj-14::obj-13::obj-100" : 				{
+					"parameter_longname" : "live.text[18]"
+				}
+,
+				"obj-14::obj-8::obj-67::obj-10::obj-10::obj-145" : 				{
+					"parameter_longname" : "live.menu[5]"
+				}
+,
+				"obj-14::obj-8::obj-67::obj-10::obj-32" : 				{
+					"parameter_longname" : "live.text[3]"
+				}
+,
+				"obj-14::obj-8::obj-67::obj-10::obj-7" : 				{
+					"parameter_longname" : "live.text[2]"
+				}
+,
+				"obj-14::obj-8::obj-67::obj-182" : 				{
+					"parameter_longname" : "live.text[6]"
+				}
+,
+				"obj-14::obj-8::obj-67::obj-7::obj-123::obj-14" : 				{
+					"parameter_longname" : "live.text[4]"
+				}
+,
+				"obj-14::obj-8::obj-67::obj-7::obj-123::obj-15" : 				{
+					"parameter_longname" : "live.text[5]"
+				}
+,
+				"obj-14::obj-8::obj-68::obj-10::obj-10::obj-145" : 				{
+					"parameter_longname" : "live.menu[6]"
+				}
+,
+				"obj-14::obj-8::obj-68::obj-10::obj-32" : 				{
+					"parameter_longname" : "live.text[7]"
+				}
+,
+				"obj-14::obj-8::obj-68::obj-10::obj-7" : 				{
+					"parameter_longname" : "live.text[8]"
+				}
+,
+				"obj-14::obj-8::obj-68::obj-182" : 				{
+					"parameter_longname" : "live.text[10]"
+				}
+,
+				"obj-14::obj-8::obj-68::obj-7::obj-123::obj-14" : 				{
+					"parameter_longname" : "live.text[9]"
+				}
+,
+				"obj-14::obj-8::obj-68::obj-7::obj-123::obj-15" : 				{
+					"parameter_longname" : "live.text[12]"
+				}
+,
+				"obj-14::obj-8::obj-70::obj-10::obj-10::obj-145" : 				{
+					"parameter_longname" : "live.menu[7]"
+				}
+,
+				"obj-14::obj-8::obj-70::obj-10::obj-32" : 				{
+					"parameter_longname" : "live.text[13]"
+				}
+,
+				"obj-14::obj-8::obj-70::obj-10::obj-7" : 				{
+					"parameter_longname" : "live.text[14]"
+				}
+,
+				"obj-14::obj-8::obj-70::obj-182" : 				{
+					"parameter_longname" : "live.text[17]"
+				}
+,
+				"obj-14::obj-8::obj-70::obj-7::obj-123::obj-14" : 				{
+					"parameter_longname" : "live.text[16]"
+				}
+,
+				"obj-14::obj-8::obj-70::obj-7::obj-123::obj-15" : 				{
+					"parameter_longname" : "live.text[15]"
+				}
+
+			}
+,
+			"inherited_shortname" : 1
 		}
 ,
 		"dependency_cache" : [ 			{
-				"name" : "pvh.lpg~.model.maxpat",
-				"bootpath" : "~/Github/PVH-maxlib/pvh.lpg~",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "poly_LPG_pvhedit.maxpat",
-				"bootpath" : "~/Github/PVH-maxlib/pvh.lpg~",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
 				"name" : "LPG_nonlin.gendsp",
-				"bootpath" : "~/Github/PVH-maxlib/pvh.lpg~",
+				"bootpath" : "~/src/PVH-maxlib_ossia/signal/ossia.pvh.lpg~",
 				"patcherrelativepath" : ".",
 				"type" : "gDSP",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "j.nav.oscroute.model.maxpat",
-				"bootpath" : "~/Github/Nav/Jamoma-v1/j.nav.oscroute",
-				"patcherrelativepath" : "../../Nav/Jamoma-v1/j.nav.oscroute",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "thru.maxpat",
-				"bootpath" : "C74:/patchers/m4l/Pluggo for Live resources/patches",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "pvh.lpg~.view.maxpat",
-				"bootpath" : "~/Github/PVH-maxlib/pvh.lpg~",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "j.nav.oscroute.view.maxpat",
-				"bootpath" : "~/Github/Nav/Jamoma-v1/j.nav.oscroute",
-				"patcherrelativepath" : "../../Nav/Jamoma-v1/j.nav.oscroute",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "j.namespacebrowser.view.maxpat",
-				"bootpath" : "~/Documents/Max 7/Packages/Jamoma/patchers/components/namespace/namespacebrowser",
-				"patcherrelativepath" : "../../../Documents/Max 7/Packages/Jamoma/patchers/components/namespace/namespacebrowser",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "j.get_onscreen_position_edit.js",
-				"bootpath" : "~/Documents/Max 7/Packages/Jamoma/javascript",
-				"patcherrelativepath" : "../../../Documents/Max 7/Packages/Jamoma/javascript",
-				"type" : "TEXT",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "pvh.functiongen.model~.maxpat",
-				"bootpath" : "~/Github/PVH-maxlib/pvh.functiongen~",
-				"patcherrelativepath" : "../pvh.functiongen~",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "pvh.functiongen.view~.maxpat",
-				"bootpath" : "~/Github/PVH-maxlib/pvh.functiongen~",
-				"patcherrelativepath" : "../pvh.functiongen~",
+				"name" : "cue_manager.model.maxpat",
+				"bootpath" : "~/Documents/Max 8/Packages/Jamoma/patchers/models/data/cue_manager",
+				"patcherrelativepath" : "../../../../Documents/Max 8/Packages/Jamoma/patchers/models/data/cue_manager",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "cue_manager.module.maxpat",
-				"bootpath" : "~/Documents/Max 7/Packages/Jamoma/patchers/models/data/cue_manager",
-				"patcherrelativepath" : "../../../Documents/Max 7/Packages/Jamoma/patchers/models/data/cue_manager",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "cue_manager.model.maxpat",
-				"bootpath" : "~/Documents/Max 7/Packages/Jamoma/patchers/models/data/cue_manager",
-				"patcherrelativepath" : "../../../Documents/Max 7/Packages/Jamoma/patchers/models/data/cue_manager",
+				"bootpath" : "~/Documents/Max 8/Packages/Jamoma/patchers/models/data/cue_manager",
+				"patcherrelativepath" : "../../../../Documents/Max 8/Packages/Jamoma/patchers/models/data/cue_manager",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "cue_manager.view.maxpat",
-				"bootpath" : "~/Documents/Max 7/Packages/Jamoma/patchers/models/data/cue_manager",
-				"patcherrelativepath" : "../../../Documents/Max 7/Packages/Jamoma/patchers/models/data/cue_manager",
+				"bootpath" : "~/Documents/Max 8/Packages/Jamoma/patchers/models/data/cue_manager",
+				"patcherrelativepath" : "../../../../Documents/Max 8/Packages/Jamoma/patchers/models/data/cue_manager",
 				"type" : "JSON",
 				"implicit" : 1
+			}
+, 			{
+				"name" : "j.cue.mxo",
+				"type" : "iLaX"
 			}
 , 			{
 				"name" : "j.datetime.maxpat",
-				"bootpath" : "~/Documents/Max 7/Packages/Jamoma/patchers/components/data/datetime",
-				"patcherrelativepath" : "../../../Documents/Max 7/Packages/Jamoma/patchers/components/data/datetime",
+				"bootpath" : "~/Documents/Max 8/Packages/Jamoma/patchers/components/data/datetime",
+				"patcherrelativepath" : "../../../../Documents/Max 8/Packages/Jamoma/patchers/components/data/datetime",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "j.namespace_selector.maxpat",
-				"bootpath" : "~/Documents/Max 7/Packages/Jamoma/patchers/components/namespace/namespace_selector",
-				"patcherrelativepath" : "../../../Documents/Max 7/Packages/Jamoma/patchers/components/namespace/namespace_selector",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "j.model.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "j.parameter.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "j.message.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "j.parameter_array.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "j.receive.mxo",
+				"name" : "j.init.mxo",
 				"type" : "iLaX"
 			}
 , 			{
@@ -719,19 +707,46 @@
 				"type" : "iLaX"
 			}
 , 			{
+				"name" : "j.message.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "j.model.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "j.namespace.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "j.namespace_selector.maxpat",
+				"bootpath" : "~/Documents/Max 8/Packages/Jamoma/patchers/components/namespace/namespace_selector",
+				"patcherrelativepath" : "../../../../Documents/Max 8/Packages/Jamoma/patchers/components/namespace/namespace_selector",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "j.parameter.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "j.receive.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "j.remote.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "j.return.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "j.send.mxo",
+				"type" : "iLaX"
+			}
+, 			{
 				"name" : "j.stats.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "j.out.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "j.out~.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "j.xfade~.mxo",
 				"type" : "iLaX"
 			}
 , 			{
@@ -743,32 +758,111 @@
 				"type" : "iLaX"
 			}
 , 			{
-				"name" : "j.remote.mxo",
+				"name" : "ossia.explorer.mxo",
 				"type" : "iLaX"
 			}
 , 			{
-				"name" : "j.remote_array.mxo",
+				"name" : "ossia.fuzzysearch.mxo",
 				"type" : "iLaX"
 			}
 , 			{
-				"name" : "j.send.mxo",
+				"name" : "ossia.get_onscreen_position.js",
+				"bootpath" : "~/Documents/Max 8/Packages/ossia/javascript",
+				"patcherrelativepath" : "../../../../Documents/Max 8/Packages/ossia/javascript",
+				"type" : "TEXT",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "ossia.model.mxo",
 				"type" : "iLaX"
 			}
 , 			{
-				"name" : "j.init.mxo",
+				"name" : "ossia.namespacebrowser.model.maxpat",
+				"bootpath" : "~/Documents/Max 8/Packages/ossia/patchers/namespacebrowser",
+				"patcherrelativepath" : "../../../../Documents/Max 8/Packages/ossia/patchers/namespacebrowser",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "ossia.namespacebrowser.view.maxpat",
+				"bootpath" : "~/Documents/Max 8/Packages/ossia/patchers/namespacebrowser",
+				"patcherrelativepath" : "../../../../Documents/Max 8/Packages/ossia/patchers/namespacebrowser",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "ossia.nav.oscroute.model.maxpat",
+				"bootpath" : "~/src/tml-ossia/nav/nav.oscroute",
+				"patcherrelativepath" : "../../../tml-ossia/nav/nav.oscroute",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "ossia.nav.oscroute.view.maxpat",
+				"bootpath" : "~/src/tml-ossia/nav/nav.oscroute",
+				"patcherrelativepath" : "../../../tml-ossia/nav/nav.oscroute",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "ossia.parameter.mxo",
 				"type" : "iLaX"
 			}
 , 			{
-				"name" : "j.return.mxo",
+				"name" : "ossia.pvh.chanctl~.model.maxpat",
+				"bootpath" : "~/src/PVH-maxlib_ossia/signal/ossia.pvh.chanctl~",
+				"patcherrelativepath" : "../ossia.pvh.chanctl~",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "ossia.pvh.chanctl~.view.maxpat",
+				"bootpath" : "~/src/PVH-maxlib_ossia/signal/ossia.pvh.chanctl~",
+				"patcherrelativepath" : "../ossia.pvh.chanctl~",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "ossia.pvh.functiongen~.model.maxpat",
+				"bootpath" : "~/src/PVH-maxlib_ossia/signal/ossia.pvh.functiongen~",
+				"patcherrelativepath" : "../ossia.pvh.functiongen~",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "ossia.pvh.functiongen~.view.maxpat",
+				"bootpath" : "~/src/PVH-maxlib_ossia/signal/ossia.pvh.functiongen~",
+				"patcherrelativepath" : "../ossia.pvh.functiongen~",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "ossia.pvh.lpg~.model.maxpat",
+				"bootpath" : "~/src/PVH-maxlib_ossia/signal/ossia.pvh.lpg~",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "ossia.remote.mxo",
 				"type" : "iLaX"
 			}
 , 			{
-				"name" : "j.cue.mxo",
+				"name" : "ossia.view.mxo",
 				"type" : "iLaX"
 			}
 , 			{
-				"name" : "j.namespace.mxo",
-				"type" : "iLaX"
+				"name" : "poly_LPG_pvhedit.maxpat",
+				"bootpath" : "~/src/PVH-maxlib_ossia/signal/ossia.pvh.lpg~",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "thru.maxpat",
+				"bootpath" : "C74:/patchers/m4l/Pluggo for Live resources/patches",
+				"type" : "JSON",
+				"implicit" : 1
 			}
  ],
 		"autosave" : 0
