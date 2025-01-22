@@ -4,7 +4,7 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 5,
-			"revision" : 0,
+			"revision" : 5,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -40,6 +40,30 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-21",
+					"linecount" : 2,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 363.0, 167.0, 103.0, 33.0 ],
+					"text" : "volm defines volume of say"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-9",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 216.333360999822617, 179.0, 123.0, 22.0 ],
+					"text" : "sprintf [[volm 0.6]] %s"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"comment" : "msg in",
 					"id" : "obj-4",
 					"index" : 2,
@@ -47,7 +71,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 199.0, 69.0, 30.0, 30.0 ]
+					"patching_rect" : [ 193.0, 66.0, 30.0, 30.0 ]
 				}
 
 			}
@@ -109,8 +133,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 212.333360999822617, 168.333349764347076, 75.0, 22.0 ],
-					"text" : "prepend say"
+					"patching_rect" : [ 216.333360999822617, 212.333349764347076, 151.0, 22.0 ],
+					"text" : "prepend say --voice=Moira"
 				}
 
 			}
@@ -133,7 +157,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
-					"patching_rect" : [ 212.333360999822617, 202.333349257707596, 33.0, 22.0 ],
+					"patching_rect" : [ 216.333360999822617, 272.333349257707596, 33.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"shell" : "(default)"
 					}
@@ -173,7 +197,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-223", 0 ],
+					"destination" : [ "obj-9", 0 ],
 					"source" : [ "obj-224", 0 ]
 				}
 
@@ -187,8 +211,15 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-223", 0 ],
+					"destination" : [ "obj-9", 0 ],
 					"source" : [ "obj-4", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-223", 0 ],
+					"source" : [ "obj-9", 0 ]
 				}
 
 			}
