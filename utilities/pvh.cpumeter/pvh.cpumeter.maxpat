@@ -78,9 +78,8 @@
 				"box" : 				{
 					"id" : "obj-20",
 					"maxclass" : "newobj",
-					"numinlets" : 2,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "int" ],
+					"numinlets" : 0,
+					"numoutlets" : 0,
 					"patching_rect" : [ 216.0, 190.024963999999954, 77.0, 22.0 ],
 					"text" : "adstatus cpu"
 				}
@@ -91,20 +90,6 @@
 				"patchline" : 				{
 					"destination" : [ "obj-69", 0 ],
 					"source" : [ "obj-2", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-3", 0 ],
-					"source" : [ "obj-20", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-20", 0 ],
-					"source" : [ "obj-69", 0 ]
 				}
 
 			}
