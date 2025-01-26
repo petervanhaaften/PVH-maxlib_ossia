@@ -54,11 +54,11 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-11",
-					"index" : 0,
+					"index" : 1,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "" ],
+					"outlettype" : [ "bang" ],
 					"patching_rect" : [ 97.000854000000004, 10.0, 30.0, 30.0 ]
 				}
 
@@ -167,8 +167,8 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 381.000854000000004, 464.0, 202.0, 35.0 ],
-					"text" : "print \"pvh.autodac : checking output option\""
+					"patching_rect" : [ 381.000854000000004, 464.0, 205.999145999999996, 35.0 ],
+					"text" : "print \"pvh.autoaudiodriver : checking audio drivers\""
 				}
 
 			}
@@ -264,7 +264,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 287.0, 283.468261999999982, 70.0, 22.0 ],
-					"text" : "count 3"
+					"text" : "count 5"
 				}
 
 			}
@@ -359,7 +359,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 97.000854000000004, 285.0, 116.0, 22.0 ],
+					"patching_rect" : [ 97.000854000000004, 285.0, 138.0, 22.0 ],
 					"text" : "zl compare #1"
 				}
 
@@ -373,7 +373,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 97.000854000000004, 256.234130999999991, 162.0, 23.0 ]
+					"patching_rect" : [ 97.000854000000004, 256.234130999999991, 162.0, 23.0 ],
+					"text" : "\"Core Audio\""
 				}
 
 			}
@@ -395,7 +396,7 @@
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
 					"id" : "obj-78",
-					"items" : "<empty>",
+					"items" : [ "None", ",", "Core Audio", ",", "NonRealTime", ",", "ad_portaudio", "Core Audio", ",", "ad_rewire" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -416,8 +417,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "int" ],
-					"patching_rect" : [ 97.000854000000004, 100.0, 102.0, 22.0 ],
-					"text" : "adstatus option 1"
+					"patching_rect" : [ 97.000854000000004, 100.0, 87.0, 22.0 ],
+					"text" : "adstatus driver"
 				}
 
 			}
@@ -646,9 +647,7 @@
 				}
 
 			}
- ],
-		"dependency_cache" : [  ],
-		"autosave" : 0
+ ]
 	}
 
 }

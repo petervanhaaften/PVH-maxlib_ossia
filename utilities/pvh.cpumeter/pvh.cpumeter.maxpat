@@ -74,17 +74,6 @@
 				}
 
 			}
-, 			{
-				"box" : 				{
-					"id" : "obj-20",
-					"maxclass" : "newobj",
-					"numinlets" : 0,
-					"numoutlets" : 0,
-					"patching_rect" : [ 216.0, 190.024963999999954, 77.0, 22.0 ],
-					"text" : "adstatus cpu"
-				}
-
-			}
  ],
 		"lines" : [ 			{
 				"patchline" : 				{

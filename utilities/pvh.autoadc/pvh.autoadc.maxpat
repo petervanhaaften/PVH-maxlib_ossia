@@ -54,11 +54,11 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-11",
-					"index" : 0,
+					"index" : 1,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "" ],
+					"outlettype" : [ "bang" ],
 					"patching_rect" : [ 97.000854000000004, 10.0, 30.0, 30.0 ]
 				}
 
@@ -163,12 +163,11 @@
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
 					"id" : "obj-23",
-					"linecount" : 2,
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 381.000854000000004, 464.0, 202.0, 35.0 ],
-					"text" : "print \"pvh.autodac : checking output option\""
+					"patching_rect" : [ 381.000854000000004, 464.0, 239.0, 22.0 ],
+					"text" : "print \"pvh.autoadc : checking output option\""
 				}
 
 			}
@@ -264,7 +263,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 287.0, 283.468261999999982, 70.0, 22.0 ],
-					"text" : "count 3"
+					"text" : "count 2"
 				}
 
 			}
@@ -422,8 +421,27 @@
 				}
 
 			}
+, 			{
+				"box" : 				{
+					"id" : "obj-1",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 51.000854000000004, 130.0, 35.0, 22.0 ],
+					"text" : "clear"
+				}
+
+			}
  ],
 		"lines" : [ 			{
+				"patchline" : 				{
+					"destination" : [ "obj-78", 0 ],
+					"source" : [ "obj-1", 0 ]
+				}
+
+			}
+, 			{
 				"patchline" : 				{
 					"destination" : [ "obj-80", 0 ],
 					"source" : [ "obj-11", 0 ]
@@ -533,7 +551,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-78", 0 ],
-					"midpoints" : [ 328.500854000000004, 506.0, 32.0, 506.0, 32.0, 168.0, 83.0, 168.0, 83.0, 169.0, 106.500854000000004, 169.0 ],
+					"midpoints" : [ 328.500854000000004, 506.0, 32.0, 506.0, 32.0, 168.0, 83.0, 168.0, 83.0, 168.0, 106.500854000000004, 168.0 ],
 					"order" : 0,
 					"source" : [ "obj-69", 0 ]
 				}
@@ -628,9 +646,7 @@
 				}
 
 			}
- ],
-		"dependency_cache" : [  ],
-		"autosave" : 0
+ ]
 	}
 
 }
